@@ -37,6 +37,10 @@
       "dest": "/api/result.js?id=$id"
     },
     {
+      "src": "/api/compare/(?<id>[^/]*)",
+      "dest": "/api/compare.js?id=$id"
+    },
+    {
       "src": "/api/(.*)",
       "dest": "/api/$1.js"
     },
