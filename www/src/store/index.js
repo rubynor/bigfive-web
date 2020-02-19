@@ -10,6 +10,7 @@ export default new Vuex.Store({
     slide: 0,
     loading: false,
     result: false,
+    compareResult: false,
     snackbar: {
       active: false,
       message: false,
@@ -124,6 +125,9 @@ export default new Vuex.Store({
     SET_RESULT: (state, payload) => {
       state.result = payload
     },
+    SET_COMPARE_RESULT: (state, payload) => {
+      state.compareResult = payload
+    },
     SET_LOADING: (state, payload) => {
       state.loading = payload
     }
@@ -140,6 +144,20 @@ export default new Vuex.Store({
           : `/api/result/${id}`
         const { data } = await axios.get(url)
         context.commit('SET_RESULT', data)
+        context.commit('SET_LOADING', false)
+      } catch (error) {
+        context.commit('SET_SNACKBAR', { msg: error.message, type: 'error' })
+        context.commit('SET_LOADING', false)
+      }
+    },
+    GET_COMPARE_RESULT: async (context, id) => {
+      try {
+        context.commit('SET_LOADING', true)
+        const url = context.state.development
+          ? `https://b5.rubynor.xyz/api/compare/${id}`
+          : `/api/compare/${id}`
+        const { data } = await axios.get(url)
+        context.commit('SET_COMPARE_RESULT', data)
         context.commit('SET_LOADING', false)
       } catch (error) {
         context.commit('SET_SNACKBAR', { msg: error.message, type: 'error' })

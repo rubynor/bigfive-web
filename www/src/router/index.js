@@ -4,6 +4,7 @@ import Home from '../views/Home'
 import Form from '../views/Form'
 import Test from '../views/Test'
 import Result from '../views/Result'
+import Compare from '../views/Compare'
 
 Vue.use(VueRouter)
 
@@ -40,6 +41,11 @@ const routes = [
     path: '/result/:id',
     name: 'result',
     component: Result
+  },
+  {
+    path: '/compare/:id',
+    name: 'compare',
+    component: Compare
   },
   {
     path: '/bigfive',
