@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
-import { languages, getItems, sleep } from '../lib/helpers'
+import router from '../router'
+import { languages, getItems, sleep, getInfo } from '../lib/helpers'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
@@ -133,8 +134,43 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    SUBMIT_TEST: context => {
-      console.log('Test submitted.')
+    SUBMIT_TEST: async context => {
+      try {
+        context.commit('SET_LOADING', true)
+
+        const answers = context.state.test.answers
+        const choices = Object.keys(answers).reduce((prev, current) => {
+          const choice = answers[current]
+          prev.push({
+            domain: choice.domain,
+            facet: choice.facet,
+            score: choice.score
+          })
+          return prev
+        }, [])
+
+        const result = {
+          ...getInfo,
+          lang: context.state.form.language,
+          invalid: context.state.invalid,
+          answers: choices,
+          timeElapsed: Math.round((Date.now() - context.state.now) / 1000),
+          dateStamp: Date.now()
+        }
+        console.log(result)
+
+        const url = context.state.development
+          ? 'https://b5.rubynor.xyz/api/save'
+          : '/api/save'
+
+        const { data: { id } } = await axios.post(url, result)
+
+        context.commit('SET_LOADING', false)
+        router.push({ path: `/result/${id}` })
+      } catch (error) {
+        context.commit('SET_SNACKBAR', { msg: error.message, type: 'error' })
+        context.commit('SET_LOADING', false)
+      }
     },
     GET_RESULT: async (context, id) => {
       try {

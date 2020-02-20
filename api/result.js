@@ -4,6 +4,8 @@ const connectToDb = require('./lib/connectToDb')
 const getResult = require('@alheimsins/b5-result-text')
 const calculateScore = require('b5-calculate-score')
 
+const dbCollection = process.env.MONGODB_COLLECTION
+
 module.exports = async (req, res) => {
   const { query: { id } } = req
 
@@ -14,7 +16,7 @@ module.exports = async (req, res) => {
 
   try {
     const db = await connectToDb()
-    const collection = db.collection('test')
+    const collection = db.collection(dbCollection)
     const data = await collection.findOne({ _id: ObjectId(id) })
     const scores = calculateScore(data)
     const result = getResult({ scores, lang: data.lang || 'en' })

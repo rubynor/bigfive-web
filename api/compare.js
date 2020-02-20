@@ -3,6 +3,8 @@ const connectToDb = require('./lib/connectToDb')
 const repackResults = require('./lib/repack-results')
 const base64url = require('./lib/base64url')
 
+const dbCollection = process.env.MONGODB_COLLECTION
+
 module.exports = async (req, res) => {
   const { query: { id } } = req
 
@@ -15,7 +17,7 @@ module.exports = async (req, res) => {
 
   try {
     const db = await connectToDb()
-    const collection = db.collection('test')
+    const collection = db.collection(dbCollection)
     const scores = await Promise.all(
       people.map(async item => {
         const data = await collection.findOne({ _id: ObjectId(item.id) })

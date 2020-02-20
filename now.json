@@ -3,7 +3,8 @@
   "scope": "rubynor",
   "alias": "b5.rubynor.xyz",
   "env": {
-    "MONGODB_URI": "@mongodb_uri"
+    "MONGODB_URI": "@mongodb_uri",
+    "MONGODB_COLLECTION": "test"
   },
   "builds": [
     {

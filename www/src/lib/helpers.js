@@ -6,6 +6,8 @@ exports.languages = getInfo()
 
 exports.getItems = getItems
 
+exports.getInfo = getInfo()
+
 module.exports.secToMin = seconds => {
   const minuteDivisor = seconds % (60 * 60)
   const minutes = Math.floor(minuteDivisor / 60)

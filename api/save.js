@@ -1,19 +1,23 @@
 const cors = require('micro-cors')()
 const connectToDb = require('./lib/connectToDb')
 
-const handler = async (req, res) => {
-  const payload = req.body
+const dbCollection = process.env.MONGODB_COLLECTION
 
-  if (payload) {
+const handler = async (req, res) => {
+  const { body: payload } = req
+
+  if (!payload) {
     res.status(500).json({ type: 'error', message: 'Not a valid payload' })
+    return
   }
 
   try {
     const db = await connectToDb()
-    const collection = db.collection('test')
+    const collection = db.collection(dbCollection)
 
-    const data = await collection.insert(payload)
-    res.send(data)
+    const data = await collection.insertOne(payload)
+    res.send({ id: data.insertedId })
+    return
   } catch (error) {
     res.status(500).json({ type: 'error', message: error.message })
   }
