@@ -20,7 +20,7 @@
       <div class="logo-text">
         bigfive
         <span class="slogan">
-          our cool slogan
+          Learn to know your self
         </span>
       </div>
       <v-spacer></v-spacer>
