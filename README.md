@@ -5,7 +5,7 @@ Demo: https://b5.rubynor.xyz/
 ## Project setup
 
 ```
-cd wwww
+cd www
 ```
 
 ```
