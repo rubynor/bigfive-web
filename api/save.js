@@ -1,11 +1,20 @@
 const connectToDb = require('./lib/connectToDb')
+const validate = require('./lib/validate-test')
 const dbCollection = process.env.MONGODB_COLLECTION
 
 module.exports = async (req, res) => {
   const { body: payload } = req
 
   if (!payload) {
-    res.status(500).json({ type: 'error', message: 'Not a valid payload' })
+    res.status(400).json({ type: 'error', message: 'Not a valid payload' })
+    return
+  }
+
+  const { error } = validate(payload)
+  const isValid = !error
+
+  if (!isValid) {
+    res.status(400).json({ type: 'error', message: error })
     return
   }
 

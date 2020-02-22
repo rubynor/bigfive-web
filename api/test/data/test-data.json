@@ -1,0 +1,703 @@
+{
+  "name": "Johnson's IPIP NEO-PI-R",
+  "id": "johnson-120-ipip-neo-pi-r",
+  "shortId": "b5-120",
+  "time": 10,
+  "questions": 120,
+  "note": "Recommended",
+  "languages": [
+    {
+      "id": "en",
+      "text": "English"
+    },
+    {
+      "id": "zh-cn",
+      "text": "Chinese (PRC)"
+    },
+    {
+      "id": "hi",
+      "text": "Hindi"
+    },
+    {
+      "id": "es",
+      "text": "Spanish"
+    },
+    {
+      "id": "fr",
+      "text": "French"
+    },
+    {
+      "id": "ru",
+      "text": "Russian"
+    },
+    {
+      "id": "id",
+      "text": "Indonesian"
+    },
+    {
+      "id": "ur",
+      "text": "Urdu"
+    },
+    {
+      "id": "de",
+      "text": "Deutsch"
+    },
+    {
+      "id": "ja",
+      "text": "Japanese"
+    },
+    {
+      "id": "it",
+      "text": "Italian"
+    },
+    {
+      "id": "th",
+      "text": "Thai"
+    },
+    {
+      "id": "uk",
+      "text": "Ukrainian"
+    },
+    {
+      "id": "da",
+      "text": "Danish"
+    },
+    {
+      "id": "no",
+      "text": "Norwegian"
+    },
+    {
+      "id": "is",
+      "text": "Icelandic"
+    },
+    {
+      "id": "fi",
+      "text": "Finnish"
+    },
+    {
+      "id": "nl",
+      "text": "Dutch"
+    },
+    {
+      "id": "sv",
+      "text": "Swedish"
+    },
+    {
+      "id": "hr",
+      "text": "Croatian"
+    },
+    {
+      "id": "et",
+      "text": "Estonian"
+    },
+    {
+      "id": "pt-br",
+      "text": "Brazilian Portuguese"
+    }
+  ],
+  "lang": "en",
+  "answers": [
+    {
+      "domain": "N",
+      "facet": 1,
+      "score": 4
+    },
+    {
+      "domain": "E",
+      "facet": 1,
+      "score": 1
+    },
+    {
+      "domain": "O",
+      "facet": 1,
+      "score": 2
+    },
+    {
+      "domain": "A",
+      "facet": 1,
+      "score": 3
+    },
+    {
+      "domain": "C",
+      "facet": 1,
+      "score": 2
+    },
+    {
+      "domain": "N",
+      "facet": 2,
+      "score": 1
+    },
+    {
+      "domain": "E",
+      "facet": 2,
+      "score": 3
+    },
+    {
+      "domain": "O",
+      "facet": 2,
+      "score": 2
+    },
+    {
+      "domain": "A",
+      "facet": 2,
+      "score": 1
+    },
+    {
+      "domain": "C",
+      "facet": 2,
+      "score": 3
+    },
+    {
+      "domain": "N",
+      "facet": 3,
+      "score": 2
+    },
+    {
+      "domain": "E",
+      "facet": 3,
+      "score": 1
+    },
+    {
+      "domain": "O",
+      "facet": 3,
+      "score": 4
+    },
+    {
+      "domain": "A",
+      "facet": 3,
+      "score": 3
+    },
+    {
+      "domain": "C",
+      "facet": 3,
+      "score": 2
+    },
+    {
+      "domain": "N",
+      "facet": 4,
+      "score": 4
+    },
+    {
+      "domain": "E",
+      "facet": 4,
+      "score": 2
+    },
+    {
+      "domain": "O",
+      "facet": 4,
+      "score": 1
+    },
+    {
+      "domain": "A",
+      "facet": 4,
+      "score": 4
+    },
+    {
+      "domain": "C",
+      "facet": 4,
+      "score": 1
+    },
+    {
+      "domain": "N",
+      "facet": 5,
+      "score": 1
+    },
+    {
+      "domain": "E",
+      "facet": 5,
+      "score": 4
+    },
+    {
+      "domain": "O",
+      "facet": 5,
+      "score": 3
+    },
+    {
+      "domain": "A",
+      "facet": 5,
+      "score": 1
+    },
+    {
+      "domain": "C",
+      "facet": 5,
+      "score": 2
+    },
+    {
+      "domain": "N",
+      "facet": 6,
+      "score": 4
+    },
+    {
+      "domain": "E",
+      "facet": 6,
+      "score": 2
+    },
+    {
+      "domain": "O",
+      "facet": 6,
+      "score": 0
+    },
+    {
+      "domain": "A",
+      "facet": 6,
+      "score": 1
+    },
+    {
+      "domain": "C",
+      "facet": 6,
+      "score": 1
+    },
+    {
+      "domain": "N",
+      "facet": 1,
+      "score": 4
+    },
+    {
+      "domain": "E",
+      "facet": 1,
+      "score": 2
+    },
+    {
+      "domain": "O",
+      "facet": 1,
+      "score": 0
+    },
+    {
+      "domain": "A",
+      "facet": 1,
+      "score": 4
+    },
+    {
+      "domain": "C",
+      "facet": 1,
+      "score": 3
+    },
+    {
+      "domain": "N",
+      "facet": 2,
+      "score": 1
+    },
+    {
+      "domain": "O",
+      "facet": 2,
+      "score": 0
+    },
+    {
+      "domain": "E",
+      "facet": 2,
+      "score": 0
+    },
+    {
+      "domain": "A",
+      "facet": 2,
+      "score": 0
+    },
+    {
+      "domain": "C",
+      "facet": 2,
+      "score": 3
+    },
+    {
+      "domain": "N",
+      "facet": 3,
+      "score": 3
+    },
+    {
+      "domain": "E",
+      "facet": 3,
+      "score": 1
+    },
+    {
+      "domain": "O",
+      "facet": 3,
+      "score": 3
+    },
+    {
+      "domain": "A",
+      "facet": 3,
+      "score": 0
+    },
+    {
+      "domain": "C",
+      "facet": 3,
+      "score": 0
+    },
+    {
+      "domain": "N",
+      "facet": 4,
+      "score": 4
+    },
+    {
+      "domain": "E",
+      "facet": 4,
+      "score": 4
+    },
+    {
+      "domain": "O",
+      "facet": 4,
+      "score": 3
+    },
+    {
+      "domain": "A",
+      "facet": 4,
+      "score": 4
+    },
+    {
+      "domain": "C",
+      "facet": 4,
+      "score": 4
+    },
+    {
+      "domain": "N",
+      "facet": 5,
+      "score": 1
+    },
+    {
+      "domain": "E",
+      "facet": 5,
+      "score": 4
+    },
+    {
+      "domain": "O",
+      "facet": 5,
+      "score": 0
+    },
+    {
+      "domain": "A",
+      "facet": 5,
+      "score": 3
+    },
+    {
+      "domain": "C",
+      "facet": 5,
+      "score": 4
+    },
+    {
+      "domain": "N",
+      "facet": 6,
+      "score": 3
+    },
+    {
+      "domain": "E",
+      "facet": 6,
+      "score": 0
+    },
+    {
+      "domain": "O",
+      "facet": 6,
+      "score": 3
+    },
+    {
+      "domain": "A",
+      "facet": 6,
+      "score": 0
+    },
+    {
+      "domain": "C",
+      "facet": 6,
+      "score": 4
+    },
+    {
+      "domain": "N",
+      "facet": 1,
+      "score": 4
+    },
+    {
+      "domain": "E",
+      "facet": 1,
+      "score": 0
+    },
+    {
+      "domain": "O",
+      "facet": 1,
+      "score": 0
+    },
+    {
+      "domain": "A",
+      "facet": 1,
+      "score": 4
+    },
+    {
+      "domain": "C",
+      "facet": 1,
+      "score": 0
+    },
+    {
+      "domain": "N",
+      "facet": 2,
+      "score": 2
+    },
+    {
+      "domain": "E",
+      "facet": 2,
+      "score": 4
+    },
+    {
+      "domain": "O",
+      "facet": 2,
+      "score": 3
+    },
+    {
+      "domain": "A",
+      "facet": 2,
+      "score": 0
+    },
+    {
+      "domain": "C",
+      "facet": 2,
+      "score": 1
+    },
+    {
+      "domain": "N",
+      "facet": 3,
+      "score": 4
+    },
+    {
+      "domain": "E",
+      "facet": 3,
+      "score": 0
+    },
+    {
+      "domain": "O",
+      "facet": 3,
+      "score": 4
+    },
+    {
+      "domain": "A",
+      "facet": 3,
+      "score": 2
+    },
+    {
+      "domain": "C",
+      "facet": 3,
+      "score": 0
+    },
+    {
+      "domain": "N",
+      "facet": 4,
+      "score": 4
+    },
+    {
+      "domain": "E",
+      "facet": 4,
+      "score": 0
+    },
+    {
+      "domain": "O",
+      "facet": 4,
+      "score": 0
+    },
+    {
+      "domain": "A",
+      "facet": 4,
+      "score": 4
+    },
+    {
+      "domain": "C",
+      "facet": 4,
+      "score": 4
+    },
+    {
+      "domain": "N",
+      "facet": 5,
+      "score": 3
+    },
+    {
+      "domain": "E",
+      "facet": 5,
+      "score": 1
+    },
+    {
+      "domain": "O",
+      "facet": 5,
+      "score": 0
+    },
+    {
+      "domain": "A",
+      "facet": 5,
+      "score": 0
+    },
+    {
+      "domain": "C",
+      "facet": 5,
+      "score": 4
+    },
+    {
+      "domain": "N",
+      "facet": 6,
+      "score": 4
+    },
+    {
+      "domain": "E",
+      "facet": 6,
+      "score": 1
+    },
+    {
+      "domain": "O",
+      "facet": 6,
+      "score": 3
+    },
+    {
+      "domain": "A",
+      "facet": 6,
+      "score": 0
+    },
+    {
+      "domain": "C",
+      "facet": 6,
+      "score": 0
+    },
+    {
+      "domain": "N",
+      "facet": 1,
+      "score": 4
+    },
+    {
+      "domain": "E",
+      "facet": 1,
+      "score": 1
+    },
+    {
+      "domain": "O",
+      "facet": 1,
+      "score": 0
+    },
+    {
+      "domain": "A",
+      "facet": 1,
+      "score": 4
+    },
+    {
+      "domain": "C",
+      "facet": 1,
+      "score": 3
+    },
+    {
+      "domain": "N",
+      "facet": 2,
+      "score": 0
+    },
+    {
+      "domain": "E",
+      "facet": 2,
+      "score": 4
+    },
+    {
+      "domain": "O",
+      "facet": 2,
+      "score": 2
+    },
+    {
+      "domain": "A",
+      "facet": 2,
+      "score": 0
+    },
+    {
+      "domain": "C",
+      "facet": 2,
+      "score": 4
+    },
+    {
+      "domain": "N",
+      "facet": 3,
+      "score": 1
+    },
+    {
+      "domain": "E",
+      "facet": 3,
+      "score": 1
+    },
+    {
+      "domain": "O",
+      "facet": 3,
+      "score": 4
+    },
+    {
+      "domain": "A",
+      "facet": 3,
+      "score": 0
+    },
+    {
+      "domain": "C",
+      "facet": 3,
+      "score": 0
+    },
+    {
+      "domain": "N",
+      "facet": 4,
+      "score": 4
+    },
+    {
+      "domain": "E",
+      "facet": 4,
+      "score": 3
+    },
+    {
+      "domain": "O",
+      "facet": 4,
+      "score": 0
+    },
+    {
+      "domain": "A",
+      "facet": 4,
+      "score": 3
+    },
+    {
+      "domain": "C",
+      "facet": 4,
+      "score": 1
+    },
+    {
+      "domain": "N",
+      "facet": 5,
+      "score": 0
+    },
+    {
+      "domain": "E",
+      "facet": 5,
+      "score": 4
+    },
+    {
+      "domain": "O",
+      "facet": 5,
+      "score": 0
+    },
+    {
+      "domain": "A",
+      "facet": 5,
+      "score": 0
+    },
+    {
+      "domain": "C",
+      "facet": 5,
+      "score": 4
+    },
+    {
+      "domain": "N",
+      "facet": 6,
+      "score": 3
+    },
+    {
+      "domain": "E",
+      "facet": 6,
+      "score": 4
+    },
+    {
+      "domain": "O",
+      "facet": 6,
+      "score": 4
+    },
+    {
+      "domain": "A",
+      "facet": 6,
+      "score": 1
+    },
+    {
+      "domain": "C",
+      "facet": 6,
+      "score": 2
+    }
+  ],
+  "timeElapsed": null,
+  "dateStamp": 1582409838492
+}

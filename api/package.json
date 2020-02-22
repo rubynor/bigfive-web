@@ -12,6 +12,7 @@
   "dependencies": {
     "@alheimsins/b5-result-text": "3.0.0",
     "@alheimsins/bigfive-calculate-score": "2.0.0",
+    "@hapi/joi": "17.1.0",
     "mongodb": "3.5.3"
   }
 }
