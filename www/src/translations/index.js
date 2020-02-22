@@ -65,7 +65,7 @@ export default {
       back: 'back'
     }
   },
-  no: {
+  nb: {
     language: 'Norsk',
     frontpage: {
       title: 'Big Five personlighetstest',
