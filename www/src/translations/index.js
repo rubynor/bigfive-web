@@ -1,5 +1,6 @@
 export default {
   en: {
+    language: 'English',
     frontpage: {
       title: 'Big Five Personality Test',
       call_to_action: 'Take the free test now',
@@ -65,7 +66,7 @@ export default {
     }
   },
   no: {
-
+    language: 'Norsk',
     frontpage: {
       title: 'Big Five personlighetstest',
       call_to_action: 'Start testen',

@@ -24,7 +24,6 @@
         </span>
       </div>
       <v-spacer></v-spacer>
-      <LanguageSwitcher />
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
     </v-app-bar>
 
@@ -34,7 +33,6 @@
       temporary
       right
     >
-
       <v-list-item>
       </v-list-item>
 
@@ -53,6 +51,9 @@
             <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+        <v-list-item>
+          <LanguageSwitcher />
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
   </div>
@@ -60,6 +61,7 @@
 
 <script>
 import LanguageSwitcher from './LanguageSwitcher'
+import localizations from '../translations'
 export default {
   components: {
     LanguageSwitcher
@@ -71,7 +73,8 @@ export default {
       { title: 'Articles', url: '/articles', icon: 'mdi-newspaper' },
       { title: 'Privacy', url: '/privacy', icon: 'mdi-shield-half-full' },
       { title: 'About', url: '/about', icon: 'mdi-account-multiple' }
-    ]
+    ],
+    languages: Object.keys(localizations)
   })
 }
 
