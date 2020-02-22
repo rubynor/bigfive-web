@@ -1,0 +1,96 @@
+{
+  "version": 2,
+  "scope": "rubynor",
+  "alias": "latest.b5.rubynor.xyz",
+  "env": {
+    "MONGODB_URI": "@mongodb_uri",
+    "MONGODB_COLLECTION": "test"
+  },
+  "builds": [
+    {
+      "src": "api/*.js",
+      "use": "@now/node"
+    },
+    {
+      "src": "www/package.json",
+      "use": "@now/static-build"
+    }
+  ],
+  "build": {
+    "env": {}
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Accept, Access-Control-Request-Headers, Access-Control-Request-Method, Authorization, Content-Type, Last-Modified, Origin, X-FusionAuth-TenantId, X-Requested-With"
+      },
+      "continue": true
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/options.js",
+      "methods": ["OPTIONS"]
+    },
+    {
+      "src": "/api/result/(?<id>[^/]*)",
+      "dest": "/api/result.js?id=$id"
+    },
+    {
+      "src": "/api/compare/(?<id>[^/]*)",
+      "dest": "/api/compare.js?id=$id"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1.js"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/www/favicon.ico"
+    },
+    {
+      "src": "/sitemap.xml",
+      "dest": "/www/sitemap.xml"
+    },
+    {
+      "src": "/manifest.json",
+      "dest": "/www/manifest.json"
+    },
+    {
+      "src": "^/precache-manifest.(.*)",
+      "dest": "/www/precache-manifest.$1"
+    },
+    {
+      "src": "^/js/(.*)",
+      "headers": {"cache-control": "max-age=31536000,immutable"},
+      "dest": "/www/js/$1"
+    },
+    {
+      "src": "^/fonts/(.*)",
+      "headers": {"cache-control": "max-age=31536000,immutable"},
+      "dest": "/www/fonts/$1"
+    },
+    {
+      "src": "^/css/(.*)",
+      "headers": {"cache-control": "max-age=31536000,immutable"},
+      "dest": "/www/css/$1"
+    },
+    {
+      "src": "^/img/(.*)",
+      "headers": {"cache-control": "max-age=31536000,immutable"},
+      "dest": "/www/img/$1"
+    },
+    {
+      "src": "/service-worker.js",
+      "headers": {
+        "cache-control": "s-maxage=0"
+      },
+      "dest": "/www/service-worker.js"
+    },
+    {
+      "src": "/.*",
+      "dest": "/www/index.html"
+    }
+  ]
+}
