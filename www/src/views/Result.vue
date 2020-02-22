@@ -10,6 +10,7 @@
     <div v-else>
       <p class="text-center">
         Save the following ID to see the results later or compare yourself to others
+        <ShareLinks :id="$route.params.id" />
         <br />
         <span class="secondary--text headline">{{ $route.params.id }}</span>
       </p>
@@ -27,6 +28,7 @@
 import { mapState } from 'vuex'
 import BarChart from '../components/BarChart'
 import Domain from '../components/Domain'
+import ShareLinks from '../components/ShareLinks'
 
 export default {
   name: 'result',
@@ -36,7 +38,8 @@ export default {
   computed: mapState(['result', 'loading']),
   components: {
     BarChart,
-    Domain
+    Domain,
+    ShareLinks
   }
 }
 </script>
