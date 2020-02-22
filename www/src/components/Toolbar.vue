@@ -24,6 +24,7 @@
         </span>
       </div>
       <v-spacer></v-spacer>
+      <LanguageSwitcher />
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
     </v-app-bar>
 
@@ -58,7 +59,11 @@
 </template>
 
 <script>
+import LanguageSwitcher from './LanguageSwitcher'
 export default {
+  components: {
+    LanguageSwitcher
+  },
   data: () => ({
     drawer: false,
     items: [
@@ -69,6 +74,7 @@ export default {
     ]
   })
 }
+
 </script>
 
 <style>
