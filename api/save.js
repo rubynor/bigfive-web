@@ -1,9 +1,7 @@
-const cors = require('micro-cors')()
 const connectToDb = require('./lib/connectToDb')
-
 const dbCollection = process.env.MONGODB_COLLECTION
 
-const handler = async (req, res) => {
+module.exports = async (req, res) => {
   const { body: payload } = req
 
   if (!payload) {
@@ -22,5 +20,3 @@ const handler = async (req, res) => {
     res.status(500).json({ type: 'error', message: error.message })
   }
 }
-
-module.exports = cors(handler)
