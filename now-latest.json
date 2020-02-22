@@ -58,6 +58,10 @@
       "dest": "/www/manifest.json"
     },
     {
+      "src": "/robots.txt",
+      "dest": "/www/robots.txt"
+    },
+    {
       "src": "^/precache-manifest.(.*)",
       "dest": "/www/precache-manifest.$1"
     },
