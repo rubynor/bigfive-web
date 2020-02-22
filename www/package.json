@@ -44,6 +44,7 @@
     "eslint-plugin-vue": "^6.2.1",
     "sass": "^1.25.0",
     "sass-loader": "^8.0.2",
+    "sitemap-webpack-plugin": "0.7.0",
     "vue-cli-plugin-vuetify": "^2.0.5",
     "vue-template-compiler": "^2.6.11",
     "vuetify-loader": "^1.4.3"
