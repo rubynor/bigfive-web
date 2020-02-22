@@ -1,4 +1,4 @@
-const calculateScore = require('b5-calculate-score')
+const calculateScore = require('@alheimsins/bigfive-calculate-score')
 const { getDomain, getFacet } = require('@alheimsins/b5-result-text')
 
 function unwrapFacets (data) {

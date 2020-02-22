@@ -9,9 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@alheimsins/b5-result-text": "^1.7.5",
-    "b5-calculate-score": "^1.0.4",
-    "micro-cors": "^0.1.1",
-    "mongodb": "^3.5.3"
+    "@alheimsins/b5-result-text": "3.0.0",
+    "@alheimsins/bigfive-calculate-score": "2.0.0",
+    "micro-cors": "0.1.1",
+    "mongodb": "3.5.3"
   }
 }
