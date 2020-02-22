@@ -11,32 +11,42 @@
             lazy
           >
             <v-card-title class="front-title">
-              Big Five Personality Test
+              {{ $t('frontpage.title') }}
             </v-card-title>
           </v-img>
           <v-card-text>
-            <p>
-            Learn to know yourself better with a <b>free, open-source</b> personality test to measure the <router-link to="bigfive">big five personality</router-link> traits,
-            the far the most scientifically validated and reliable psychological model to measure personality.
+            <p v-html="$t('frontpage.description.top')">
             </p>
             <p>
-            The following test contains <b>120 questions</b> which is estimated to take you about <b>10 minutes</b> to complete.
+              {{ $t('frontpage.description.subtop') }}
+              <router-link to='bigfive'>{{ $t('frontpage.title') }}</router-link>
+              {{ $t('frontpage.description.subtop2') }}
+            </p>
+            <p v-html="$t('frontpage.description.reference')" >
+            </p>
+            <p v-html="$t('frontpage.description.info')">
+            </p>
+            <p v-html="$t('frontpage.description.result')">
             </p>
             <p>
-            After you have completed the test you will receive a detailed personality report in the following domains:
-            <br />
-            <i><router-link to="openness_to_experience">Openness to experience</router-link>, <router-link to="consciousness">Conscientiousness</router-link>, <router-link to="extraversion">Extraversion</router-link>, <router-link to="agreeableness">Agreeableness</router-link> and <router-link to="neuroticism">Neuroticism</router-link></i>.
+              <i>
+                <router-link to="openness_to_experience">{{ $t('facets.openness_to_experience.title') }}</router-link>,
+                <router-link to="conscientiousness">{{ $t('facets.conscientiousness.title') }}</router-link>,
+                <router-link to="extraversion">{{ $t('facets.extraversion.title') }}</router-link>,
+                <router-link to="agreeableness">{{ $t('facets.agreeableness.title') }}</router-link> {{ $t('common.and') }}
+                <router-link to="neuroticism">{{ $t('facets.neuroticism.title') }}</router-link>
+              </i>.
             </p>
             <div class="counter">
-              123 456 78
+              700 000 +
               <span class="font-italic text--secondary">
-                tests taken so far
+                {{ $t('frontpage.description.tests_taken') }}
               </span>
             </div>
 
             <p>
               <v-btn large color="secondary" to="/form">
-                take the free test now
+                {{ $t('frontpage.call_to_action') }}
               </v-btn>
             </p>
           </v-card-text>

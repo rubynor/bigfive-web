@@ -58,8 +58,8 @@ const routes = [
     component: () => import(/* webpackChunkName: "Openness" */ '../views/Openness_to_experience')
   },
   {
-    path: '/consciousness',
-    name: 'consciousness',
+    path: '/conscientiousness',
+    name: 'conscientiousness',
     component: () => import(/* webpackChunkName: "Conscientiousness" */ '../views/Conscientiousness')
   },
   {
