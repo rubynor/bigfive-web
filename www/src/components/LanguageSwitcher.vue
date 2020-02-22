@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-select :items="languages" v-model="$i18n.locale" label="Language:">
+    <v-select :items="languages" v-model="$i18n.locale" label="Language:" @change="langChanged">
     </v-select>
   </div>
 </template>
@@ -18,7 +18,12 @@ console.log(languageEntries)
 export default {
   data: () => ({
     languages: languageEntries
-  })
+  }),
+  methods: {
+    langChanged: (lang) => {
+      window.localStorage.setItem('language', lang)
+    }
+  }
 }
 </script>
 Privacy
