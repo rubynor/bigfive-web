@@ -5,6 +5,6 @@ import messages from '../translations'
 Vue.use(VueI18n)
 
 export default new VueI18n({
-  locale: 'en',
+  locale: window.localStorage.getItem('language') || 'en',
   messages
 })

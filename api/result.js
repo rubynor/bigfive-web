@@ -2,7 +2,7 @@ const { ObjectId } = require('mongodb')
 const validMongoId = require('./lib/valid-mongoid')
 const connectToDb = require('./lib/connectToDb')
 const getResult = require('@alheimsins/b5-result-text')
-const calculateScore = require('b5-calculate-score')
+const calculateScore = require('@alheimsins/bigfive-calculate-score')
 
 const dbCollection = process.env.MONGODB_COLLECTION
 
