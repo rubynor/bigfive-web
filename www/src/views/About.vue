@@ -47,7 +47,7 @@ export default {
         {
           name: 'PÅL ANDRÈ SUNDT',
           role: 'ART DIRECTOR',
-          avatar: '/img/pål.png',
+          avatar: '/img/paal.png',
           github: 'https://github.com/str1fe'
         },
         {
