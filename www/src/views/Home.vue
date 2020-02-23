@@ -53,7 +53,7 @@
         </v-card>
       </v-flex>
 
-      <v-flex xs12>
+      <v-flex xs12 class="d-none">
       <router-link to="pro">
         <v-card color="secondary" dark>
           <v-card-title>
@@ -63,7 +63,7 @@
       </router-link>
       </v-flex>
 
-      <v-flex xs12 md6>
+      <v-flex xs12 md6 class="d-none">
         <router-link to="article1">
           <v-card>
             <v-card-title>
@@ -76,7 +76,7 @@
         </router-link>
       </v-flex>
 
-      <v-flex xs12 md6>
+      <v-flex xs12 md6 class="d-none">
         <router-link to="article2">
           <v-card>
             <v-card-title>
@@ -89,7 +89,7 @@
         </router-link>
       </v-flex>
 
-      <v-flex>
+      <v-flex class="d-none">
         <v-card color="primary" dark min-height="400">
           <v-card-title>
             How it works video
