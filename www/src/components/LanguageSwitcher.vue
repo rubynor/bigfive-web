@@ -13,8 +13,6 @@ const languageEntries = Object.entries(localizations).map(lang => ({
   value: lang[0]
 }))
 
-console.log(languageEntries)
-
 export default {
   data: () => ({
     languages: languageEntries

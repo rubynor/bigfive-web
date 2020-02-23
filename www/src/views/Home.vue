@@ -7,7 +7,7 @@
           <v-img
             class="white--text align-end"
             height="200px"
-            src="/front_image.jpg"
+            src="@/assets/front_image.jpg"
             lazy
           >
             <v-card-title :class="$vuetify.breakpoint.smAndDown ? 'front-title' : 'front-title front-title-big'">
