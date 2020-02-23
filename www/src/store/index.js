@@ -104,7 +104,7 @@ export default new Vuex.Store({
         test.position += test.itemsPerPage
       }
 
-      if (Object.keys(test.answers).length === test.inventory.length) {
+      if (Object.keys(test.answers).length >= test.inventory.length) {
         test.done = true
       }
     },
