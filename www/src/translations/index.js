@@ -104,7 +104,28 @@ export default {
       and: 'og'
     },
     form: {
-      information: 'informasjon'
+      information: 'informasjon',
+      informationText: 'Svarene du gir brukes til å gi deg et',
+      mostAccurate: 'så nøyaktig resultat som mulig',
+      readMoreAbout: 'Les mer om',
+      privacy: 'Personvern',
+      nextButton: 'OK, neste spørsmål',
+      declineButton: 'fortsett uten å dele',
+      prefferedLanguage: 'Mitt foretrukne språk er',
+      selectLanguage: 'Velg språk',
+      iama: 'Jeg er en',
+      male: 'Mann',
+      female: 'Kvinne',
+      age: 'Alder',
+      iam: 'Jeg er',
+      yearsOld: 'år gammel',
+      ageWarning: 'Du må være 16 år eller eldre',
+      language: 'Språk',
+      gender: 'Kjønn',
+      confirmInfo: 'Bekreft informasjon',
+      confirm: 'Bekreft',
+      toTestButton: 'Åreit! Ta meg til testen'
+
     },
     test: {
       next: 'neste',

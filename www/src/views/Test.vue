@@ -44,7 +44,7 @@
             {{ $t("test.next") }}
           </v-btn>
           <v-btn v-if="development" large color="primary" class="ml-2" @click="SKIP_QUESTIONS">
-            skip
+            dev: skip to end
           </v-btn>
         </div>
 
