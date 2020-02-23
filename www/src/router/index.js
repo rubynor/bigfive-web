@@ -1,10 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home'
-import Form from '../views/Form'
-import Test from '../views/Test'
-import Result from '../views/Result'
-import Compare from '../views/Compare'
 
 Vue.use(VueRouter)
 
@@ -30,22 +26,22 @@ const routes = [
   {
     path: '/form',
     name: 'Form',
-    component: Form
+    component: () => import(/* webpackChunkName: "Form" */ '../views/Form')
   },
   {
     path: '/test',
     name: 'test',
-    component: Test
+    component: () => import(/* webpackChunkName: "Test" */ '../views/Test')
   },
   {
     path: '/result/:id',
     name: 'result',
-    component: Result
+    component: () => import(/* webpackChunkName: "Result" */ '../views/Result')
   },
   {
     path: '/compare/:id',
     name: 'compare',
-    component: Compare
+    component: () => import(/* webpackChunkName: "Compare" */ '../views/Compare')
   },
   {
     path: '/bigfive',
