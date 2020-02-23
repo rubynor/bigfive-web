@@ -19,6 +19,7 @@
     "vue": "2.6.11",
     "vue-apexcharts": "1.5.2",
     "vue-confetti": "2.0.7",
+    "vue-gtag": "^1.6.2",
     "vue-i18n": "8.15.3",
     "vue-router": "3.1.5",
     "vuetify": "2.2.14",
