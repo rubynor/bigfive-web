@@ -49,6 +49,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "Compare" */ '../views/Compare')
   },
   {
+    path: '/compare',
+    name: 'compareform',
+    component: () => import(/* webpackChunkName: "Compare_form" */ '../views/Compare_form')
+  },
+  {
     path: '/bigfive',
     name: 'bigfive',
     component: () => import(/* webpackChunkName: "Bigfive" */ '../views/Big_five')

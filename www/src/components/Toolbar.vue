@@ -70,7 +70,8 @@ export default {
     drawer: false,
     items: [
       { title: 'Home', url: '/', icon: 'mdi-home' },
-      { title: 'Result', url: '/', icon: 'mdi-chart-bar' },
+      { title: 'Result', url: '/result', icon: 'mdi-chart-bar' },
+      { title: 'Compare', url: '/compare', icon: 'mdi-chart-bar' },
       { title: 'Articles', url: '/articles', icon: 'mdi-newspaper' },
       { title: 'Privacy', url: '/privacy', icon: 'mdi-shield-half-full' },
       { title: 'About', url: '/about', icon: 'mdi-account-multiple' }

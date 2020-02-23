@@ -29,3 +29,7 @@ module.exports.secToMin = seconds => {
 module.exports.sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 
 module.exports.validMongoId = id => /^[0-9a-fA-F]{24}$/.test(id)
+
+module.exports.base64url = str => escape(Buffer.from(str, 'utf8').toString('base64'))
+
+module.exports.formatId = id => /^((http|https):\/\/)/.test(id) ? id.replace((process.env.NODE_ENV === 'development' ? 'http://localhost:8080' : 'https://bigfive-test.com') + '/result/', '').replace(' ', '').toLowerCase() : id ? id.replace(' ', '') : id
