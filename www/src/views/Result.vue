@@ -9,7 +9,7 @@
     </div>
     <div v-else>
       <p class="text-center">
-        Save the following ID to see the results later or compare yourself to others
+      <b>Important!</b> Save the following ID to see the results later or <router-link to="/compare">compare</router-link> yourself to others
         <span class="secondary--text headline">{{ $route.params.id }}</span>
         <ShareLinks :id="$route.params.id" />
       </p>
