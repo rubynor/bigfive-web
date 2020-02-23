@@ -1,0 +1,22 @@
+{
+  "name": "bigfive-web",
+  "version": "1.0.0",
+  "description": "Demo: https://b5.rubynor.xyz/",
+  "main": "index.js",
+  "scripts": {
+    "setup": "cd www && npm i && cd ../api && npm i",
+    "refresh": "cd www && npm run refresh && cd ../api && npm run refresh",
+    "dev": "now dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubynor/bigfive-web.git"
+  },
+  "keywords": [],
+  "author": "Geir Gåsodden <geir.gasodden@pythonia.no> (https://github.com/zrrrzzt)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rubynor/bigfive-web/issues"
+  },
+  "homepage": "https://github.com/rubynor/bigfive-web#readme"
+}

@@ -19,17 +19,25 @@ TODO
 Download and install [nodejs](https://nodejs.org),
 [git](https://git-scm.com/downloads) and [zeit/now](https://zeit.co/now)
 
-Make sure nodejs version is equal or greater than 10.
+Make sure nodejs version is equal or greater than 12
 
 The results are saved to a [mongodb](https://www.mongodb.com/) database, so for a full test you either need a running mongodb or an instance at [mlab](https://mlab.com/)
 
 
-## Project setup
+## Development
+
+Run the setup script to install all dependencies
 
 ```
-cd www
-npm install
+npm run setup
 ```
+
+Start the development environment
+
+```
+npm run dev
+```
+
 
 ### Compiles and hot-reloads for development
 ```
