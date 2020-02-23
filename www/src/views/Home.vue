@@ -69,7 +69,9 @@
             We recently launched a site update 🚀
           </v-card-title>
           <v-card-text>
-            Please send issues and bugs to <a href="mailto:jonas.enge@gmail.com">jonas.enge@gmail.com</a>
+            <p>
+            Please report issues and bugs at <a href="https://github.com/rubynor/bigfive-web/issues" target="_blank">github</a>.
+            </p>
           </v-card-text>
         </v-card>
       </v-flex>
