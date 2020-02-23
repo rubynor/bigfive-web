@@ -2,7 +2,14 @@
   <v-container v-resize="onResize">
     <Language v-if="!form.language" />
     <div v-else>
-      <Timer />
+      <v-row>
+        <v-col>
+          <TestLanguageSwitcher />
+        </v-col>
+        <v-col col="12">
+          <Timer />
+        </v-col>
+      </v-row>
       <v-progress-linear
         :value="GET_PROGRESS"
         height="25"
@@ -58,6 +65,7 @@ import Timer from '../components/Timer'
 import { mapMutations, mapState, mapGetters, mapActions } from 'vuex'
 import { sleep } from '../lib/helpers'
 import { Language } from '../components/form'
+import TestLanguageSwitcher from '../components/TestLanguageSwitcher'
 
 export default {
   name: 'test',
@@ -82,7 +90,8 @@ export default {
   },
   components: {
     Timer,
-    Language
+    Language,
+    TestLanguageSwitcher
   },
   watch: {
     'test.done': async function (testDone) {

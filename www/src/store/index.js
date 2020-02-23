@@ -131,6 +131,10 @@ export default new Vuex.Store({
     },
     SET_LOADING: (state, payload) => {
       state.loading = payload
+    },
+    CHANGE_LANGUAGE: (state, language) => {
+      state.test.inventory = getItems(language)
+      state.form.language = language
     }
   },
   actions: {
