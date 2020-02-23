@@ -7,10 +7,10 @@
           <v-img
             class="white--text align-end"
             height="200px"
-            src="https://static.neris-assets.com/images/personality-types/headers/fb/entj-personality-type-header.png"
+            src="/front_image.jpg"
             lazy
           >
-            <v-card-title class="front-title">
+            <v-card-title :class="$vuetify.breakpoint.smAndDown ? 'front-title' : 'front-title front-title-big'">
               {{ $t('frontpage.title') }}
             </v-card-title>
           </v-img>
@@ -112,8 +112,12 @@ export default {
 .front-title {
   background: rgba(0, 0, 0, 0.52);
   font-family: 'Passion One', cursive !important;
-  font-size: 3rem !important;
   text-transform: uppercase;
+  font-size: 2rem !important;
+}
+
+.front-title-big {
+  font-size: 3rem !important;
 }
 
 .counter {
