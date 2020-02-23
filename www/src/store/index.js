@@ -52,7 +52,6 @@ export default new Vuex.Store({
     },
     NEXT_BUTTON_STATE: ({ test }) => {
       const currentQuestions = test.inventory.slice(test.position, test.position + test.itemsPerPage)
-      if (test.itemsPerPage === 1) return true
       return currentQuestions.filter(item => !test.answers[item.id]).length !== 0
     },
     BACK_BUTTON_STATE: ({ test }) => {
