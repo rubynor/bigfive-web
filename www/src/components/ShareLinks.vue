@@ -3,10 +3,10 @@
     <a @click="copyLink(`https://bigfive-test.com/result/${id}`)">
       <v-icon large>mdi-link</v-icon>
     </a>
-    <a :href="'https://www.facebook.com/sharer/sharer.php?u=https://bigfive-test.com/result/' + id">
+    <a :href="'https://www.facebook.com/sharer/sharer.php?u=https://bigfive-test.com/result/' + id" target="_blank">
       <v-icon large>mdi-facebook</v-icon>
     </a>
-    <a :href="'https://twitter.com/home?status=https://bigfive-test.com/result/' + id">
+    <a :href="'https://twitter.com/home?status=https://bigfive-test.com/result/' + id" target="_blank">
       <v-icon large>mdi-twitter</v-icon>
     </a>
     <v-dialog
