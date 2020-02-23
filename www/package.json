@@ -43,6 +43,7 @@
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-standard": "4.0.1",
     "eslint-plugin-vue": "6.2.1",
+    "null-loader": "3.0.0",
     "sass": "1.25.0",
     "sass-loader": "8.0.2",
     "sitemap-webpack-plugin": "0.7.0",
