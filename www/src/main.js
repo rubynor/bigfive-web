@@ -6,6 +6,7 @@ import store from './store'
 import vuetify from './plugins/vuetify'
 import './plugins/confetti'
 import './plugins/apexcharts'
+import './plugins/gtag'
 import i18n from './plugins/i18n'
 
 Vue.config.productionTip = false
