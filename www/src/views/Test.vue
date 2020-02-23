@@ -48,6 +48,14 @@
           </v-btn>
         </div>
 
+        <div v-else-if="loading" class="text-center">
+          <v-progress-circular
+            indeterminate
+            color="secondary"
+            size="128"
+          ></v-progress-circular>
+      </div>
+
         <div v-else>
           <v-btn large color="secondary" @click="SUBMIT_TEST">
             see results
@@ -82,7 +90,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['test', 'development', 'form']),
+    ...mapState(['test', 'development', 'form', 'loading']),
     ...mapGetters(['GET_CURRENT_QUESTIONS', 'GET_PROGRESS', 'NEXT_BUTTON_STATE', 'BACK_BUTTON_STATE', 'GET_CURRENT_ANSWER'])
   },
   created () {
