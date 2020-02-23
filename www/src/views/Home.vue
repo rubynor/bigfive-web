@@ -45,7 +45,7 @@
             </div>
 
             <p>
-              <v-btn large color="secondary" to="/form">
+              <v-btn large color="secondary" to="/test">
                 {{ $t('frontpage.call_to_action') }}
               </v-btn>
             </p>
