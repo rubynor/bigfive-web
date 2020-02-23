@@ -96,7 +96,6 @@ export default new Vuex.Store({
       state.test.inventory = getItems(state.form.language || 'en')
     },
     SET_ANSWER: async ({ test }, { id, answer }) => {
-      if (!answer) return
       const { domain, facet } = test.inventory.find(q => q.id === id)
       Vue.set(test.answers, id, { score: parseInt(answer), domain, facet })
 
