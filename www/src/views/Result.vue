@@ -10,9 +10,8 @@
     <div v-else>
       <p class="text-center">
         Save the following ID to see the results later or compare yourself to others
-        <ShareLinks :id="$route.params.id" />
-        <br />
         <span class="secondary--text headline">{{ $route.params.id }}</span>
+        <ShareLinks :id="$route.params.id" />
       </p>
 
       <span class="headline">The five domains</span>
