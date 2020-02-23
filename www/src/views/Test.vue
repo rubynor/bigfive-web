@@ -3,10 +3,10 @@
     <Language v-if="!form.language" />
     <div v-else>
       <v-row>
-        <v-col>
+        <v-col cols="10" class="pa-0">
           <TestLanguageSwitcher />
         </v-col>
-        <v-col col="12">
+        <v-col>
           <Timer />
         </v-col>
       </v-row>
