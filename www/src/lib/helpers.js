@@ -27,3 +27,5 @@ module.exports.secToMin = seconds => {
 }
 
 module.exports.sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
+
+module.exports.validMongoId = id => /^[0-9a-fA-F]{24}$/.test(id)

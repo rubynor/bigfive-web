@@ -34,6 +34,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "Test" */ '../views/Test')
   },
   {
+    path: '/result',
+    name: 'resultform',
+    component: () => import(/* webpackChunkName: "Result_form" */ '../views/Result_form')
+  },
+  {
     path: '/result/:id',
     name: 'result',
     component: () => import(/* webpackChunkName: "Result" */ '../views/Result')
