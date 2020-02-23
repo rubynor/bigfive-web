@@ -63,17 +63,15 @@
       </router-link>
       </v-flex>
 
-      <v-flex xs12 md6 class="d-none">
-        <router-link to="article1">
-          <v-card>
-            <v-card-title>
-              Article #1
-            </v-card-title>
-            <v-card-text>
-              a cool story bro'
-            </v-card-text>
-          </v-card>
-        </router-link>
+      <v-flex>
+        <v-card>
+          <v-card-title>
+            We recently launched a site update 🚀
+          </v-card-title>
+          <v-card-text>
+            Please send issues and bugs to <a href="mailto:jonas.enge@gmail.com">jonas.enge@gmail.com</a>
+          </v-card-text>
+        </v-card>
       </v-flex>
 
       <v-flex xs12 md6 class="d-none">
