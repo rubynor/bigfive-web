@@ -1,11 +1,13 @@
 <template>
   <div>
+    <v-chip color="secondary">
+      {{ form.language }}
+    </v-chip>
     <v-chip
       @click="CHANGE_LANGUAGE(languageId)"
-      :color="form.language === languageId ? 'secondary' : 'none'"
       class="ma-1"
       :key="languageId"
-      v-for="languageId in languages.map(({ value }) => value).slice(0, expanded ? languages.length : 2)"
+      v-for="languageId in languages.map(({ value }) => value).filter(langCode => langCode !== form.language).slice(0, expanded ? languages.length : 1)"
     >
       {{ languageId }}
     </v-chip>
