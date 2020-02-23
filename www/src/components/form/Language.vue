@@ -9,7 +9,7 @@
 
       <v-autocomplete
         :value="form.language"
-        @input="this.SET_LANGUAGE"
+        @input="choseLanguage"
         :items="languages"
         :label="$t('form.selectLanguage')"
         color="secondary"
@@ -23,7 +23,13 @@ import { mapState, mapMutations, mapGetters } from 'vuex'
 
 export default {
   name: 'Language',
-  methods: mapMutations(['SET_LANGUAGE']),
+  methods: {
+    ...mapMutations(['SET_LANGUAGE', 'SET_INVENTORY']),
+    choseLanguage (lang) {
+      this.SET_LANGUAGE(lang)
+      this.SET_INVENTORY()
+    }
+  },
   computed: {
     ...mapState(['form', 'languages']),
     ...mapGetters(['GET_SELECTED_LANGUAGE'])
