@@ -29,31 +29,31 @@ export default {
         {
           name: 'JONAS MACCYBER ENGE',
           role: 'FOUNDER',
-          avatar: '/img/jonas.png',
+          avatar: '/img/jonas.jpg',
           github: 'https://github.com/maccyber'
         },
         {
           name: 'GEIR GÅSODDEN',
           role: 'CO FOUNDER',
-          avatar: '/img/geir.png',
+          avatar: '/img/geir.jpg',
           github: 'https://github.com/zrrrzzt'
         },
         {
           name: 'OLE MORTEN AMUNDSEN',
           role: 'WEB DEVELOPER',
-          avatar: '/img/ole_morten.png',
+          avatar: '/img/ole_morten.jpg',
           github: 'https://github.com/oma'
         },
         {
           name: 'PÅL ANDRÈ SUNDT',
           role: 'ART DIRECTOR',
-          avatar: '/img/paal.png',
+          avatar: '/img/paal.jpg',
           github: 'https://github.com/str1fe'
         },
         {
           name: 'MATHIAS MOXNES',
           role: 'WEB DEVELOPER',
-          avatar: '/img/mathias.png',
+          avatar: '/img/mathias.jpg',
           github: 'https://github.com/moxnes'
         }
       ]
