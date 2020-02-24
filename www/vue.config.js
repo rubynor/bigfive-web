@@ -1,5 +1,8 @@
-const manifestJSON = require('./public/manifest.json')
+const PurgecssPlugin = require('purgecss-webpack-plugin')
+const glob = require('glob-all')
+const path = require('path')
 const SitemapPlugin = require('sitemap-webpack-plugin').default
+const manifestJSON = require('./public/manifest.json')
 const routerPaths = require('./src/router/paths').default.map(r => r.path).filter(p => !p.match(/\*/))
 
 module.exports = {
@@ -9,6 +12,14 @@ module.exports = {
         fileName: 'sitemap.xml',
         lastMod: true,
         changeFreq: 'weekly'
+      }),
+      new PurgecssPlugin({
+        paths: glob.sync([
+          path.join(__dirname, './src/**/*.vue'),
+          path.join(__dirname, './src/**/*.js'),
+          path.join(__dirname, './src/public/index.html'),
+          path.join(__dirname, './node_modules/vuetify/src/components/**/*.ts')
+        ])
       })
     ]
   },
