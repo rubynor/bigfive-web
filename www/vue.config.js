@@ -17,8 +17,8 @@ module.exports = {
         paths: glob.sync([
           path.join(__dirname, './src/**/*.vue'),
           path.join(__dirname, './src/**/*.js'),
-          path.join(__dirname, './src/public/index.html'),
-          path.join(__dirname, './node_modules/vuetify/src/components/**/*.ts')
+          path.join(__dirname, './public/index.html'),
+          path.join(__dirname, './node_modules/vuetify/src/**/*.ts')
         ])
       })
     ]
