@@ -1,0 +1,16 @@
+on:
+  release:
+    types: [published]
+    branches: [master]
+name: Deploy to prod on release
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 12
+    - run: now --confirm --prod --token ${ZEIT_TOKEN}
+      env:
+        ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }}
