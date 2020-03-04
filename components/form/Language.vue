@@ -13,19 +13,21 @@
         :items="languages"
         :label="$t('form.selectLanguage')"
         color="secondary"
+        :append-icon="mdiMenuDown"
       ></v-autocomplete>
     </v-card-text>
   </v-card>
 </template>
 
 <script>
-import { mdiEarth } from '@mdi/js'
+import { mdiEarth, mdiMenuDown } from '@mdi/js'
 import { mapState, mapMutations, mapGetters } from 'vuex'
 
 export default {
   name: 'Language',
   data: () => ({
-    mdiEarth
+    mdiEarth,
+    mdiMenuDown
   }),
   methods: {
     ...mapMutations(['SET_LANGUAGE', 'SET_INVENTORY']),
