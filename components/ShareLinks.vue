@@ -1,0 +1,89 @@
+<template>
+  <div class="pt-5">
+
+    <v-tooltip bottom>
+      <template v-slot:activator="{ on }">
+        <a v-on="on" @click="copyLink(`https://bigfive-test.com/result/${id}`)">
+          <v-icon large>{{ mdiLink }}</v-icon>
+        </a>
+      </template>
+      Copy link to clipboard
+    </v-tooltip>
+
+    <v-tooltip bottom>
+      <template v-slot:activator="{ on }">
+        <a v-on="on" :href="'https://www.facebook.com/sharer/sharer.php?u=https://bigfive-test.com/result/' + id" target="_blank">
+          <v-icon large>{{ mdiFacebook }}</v-icon>
+        </a>
+      </template>
+      Share on facebook
+    </v-tooltip>
+
+    <v-tooltip bottom>
+      <template v-slot:activator="{ on }">
+        <a v-on="on" :href="'https://twitter.com/intent/tweet?text=See my personality traits!&url=https://bigfive-test.com/result/' + id" target="_blank">
+          <v-icon large>{{ mdiTwitter }}</v-icon>
+        </a>
+      </template>
+      Share on twitter
+    </v-tooltip>
+
+    <v-dialog
+      v-model="dialog"
+      hide-overlay
+      persistent
+      width="155"
+      origin="top left"
+      transition="fade-transition"
+    >
+      <v-card
+        color="secondary"
+        dark
+      >
+        <v-card-title>
+          Copied link
+        </v-card-title>
+      </v-card>
+    </v-dialog>
+  </div>
+</template>
+
+<script>
+import { mdiFacebook, mdiTwitter, mdiLink } from '@mdi/js'
+import { sleep } from '../lib/helpers'
+
+export default {
+  name: 'ShareLinks',
+  props: ['id'],
+  data: () => ({
+    mdiFacebook,
+    mdiTwitter,
+    mdiLink,
+    dialog: false
+  }),
+  methods: {
+    async copyLink (str) {
+      const el = document.createElement('textarea')
+      el.value = str
+      el.setAttribute('readonly', '')
+      el.style = { position: 'absolute', left: '-9999px' }
+      document.body.appendChild(el)
+      el.select()
+      document.execCommand('copy')
+      this.dialog = true
+      await sleep(600)
+      this.dialog = false
+    }
+  }
+}
+</script>
+
+<style scoped>
+a:hover i {
+  color: var(--v-secondary);
+}
+
+a {
+  margin-right: 10px;
+}
+</style>

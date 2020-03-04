@@ -1,0 +1,5 @@
+export { default as Info } from './Info'
+export { default as Language } from './Language'
+export { default as Gender } from './Gender'
+export { default as Age } from './Age'
+export { default as Confirm } from './Confirm'

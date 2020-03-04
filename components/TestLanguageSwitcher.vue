@@ -1,0 +1,44 @@
+<template>
+  <div>
+    <v-chip color="secondary">
+      {{ form.language }}
+    </v-chip>
+    <v-chip
+      @click="CHANGE_LANGUAGE(languageId)"
+      class="ma-1"
+      :key="languageId"
+      v-for="languageId in languages.map(({ value }) => value).filter(langCode => langCode !== form.language).slice(0, expanded ? languages.length : 1)"
+    >
+      {{ languageId }}
+    </v-chip>
+    <v-chip @click="toggleExpand" v-if="!expanded">
+      ... {{languages.length - 2}} more
+    </v-chip>
+    <v-chip v-else @click="toggleExpand" color="secondary" dark>
+      <v-icon small>mdi-close</v-icon>
+    </v-chip>
+  </div>
+</template>
+
+<script>
+import { mapState, mapMutations } from 'vuex'
+import { sleep } from '../lib/helpers'
+
+export default {
+  name: 'TestLanguageSwitcher',
+  computed: mapState(['languages', 'form']),
+  methods: {
+    ...mapMutations(['CHANGE_LANGUAGE']),
+    async toggleExpand () {
+      this.expanded = !this.expanded
+      if (this.expanded) {
+        await sleep(6000)
+        this.expanded = false
+      }
+    }
+  },
+  data: () => ({
+    expanded: false
+  })
+}
+</script>

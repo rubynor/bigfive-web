@@ -1,0 +1,25 @@
+{
+  "name": "bigfive-api",
+  "version": "1.0.0",
+  "description": "API for big five test",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubynor/bigfive-web.git"
+  },
+  "keywords": [
+    "bigfive",
+    "personality"
+  ],
+  "author": "Jonas Enge <jonas.enge@gmail.com> (https://github.com/maccyber)",
+  "license": "ISC",
+  "dependencies": {
+    "@alheimsins/b5-result-text": "3.0.0",
+    "@alheimsins/bigfive-calculate-score": "2.0.0",
+    "@hapi/joi": "17.1.0",
+    "mongodb": "3.5.4"
+  }
+}
