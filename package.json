@@ -12,7 +12,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "setup": "yarn && cd ../api && yarn",
+    "setup": "yarn && cd api && yarn",
     "generate": "nuxt generate",
     "test": "jest",
     "debug-build": "nuxt build -a"
