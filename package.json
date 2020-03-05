@@ -18,28 +18,28 @@
     "debug-build": "nuxt build -a"
   },
   "dependencies": {
-    "@alheimsins/b5-johnson-120-ipip-neo-pi-r": "^4.0.3",
-    "@bazzite/nuxt-optimized-images": "^0.3.0",
-    "@nuxtjs/axios": "^5.9.5",
-    "@nuxtjs/pwa": "^3.0.0-beta.20",
-    "@nuxtjs/sitemap": "^2.0.1",
-    "apexcharts": "^3.16.0",
-    "imagemin-mozjpeg": "^8.0.0",
-    "imagemin-pngquant": "^8.0.0",
-    "imagemin-svgo": "^7.1.0",
-    "nuxt": "^2.11.0",
-    "nuxt-i18n": "^6.6.0",
-    "nuxt-webfontloader": "^1.1.0",
-    "vue-apexcharts": "^1.5.2",
-    "vue-confetti": "^2.0.7"
+    "@alheimsins/b5-johnson-120-ipip-neo-pi-r": "4.0.3",
+    "@bazzite/nuxt-optimized-images": "0.3.0",
+    "@nuxtjs/axios": "5.9.5",
+    "@nuxtjs/pwa": "3.0.0-beta.20",
+    "@nuxtjs/sitemap": "2.0.1",
+    "apexcharts": "3.16.0",
+    "imagemin-mozjpeg": "8.0.0",
+    "imagemin-pngquant": "8.0.0",
+    "imagemin-svgo": "7.1.0",
+    "nuxt": "2.11.0",
+    "nuxt-i18n": "6.6.0",
+    "nuxt-webfontloader": "1.1.0",
+    "vue-apexcharts": "1.5.2",
+    "vue-confetti": "2.0.7"
   },
   "devDependencies": {
-    "@mdi/js": "^4.9.95",
-    "@nuxtjs/google-analytics": "^2.2.3",
-    "@nuxtjs/vuetify": "^1.11.0",
-    "@vue/test-utils": "^1.0.0-beta.31",
-    "babel-jest": "^25.1.0",
-    "jest": "^25.1.0",
-    "vue-jest": "^4.0.0-0"
+    "@mdi/js": "4.9.95",
+    "@nuxtjs/google-analytics": "2.2.3",
+    "@nuxtjs/vuetify": "1.11.0",
+    "@vue/test-utils": "1.0.0-beta.31",
+    "babel-jest": "25.1.0",
+    "jest": "25.1.0",
+    "vue-jest": "4.0.0-beta.2"
   }
 }
