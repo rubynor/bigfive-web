@@ -15,12 +15,13 @@
       ... {{languages.length - 2}} more
     </v-chip>
     <v-chip v-else @click="toggleExpand" color="secondary" dark>
-      <v-icon small>mdi-close</v-icon>
+      <v-icon small>{{ mdiClose }}</v-icon>
     </v-chip>
   </div>
 </template>
 
 <script>
+import { mdiClose } from '@mdi/js'
 import { mapState, mapMutations } from 'vuex'
 import { sleep } from '../lib/helpers'
 
@@ -38,7 +39,8 @@ export default {
     }
   },
   data: () => ({
-    expanded: false
+    expanded: false,
+    mdiClose
   })
 }
 </script>
