@@ -61,7 +61,7 @@
 
         <div v-else>
           <v-btn large color="secondary" @click="SUBMIT_TEST">
-            see results
+            {{ $t('test.seeResults') }}
           </v-btn>
         </div>
 

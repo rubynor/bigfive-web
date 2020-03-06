@@ -2,7 +2,7 @@
   <v-container>
     <div v-if="result">
       <div class="text-center">
-        <b>Important!</b> Save the following ID to see the results later or <nuxt-link :to="localePath('compare')">compare</nuxt-link> yourself to others
+        <b>{{ $t('results.important') }}</b> {{ $t('results.saveResults') }} <nuxt-link :to="localePath('compare')">{{ $t('results.compare') }}</nuxt-link> {{ $t('results.toOthers') }}
         <br />
         <br />
         <v-alert outlined color="secondary">
@@ -11,13 +11,13 @@
         <ShareLinks :id="$route.params.id" />
       </div>
 
-      <span class="display-1">The big five</span>
+      <span class="display-1">{{ $t('results.theBigFive') }}</span>
       <BarChart :data="result" max='120' />
       <div v-for="domain in result" :key="domain.id">
         <Domain :domain="domain" />
       </div>
       <br />
-      <span class="headline">Share your results!</span>
+      <span class="headline">{{ $t('shareLinks.shareResults') }}</span>
       <ShareLinks :id="$route.params.id" />
     </div>
     <Error v-else />

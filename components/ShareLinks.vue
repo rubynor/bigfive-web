@@ -7,7 +7,7 @@
           <v-icon large>{{ mdiLink }}</v-icon>
         </a>
       </template>
-      Copy link to clipboard
+      {{ $t('shareLinks.copyLink') }}
     </v-tooltip>
 
     <v-tooltip bottom>
@@ -16,7 +16,7 @@
           <v-icon large>{{ mdiFacebook }}</v-icon>
         </a>
       </template>
-      Share on facebook
+      {{ $t('shareLinks.shareFacebook') }}
     </v-tooltip>
 
     <v-tooltip bottom>
@@ -25,7 +25,7 @@
           <v-icon large>{{ mdiTwitter }}</v-icon>
         </a>
       </template>
-      Share on twitter
+      {{ $t('shareLinks.shareTwitter') }}
     </v-tooltip>
 
     <v-dialog
@@ -41,7 +41,7 @@
         dark
       >
         <v-card-title>
-          Copied link
+          {{ $t('shareLinks.copiedLink') }}
         </v-card-title>
       </v-card>
     </v-dialog>

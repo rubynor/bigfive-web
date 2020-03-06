@@ -15,6 +15,14 @@ innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
       tests_taken: 'tester utført så langt'
     }
   },
+  toolbar: {
+    home: 'Hjem',
+    result: 'Resultater',
+    compare: 'Sammenligning',
+    articles: 'Artikler',
+    privacy: 'Personvern',
+    about: 'Om'
+  },
   facets: {
     openness_to_experience: {
       title: 'Åpenhet for erfaringer'
@@ -61,7 +69,9 @@ innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
   },
   test: {
     next: 'neste',
-    back: 'tilbake'
+    back: 'tilbake',
+    more: 'fler',
+    seeResults: 'Se resultater'
   },
   big_five: {
     title: 'What are the big five?'
@@ -80,5 +90,20 @@ innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
   },
   neuroticism: {
     title: 'Nevrotisisme'
+  },
+  results: {
+    theBigFive: 'De fem store',
+    score: 'Score',
+    important: 'Viktig!',
+    saveResults: 'Lagre følgende ID for å se resultatene dine senere eller for å',
+    compare: 'sammenligne',
+    toOthers: 'deg med andre'
+  },
+  shareLinks: {
+    copyLink: 'Kopièr lenken',
+    shareFacebook: 'Del på Facebook',
+    shareTwitter: 'Del på Twitter',
+    copiedLink: 'Kopierte lenke',
+    shareResults: 'Del dine resultater!'
   }
 }

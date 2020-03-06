@@ -78,12 +78,12 @@ export default {
       logoSrc: require('@/assets/logo.svg'),
       icons,
       items: [
-        { title: 'Home', url: '/', icon: icons.mdiHome },
-        { title: 'Result', url: '/result', icon: icons.mdiChartBar },
-        { title: 'Compare', url: '/compare', icon: icons.mdiChartBar },
-        { title: 'Articles', url: '/articles', icon: icons.mdiNewspaper },
-        { title: 'Privacy', url: '/privacy', icon: icons.mdiShieldHalfFull },
-        { title: 'About', url: '/about', icon: icons.mdiAccountMultiple }
+        { title: this.$t('toolbar.home'), url: '/', icon: icons.mdiHome },
+        { title: this.$t('toolbar.result'), url: '/result', icon: icons.mdiChartBar },
+        { title: this.$t('toolbar.compare'), url: '/compare', icon: icons.mdiChartBar },
+        { title: this.$t('toolbar.articles'), url: '/articles', icon: icons.mdiNewspaper },
+        { title: this.$t('toolbar.privacy'), url: '/privacy', icon: icons.mdiShieldHalfFull },
+        { title: this.$t('toolbar.about'), url: '/about', icon: icons.mdiAccountMultiple }
       ],
       languages: Object.keys(localizations)
     }

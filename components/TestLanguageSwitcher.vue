@@ -12,7 +12,7 @@
       {{ languageId }}
     </v-chip>
     <v-chip @click="toggleExpand" v-if="!expanded">
-      ... {{languages.length - 2}} more
+      ... {{languages.length - 2}} {{ $t('test.more') }}
     </v-chip>
     <v-chip v-else @click="toggleExpand" color="secondary" dark>
       <v-icon small>{{ mdiClose }}</v-icon>

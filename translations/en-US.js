@@ -15,7 +15,14 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
       tests_taken: 'tests taken so far'
     }
   },
-
+  toolbar: {
+    home: 'Home',
+    result: 'Result',
+    compare: 'Compare',
+    articles: 'Articles',
+    privacy: 'Privacy',
+    about: 'About'
+  },
   facets: {
     openness_to_experience: {
       title: 'Openness to experience'
@@ -61,7 +68,9 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
   },
   test: {
     next: 'next',
-    back: 'back'
+    back: 'back',
+    more: 'more',
+    seeResults: 'see results'
   },
   big_five: {
     title: 'What are the big five?'
@@ -80,5 +89,20 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
   },
   neuroticism: {
     title: 'Neuroticism'
+  },
+  results: {
+    theBigFive: 'The Big Five',
+    score: 'score',
+    important: 'Important!',
+    saveResults: 'Save the following ID to see the results later or ',
+    compare: 'compare',
+    toOthers: 'yourself to others'
+  },
+  shareLinks: {
+    copyLink: 'Copy link to clipboard',
+    shareFacebook: 'Share on Facebook',
+    shareTwitter: 'Share on Twitter',
+    copiedLink: 'Copied link',
+    shareResults: 'Share your results!'
   }
 }
