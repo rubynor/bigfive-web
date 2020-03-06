@@ -31,6 +31,10 @@
     {
       "source": "/api/(.*)",
       "destination": "/api/$1.js"
+    },
+    {
+      "source": "/service-worker.js",
+      "destination": "/sw.js"
     }
   ],
   "headers": [
