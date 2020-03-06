@@ -24,8 +24,8 @@ export default {
       { name: 'twitter:image:alt', content: 'BigFive logo' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'preconnect', href: 'https://cdn.jsdelivr.net', crossorigin: true }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      // { rel: 'preconnect', href: 'https://cdn.jsdelivr.net', crossorigin: true }
     ]
   },
   /*
