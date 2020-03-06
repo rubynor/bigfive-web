@@ -126,6 +126,9 @@ export default {
   computed: {
     ...mapState(['development'])
   },
+  mounted () {
+    this.$amplitude.getInstance().logEvent('b5.frontpage.loaded');
+  },
   head: () => ({
     title: 'Free open-source BigFive personality traits test',
     meta: [
