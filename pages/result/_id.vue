@@ -35,6 +35,9 @@ export default {
   data: () => ({
     result: false
   }),
+  mounted () {
+    this.$amplitude.getInstance().logEvent('b5.test', { part: 'result' });
+  },
   async asyncData ({ params, store, $axios }) {
     try {
       const result = await $axios.$get(process.env.API_URL + 'result/' + params.id)

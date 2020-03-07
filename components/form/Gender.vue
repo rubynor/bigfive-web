@@ -24,6 +24,9 @@ export default {
   data: () => ({
     mdiGenderMaleFemale
   }),
+  mounted () {
+    this.$amplitude.getInstance().logEvent('b5.form', { part: 'gender' });
+  },
   methods: mapMutations(['SET_GENDER']),
   computed: mapState(['form'])
 }

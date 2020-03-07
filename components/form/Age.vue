@@ -30,6 +30,9 @@ export default {
   data: () => ({
     mdiAccountOutline
   }),
+  mounted () {
+    this.$amplitude.getInstance().logEvent('b5.form', { part: 'age' });
+  },
   methods: mapMutations(['SET_AGE', 'NEXT_SLIDE']),
   computed: mapState(['form'])
 }

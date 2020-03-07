@@ -82,7 +82,8 @@ export default {
     title: 'The test'
   }),
   mounted () {
-    this.onResize()
+    this.onResize(),
+    this.$amplitude.getInstance().logEvent('b5.test', { part: 'start' });
   },
   data: () => ({
     mdiRadioboxBlank,

@@ -29,6 +29,9 @@ export default {
   data: () => ({
     mdiInformationOutline
   }),
+  mounted () {
+    this.$amplitude.getInstance().logEvent('b5.form', { part: 'info' });
+  },
   methods: mapMutations(['NEXT_SLIDE'])
 }
 </script>
