@@ -97,6 +97,14 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     urlOrId: 'URL or ID of your result',
     getResult: 'Get result'
   },
+  getCompare: {
+    title: 'Compare people or teams',
+    description1: 'Compare results from the bigfive personality test with multiple people.',
+    description2: 'Type in the ID you got from the test results i.e.',
+    description3: 'in the ID-input field',
+    needToAddPeople: 'You need to add people to compare them',
+    addAnother: 'Add another person'
+  },
   results: {
     theBigFive: 'The Big Five',
     score: 'score',

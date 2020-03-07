@@ -1,9 +1,9 @@
 <template>
   <v-card>
-    <v-card-title>Compare people or teams</v-card-title>
+    <v-card-title>{{ $t('getCompare.title') }}</v-card-title>
     <v-card-text>
-      <p>Compare results from the bigfive personality test with multiple people.</p>
-      <p>Type in the ID you got from the test results i.e. <span class="font-italic secondary--text">58a70606a835c400c8b38e84</span> in the ID-input field</p>
+      <p>{{ $t('getCompare.description1') }}</p>
+      <p>{{ $t('getCompare.description2') }} <span class="font-italic secondary--text">58a70606a835c400c8b38e84</span> {{ $t('getCompare.description3') }}</p>
       <br />
 
       <v-list-item-group>
@@ -32,8 +32,8 @@
           <v-list-item-content>
             {{
               people.length === 0
-                ? 'You need to add people to compare them'
-                : 'Add another person'
+                ? $t('getCompare.needToAddPeople')
+                : $t('getCompare.addAnother')
             }}
           </v-list-item-content>
 

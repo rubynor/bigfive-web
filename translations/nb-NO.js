@@ -91,6 +91,14 @@ innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
   neuroticism: {
     title: 'Nevrotisisme'
   },
+  getCompare: {
+    title: 'Sammenlign personer eller grupper',
+    description1: 'Sammenlign resultatene dine fra personlighetstesten med flere andre.',
+    description2: 'Lim inn ID du fikk fra testen f.eks.',
+    description3: 'i ID-tekstfeltet',
+    needToAddPeople: 'Du må legge til personer for å sammenligne dem.',
+    addAnother: 'Legg til en person til'
+  },
   results: {
     theBigFive: 'De fem store',
     score: 'Score',
