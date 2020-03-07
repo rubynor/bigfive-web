@@ -1,7 +1,6 @@
 {
   "version": 2,
   "scope": "rubynor",
-  "alias": "latest.bigfive-test.com",
   "env": {
     "MONGODB_URI": "@mongodb_uri",
     "MONGODB_COLLECTION": "results",
