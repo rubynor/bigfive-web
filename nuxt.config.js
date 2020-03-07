@@ -92,7 +92,10 @@ export default {
         ],
         defaultLocale: 'en',
         lazy: true,
-        langDir: 'translations/'
+        langDir: 'translations/',
+        detectBrowserLanguage: {
+          useCookie: false
+        }
       }
     ],
     '@nuxtjs/sitemap',
