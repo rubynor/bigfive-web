@@ -139,7 +139,7 @@ export default {
     },
     compare () {
       const id = base64url(JSON.stringify(this.people))
-      this.$router.push({ path: `/compare/${id}` })
+      this.$router.push(this.localePath({ path: `/compare/${id}` }))
     }
   },
   data: function () {

@@ -99,6 +99,13 @@ innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     compare: 'sammenligne',
     toOthers: 'deg med andre'
   },
+  getResult: {
+    result: 'Hent resultater',
+    explaination: 'Hvis du tidligere har tatt testen, og lagret ID-en, kan du se resultatene dine her ved å lime inn ID-en du fikk f.eks.',
+    idInput: 'i ID-tekstfeltet',
+    urlOrId: 'Lenken eller ID til resultatet',
+    getResult: 'Hent resultat'
+  },
   shareLinks: {
     copyLink: 'Kopièr lenken',
     shareFacebook: 'Del på Facebook',

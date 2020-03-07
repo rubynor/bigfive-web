@@ -1,15 +1,15 @@
 <template>
   <v-card>
-    <v-card-title>Result</v-card-title>
+    <v-card-title>{{ $t('getResult.result') }}</v-card-title>
     <v-card-text>
-      If you have taken the test and saved your ID, you can see the results here by typing in the ID you got i.e. <span class="font-italic secondary--text">58a70606a835c400c8b38e84</span> in the ID-input field
+      {{ $t('getResult.explaination') }} <span class="font-italic secondary--text">58a70606a835c400c8b38e84</span> {{ $t('getResult.idInput') }}
       <br />
       <v-text-field
         class="pt-5"
         v-model="id"
         label="ID"
         hide-details="auto"
-        placeholder="URL or ID of your result"
+        :placeholder="$t('getResult.urlOrId')"
         :rules="[rules.valid]"
         autofocus
       ></v-text-field>
@@ -17,11 +17,11 @@
         <v-spacer></v-spacer>
         <v-btn
           color="primary"
-          :to="'/result/' + this.formatId(id)"
+          :to="localePath('/result/' + this.formatId(id))"
           large
           :disabled="!this.validMongoId(this.formatId(id))"
         >
-          get result
+          {{ $t('getResult.getResult') }}
         </v-btn>
       </v-card-actions>
     </v-card-text>
