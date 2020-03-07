@@ -65,7 +65,6 @@ innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     confirmInfo: 'Bekreft informasjon',
     confirm: 'Bekreft',
     toTestButton: 'Åreit! Ta meg til testen'
-
   },
   test: {
     next: 'neste',
@@ -97,7 +96,12 @@ innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     description2: 'Lim inn ID du fikk fra testen f.eks.',
     description3: 'i ID-tekstfeltet',
     needToAddPeople: 'Du må legge til personer for å sammenligne dem.',
-    addAnother: 'Legg til en person til'
+    addAnother: 'Legg til en person til',
+    addPerson: 'Legg til person',
+    comparePeople: 'Sammenlign personer',
+    nameOfPerson: 'Navnet til personen',
+    urlOrId: 'Lenke eller ID til resultat',
+    name: 'Navn'
   },
   results: {
     theBigFive: 'De fem store',

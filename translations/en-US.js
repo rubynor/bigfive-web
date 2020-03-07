@@ -90,20 +90,18 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
   neuroticism: {
     title: 'Neuroticism'
   },
-  getResult: {
-    result: 'Result',
-    explaination: 'If you have taken the test and saved your ID, you can see the results here by typing in the ID you got i.e. ',
-    idInput: 'in the ID-input field',
-    urlOrId: 'URL or ID of your result',
-    getResult: 'Get result'
-  },
   getCompare: {
     title: 'Compare people or teams',
     description1: 'Compare results from the bigfive personality test with multiple people.',
     description2: 'Type in the ID you got from the test results i.e.',
     description3: 'in the ID-input field',
     needToAddPeople: 'You need to add people to compare them',
-    addAnother: 'Add another person'
+    addAnother: 'Add another person',
+    addPerson: 'Add Person',
+    comparePeople: 'compare people',
+    nameOfPerson: 'Name of this person',
+    urlOrId: 'URL or ID for comparison',
+    name: 'Name'
   },
   results: {
     theBigFive: 'The Big Five',
@@ -112,6 +110,13 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     saveResults: 'Save the following ID to see the results later or ',
     compare: 'compare',
     toOthers: 'yourself to others'
+  },
+  getResult: {
+    result: 'Result',
+    explaination: 'If you have taken the test and saved your ID, you can see the results here by typing in the ID you got i.e. ',
+    idInput: 'in the ID-input field',
+    urlOrId: 'URL or ID of your result',
+    getResult: 'Get result'
   },
   shareLinks: {
     copyLink: 'Copy link to clipboard',

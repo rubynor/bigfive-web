@@ -49,13 +49,13 @@
                 v-on="on"
               >
               <v-icon>{{ mdiPlus }}</v-icon>
-                Add person
+                {{ $t('getCompare.addPerson') }}
               </v-btn>
             </template>
 
             <v-card>
               <v-card-title>
-                Add Person
+                {{ $t('getCompare.addPerson') }}
               </v-card-title>
 
               <v-card-text>
@@ -63,17 +63,17 @@
                   <v-text-field
                     class="mt-5"
                     v-model="name"
-                    label="Name"
+                    :label="$t('getCompare.name')"
                     :rules="[rules.uniqueName]"
                     autofocus
-                    placeholder="Name of this person"
+                    :placeholder="$t('getCompare.nameOfPerson')"
                   ></v-text-field>
 
                   <v-text-field
                     v-model="id"
                     label="ID"
                     :rules="[rules.validId]"
-                    placeholder="URL or ID for comparison"
+                    :placeholder="$t('getCompare.urlOrId')"
                   ></v-text-field>
                 </v-form>
 
@@ -105,7 +105,7 @@
           large
           @click="this.compare"
         >
-          compare people
+          {{ $t('getCompare.comparePeople') }}
         </v-btn>
       </v-card-actions>
     </v-card-text>
