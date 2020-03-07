@@ -1,10 +1,11 @@
 {
   "version": 2,
   "scope": "rubynor",
+  "alias": "latest.bigfive-test.com",
   "env": {
     "MONGODB_URI": "@mongodb_uri",
     "MONGODB_COLLECTION": "results",
-    "BASE_URL": "https://bigfive-test.com"
+    "BASE_URL": "https://latest.bigfive-test.com"
   },
   "builds": [
     {
