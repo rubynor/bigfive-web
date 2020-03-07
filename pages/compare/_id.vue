@@ -21,6 +21,9 @@ export default {
   data: () => ({
     result: false
   }),
+  mounted () {
+    this.$amplitude.getInstance().logEvent('b5.test', { part: 'compare' });
+  },
   async asyncData ({ params, store, $axios }) {
     try {
       const result = await $axios.$get(process.env.API_URL + 'compare/' + params.id)
