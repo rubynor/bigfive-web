@@ -78,23 +78,25 @@ export default {
       {
         locales: [
           {
-            name: 'English',
-            code: 'en',
-            iso: 'en-US',
-            file: 'en-US.js'
-          },
-          {
             name: 'Norsk',
             code: 'no',
             iso: 'nb-NO',
             file: 'nb-NO.js'
+          },
+          {
+            name: 'English',
+            code: 'en',
+            iso: 'en-US',
+            file: 'en-US.js'
           }
         ],
         defaultLocale: 'en',
+        strategy: 'prefix_except_default',
         lazy: true,
         langDir: 'translations/',
         detectBrowserLanguage: {
-          useCookie: false
+          useCookie: true,
+          alwaysRedirect: false
         }
       }
     ],
