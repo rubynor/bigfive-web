@@ -12,7 +12,7 @@
 
     <v-tooltip bottom>
       <template v-slot:activator="{ on }">
-        <a v-on="on" :href="'https://www.facebook.com/sharer/sharer.php?u=https://bigfive-test.com/result/' + id" target="_blank">
+        <a v-on="on" @click="logClick('facebook')" :href="'https://www.facebook.com/sharer/sharer.php?u=https://bigfive-test.com/result/' + id" target="_blank">
           <v-icon large>{{ mdiFacebook }}</v-icon>
         </a>
       </template>
@@ -21,7 +21,7 @@
 
     <v-tooltip bottom>
       <template v-slot:activator="{ on }">
-        <a v-on="on" :href="'https://twitter.com/intent/tweet?text=See my personality traits!&url=https://bigfive-test.com/result/' + id" target="_blank">
+        <a v-on="on" @click="logClick('twitter')" :href="'https://twitter.com/intent/tweet?text=See my personality traits!&url=https://bigfive-test.com/result/' + id" target="_blank">
           <v-icon large>{{ mdiTwitter }}</v-icon>
         </a>
       </template>
@@ -62,6 +62,9 @@ export default {
     dialog: false
   }),
   methods: {
+    logClick (type) {
+      this.$amplitude.getInstance().logEvent('b5.sharing', { type })
+    },
     async copyLink (str) {
       const el = document.createElement('textarea')
       el.value = str
@@ -73,6 +76,7 @@ export default {
       this.dialog = true
       await sleep(600)
       this.dialog = false
+      this.logClick('link')
     }
   }
 }
