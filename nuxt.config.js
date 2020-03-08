@@ -90,14 +90,12 @@ export default {
             file: 'en-US.js'
           }
         ],
+        seo: true,
         defaultLocale: 'en',
         strategy: 'prefix_except_default',
         lazy: true,
         langDir: 'translations/',
-        detectBrowserLanguage: {
-          useCookie: true,
-          alwaysRedirect: false
-        }
+        detectBrowserLanguage: false
       }
     ],
     '@nuxtjs/sitemap',
