@@ -91,6 +91,7 @@ export default {
           }
         ],
         seo: true,
+        baseUrl: 'https://bigfive-test.com',
         defaultLocale: 'en',
         strategy: 'prefix_except_default',
         lazy: true,
