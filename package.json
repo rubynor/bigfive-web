@@ -25,7 +25,7 @@
     "@nuxtjs/pwa": "3.0.0-beta.20",
     "@nuxtjs/sitemap": "2.0.1",
     "amplitude-js": "5.9.0",
-    "apexcharts": "3.16.0",
+    "apexcharts": "3.16.1",
     "imagemin-mozjpeg": "8.0.0",
     "imagemin-pngquant": "8.0.0",
     "imagemin-svgo": "7.1.0",

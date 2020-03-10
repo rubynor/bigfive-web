@@ -2,10 +2,10 @@
   <v-card>
     <v-card-title>
       <v-icon large left>{{ mdiEarth }}</v-icon>
-      Language
+      {{ $t('form.language') }}
     </v-card-title>
     <v-card-text>
-      <p>{{ $t("form.prefferedLanguage") }} <b>{{ GET_SELECTED_LANGUAGE }}</b></p>
+      <p>{{ $t('form.prefferedLanguage') }} <b>{{ GET_SELECTED_LANGUAGE }}</b></p>
 
       <v-autocomplete
         :value="form.language"
