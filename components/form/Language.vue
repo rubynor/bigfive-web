@@ -29,12 +29,10 @@ export default {
     mdiEarth,
     mdiMenuDown
   }),
-  mounted () {
-    this.$amplitude.getInstance().logEvent('b5.form', { part: 'language' });
-  },
   methods: {
     ...mapMutations(['SET_LANGUAGE', 'SET_INVENTORY']),
     choseLanguage (lang) {
+      this.$amplitude.getInstance().logEvent('b5.test.language', { language: lang });
       this.SET_LANGUAGE(lang)
       this.SET_INVENTORY()
     }
