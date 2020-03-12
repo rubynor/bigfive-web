@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import { languages, getItems, sleep, getInfo } from '../lib/helpers'
+languages.sort((a, b) => (a.text > b.text) ? 1 : -1)
 
 export const strict = false
 
