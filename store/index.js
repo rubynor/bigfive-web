@@ -1,6 +1,5 @@
 import Vue from 'vue'
-import { languages, getItems, sleep, getInfo } from '../lib/helpers'
-languages.sort((a, b) => (a.text > b.text) ? 1 : -1)
+import { languages, getItems, sleep, getInfo, elapsedTimeInSeconds } from '../lib/helpers'
 
 export const strict = false
 
@@ -99,11 +98,19 @@ export const mutations = {
   },
   SET_ANSWER: async (state, { id, answer }) => {
     const { domain, facet } = state.test.inventory.find(q => q.id === id)
+
+    const lastAnswerId = Object.keys(state.test.answers).slice(-1)[0]
     Vue.set(state.test.answers, id, { score: parseInt(answer), domain, facet })
 
     if (state.test.itemsPerPage === 1) {
       await sleep(700)
-      state.test.position += state.test.itemsPerPage
+
+      // Avoids skipping question if user changes answer within 700 ms on
+      // 1 itemsPerPage
+      if (lastAnswerId !== id) {
+        state.test.position += state.test.itemsPerPage
+      }
+
       window.scrollTo(0, 0)
     }
 
@@ -119,7 +126,15 @@ export const mutations = {
   },
   SKIP_QUESTIONS: ({ test }) => {
     test.inventory.forEach(question => {
-      Vue.set(test.answers, question.id, { score: Math.floor(Math.random() * 5) + 1, domain: question.domain, facet: question.facet })
+      Vue.set(
+        test.answers,
+        question.id,
+        {
+          score: Math.floor(Math.random() * 5) + 1,
+          domain: question.domain,
+          facet: question.facet
+        }
+      )
     })
     test.position = test.inventory.length
     test.done = true
@@ -146,26 +161,15 @@ export const actions = {
       context.commit('SET_LOADING', true)
 
       const answers = context.state.test.answers
-      const choices = Object.keys(answers).reduce((prev, current) => {
-        const choice = answers[current]
-        prev.push({
-          domain: choice.domain,
-          facet: choice.facet,
-          score: choice.score
-        })
-        return prev
-      }, [])
-
 
       const result = {
-        ...getInfo,
+        testId: getInfo.shortId,
         lang: context.state.form.language,
-        // invalid: context.state.test.invalid,
-        answers: choices,
-        timeElapsed: Math.round((Date.now() - context.state.test.testStart) / 1000),
+        invalid: context.state.test.invalid,
+        answers: Object.keys(answers).map(key => answers[key]),
+        timeElapsed: elapsedTimeInSeconds(context.state.test.testStart),
         dateStamp: Date.now()
       }
-      console.log(result)
 
       const { id } = await this.$axios.$post(process.env.API_URL + 'save', result)
 
