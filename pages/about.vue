@@ -13,7 +13,7 @@
               <div class="subheading">{{ person.name }}</div>
               <div class="grey--text">{{ person.role }}</div>
               <a :href="person.github" target="_blank">
-                <v-icon>{{ mdiGithubCircle }}</v-icon>
+                <v-icon>{{ mdiGithub }}</v-icon>
               </a>
             </v-card-text>
           </v-card>
@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import { mdiGithubCircle } from '@mdi/js'
+import { mdiGithub } from '@mdi/js'
 export default {
   name: 'About',
   head: () => ({
@@ -35,7 +35,7 @@ export default {
   }),
   data () {
     return {
-      mdiGithubCircle,
+      mdiGithub,
       team: [
         {
           name: 'JONAS MACCYBER ENGE',
