@@ -1,6 +1,6 @@
 {
   "name": "bigfive-web",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Website for testing five factor model of personality",
   "author": "Jonas Enge <jonas.enge@gmail.com> (https://github.com/maccyber)",
   "private": true,
