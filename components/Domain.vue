@@ -5,6 +5,7 @@
         {{ domain.title }}
       </span>
     </a>
+    <p>score: {{ domain.score }} - {{ domain.scoreText }}</p>
     <p>{{ domain.shortDescription }}</p>
     <BarChart :data="domain.facets" />
     <div v-for="facet in domain.facets" :key="facet.title">
