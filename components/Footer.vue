@@ -14,7 +14,7 @@
       B5<br/>
       Bedriftsveien 64<br/>
       3735 Skien, Norway<br /><br />
-      jonas.enge@gmail.com<br />
+      support@bigfive-test.com<br />
     </v-col>
     <v-col
       class="footer-text"
