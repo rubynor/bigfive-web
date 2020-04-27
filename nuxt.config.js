@@ -72,7 +72,7 @@ export default {
     '@nuxtjs/axios',
     'nuxt-webfontloader',
     '@nuxtjs/pwa',
-    '@bazzite/nuxt-optimized-images',
+    '@aceforth/nuxt-optimized-images',
     [
       'nuxt-i18n',
       {
