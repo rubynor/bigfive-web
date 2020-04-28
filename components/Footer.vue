@@ -11,16 +11,16 @@
       <v-icon>{{ mdiLinkedin }}</v-icon>
     </v-col>
     <v-col cols="12" class="footer-about">
-      B5<br/>
+      Rubynor<br/>
       Bedriftsveien 64<br/>
       3735 Skien, Norway<br /><br />
-      support@bigfive-test.com<br />
+      bigfive-test@rubynor.com<br />
     </v-col>
     <v-col
       class="footer-text"
       cols="12"
     >
-      © {{ new Date().getFullYear() }} — B5 - all rights reserved.
+      © {{ new Date().getFullYear() }} — Rubynor - all rights reserved.
     </v-col>
   </v-footer>
 </template>
