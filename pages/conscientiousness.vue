@@ -96,12 +96,21 @@ import { mdiFormatQuoteOpen, mdiFormatQuoteClose } from '@mdi/js'
 
 export default {
   name: 'Conscientiousness',
-  head: () => ({
-    title: 'Overview of the Conscientiousness',
-    meta: [
-      { hid: 'description', name: 'description', content: 'Read more about the Conscientiousness domain in the b5 model' }
-    ]
-  }),
+  head () {
+    return {
+      title: this.$t('conscientiousness.seo.title'),
+      meta: [
+        { hid: 'title', name: 'title', content: this.$t('conscientiousness.seo.title') },
+        { hid: 'description', name: 'description', content: this.$t('conscientiousness.seo.description') },
+        { hid: 'keywords', name: 'keywords', content: this.$t('seo.keywords') },
+        // Open Graph
+        { hid: 'og:title', name: 'og:title', content: this.$t('conscientiousness.seo.title') },
+        { hid: 'og:description', name: 'og:description', content: this.$t('conscientiousness.seo.description') },
+        { hid: 'twitter:title', name: 'twitter:title', content: this.$t('conscientiousness.seo.title') },
+        { hid: 'twitter:description', name: 'twitter:description', content: this.$t('conscientiousness.seo.description')  }
+      ]
+    }
+  },
   data: () => ({
     mdiFormatQuoteClose,
     mdiFormatQuoteOpen

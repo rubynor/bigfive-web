@@ -1,6 +1,13 @@
 export default {
   language: 'English',
+  seo: {
+    keywords: 'big five personality test, big 5 personality test, b5 test, bigfive test, personality traits, bigfive, compare, free, jordan peterson'
+  },
   frontpage: {
+    seo: {
+      title: 'Free open-source BigFive personality traits test',
+      description: 'Take a free, open-source Big Five personality test - translated to multiple languages. Get to know yourself better from a detailed profile of your personality traits or learn to know others by comparing yourself with your partner, colleagues, friends or family.'
+    },
     title: 'Big Five Personality Test',
     call_to_action: 'Take the free test now',
     description: {
@@ -13,6 +20,12 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
       info: 'The following test contains <b>120 questions</b> which is estimated to take you about <b>10 minutes</b> to complete.',
       result: 'After you have completed the test you will receive a detailed personality report in the following domains:',
       tests_taken: 'tests taken so far'
+    }
+  },
+  about: {
+    seo: {
+      title: 'About and the big five team',
+      description: 'BigFive has a very active and engaged team that is constantly striving to push BigFive forward.'
     }
   },
   toolbar: {
@@ -73,22 +86,46 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     seeResults: 'see results'
   },
   big_five: {
-    title: 'What are the big five?'
+    title: 'What are the big five?',
+    seo: {
+      title: 'What are the big five?',
+      description: 'Read more about the big five'
+    }
   },
   openness_to_experience: {
-    title: 'Openness to Experience'
+    title: 'Openness to Experience',
+    seo: {
+      title: 'Overview of the domain Openness To Experience.',
+      description: 'Read more about the Openness To Experience domain in the b5 model'
+    }
   },
   conscientiousness: {
-    title: 'Conscientiousness'
+    title: 'Conscientiousness',
+    seo: {
+      title: 'Overview of the domain Conscientiousness',
+      description: 'Read more about the Conscientiousness domain in the b5 model'
+    }
   },
   extraversion: {
-    title: 'Extraversion'
+    title: 'Extraversion',
+    seo: {
+      title: 'Overview of the domain Extraversion',
+      description: 'Read more about the Extraversion domain in the b5 model'
+    }
   },
   agreeableness: {
-    title: 'Agreeableness'
+    title: 'Agreeableness',
+    seo: {
+      title: 'Overview of the domain Agreeableness',
+      description: 'Read more about the agreeableness domain in the b5 model'
+    }
   },
   neuroticism: {
-    title: 'Neuroticism'
+    title: 'Neuroticism',
+    seo: {
+      title: 'Overview of the domain Neuroticism',
+      description: 'Read more about the Neuroticism domain in the b5 model'
+    }
   },
   getCompare: {
     title: 'Compare people or teams',
@@ -109,7 +146,11 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     important: 'Important!',
     saveResults: 'Save the following ID to see the results later or ',
     compare: 'compare',
-    toOthers: 'yourself to others'
+    toOthers: 'yourself to others',
+    seo: {
+      title: 'My results from the BigFive personality test',
+      description: 'See my personality and compare yourself in the following five domains: Neuroticism, Openness To Experience, Conscientiousness, Extraversion, Agreeableness'
+    }
   },
   getResult: {
     result: 'Result',

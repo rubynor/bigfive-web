@@ -129,25 +129,21 @@ export default {
   mounted () {
     this.$amplitude.getInstance().logEvent('b5.frontpage.loaded');
   },
-  head: () => ({
-    title: 'Free open-source BigFive personality traits test',
-    meta: [
-      { name: 'keywords', content: 'big five personality test, big 5 personality test, b5 test, bigfive test, personality traits, bigfive, compare, free, jordan peterson' },
-      // Open Graph
-      { name: 'og:title', content: 'Free open-source BigFive personality traits test' },
-      { name: 'og:description', content: 'Take a free, open-source Big Five personality test - translated to multiple languages. Get to know yourself better from a detailed profile of your personality traits or learn to know others by comparing yourself with your partner, colleagues, friends or family.' },
-      { name: 'og:type', content: 'website' },
-      { name: 'og:url', content: 'https://bigfive-test.com' },
-      { name: 'og:image', content: 'https://bigfive-test.com/icon.png' },
-      // Twitter Card
-      { name: 'twitter:card', content: 'summary' },
-      { name: 'twitter:site', content: '@maccyber' },
-      { name: 'twitter:title', content: 'Free open-source BigFive personality traits test' },
-      { name: 'twitter:description', content: 'Take a free, open-source Big Five personality test - translated to multiple languages. Get to know yourself better from a detailed profile of your personality traits or learn to know others by comparing yourself with your partner, colleagues, friends or family.' },
-      { name: 'twitter:image', content: 'https://bigfive-test.com/icon.png' },
-      { name: 'twitter:image:alt', content: 'BigFive logo' }
-    ]
-  })
+  head () {
+    return {
+      title: this.$t('frontpage.seo.title'),
+      meta: [
+        { hid: 'title', name: 'title', content: this.$t('frontpage.seo.title') },
+        { hid: 'description', name: 'description', content: this.$t('frontpage.seo.description') },
+        { hid: 'keywords', name: 'keywords', content: this.$t('seo.keywords') },
+        // Open Graph
+        { hid: 'og:title', name: 'og:title', content: this.$t('frontpage.seo.title') },
+        { hid: 'og:description', name: 'og:description', content: this.$t('frontpage.seo.description') },
+        { hid: 'twitter:title', name: 'twitter:title', content: this.$t('frontpage.seo.title') },
+        { hid: 'twitter:description', name: 'twitter:description', content: this.$t('frontpage.seo.description')  }
+      ]
+    }
+  }
 }
 </script>
 

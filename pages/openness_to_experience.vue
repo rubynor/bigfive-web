@@ -24,12 +24,21 @@ import { mdiFormatQuoteOpen, mdiFormatQuoteClose } from '@mdi/js'
 
 export default {
   name: 'Openness',
-  head: () => ({
-    title: 'Overview of Openness To Experience',
-    meta: [
-      { hid: 'description', name: 'description', content: 'Read more about the Openness To Experience domain in the b5 model' }
-    ]
-  }),
+  head () {
+    return {
+      title: this.$t('openness_to_experience.seo.title'),
+      meta: [
+        { hid: 'title', name: 'title', content: this.$t('openness_to_experience.seo.title') },
+        { hid: 'description', name: 'description', content: this.$t('openness_to_experience.seo.description') },
+        { hid: 'keywords', name: 'keywords', content: this.$t('seo.keywords') },
+        // Open Graph
+        { hid: 'og:title', name: 'og:title', content: this.$t('openness_to_experience.seo.title') },
+        { hid: 'og:description', name: 'og:description', content: this.$t('openness_to_experience.seo.description') },
+        { hid: 'twitter:title', name: 'twitter:title', content: this.$t('openness_to_experience.seo.title') },
+        { hid: 'twitter:description', name: 'twitter:description', content: this.$t('openness_to_experience.seo.description')  }
+      ]
+    }
+  },
   data: () => ({
     mdiFormatQuoteClose,
     mdiFormatQuoteOpen

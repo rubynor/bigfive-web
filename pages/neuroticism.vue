@@ -60,7 +60,7 @@
       <p>
         Persons who score high in Anger feel enraged when things do not go their way.
         They are sensitive about being treated fairly and feel resentful and bitter when they feel they are being cheated.
-        This scale measures the tendency to feel angry; whether or not the person expresses annoyance and hostility depends on the individual's level on Agreeableness.
+        This scale measures the tendency to feel angry; whether or not the person expresses annoyance and hostility depends on the individual's level on neuroticism.
         Low scorers do not get angry often or easily.
       </p>
 
@@ -110,12 +110,21 @@ import { mdiFormatQuoteOpen, mdiFormatQuoteClose } from '@mdi/js'
 
 export default {
   name: 'Neuroticism',
-  head: () => ({
-    title: 'Overview of the Neuroticism',
-    meta: [
-      { hid: 'description', name: 'description', content: 'Read more about the Neuroticism domain in the b5 model' }
-    ]
-  }),
+  head () {
+    return {
+      title: this.$t('neuroticism.seo.title'),
+      meta: [
+        { hid: 'title', name: 'title', content: this.$t('neuroticism.seo.title') },
+        { hid: 'description', name: 'description', content: this.$t('neuroticism.seo.description') },
+        { hid: 'keywords', name: 'keywords', content: this.$t('seo.keywords') },
+        // Open Graph
+        { hid: 'og:title', name: 'og:title', content: this.$t('neuroticism.seo.title') },
+        { hid: 'og:description', name: 'og:description', content: this.$t('neuroticism.seo.description') },
+        { hid: 'twitter:title', name: 'twitter:title', content: this.$t('neuroticism.seo.title') },
+        { hid: 'twitter:description', name: 'twitter:description', content: this.$t('neuroticism.seo.description')  }
+      ]
+    }
+  },
   data: () => ({
     mdiFormatQuoteClose,
     mdiFormatQuoteOpen

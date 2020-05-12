@@ -33,12 +33,21 @@ import { validMongoId, formatId } from '../../lib/helpers.js'
 
 export default {
   name: 'ResultForm',
-  head: () => ({
-    title: 'See your results',
-    meta: [
-      { hid: 'description', name: 'description', content: 'See your Big Five personality results' }
-    ]
-  }),
+  head () {
+    return {
+      title: this.$t('results.seo.title'),
+      meta: [
+        { hid: 'title', name: 'title', content: this.$t('results.seo.title') },
+        { hid: 'description', name: 'description', content: this.$t('results.seo.description') },
+        { hid: 'keywords', name: 'keywords', content: this.$t('seo.keywords') },
+        // Open Graph
+        { hid: 'og:title', name: 'og:title', content: this.$t('results.seo.title') },
+        { hid: 'og:description', name: 'og:description', content: this.$t('results.seo.description') },
+        { hid: 'twitter:title', name: 'twitter:title', content: this.$t('results.seo.title') },
+        { hid: 'twitter:description', name: 'twitter:description', content: this.$t('results.seo.description')  }
+      ]
+    }
+  },
   methods: {
     validMongoId: validMongoId,
     formatId: formatId

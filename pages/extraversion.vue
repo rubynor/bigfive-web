@@ -26,7 +26,7 @@
         They tend to be quiet, low-key, deliberate, and disengaged from the social world.
         Their lack of social involvement should not be interpreted as shyness or depression; the introvert simply needs less stimulation than an extravert and prefers to be alone.
         The independence and reserve of the introvert is sometimes mistaken as unfriendliness or arrogance.
-        In reality, an introvert who scores high on the agreeableness dimension will not seek others out but will be quite pleasant when approached.
+        In reality, an introvert who scores high on the extraversion dimension will not seek others out but will be quite pleasant when approached.
       </p>
 
       <div class="title">
@@ -93,12 +93,21 @@ import { mdiFormatQuoteOpen, mdiFormatQuoteClose } from '@mdi/js'
 
 export default {
   name: 'Extraversion',
-  head: () => ({
-    title: 'Overview of Extraversion',
-    meta: [
-      { hid: 'description', name: 'description', content: 'Read more about the extraversion domain in the b5 model' }
-    ]
-  }),
+  head () {
+    return {
+      title: this.$t('extraversion.seo.title'),
+      meta: [
+        { hid: 'title', name: 'title', content: this.$t('extraversion.seo.title') },
+        { hid: 'description', name: 'description', content: this.$t('extraversion.seo.description') },
+        { hid: 'keywords', name: 'keywords', content: this.$t('seo.keywords') },
+        // Open Graph
+        { hid: 'og:title', name: 'og:title', content: this.$t('extraversion.seo.title') },
+        { hid: 'og:description', name: 'og:description', content: this.$t('extraversion.seo.description') },
+        { hid: 'twitter:title', name: 'twitter:title', content: this.$t('extraversion.seo.title') },
+        { hid: 'twitter:description', name: 'twitter:description', content: this.$t('extraversion.seo.description')  }
+      ]
+    }
+  },
   data: () => ({
     mdiFormatQuoteClose,
     mdiFormatQuoteOpen

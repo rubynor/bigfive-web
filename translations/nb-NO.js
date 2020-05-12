@@ -1,6 +1,13 @@
 export default {
   language: 'Norsk',
+  seo: {
+    keywords: 'big five personlighetstest, big 5 personlighetstest, b5 test, bigfive test, sånn er du, harald eia, sammenlign, gratis, jordan peterson'
+  },
   frontpage: {
+    seo: {
+      title: 'Gratis åpenkildekode big five personlighetstest',
+      description: 'Ta en gratis, open source Big Five-personlighetstest - oversatt til flere språk. Bli bedre kjent med deg selv fra en detaljert profil av personlighetstrekkene dine eller lær deg å kjenne andre ved å sammenligne deg med partneren din, kolleger, venner eller familie.'
+    },
     title: 'Big Five personlighetstest',
     call_to_action: 'Start testen',
     description: {
@@ -13,6 +20,12 @@ innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
       info: 'Testen som følger har <b>120 spørsmål</b> og estimert tidsbruk er <b>10 minutter</b>.',
       result: 'Etter at testen er gjennomført vil du bli presentert en detaljert personlighetsrapport innen følgende domener:',
       tests_taken: 'tester utført så langt'
+    }
+  },
+  about: {
+    seo: {
+      title: 'Om "big five" laget',
+      description: 'BigFive har et veldig aktivt og engasjert team som hele tiden prøver å presse BigFive fremover.BigFive har et veldig aktivt og engasjert team som hele tiden prøver å presse BigFive fremover.'
     }
   },
   toolbar: {
@@ -73,22 +86,46 @@ innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     seeResults: 'Se resultater'
   },
   big_five: {
-    title: 'What are the big five?'
+    title: 'Hva er de store fem?',
+    seo: {
+      title: 'Hva er de store fem?',
+      description: 'Les mer om de store fem'
+    }
   },
   openness_to_experience: {
-    title: 'Åpenhet for erfaringer'
+    title: 'Åpenhet for erfaringer',
+    seo: {
+      title: 'Oversikt over domenet Åpenhet for erfaringer',
+      description: 'Les mer om domenet åpenhet for erfaringer i bigfive modellen'
+    }
   },
   conscientiousness: {
-    title: 'Planmessighet'
+    title: 'Planmessighet',
+    seo: {
+      title: 'Oversikt over domenet planmessighet',
+      description: 'Les mer om domenet planmessighet i bigfive modellen'
+    }
   },
   extraversion: {
-    title: 'Ekstroversjon'
+    title: 'Ekstroversjon',
+    seo: {
+      title: 'Oversikt over domenet ekstroversjon',
+      description: 'Les mer om domenet ekstroversjon i bigfive modellen'
+    }
   },
   agreeableness: {
-    title: 'Medmenneskelighet'
+    title: 'Medmenneskelighet',
+    seo: {
+      title: 'Oversikt over domenet medmenneskelighet',
+      description: 'Les mer om domenet medmenneskelighet i bigfive modellen'
+    }
   },
   neuroticism: {
-    title: 'Nevrotisisme'
+    title: 'Nevrotisisme',
+    seo: {
+      title: 'Oversikt over domenet Nevrotisisme',
+      description: 'Les mer om domenet Nevrotisisme i bigfive modellen'
+    }
   },
   getCompare: {
     title: 'Sammenlign personer eller grupper',
@@ -109,7 +146,11 @@ innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     important: 'Viktig!',
     saveResults: 'Lagre følgende ID for å se resultatene dine senere eller for å',
     compare: 'sammenligne',
-    toOthers: 'deg med andre'
+    toOthers: 'deg med andre',
+    seo: {
+      title: 'Mine rapport fra BigFive personlighetstesten',
+      description: 'Se min personlighet, og sammenlign deg selv i de følgende fem domenene: Nevrotisme, Åpenhet for Erfaringer, planmessighet, Ekstraversjon, og medmenneskelighet'
+    }
   },
   getResult: {
     result: 'Hent resultater',

@@ -53,24 +53,20 @@ export default {
     ShareLinks,
     Error
   },
-  head: () => ({
-    title: 'Results from the BigFive personality traits test',
-    meta: [
-      { name: 'keywords', content: 'big five personality test, big 5 personality test, b5 test, bigfive test, personality traits, bigfive, compare, free, jordan peterson' },
-      // Open Graph
-      { name: 'og:title', content: 'My results from the BigFive personality test' },
-      { name: 'og:description', content: 'See my personality and compare yourself in the following five domains: Neuroticism, Openness To Experience, Conscientiousness, Extraversion, Agreeableness' },
-      { name: 'og:type', content: 'website' },
-      { name: 'og:url', content: 'https://bigfive-test.com' },
-      { name: 'og:image', content: 'https://bigfive-test.com/icon.png' },
-      // Twitter Card
-      { name: 'twitter:card', content: 'summary' },
-      { name: 'twitter:site', content: '@maccyber' },
-      { name: 'twitter:title', content: 'Free open-source BigFive personality traits test' },
-      { name: 'twitter:description', content: 'See my personality and compare yourself in the following five domains: Neuroticism, Openness To Experience, Conscientiousness, Extraversion, Agreeableness' },
-      { name: 'twitter:image', content: 'https://bigfive-test.com/icon.png' },
-      { name: 'twitter:image:alt', content: 'BigFive logo' }
-    ]
-  })
+  head () {
+    return {
+      title: this.$t('results.seo.title'),
+      meta: [
+        { hid: 'title', name: 'title', content: this.$t('results.seo.title') },
+        { hid: 'description', name: 'description', content: this.$t('results.seo.description') },
+        { hid: 'keywords', name: 'keywords', content: this.$t('seo.keywords') },
+        // Open Graph
+        { hid: 'og:title', name: 'og:title', content: this.$t('results.seo.title') },
+        { hid: 'og:description', name: 'og:description', content: this.$t('results.seo.description') },
+        { hid: 'twitter:title', name: 'twitter:title', content: this.$t('results.seo.title') },
+        { hid: 'twitter:description', name: 'twitter:description', content: this.$t('results.seo.description')  }
+      ]
+    }
+  }
 }
 </script>
