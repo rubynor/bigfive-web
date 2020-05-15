@@ -1,2 +1,3 @@
+Sitemap: https://bigfive-test.com/sitemap.xml
 User-agent: *
 Disallow:
