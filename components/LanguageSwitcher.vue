@@ -2,7 +2,7 @@
   <span>
     <v-list-item>
       <v-subheader class="text-uppercase">
-        languages
+        {{ $t('common.languages') }}
       </v-subheader>
     </v-list-item>
     <v-divider></v-divider>

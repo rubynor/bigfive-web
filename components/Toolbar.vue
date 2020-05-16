@@ -41,7 +41,7 @@
       </template>
       <v-list nav>
         <v-list-item>
-          <v-subheader class="text-uppercase">pages</v-subheader>
+          <v-subheader class="text-uppercase">{{ $t('common.pages') }}</v-subheader>
         </v-list-item>
         <v-divider></v-divider>
         <v-list-item
@@ -77,7 +77,6 @@ export default {
       logoSrc: require('@/assets/logo.svg'),
       icons,
       items: [
-        { title: this.$t('toolbar.home'), url: '/' },
         { title: this.$t('toolbar.result'), url: '/result' },
         { title: this.$t('toolbar.compare'), url: '/compare' },
         { title: this.$t('toolbar.articles'), url: '/articles' },
