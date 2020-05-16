@@ -1,5 +1,5 @@
 <template>
-  <v-footer class="pl-10 mt-10">
+  <v-footer class="pl-10 pt-10">
     <v-col class="footer-heading">
       SAY<br/>HALLO
     </v-col>

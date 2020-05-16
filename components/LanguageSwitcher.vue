@@ -1,14 +1,22 @@
 <template>
-  <div class="mt-4">
-    <b>Languages</b>
-    <br />
-    <nuxt-link
+  <span>
+    <v-list-item>
+      <v-subheader class="text-uppercase">
+        languages
+      </v-subheader>
+    </v-list-item>
+    <v-divider></v-divider>
+    <v-list-item
       v-for="locale in availableLocales"
       @click.native="logClick(locale.code)"
       :key="locale.code"
-      :to="switchLocalePath(locale.code)">{{ locale.name }}
-    </nuxt-link>
-  </div>
+      link
+      :to="switchLocalePath(locale.code)"
+      class="text-none font-weight-regular pl-5 body-2"
+    >
+      {{ locale.name }}
+    </v-list-item>
+    </span>
 </template>
 
 <script>

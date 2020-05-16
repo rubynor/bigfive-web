@@ -1,6 +1,6 @@
 <template>
   <div>
-    <span class="headline">{{ domain.title }}</span>
+    <h2 class="pt-12">{{ domain.title }}</h2>
     <p>{{ domain.description }}</p>
     <BarChartCompare :data="domain.facets" />
   </div>
@@ -17,3 +17,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+p {
+  font-size: 1.3rem;
+  line-height: 1.9;
+}
+</style>

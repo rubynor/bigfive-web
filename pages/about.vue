@@ -1,8 +1,6 @@
 <template>
   <div class="about">
-    <h1 class="subheading grey--text">About</h1>
-    Under construction.
-    <h1 class="subheading grey--text">Team</h1>
+    <h1>Team</h1>
 
     <v-container class="my-5">
       <v-layout row wrap>

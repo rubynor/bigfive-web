@@ -2,8 +2,11 @@
   <v-app>
     <Toolbar />
 
-    <v-content>
-      <v-container class="container">
+    <v-content v-if="$nuxt.$route.path === '/'">
+      <nuxt />
+    </v-content>
+    <v-content v-else>
+      <v-container class="container pt-12">
         <nuxt />
       </v-container>
     </v-content>
@@ -57,7 +60,7 @@ a {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 960px;
 }
 
 ::selection {

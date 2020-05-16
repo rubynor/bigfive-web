@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <div v-if="result">
-      <span class="headline">Overview</span>
+      <h1>Overview</h1>
       <BarChartCompare :data="result" max='120' />
       <div v-for="domain in result" :key="domain.id">
         <DomainCompare :domain="domain" />

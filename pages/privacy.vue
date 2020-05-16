@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h1 class="subheading grey--text">Privacy Policy</h1>
-    This privacy policy will explain how out organization uses the personal data we collect from you
+    <h1>Privacy Policy</h1>
+    This privacy policy will explain how we use the personal data we collect from you
     when you use our website.
-    <h2 class="subheading grey--text">What data do we collect?</h2>
+    <h2>What data do we collect?</h2>
     We collect the following data
     <br /><br />
     <ul>
@@ -30,7 +30,7 @@
     We also use Google Analytics to measure traffic to our site and how users interact with our site. The Google Analytics terms specify that no personally identifiable information may be collected through the Google Analytics software.
     <br /><br />
     Read more about Google Analytics privacy policy <a href='https://policies.google.com/privacy' rel='noopener noreferrer' target='_blank'>here</a>.</p>
-    <h2 class="subheading grey--text">How do we collect your data?</h2>
+    <h2>How do we collect your data?</h2>
     Google Analytics sets the following cookies:
     <br />
     <br />
@@ -50,13 +50,13 @@
     <br />
     <br />
     When you submit the test the information you provide (described above) is stored in our database.
-    <h2 class="subheading grey--text">How will we use your data?</h2>
+    <h2>How will we use your data?</h2>
     We use Google Analytics to get statistics on how visitors use the site.
     <br />
     <br />
     We will create statistical, aggregated data from the test results for analytical purposes.
-    <h2 class="subheading grey--text">How do we store your data?</h2>
-    <h2 class="subheading grey--text">How to contact us?</h2>
+    <h2>How do we store your data?</h2>
+    <h2>How to contact us?</h2>
     If you have any questions about this privacy policy, please <a href='mailto:support@bigfive-test.com' rel='noopener noreferrer' target='_blank'>contact</a> us.</p>
   </div>
 </template>

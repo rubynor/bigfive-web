@@ -7,8 +7,9 @@
       {{ otherError }}
     </h1>
     <NuxtLink to="/">
-      Home page
+      Go to home page
     </NuxtLink>
+    <img class="responsive" :src="require('@/assets/404.svg')" />
   </v-app>
 </template>
 
@@ -36,9 +37,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-h1 {
-  font-size: 20px;
-}
-</style>

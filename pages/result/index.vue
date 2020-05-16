@@ -1,7 +1,7 @@
 <template>
-  <v-card>
-    <v-card-title>{{ $t('getResult.result') }}</v-card-title>
-    <v-card-text>
+  <div>
+    <h1>{{ $t('getResult.result') }}</h1>
+    <div class="body-text">
       {{ $t('getResult.explaination') }} <span class="font-italic secondary--text">58a70606a835c400c8b38e84</span> {{ $t('getResult.idInput') }}
       <br />
       <v-text-field
@@ -24,8 +24,8 @@
           {{ $t('getResult.getResult') }}
         </v-btn>
       </v-card-actions>
-    </v-card-text>
-  </v-card>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -60,3 +60,10 @@ export default {
   })
 }
 </script>
+
+<style scoped>
+.body-text {
+  font-size: 1.3rem;
+  line-height: 1.9;
+}
+</style>

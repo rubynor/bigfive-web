@@ -1,7 +1,7 @@
 <template>
-  <v-card>
-    <v-card-title>{{ $t('getCompare.title') }}</v-card-title>
-    <v-card-text>
+  <div>
+    <h1>{{ $t('getCompare.title') }}</h1>
+    <div class="body-text">
       <p>{{ $t('getCompare.description1') }}</p>
       <p>{{ $t('getCompare.description2') }} <span class="font-italic secondary--text">58a70606a835c400c8b38e84</span> {{ $t('getCompare.description3') }}</p>
       <br />
@@ -108,8 +108,8 @@
           {{ $t('getCompare.comparePeople') }}
         </v-btn>
       </v-card-actions>
-    </v-card-text>
-  </v-card>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -160,3 +160,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.body-text {
+  font-size: 1.3rem;
+  line-height: 1.9;
+}
+</style>
