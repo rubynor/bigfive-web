@@ -21,7 +21,7 @@ export default {
     share: 'Del med vennene dine og finn ut hvor kompatible dere er.',
     cards: {
       open: {
-        title: 'Open',
+        title: 'Åpen',
         text: 'Dette er et åpen kildekode prosjekt under MIT-lisens.'
       },
       free: {
