@@ -2,7 +2,7 @@
   <v-app>
     <Toolbar />
 
-    <v-content v-if="$nuxt.$route.path === '/' || $nuxt.$route.path === '/no'">
+    <v-content v-if="$nuxt.$route.name.includes('index')">
       <nuxt />
     </v-content>
     <v-content v-else>
