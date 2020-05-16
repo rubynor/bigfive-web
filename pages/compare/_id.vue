@@ -1,19 +1,28 @@
 <template>
   <v-container>
     <div v-if="result">
+      <div class="text-right">
+        <ShareLinks :id="'compare/' + $route.params.id" />
+      </div>
       <h1>Overview</h1>
       <BarChartCompare :data="result" max='120' />
       <div v-for="domain in result" :key="domain.id">
         <DomainCompare :domain="domain" />
       </div>
     </div>
+
     <Error v-else />
+
+    <div class="text-right">
+      <ShareLinks :id="'compare/' + $route.params.id" />
+    </div>
   </v-container>
 </template>
 
 <script>
 import BarChartCompare from '../../components/BarChartCompare'
 import DomainCompare from '../../components/DomainCompare'
+import ShareLinks from '../../components/ShareLinks'
 import Error from '../../components/Error'
 
 export default {
@@ -35,7 +44,8 @@ export default {
   components: {
     BarChartCompare,
     DomainCompare,
-    Error
+    Error,
+    ShareLinks
   },
   head: () => ({
     title: 'Team Comparison of personalities from the Big Five personality traits test',

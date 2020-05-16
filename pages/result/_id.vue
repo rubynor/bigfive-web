@@ -8,7 +8,7 @@
         <v-alert outlined color="secondary">
           <span class="secondary--text headline">{{ $route.params.id }}</span>
         </v-alert>
-        <ShareLinks :id="$route.params.id" />
+        <ShareLinks :id="'result/' + $route.params.id" />
       </div>
 
       <span class="display-1">{{ $t('results.theBigFive') }}</span>
@@ -18,7 +18,7 @@
       </div>
       <br />
       <span class="headline">{{ $t('shareLinks.shareResults') }}</span>
-      <ShareLinks :id="$route.params.id" />
+      <ShareLinks :id="'result/' + $route.params.id" />
     </div>
     <Error v-else />
   </v-container>

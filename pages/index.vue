@@ -62,6 +62,14 @@
           </p>
         </v-col>
       </v-row>
+      <v-row>
+        <v-col class="text-center" cols="12">
+          <h2 style="color: #797878">
+            Share with your friends and find out how compatible you are
+          </h2>
+          <ShareLinks />
+        </v-col>
+      </v-row>
     </Wrapper>
 
   </div>
@@ -70,6 +78,7 @@
 
 <script>
 import Highlights from '../components/Highlights.vue'
+import ShareLinks from '../components/ShareLinks.vue'
 import Wrapper from '../components/Wrapper.vue'
 import { mapState } from 'vuex'
 
@@ -83,7 +92,8 @@ export default {
   },
   components: {
     Highlights,
-    Wrapper
+    Wrapper,
+    ShareLinks
   },
   head () {
     return {
@@ -122,4 +132,5 @@ p {
 .default-width {
   max-width: 960px;
 }
+
 </style>

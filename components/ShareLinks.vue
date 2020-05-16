@@ -3,7 +3,7 @@
 
     <v-tooltip bottom>
       <template v-slot:activator="{ on }">
-        <a v-on="on" @click="copyLink(`https://bigfive-test.com/result/${id}`)">
+        <a v-on="on" @click="copyLink(`https://bigfive-test.com/${id}`)">
           <v-icon large>{{ mdiLink }}</v-icon>
         </a>
       </template>
@@ -12,7 +12,7 @@
 
     <v-tooltip bottom>
       <template v-slot:activator="{ on }">
-        <a v-on="on" @click="logClick('facebook')" :href="'https://www.facebook.com/sharer/sharer.php?u=https://bigfive-test.com/result/' + id" target="_blank">
+        <a v-on="on" @click="logClick('facebook')" :href="'https://www.facebook.com/sharer/sharer.php?u=https://bigfive-test.com/' + id" target="_blank">
           <v-icon large>{{ mdiFacebook }}</v-icon>
         </a>
       </template>
@@ -21,7 +21,7 @@
 
     <v-tooltip bottom>
       <template v-slot:activator="{ on }">
-        <a v-on="on" @click="logClick('twitter')" :href="'https://twitter.com/intent/tweet?text=See my personality traits!&url=https://bigfive-test.com/result/' + id" target="_blank">
+        <a v-on="on" @click="logClick('twitter')" :href="'https://twitter.com/intent/tweet?text=See my personality traits!&url=https://bigfive-test.com/' + id" target="_blank">
           <v-icon large>{{ mdiTwitter }}</v-icon>
         </a>
       </template>
@@ -54,7 +54,11 @@ import { sleep } from '../lib/helpers'
 
 export default {
   name: 'ShareLinks',
-  props: ['id'],
+  props: {
+    id: {
+      default: ''
+    }
+  },
   data: () => ({
     mdiFacebook,
     mdiTwitter,
@@ -82,12 +86,14 @@ export default {
 }
 </script>
 
-<style scoped>
-a:hover i {
-  color: var(--v-secondary);
+<style>
+.v-icon svg:hover {
+  fill: #ff0080;
 }
+</style>
 
+<style scoped>
 a {
-  margin-right: 10px;
+  margin-right: 30px;
 }
 </style>
