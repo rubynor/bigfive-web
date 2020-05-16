@@ -6,18 +6,45 @@ export default {
   frontpage: {
     seo: {
       title: 'Gratis åpenkildekode big five personlighetstest',
-      description: 'Ta en gratis, open source Big Five-personlighetstest - oversatt til flere språk. Bli bedre kjent med deg selv fra en detaljert profil av personlighetstrekkene dine eller lær deg å kjenne andre ved å sammenligne deg med partneren din, kolleger, venner eller familie.'
+      description: 'Ta en gratis, open source Big Five-personlighetstest. Lær å kjenne personlighetstrekkene dine - sammenlign deg med partneren din, kollegene, venner eller familie.'
     },
     title: 'Big Five personlighetstest',
     call_to_action: 'Start testen',
+    no_registration: '* Ingen registrering påkrevd',
+    tests_taken: 'Over 700.000 personer har tatt testen',
+    compare: {
+      title: 'Sammenlign deg med andre',
+      text1: 'Sammenlign deg med partneren din, kollegaer, venner eller familie.',
+      text2: 'Lær hvordan du skiller deg fra andre mennesker i de fem domenene:',
+      action: 'Se sammenligning i aksjon'
+    },
+    share: 'Del med vennene dine og finn ut hvor kompatible dere er.',
+    cards: {
+      open: {
+        title: 'Open',
+        text: 'Dette er et åpen kildekode prosjekt under MIT-lisens.'
+      },
+      free: {
+        title: 'Gratis',
+        text: 'Testen er helt gratis.'
+      },
+      scientific: {
+        title: 'Vitenskapelig',
+        text: 'BigFive er en vitenskapelig validert og pålitelig psykologisk modell.'
+      },
+      translated: {
+        title: 'Oversettelser',
+        text: 'Testen er oversatt til over 20 språk.'
+      }
+    },
     description: {
-      top: 'Forstå deg selv og andre bedre med en <b>gratis, open-source</b> personlighetstest.',
+      top: 'Forstå deg selv og andre bedre med en gratis, open-source personlighetstest.',
       subtop: '',
       subtop2: ' er en vitenskapelig og troverdig psykologisk modell for å måle personlighet.',
       reference: `Tester og evalueringer for bigfive-test.com er hentet fra
 <a href="http://ipip.ori.org" rel="noopener" target="_blank">ipip.ori.org</a>,
 innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
-      info: 'Testen som følger har <b>120 spørsmål</b> og estimert tidsbruk er <b>10 minutter</b>.',
+      info: 'Testen som følger har 120 spørsmål og estimert tidsbruk er 10 minutter.',
       result: 'Etter at testen er gjennomført vil du bli presentert en detaljert personlighetsrapport innen følgende domener:',
       tests_taken: 'tester utført så langt'
     }
@@ -34,7 +61,9 @@ innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     compare: 'Sammenligning',
     articles: 'Artikler',
     privacy: 'Personvern',
-    about: 'Om'
+    about: 'Om',
+    see_results: 'Se resultater',
+    compare_with: 'Se sammenligning'
   },
   facets: {
     openness_to_experience: {

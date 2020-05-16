@@ -2,23 +2,23 @@
   <v-row>
     <v-col cols="6" xs="6" sm="6" md="3">
       <img class="responsive" alt="open source" :src="require('@/assets/open-source.png')" />
-      <h3>Open</h3>
-      <span color="#666">This is an open source project under MIT-license.</span>
+      <h3 v-html="$t('frontpage.cards.open.title')" />
+      <span color="#666">{{ $t('frontpage.cards.open.text') }}</span>
     </v-col>
     <v-col cols="6" xs="6" sm="6" md="3">
       <img class="responsive" alt="free" :src="require('@/assets/free.png')" />
-      <h3>Free</h3>
-      <span color="#666">The test is completely free</span>
+      <h3 v-html="$t('frontpage.cards.free.title')" />
+      <span color="#666">{{ $t('frontpage.cards.free.text') }}</span>
     </v-col>
     <v-col cols="6" xs="6" sm="6" md="3">
       <img class="responsive" alt="scientific" :src="require('@/assets/scientific.png')" />
-      <h3>Scientific</h3>
-      <span color="#666">BigFive is a scientifically validated and reliable psychological model.</span>
+      <h3 v-html="$t('frontpage.cards.scientific.title')" />
+      <span color="#666">{{ $t('frontpage.cards.scientific.text') }}</span>
     </v-col>
     <v-col cols="6" xs="6" sm="6" md="3">
       <img class="responsive" alt="Translated to over 20 langauges" :src="require('@/assets/languages.png')" />
-      <h3>Translated</h3>
-      <span color="#666">Translated to over 20 languages. Help out!</span>
+      <h3 v-html="$t('frontpage.cards.translated.title')" />
+      <span color="#666">{{ $t('frontpage.cards.translated.text') }}</span>
     </v-col>
   </v-row>
 </template>

@@ -6,10 +6,37 @@ export default {
   frontpage: {
     seo: {
       title: 'Free open-source BigFive personality traits test',
-      description: 'Take a free, open-source Big Five personality test - translated to multiple languages. Get to know yourself better from a detailed profile of your personality traits or learn to know others by comparing yourself with your partner, colleagues, friends or family.'
+      description: 'Take a free, open-source Big Five personality test. Learn to know your personality traits and compare yourself with your partner, colleagues, friends or family.'
     },
     title: 'Big Five Personality Test',
     call_to_action: 'Take the free test now',
+    no_registration: '* No registration required',
+    tests_taken: 'Over 700.000 people has taken the test',
+    compare: {
+      title: 'Compare yourself to others',
+      text1: 'Compare yourself with your partner, colleagues, friends or family.',
+      text2: 'Learn how you differ from other people in the five domains:',
+      action: 'See it live in action'
+    },
+    share: 'Share with your friends and find out how compatible you are',
+    cards: {
+      open: {
+        title: 'Open',
+        text: 'This is an open source project under MIT-license.'
+      },
+      free: {
+        title: 'Free',
+        text: 'The test is completely free'
+      },
+      scientific: {
+        title: 'Scientific',
+        text: 'BigFive is a scientifically validated and reliable psychological model.'
+      },
+      translated: {
+        title: 'Translated',
+        text: 'Translated to over 20 languages. Help out!'
+      }
+    },
     description: {
       top: 'Learn to know yourself better with a free, open-source personality test.',
       subtop: 'The',
@@ -34,7 +61,9 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     compare: 'Compare',
     articles: 'Articles',
     privacy: 'Privacy',
-    about: 'About'
+    about: 'About',
+    see_results: 'See your results',
+    compare_with: 'Compare with others'
   },
   facets: {
     openness_to_experience: {

@@ -22,10 +22,10 @@
       </div>
       <v-spacer></v-spacer>
       <v-btn text :to="localePath('result')" class="hidden-sm-and-down text-none font-weight-regular">
-        See your results
+        {{ $t('toolbar.see_results') }}
       </v-btn>
       <v-btn text :to="localePath('compare')" class="hidden-sm-and-down text-none font-weight-regular">
-        Compare with others
+        {{ $t('toolbar.compare_with') }}
       </v-btn>
 
     <v-menu

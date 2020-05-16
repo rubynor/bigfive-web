@@ -13,10 +13,7 @@
           {{ $t('frontpage.call_to_action') }}
         </v-btn>
         <br />
-        <div class="ml-2 mt-2" color="grey">
-          * No registration required
-        </div>
-
+        <div class="ml-2 mt-2" color="grey" v-html="$t('frontpage.no_registration')" />
         </v-col>
         <v-col cols="12" xs="12" md="6">
           <img class="responsive" alt="Girl infront of test" :src="require('@/assets/front.svg')" />
@@ -26,9 +23,7 @@
     <Wrapper background="#e4e4e4">
       <v-row cols="12" class="py-10">
         <v-col class="text-center" cols="12">
-          <h1 class="font-italic">
-            Over 700.000 people has taken the test
-          </h1>
+          <h1 class="font-italic" v-html="$t('frontpage.tests_taken')" />
         </v-col>
         <v-col>
           <Highlights />
@@ -41,14 +36,10 @@
           <img class="responsive" alt="Comparing people" :src="require('@/assets/front_compare.svg')" />
         </v-col>
         <v-col cols="12" xs="12" md="6">
-          <h1>
-            Compare yourself to others
-          </h1>
-          <p>
-            Compare yourself with your partner, colleagues, friends or family.
-          </p>
+          <h1 v-html="$t('frontpage.compare.title')" />
+          <p v-html="$t('frontpage.compare.text1')" />
           <p class="black--link">
-            Learn how you differ from other people in the five domains:
+            {{ $t('frontpage.compare.text2') }}
             <nuxt-link :to="localePath('openness_to_experience')">{{ $t('facets.openness_to_experience.title') }}</nuxt-link>,
             <nuxt-link :to="localePath('conscientiousness')">{{ $t('facets.conscientiousness.title') }}</nuxt-link>,
             <nuxt-link :to="localePath('extraversion')">{{ $t('facets.extraversion.title') }}</nuxt-link>,
@@ -56,17 +47,13 @@
             <nuxt-link :to="localePath('neuroticism')">{{ $t('facets.neuroticism.title') }}</nuxt-link>
           </p>
           <p>
-            <v-btn outlined :to="localePath('/compare/W3sibmFtZSI6Ik1hcnZpbiIsImlkIjoiNThhNzA2MDZhODM1YzQwMGM4YjM4ZTg0In0seyJuYW1lIjoiQXJ0aHVyIERlbnQiLCJpZCI6IjVlNTZiYTdhYjA5NjEzMDAwN2Q1ZDZkOCJ9LHsibmFtZSI6IkZvcmQgUGVyZmVjdCIsImlkIjoiNWRlYTllODhlMTA4Y2IwMDYyMTgzYWYzIn0seyJuYW1lIjoiU2xhcnRpYmFydGZhc3QiLCJpZCI6IjVlNTZiNjUwYjA5NjEzMDAwN2Q1ZDZkMCJ9XQ%3D%3D')">
-              See it live in action
-            </v-btn>
+            <v-btn outlined :to="localePath('/compare/W3sibmFtZSI6Ik1hcnZpbiIsImlkIjoiNThhNzA2MDZhODM1YzQwMGM4YjM4ZTg0In0seyJuYW1lIjoiQXJ0aHVyIERlbnQiLCJpZCI6IjVlNTZiYTdhYjA5NjEzMDAwN2Q1ZDZkOCJ9LHsibmFtZSI6IkZvcmQgUGVyZmVjdCIsImlkIjoiNWRlYTllODhlMTA4Y2IwMDYyMTgzYWYzIn0seyJuYW1lIjoiU2xhcnRpYmFydGZhc3QiLCJpZCI6IjVlNTZiNjUwYjA5NjEzMDAwN2Q1ZDZkMCJ9XQ%3D%3D')" v-html="$t('frontpage.compare.action')" />
           </p>
         </v-col>
       </v-row>
       <v-row>
         <v-col class="text-center" cols="12">
-          <h2 style="color: #797878">
-            Share with your friends and find out how compatible you are
-          </h2>
+          <h2 style="color: #797878" v-html="$t('frontpage.share')" />
           <ShareLinks />
         </v-col>
       </v-row>
