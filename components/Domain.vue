@@ -5,7 +5,7 @@
         {{ domain.title }}
       </span>
     </a>
-    <p>score: {{ domain.score }} - {{ domain.scoreText }}</p>
+    <p class="subheading grey--text text--darken-1">{{ $t('results.score') }}: {{ domain.score }} - {{ domain.scoreText }}</p>
     <p>{{ domain.shortDescription }}</p>
     <BarChart :data="domain.facets" />
     <div v-for="facet in domain.facets" :key="facet.title">
@@ -13,7 +13,7 @@
         <span class="title">
           {{ facet.title }}
         </span></a>
-        <p>{{ $t('results.score') }}: {{ facet.score }} - {{ facet.scoreText }}</p>
+        <p class="subheading grey--text text--darken-1">{{ $t('results.score') }}: {{ facet.score }} - {{ facet.scoreText }}</p>
       <p v-html="facet.text" />
     </div>
   </div>

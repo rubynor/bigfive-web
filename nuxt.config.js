@@ -84,6 +84,12 @@ export default {
             file: 'nb-NO.js'
           },
           {
+            name: 'Dansk',
+            code: 'da',
+            iso: 'da',
+            file: 'da.js'
+          },
+          {
             name: 'English',
             code: 'en',
             iso: 'en-US',

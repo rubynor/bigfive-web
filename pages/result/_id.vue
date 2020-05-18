@@ -11,7 +11,17 @@
         <ShareLinks :id="'result/' + $route.params.id" />
       </div>
 
-      <span class="display-1">{{ $t('results.theBigFive') }}</span>
+      <div class="display-1 mt-6">{{ $t('results.theBigFive') }}</div>
+      <!-- Todo add language switcher
+      <span style="float: right;">
+        <v-select
+          :items="this.$store.state.languages"
+          label="Language"
+          v-model="selectedLanguage"
+          class="d-none"
+        ></v-select>
+      </span>
+      -->
       <BarChart :data="result" max='120' />
       <div v-for="domain in result" :key="domain.id">
         <Domain :domain="domain" />
@@ -33,7 +43,8 @@ import Error from '../../components/Error'
 export default {
   name: 'result',
   data: () => ({
-    result: false
+    result: false,
+    selectedLanguage: 'en'
   }),
   mounted () {
     this.$amplitude.getInstance().logEvent('b5.test', { part: 'result' });

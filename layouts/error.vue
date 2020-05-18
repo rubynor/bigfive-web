@@ -2,14 +2,15 @@
   <v-app dark>
     <h1 v-if="error.statusCode === 404">
       {{ pageNotFound }}
+
+      <img class="responsive" :src="require('@/assets/404.svg')" />
     </h1>
     <h1 v-else>
       {{ otherError }}
     </h1>
-    <NuxtLink to="/">
+    <v-btn to="/" class="mt-5" color="secondary">
       Go to home page
-    </NuxtLink>
-    <img class="responsive" :src="require('@/assets/404.svg')" />
+    </v-btn>
   </v-app>
 </template>
 

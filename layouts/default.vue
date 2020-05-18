@@ -2,7 +2,7 @@
   <v-app>
     <Toolbar />
 
-    <v-content v-if="$nuxt.$route.name.includes('index')">
+    <v-content v-if="$nuxt.$route && $nuxt.$route.name && $nuxt.$route.name.includes('index')">
       <nuxt />
     </v-content>
     <v-content v-else>

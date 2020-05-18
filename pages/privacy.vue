@@ -57,7 +57,7 @@
     We will create statistical, aggregated data from the test results for analytical purposes.
     <h2>How do we store your data?</h2>
     <h2>How to contact us?</h2>
-    If you have any questions about this privacy policy, please <a href='mailto:support@bigfive-test.com' rel='noopener noreferrer' target='_blank'>contact</a> us.</p>
+    If you have any questions about this privacy policy, please <a href='mailto:bigfive-test@rubynor.com' rel='noopener noreferrer' target='_blank'>contact</a> us.</p>
   </div>
 </template>
 

@@ -4,7 +4,7 @@
     <v-tooltip bottom>
       <template v-slot:activator="{ on }">
         <a v-on="on" @click="copyLink(`https://bigfive-test.com/${id}`)">
-          <v-icon large>{{ mdiLink }}</v-icon>
+          <v-icon x-large>{{ mdiLink }}</v-icon>
         </a>
       </template>
       {{ $t('shareLinks.copyLink') }}
@@ -12,8 +12,8 @@
 
     <v-tooltip bottom>
       <template v-slot:activator="{ on }">
-        <a v-on="on" @click="logClick('facebook')" :href="'https://www.facebook.com/sharer/sharer.php?u=https://bigfive-test.com/' + id" target="_blank">
-          <v-icon large>{{ mdiFacebook }}</v-icon>
+        <a v-on="on" @click="logClick('facebook')" :href="'https://www.facebook.com/sharer/sharer.php?u=https://bigfive-test.com/' + id" target="_blank" rel="noopener" alt="Share on facebook">
+          <v-icon x-large>{{ mdiFacebook }}</v-icon>
         </a>
       </template>
       {{ $t('shareLinks.shareFacebook') }}
@@ -21,8 +21,8 @@
 
     <v-tooltip bottom>
       <template v-slot:activator="{ on }">
-        <a v-on="on" @click="logClick('twitter')" :href="'https://twitter.com/intent/tweet?text=See my personality traits!&url=https://bigfive-test.com/' + id" target="_blank">
-          <v-icon large>{{ mdiTwitter }}</v-icon>
+        <a v-on="on" @click="logClick('twitter')" :href="'https://twitter.com/intent/tweet?text=See my personality traits!&url=https://bigfive-test.com/' + id" target="_blank" rel="noopener" alt="Share on twitter">
+          <v-icon x-large>{{ mdiTwitter }}</v-icon>
         </a>
       </template>
       {{ $t('shareLinks.shareTwitter') }}
