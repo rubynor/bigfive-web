@@ -29,7 +29,7 @@ export default {
         text: 'Testen er helt gratis.'
       },
       scientific: {
-        title: 'VVidenskabeli',
+        title: 'Videnskabelig',
         text: 'Big Five er en videnskabeligt valideret og pålidelig psykologisk model.'
       },
       translated: {
