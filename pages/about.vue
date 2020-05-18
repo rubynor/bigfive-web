@@ -4,7 +4,7 @@
 
     <v-container class="my-5">
       <v-layout row wrap>
-        <v-flex xs12 sm6 md6 v-for="person in team" :key="person.name">
+        <v-flex xs12 sm12 md6 v-for="person in team" :key="person.name">
           <v-card flat width="400px" class="text-xs-center ma-3">
             <v-img :src="person.avatar" height="400px" color="#eeeeee"></v-img>
             <v-card-text>

@@ -28,7 +28,6 @@
     "apexcharts": "3.19.0",
     "imagemin-mozjpeg": "8.0.0",
     "imagemin-pngquant": "8.0.0",
-    "imagemin-svgo": "7.1.0",
     "nuxt": "2.12.2",
     "nuxt-amplitude": "0.1.2",
     "nuxt-i18n": "6.11.1",

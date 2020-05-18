@@ -34,7 +34,7 @@ export default {
       },
       translated: {
         title: 'Oversettelser',
-        text: 'Testen er oversatt til over 20 språk.'
+        text: 'Testen er oversatt til mer enn 20 språk.'
       }
     },
     description: {

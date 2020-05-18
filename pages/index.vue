@@ -2,18 +2,18 @@
   <div>
     <Wrapper>
       <v-row cols="12" class="py-10">
-        <v-col cols="12" xs="12" md="6">
+        <v-col cols="12" xs="12" md="6" class="text-md-left text-center">
           <h1>
             {{ $t('frontpage.title') }}
           </h1>
-          <p v-html="$t('frontpage.description.top')" />
-          <p v-html="$t('frontpage.description.info')" />
+          <p v-html="$t('frontpage.description.top')" :class="{ 'responsive-text': $vuetify.breakpoint.smAndDown }" />
+          <p v-html="$t('frontpage.description.info')" :class="{ 'responsive-text': $vuetify.breakpoint.smAndDown }" />
 
-        <v-btn x-large color="#0070f3" :to="localePath('/test')" dark class="mt-7">
-          {{ $t('frontpage.call_to_action') }}
-        </v-btn>
-        <br />
-        <div class="ml-2 mt-2" color="grey" v-html="$t('frontpage.no_registration')" />
+          <v-btn x-large color="#0070f3" :to="localePath('/test')" dark class="mt-7">
+            {{ $t('frontpage.call_to_action') }}
+          </v-btn>
+          <br />
+          <div class="ml-2 mt-2 grey--text text--darken-2" v-html="$t('frontpage.no_registration')" />
         </v-col>
         <v-col cols="12" xs="12" md="6">
           <img class="responsive" alt="Girl infront of test" :src="require('@/assets/front.svg')" />
@@ -47,7 +47,9 @@
             <nuxt-link :to="localePath('neuroticism')">{{ $t('facets.neuroticism.title') }}</nuxt-link>
           </p>
           <p>
-            <v-btn outlined :to="localePath('/compare/W3sibmFtZSI6Ik1hcnZpbiIsImlkIjoiNThhNzA2MDZhODM1YzQwMGM4YjM4ZTg0In0seyJuYW1lIjoiQXJ0aHVyIERlbnQiLCJpZCI6IjVlNTZiYTdhYjA5NjEzMDAwN2Q1ZDZkOCJ9LHsibmFtZSI6IkZvcmQgUGVyZmVjdCIsImlkIjoiNWRlYTllODhlMTA4Y2IwMDYyMTgzYWYzIn0seyJuYW1lIjoiU2xhcnRpYmFydGZhc3QiLCJpZCI6IjVlNTZiNjUwYjA5NjEzMDAwN2Q1ZDZkMCJ9XQ%3D%3D')" v-html="$t('frontpage.compare.action')" />
+            <v-btn outlined :to="localePath('/compare/W3sibmFtZSI6Ik1hcnZpbiIsImlkIjoiNThhNzA2MDZhODM1YzQwMGM4YjM4ZTg0In0seyJuYW1lIjoiQXJ0aHVyIERlbnQiLCJpZCI6IjVlNTZiYTdhYjA5NjEzMDAwN2Q1ZDZkOCJ9LHsibmFtZSI6IkZvcmQgUGVyZmVjdCIsImlkIjoiNWRlYTllODhlMTA4Y2IwMDYyMTgzYWYzIn0seyJuYW1lIjoiU2xhcnRpYmFydGZhc3QiLCJpZCI6IjVlNTZiNjUwYjA5NjEzMDAwN2Q1ZDZkMCJ9XQ%3D%3D')">
+              {{ $t('frontpage.compare.action') }}
+            </v-btn>
           </p>
         </v-col>
       </v-row>
@@ -104,6 +106,12 @@ export default {
 p {
   font-size: 1.3rem;
   line-height: 1.9;
+}
+
+.responsive-text {
+  padding-top: 10px;
+  font-size: 18px;
+  line-height: 1.0;
 }
 
 .responsive {

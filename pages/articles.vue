@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="subheading grey--text">Articles</h1>
+    <h1>Articles</h1>
     Under construction ...
   </div>
 </template>

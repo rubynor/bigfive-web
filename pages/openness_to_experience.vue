@@ -52,4 +52,9 @@ export default {
   font-size: 3rem;
   text-transform: uppercase;
 }
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
 </style>
