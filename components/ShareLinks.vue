@@ -12,7 +12,7 @@
 
     <v-tooltip bottom>
       <template v-slot:activator="{ on }">
-        <a v-on="on" @click="logClick('facebook')" :href="'https://www.facebook.com/sharer/sharer.php?u=https://bigfive-test.com/' + id" target="_blank" rel="noopener" alt="Share on facebook">
+        <a v-on="on" @click="logClick('facebook')" :href="'https://www.facebook.com/sharer/sharer.php?u=https://bigfive-test.com/' + id" target="_blank" rel="noopener" aria-label="Share on facebook">
           <v-icon x-large>{{ mdiFacebook }}</v-icon>
         </a>
       </template>
@@ -21,7 +21,7 @@
 
     <v-tooltip bottom>
       <template v-slot:activator="{ on }">
-        <a v-on="on" @click="logClick('twitter')" :href="'https://twitter.com/intent/tweet?text=See my personality traits!&url=https://bigfive-test.com/' + id" target="_blank" rel="noopener" alt="Share on twitter">
+        <a v-on="on" @click="logClick('twitter')" :href="'https://twitter.com/intent/tweet?text=See my personality traits!&url=https://bigfive-test.com/' + id" target="_blank" rel="noopener" aria-label="Share on twitter">
           <v-icon x-large>{{ mdiTwitter }}</v-icon>
         </a>
       </template>

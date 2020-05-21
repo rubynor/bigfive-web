@@ -33,7 +33,7 @@
     <Wrapper background="white">
       <v-row cols="12" :class="{ 'flex-column-reverse': $vuetify.breakpoint.smAndDown }" class="py-10">
         <v-col cols="12" xs="12" md="6">
-          <img class="responsive" alt="Comparing people" :src="require('@/assets/front_compare.svg')" />
+          <img class="responsive" alt="Comparing people" :src="require('@/assets/front_compare.svg')" loading="lazy" />
         </v-col>
         <v-col cols="12" xs="12" md="6">
           <h1 v-html="$t('frontpage.compare.title')" />

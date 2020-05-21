@@ -5,6 +5,7 @@
     <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no" />
     <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no" />
     <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com" />
   </url>
   <url>
@@ -12,6 +13,7 @@
     <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/about" />
     <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/about" />
     <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da/about" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv/about" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/about" />
   </url>
   <url>
@@ -19,6 +21,7 @@
     <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/agreeableness" />
     <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/agreeableness" />
     <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da/agreeableness" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv/agreeableness" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/agreeableness" />
   </url>
   <url>
@@ -26,12 +29,14 @@
     <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/articles" />
     <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/articles" />
     <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/da/articles" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv/articles" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/articles" />
   </url>
   <url>
     <loc>https://bigfive-test.com/big_five</loc>
     <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/big_five" />
     <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da/big_five" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv/big_five" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/big_five" />
   </url>
   <url>
@@ -39,6 +44,7 @@
     <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/compare" />
     <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/compare" />
     <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da/compare" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv/compare" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/compare" />
   </url>
   <url>
@@ -46,6 +52,7 @@
     <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/conscientiousness" />
     <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/conscientiousness" />
     <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da/conscientiousness" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv/conscientiousness" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/conscientiousness" />
   </url>
   <url>
@@ -53,6 +60,7 @@
     <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/extraversion" />
     <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/extraversion" />
     <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da/extraversion" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv/extraversion" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/extraversion" />
   </url>
   <url>
@@ -60,6 +68,7 @@
     <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/neuroticism" />
     <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/neuroticism" />
     <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da/neuroticism" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv/neuroticism" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/neuroticism" />
   </url>
   <url>
@@ -67,6 +76,7 @@
     <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/openness_to_experience" />
     <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/openness_to_experience" />
     <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da/openness_to_experience" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/da/openness_to_experience" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/openness_to_experience" />
   </url>
   <url>
@@ -74,6 +84,7 @@
     <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/privacy" />
     <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/privacy" />
     <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da/privacy" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv/privacy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/privacy" />
   </url>
   <url>
@@ -81,6 +92,7 @@
     <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/result" />
     <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/result" />
     <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da/result" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv/result" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/result" />
   </url>
   <url>
@@ -88,6 +100,7 @@
     <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/test" />
     <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/test" />
     <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da/test" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv/test" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/test" />
   </url>
   <url>
@@ -109,6 +122,7 @@
     <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/compare/W3sibmFtZSI6Ik1hcnZpbiIsImlkIjoiNThhNzA2MDZhODM1YzQwMGM4YjM4ZTg0In0seyJuYW1lIjoiQXJ0aHVyIERlbnQiLCJpZCI6IjVlNTZiYTdhYjA5NjEzMDAwN2Q1ZDZkOCJ9LHsibmFtZSI6IkZvcmQgUGVyZmVjdCIsImlkIjoiNWRlYTllODhlMTA4Y2IwMDYyMTgzYWYzIn0seyJuYW1lIjoiU2xhcnRpYmFydGZhc3QiLCJpZCI6IjVlNTZiNjUwYjA5NjEzMDAwN2Q1ZDZkMCJ9XQ%3D%3D" />
     <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/compare/W3sibmFtZSI6Ik1hcnZpbiIsImlkIjoiNThhNzA2MDZhODM1YzQwMGM4YjM4ZTg0In0seyJuYW1lIjoiQXJ0aHVyIERlbnQiLCJpZCI6IjVlNTZiYTdhYjA5NjEzMDAwN2Q1ZDZkOCJ9LHsibmFtZSI6IkZvcmQgUGVyZmVjdCIsImlkIjoiNWRlYTllODhlMTA4Y2IwMDYyMTgzYWYzIn0seyJuYW1lIjoiU2xhcnRpYmFydGZhc3QiLCJpZCI6IjVlNTZiNjUwYjA5NjEzMDAwN2Q1ZDZkMCJ9XQ%3D%3D" />
     <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/no/compare/W3sibmFtZSI6Ik1hcnZpbiIsImlkIjoiNThhNzA2MDZhODM1YzQwMGM4YjM4ZTg0In0seyJuYW1lIjoiQXJ0aHVyIERlbnQiLCJpZCI6IjVlNTZiYTdhYjA5NjEzMDAwN2Q1ZDZkOCJ9LHsibmFtZSI6IkZvcmQgUGVyZmVjdCIsImlkIjoiNWRlYTllODhlMTA4Y2IwMDYyMTgzYWYzIn0seyJuYW1lIjoiU2xhcnRpYmFydGZhc3QiLCJpZCI6IjVlNTZiNjUwYjA5NjEzMDAwN2Q1ZDZkMCJ9XQ%3D%3D" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/no/compare/W3sibmFtZSI6Ik1hcnZpbiIsImlkIjoiNThhNzA2MDZhODM1YzQwMGM4YjM4ZTg0In0seyJuYW1lIjoiQXJ0aHVyIERlbnQiLCJpZCI6IjVlNTZiYTdhYjA5NjEzMDAwN2Q1ZDZkOCJ9LHsibmFtZSI6IkZvcmQgUGVyZmVjdCIsImlkIjoiNWRlYTllODhlMTA4Y2IwMDYyMTgzYWYzIn0seyJuYW1lIjoiU2xhcnRpYmFydGZhc3QiLCJpZCI6IjVlNTZiNjUwYjA5NjEzMDAwN2Q1ZDZkMCJ9XQ%3D%3D" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/compare/W3sibmFtZSI6Ik1hcnZpbiIsImlkIjoiNThhNzA2MDZhODM1YzQwMGM4YjM4ZTg0In0seyJuYW1lIjoiQXJ0aHVyIERlbnQiLCJpZCI6IjVlNTZiYTdhYjA5NjEzMDAwN2Q1ZDZkOCJ9LHsibmFtZSI6IkZvcmQgUGVyZmVjdCIsImlkIjoiNWRlYTllODhlMTA4Y2IwMDYyMTgzYWYzIn0seyJuYW1lIjoiU2xhcnRpYmFydGZhc3QiLCJpZCI6IjVlNTZiNjUwYjA5NjEzMDAwN2Q1ZDZkMCJ9XQ%3D%3D" />
   </url>
   <url>
@@ -116,6 +130,7 @@
     <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/result/58a7230da835c400c8b38e87" />
     <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/result/58a7230da835c400c8b38e87" />
     <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/no/result/58a7230da835c400c8b38e87" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/no/result/58a7230da835c400c8b38e87" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/result/58a7230da835c400c8b38e87" />
   </url>
 </urlset>

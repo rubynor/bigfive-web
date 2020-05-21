@@ -90,6 +90,12 @@ export default {
             file: 'da.js'
           },
           {
+            name: 'Svenska',
+            code: 'sv',
+            iso: 'sv',
+            file: 'sv.js'
+          },
+          {
             name: 'English',
             code: 'en',
             iso: 'en-US',
@@ -168,5 +174,7 @@ export default {
   env: {
     API_URL: process.env.BASE_URL ? process.env.BASE_URL + '/api/' : 'https://b5.rubynor.xyz/api/'
   },
-  build: {}
+  build: {
+    extractCSS: true
+  }
 }

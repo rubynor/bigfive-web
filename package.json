@@ -25,7 +25,7 @@
     "@nuxtjs/pwa": "3.0.0-beta.20",
     "@nuxtjs/sitemap": "2.3.0",
     "amplitude-js": "6.2.0",
-    "apexcharts": "3.19.0",
+    "apexcharts": "3.19.2",
     "imagemin-mozjpeg": "8.0.0",
     "imagemin-pngquant": "8.0.0",
     "nuxt": "2.12.2",
@@ -37,10 +37,10 @@
     "vue-confetti": "2.0.8"
   },
   "devDependencies": {
-    "@mdi/js": "5.1.45",
-    "@nuxtjs/google-analytics": "2.2.3",
+    "@mdi/js": "5.2.45",
+    "@nuxtjs/google-analytics": "2.3.0",
     "@nuxtjs/vuetify": "1.11.2",
-    "@vue/test-utils": "1.0.2",
+    "@vue/test-utils": "1.0.3",
     "babel-jest": "26.0.1",
     "jest": "26.0.1",
     "vue-jest": "4.0.0-beta.2"

@@ -1,7 +1,7 @@
 <template>
   <v-footer class="pl-10 pt-10">
     <v-row class="footer-container">
-      <v-col cols="6">
+      <v-col sm="12" md="6">
         <v-row class="footer-wrapper">
           <v-col class="footer-heading">
             SAY<br/>HALLO
@@ -44,15 +44,11 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-col>
-        <v-row>
-          <v-col>
-            <h3 class="mb-2">
-              Having issues with the site?
-            </h3>
-            Submit an issue at <a href="https://github.com/rubynor/bigfive-web" rel="noopener noreferrer" target="_blank">GitHub</a> or contact us at <a href="mailto:bigfive-test@rubynor.com">bigfive-test@rubynor.com</a>
-          </v-col>
-        </v-row>
+      <v-col cols="auto">
+        <h3 class="mb-2">
+          Having issues with the site?
+        </h3>
+        Submit an issue at <a href="https://github.com/rubynor/bigfive-web" rel="noopener noreferrer" target="_blank">GitHub</a> or contact us at <a href="mailto:bigfive-test@rubynor.com">bigfive-test@rubynor.com</a>
       </v-col>
     </v-row>
   </v-footer>

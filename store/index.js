@@ -28,7 +28,8 @@ export const state = () => ({
     inventory: [],
     position: 0,
     done: false,
-    invalid: false
+    invalid: false,
+    inProgress: false
   }
 })
 
@@ -50,6 +51,7 @@ export const getters = {
     return Math.round(Object.keys(state.test.answers).length / state.test.inventory.length * 100)
   },
   NEXT_BUTTON_STATE: ({ test }) => {
+    if (test.inProgress) return true
     const currentQuestions = test.inventory.slice(test.position, test.position + test.itemsPerPage)
     return currentQuestions.filter(item => !test.answers[item.id]).length !== 0
   },
@@ -100,15 +102,18 @@ export const mutations = {
     const { domain, facet } = state.test.inventory.find(q => q.id === id)
 
     const lastAnswerId = Object.keys(state.test.answers).slice(-1)[0]
+
     Vue.set(state.test.answers, id, { score: parseInt(answer), domain, facet })
 
     if (state.test.itemsPerPage === 1) {
-      await sleep(700)
 
       // Avoids skipping question if user changes answer within 700 ms on
       // 1 itemsPerPage
-      if (lastAnswerId !== id) {
+      if (lastAnswerId !== id && state.test.position <= Object.keys(state.test.answers).length) {
+        state.test.inProgress = true
+        await sleep(700)
         state.test.position += state.test.itemsPerPage
+        state.test.inProgress = false
       }
 
       window.scrollTo(0, 0)
@@ -119,7 +124,9 @@ export const mutations = {
     }
   },
   NEXT_QUESTIONS: ({ test }) => {
-    test.position += test.itemsPerPage
+    if (test.position + test.itemsPerPage <= Object.keys(test.answers).length) {
+      test.position += test.itemsPerPage
+    }
   },
   PREVIOUS_QUESTIONS: ({ test }) => {
     test.position -= test.itemsPerPage
