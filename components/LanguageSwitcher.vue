@@ -25,6 +25,8 @@ export default {
   methods: {
     logClick (code) {
       this.$amplitude.getInstance().logEvent('b5.langauge.switch', { code })
+      const { dir } = this.$i18n.locales.find(i => i.code === code)
+      this.$vuetify.rtl = dir === 'rtl'
     }
   },
   computed: {

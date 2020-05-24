@@ -3,9 +3,9 @@
     <v-app-bar
       app
       color="white"
-      class="asd"
+      class="app-bar-shadow"
     >
-    <div class="s">
+    <div class="toolbar-wrapper">
       <div class="d-flex align-center">
         <nuxt-link :to="localePath('/')">
         <transition appear name="rotate">
@@ -91,11 +91,11 @@ export default {
 </script>
 
 <style>
-.asd {
+.app-bar-shadow {
   box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.1) !important;
 }
 
-.s {
+.toolbar-wrapper {
   display: flex;
   flex-direction: row;
   margin: auto;
