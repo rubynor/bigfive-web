@@ -35,6 +35,10 @@ export default {
     Toolbar,
     Footer
   },
+  created () {
+    const { dir } = this.$i18n.locales.find(i => i.code === this.$i18n.locale)
+    this.$vuetify.rtl = dir === 'rtl'
+  },
   computed: mapState(['snackbar']),
   head: () => ({
       __dangerouslyDisableSanitizers: ['script'],
@@ -70,5 +74,11 @@ a {
 
 .v-slider__thumb-label, .v-stepper__step__step {
   font-weight: 800;
+}
+</style>
+
+<style scoped>
+.container {
+  min-height: 80vh;
 }
 </style>

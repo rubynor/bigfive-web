@@ -35,7 +35,7 @@
         <v-col cols="12" xs="12" md="6">
           <img class="responsive" alt="Comparing people" :src="require('@/assets/front_compare.svg')" loading="lazy" />
         </v-col>
-        <v-col cols="12" xs="12" md="6">
+        <v-col cols="12" xs="12" md="6" class="text-md-left text-center">
           <h1 v-html="$t('frontpage.compare.title')" />
           <p v-html="$t('frontpage.compare.text1')" />
           <p class="black--link">

@@ -106,7 +106,6 @@ export const mutations = {
     Vue.set(state.test.answers, id, { score: parseInt(answer), domain, facet })
 
     if (state.test.itemsPerPage === 1) {
-
       // Avoids skipping question if user changes answer within 700 ms on
       // 1 itemsPerPage
       if (lastAnswerId !== id && state.test.position <= Object.keys(state.test.answers).length) {
