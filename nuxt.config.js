@@ -81,25 +81,36 @@ export default {
             name: 'Norsk',
             code: 'no',
             iso: 'nb-NO',
-            file: 'nb-NO.js'
+            file: 'nb-NO.js',
+            dir: 'ltr'
           },
           {
             name: 'Dansk',
             code: 'da',
             iso: 'da',
-            file: 'da.js'
+            file: 'da.js',
+            dir: 'ltr'
           },
           {
             name: 'Svenska',
             code: 'sv',
             iso: 'sv',
-            file: 'sv.js'
+            file: 'sv.js',
+            dir: 'ltr'
+          },
+          {
+            name: 'Arabic',
+            code: 'ar',
+            iso: 'ar',
+            file: 'ar.js',
+            dir: 'rtl'
           },
           {
             name: 'English',
             code: 'en',
             iso: 'en-US',
-            file: 'en-US.js'
+            file: 'en-US.js',
+            dir: 'ltr'
           }
         ],
         seo: true,
