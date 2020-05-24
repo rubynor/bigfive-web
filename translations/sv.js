@@ -70,13 +70,13 @@ innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
       title: 'Öppenhet för upplevelse'
     },
     conscientiousness: {
-      title: 'Planmessighet'
+      title: 'Samvetsgrannhet'
     },
     extraversion: {
-      title: 'Ekstroversjon'
+      title: 'Extraversion'
     },
     agreeableness: {
-      title: 'Medmenneskelighet'
+      title: 'Tillmötesgående'
     },
     neuroticism: {
       title: 'Nevrotisisme'
@@ -131,24 +131,24 @@ innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     }
   },
   conscientiousness: {
-    title: 'Planmessighet',
+    title: 'Samvetsgrannhet',
     seo: {
-      title: 'Oversikt over domenet planmessighet',
-      description: 'Les mer om domenet planmessighet i bigfive modellen'
+      title: 'Oversikt over domenet Samvetsgrannhet',
+      description: 'Les mer om domenet Samvetsgrannhet i bigfive modellen'
     }
   },
   extraversion: {
-    title: 'Ekstroversjon',
+    title: 'Extraversion',
     seo: {
-      title: 'Oversikt over domenet ekstroversjon',
-      description: 'Les mer om domenet ekstroversjon i bigfive modellen'
+      title: 'Oversikt over domenet extraversion',
+      description: 'Les mer om domenet extraversion i bigfive modellen'
     }
   },
   agreeableness: {
-    title: 'Medmenneskelighet',
+    title: 'Tillmötesgående',
     seo: {
-      title: 'Oversikt over domenet medmenneskelighet',
-      description: 'Les mer om domenet medmenneskelighet i bigfive modellen'
+      title: 'Oversikt over domenet Tillmötesgående',
+      description: 'Les mer om domenet Tillmötesgående i bigfive modellen'
     }
   },
   neuroticism: {
