@@ -19,7 +19,7 @@
     "debug-build": "nuxt build -a"
   },
   "dependencies": {
-    "@alheimsins/b5-johnson-120-ipip-neo-pi-r": "4.0.3",
+    "@alheimsins/b5-johnson-120-ipip-neo-pi-r": "5.0.1",
     "@aceforth/nuxt-optimized-images": "1.0.1",
     "@nuxtjs/axios": "5.10.3",
     "@nuxtjs/pwa": "3.0.0-beta.20",
@@ -37,7 +37,7 @@
     "vue-confetti": "2.0.8"
   },
   "devDependencies": {
-    "@mdi/js": "5.2.45",
+    "@mdi/js": "5.3.45",
     "@nuxtjs/google-analytics": "2.3.0",
     "@nuxtjs/vuetify": "1.11.2",
     "@vue/test-utils": "1.0.3",
