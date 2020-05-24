@@ -13,10 +13,10 @@
     raw-loader "^4.0.1"
     url-loader "^4.1.0"
 
-"@alheimsins/b5-johnson-120-ipip-neo-pi-r@4.0.3":
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/@alheimsins/b5-johnson-120-ipip-neo-pi-r/-/b5-johnson-120-ipip-neo-pi-r-4.0.3.tgz#71ba5841f0d24a4566479e24b5aad54cadd01e10"
-  integrity sha512-wtR1RewyoWKtaQxhTe5d41dMgrWnW2+j8n9hvtX1PdYkTKrJ+a2YJN7U/rSed9RLkkZMc28I277EbPFi/VlarQ==
+"@alheimsins/b5-johnson-120-ipip-neo-pi-r@5.0.1":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@alheimsins/b5-johnson-120-ipip-neo-pi-r/-/b5-johnson-120-ipip-neo-pi-r-5.0.1.tgz#7c994e702feb179a31a2cfe8d89fdce57db3183b"
+  integrity sha512-sms+XtcJRoZ/ECbfM0TZZWK/VnNE1ONVM5nkFK/oDHEgHvoAGNu8kN2hTkNaZ3yl9+Sb+qPM/RlvKSB/zaZaQA==
   dependencies:
     knuth-shuffle "1.0.8"
 
@@ -1089,10 +1089,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@mdi/js@5.2.45":
-  version "5.2.45"
-  resolved "https://registry.yarnpkg.com/@mdi/js/-/js-5.2.45.tgz#79534928b0e89568cfadc5a456ed3cab8210c232"
-  integrity sha512-YQupWiJMIxcSNDnv7M4EWqRzCbkBKQ4UHLqg55tEAsjYYzRxNKOqCXVrKFyp0DiTH0CQhl52TZnhTxq8H/T3Ow==
+"@mdi/js@5.3.45":
+  version "5.3.45"
+  resolved "https://registry.yarnpkg.com/@mdi/js/-/js-5.3.45.tgz#c6f523311bf77e339051e24aaa3eddabf565a027"
+  integrity sha512-r05JoeUhokSERwW6yYi3WcKCBePHHqBvIikOD0X/dWyaZb6gIRth5Lya7VVTItvGo1qlpp8LpMJKmE6o49+G+Q==
 
 "@nodelib/fs.scandir@2.1.3":
   version "2.1.3"
