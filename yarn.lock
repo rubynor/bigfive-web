@@ -13,10 +13,10 @@
     raw-loader "^4.0.1"
     url-loader "^4.1.0"
 
-"@alheimsins/b5-johnson-120-ipip-neo-pi-r@5.0.2":
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/@alheimsins/b5-johnson-120-ipip-neo-pi-r/-/b5-johnson-120-ipip-neo-pi-r-5.0.2.tgz#03bcb512991a1291d1fa418416f88e3996acb2d9"
-  integrity sha512-aIeIli9jIGx5aJVvUBxJboFp8s1fQI0QtpgKAWLaCoNNwcHdAf74tCtTzc3ggWxjSYt3guAOgE/KEMBZ+OpiLQ==
+"@alheimsins/b5-johnson-120-ipip-neo-pi-r@5.0.3":
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/@alheimsins/b5-johnson-120-ipip-neo-pi-r/-/b5-johnson-120-ipip-neo-pi-r-5.0.3.tgz#7772f0c885f54ca81e75d65b492ffc0fdbca8b24"
+  integrity sha512-se6VWM2cs2/i6l46FSSQEpNgIgxgPwoPEK2dAxHm/yaLnUBwcfBCTLB1m580ba3CXp21h15X7kN53wK6D+OMGA==
   dependencies:
     knuth-shuffle "1.0.8"
 
@@ -5283,14 +5283,14 @@ ignore@^5.1.1, ignore@^5.1.4:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.1.4.tgz#84b7b3dbe64552b6ef0eca99f6743dbec6d97adf"
   integrity sha512-MzbUSahkTW1u7JpKKjY7LCARd1fU5W2rLdxlM4kdkayuCwZImjkpluF9CM1aLewYJguPDqewLam18Y6AU69A8A==
 
-imagemin-mozjpeg@8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/imagemin-mozjpeg/-/imagemin-mozjpeg-8.0.0.tgz#d2ca4e8c982c7c6eda55069af89dee4c1cebcdfd"
-  integrity sha512-+EciPiIjCb8JWjQNr1q8sYWYf7GDCNDxPYnkD11TNIjjWNzaV+oTg4DpOPQjl5ZX/KRCPMEgS79zLYAQzLitIA==
+imagemin-mozjpeg@9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/imagemin-mozjpeg/-/imagemin-mozjpeg-9.0.0.tgz#d1af26d0b43d75a41c211051c1910da59d9d2324"
+  integrity sha512-TwOjTzYqCFRgROTWpVSt5UTT0JeCuzF1jswPLKALDd89+PmrJ2PdMMYeDLYZ1fs9cTovI9GJd68mRSnuVt691w==
   dependencies:
-    execa "^1.0.0"
+    execa "^4.0.0"
     is-jpg "^2.0.0"
-    mozjpeg "^6.0.0"
+    mozjpeg "^7.0.0"
 
 imagemin-pngquant@8.0.0:
   version "8.0.0"
@@ -6931,10 +6931,10 @@ move-concurrently@^1.0.1:
     rimraf "^2.5.4"
     run-queue "^1.0.3"
 
-mozjpeg@^6.0.0:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/mozjpeg/-/mozjpeg-6.0.1.tgz#56969dddb5741ef2bcb1af066cae21e61a91a27b"
-  integrity sha512-9Z59pJMi8ni+IUvSH5xQwK5tNLw7p3dwDNCZ3o1xE+of3G5Hc/yOz6Ue/YuLiBXU3ZB5oaHPURyPdqfBX/QYJA==
+mozjpeg@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/mozjpeg/-/mozjpeg-7.0.0.tgz#c20f67a538fcaaa388d325875c53c0e7bc432f7d"
+  integrity sha512-mH7atSbIusVTO3A4H43sEdmveN3aWn54k6V0edefzCEvOsTrbjg5murY2TsNznaztWnIgaRbWxeLVp4IgKdedQ==
   dependencies:
     bin-build "^3.0.0"
     bin-wrapper "^4.0.0"
@@ -7188,10 +7188,10 @@ nuxt-amplitude@0.1.2:
   dependencies:
     vue-amplitude "^1.0.3"
 
-nuxt-i18n@6.11.1:
-  version "6.11.1"
-  resolved "https://registry.yarnpkg.com/nuxt-i18n/-/nuxt-i18n-6.11.1.tgz#4dfe37d98e973dd0fe6f284e2c8fd5215bd1a17a"
-  integrity sha512-nyr53JhHRoF3Ig6slUaXRALtAUOyGbKonL5AcNXxGkRdHpzF9HJ6mZ13W2wZCf2AiH3XatRYEh6GAmwLAOUj3A==
+nuxt-i18n@6.12.1:
+  version "6.12.1"
+  resolved "https://registry.yarnpkg.com/nuxt-i18n/-/nuxt-i18n-6.12.1.tgz#e92710bcc7d85a46687f3bb06c263100349e718c"
+  integrity sha512-IkdYTnwREM+cuds2w3bqTnCB52wK2Sbs4VwXQgRyXzLpHGUn0TN9vuQ4OhQzw3VP+xWNNPke+bzMkjIKw8YlNQ==
   dependencies:
     "@babel/parser" "^7.5.5"
     "@babel/traverse" "^7.5.5"
@@ -7200,7 +7200,7 @@ nuxt-i18n@6.11.1:
     cookie "^0.4.0"
     is-https "^1.0.0"
     js-cookie "^2.2.1"
-    vue-i18n "^8.17.3"
+    vue-i18n "^8.18.1"
 
 nuxt-webfontloader@1.1.0:
   version "1.1.0"
@@ -10492,10 +10492,10 @@ vue-hot-reload-api@^2.3.0:
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
   integrity sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
 
-vue-i18n@^8.17.3:
-  version "8.17.4"
-  resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-8.17.4.tgz#d314df7a3fa0780f86cff46a02752668f89b3935"
-  integrity sha512-wpk/drIkPf6gHCtvHc8zAZ1nsWBZ+/OOJYtJxqhYD6CKT0FJAG5oypwgF9kABt30FBWhl8NEb/QY+vaaBARlFg==
+vue-i18n@^8.18.1:
+  version "8.18.1"
+  resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-8.18.1.tgz#2e683ac93a15617bdcd210f99359d6034e8425dd"
+  integrity sha512-K+hFQJksF8Ph23pnhbwSyoQx+4Y1q/rh2o7GiXI/3rLCCrwanUbzudC8+trp0Mb8rn9y83DYF6RXNrMd+VsuCw==
 
 vue-jest@4.0.0-beta.2:
   version "4.0.0-beta.2"

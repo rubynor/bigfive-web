@@ -8,43 +8,43 @@ export default {
       title: 'Free open-source BigFive personality traits test',
       description: 'Take a free, open-source Big Five personality test. Learn to know your personality traits and compare yourself with your partner, colleagues, friends or family.'
     },
-    title: 'Big Five Personality Test',
-    call_to_action: 'Take the free test now',
-    no_registration: '* No registration required',
-    tests_taken: 'Over 700.000 people has taken the test',
+    title: 'اختبار السمات الخمسة الكبرى للشخصية',
+    call_to_action: 'ابدأ الاختبار الآن مجاناً',
+    no_registration: '* لا يتطلب التسجيل',
+    tests_taken: 'أكثر من ٧٠٠,٠٠٠ أخذوا الاختبار',
     compare: {
-      title: 'Compare yourself to others',
-      text1: 'Compare yourself with your partner, colleagues, friends or family.',
-      text2: 'Learn how you differ from other people in the five domains:',
-      action: 'See it live in action'
+      title: 'قارن شخصيتك بشخصية غيرك',
+      text1: 'قارن شخصيتك بشخصية شريكك أو زميلك أو صديقك',
+      text2: 'اعرف ما يميّزك عن غيرك في السمات الخمسة',
+      action: 'شاهد عينة'
     },
-    share: 'Share with your friends and find out how compatible you are',
+    share: 'شاركها مع أصدقائك واكتشف مدى التوافق بينكم',
     cards: {
       open: {
-        title: 'Open',
-        text: 'This is an open source project under MIT-license.'
+        title: 'مفتوح',
+        text: 'MIT هذا مشروع مفتوح المصدر تحت ترخيص'
       },
       free: {
-        title: 'Free',
-        text: 'The test is completely free'
+        title: 'مجاني',
+        text: 'الاختبار مجاني تماماً'
       },
       scientific: {
-        title: 'Scientific',
-        text: 'BigFive is a scientifically validated and reliable psychological model.'
+        title: 'علمي',
+        text: 'نموذج السمات الخمسة في علم النفس هو نموذج علمي محقّق وموثوق'
       },
       translated: {
-        title: 'Translated',
-        text: 'Translated to over 20 languages. Help out!'
+        title: 'مترجم',
+        text: 'الاختبار مترجم إلى أكثر من ٢٠ لغة. بإمكانك المساعدة'
       }
     },
     description: {
-      top: 'Learn to know yourself better with a free, open-source personality test.',
+      top: 'تعرّف على نفسك أكثر عن طريق هذا الاختبار المجاني ومفتوح المصدر',
       subtop: 'The',
       subtop2: ' is the most scientifically validated and reliable psychological model to measure personality.',
       reference: `Tests and evaluation for this site is gathered from
 <a href="http://ipip.ori.org" rel="noopener" target="_blank">ipip.ori.org</a>,
 inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
-      info: 'The following test contains 120 questions which is estimated to take you about 10 minutes to complete.',
+      info: 'الاختبار يحتوي على ١٢٠ سؤال وسيستغرق منك إتمامه حوالي ١٠ دقائق',
       result: 'After you have completed the test you will receive a detailed personality report in the following domains:',
       tests_taken: 'tests taken so far'
     }
@@ -57,35 +57,35 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
   },
   toolbar: {
     home: 'Home',
-    result: 'Result',
-    compare: 'Compare',
-    articles: 'Articles',
-    privacy: 'Privacy',
-    about: 'About',
-    see_results: 'See your results',
-    compare_with: 'Compare with others'
+    result: 'النتيجة',
+    compare: 'قارن',
+    articles: 'مقالات',
+    privacy: 'الخصوصية',
+    about: 'عنّا',
+    see_results: 'شاهد نتيجتك',
+    compare_with: 'قارن مع غيرك'
   },
   facets: {
     openness_to_experience: {
-      title: 'Openness to experience'
+      title: 'الانفتاح'
     },
     conscientiousness: {
-      title: 'Conscientiousness'
+      title: 'اليقظة/التفاني'
     },
     extraversion: {
-      title: 'Extraversion'
+      title: 'الانبساطية'
     },
     agreeableness: {
-      title: 'Agreeableness'
+      title: 'المسايرة/الطيبة'
     },
     neuroticism: {
-      title: 'Neuroticism'
+      title: 'العُصابية'
     }
   },
   common: {
-    and: 'and',
-    pages: 'pages',
-    languages: 'languages'
+    and: 'و',
+    pages: 'صفحات',
+    languages: 'اللغات'
   },
   form: {
     information: 'Information',
@@ -95,8 +95,8 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     privacy: 'privacy',
     nextButton: 'Okey, next question',
     declineButton: 'continue without sharing',
-    prefferedLanguage: 'My preffered language is',
-    selectLanguage: 'Select a language',
+    prefferedLanguage: 'لغتي المفضلة هي',
+    selectLanguage: 'اختر اللغة',
     iama: 'I am a',
     male: 'Male',
     female: 'Female',
@@ -104,17 +104,17 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     iam: 'I am',
     yearsOld: 'years old',
     ageWarning: 'You must be 16 or older',
-    language: 'Language',
+    language: 'اللغة',
     gender: 'Gender',
     confirmInfo: 'Confirm information',
     confirm: 'Confirm',
     toTestButton: 'Alrighty, take me to the test'
   },
   test: {
-    next: 'next',
-    back: 'back',
-    more: 'more',
-    seeResults: 'see results'
+    next: 'التالي',
+    back: 'السابق',
+    more: 'أكثر',
+    seeResults: 'شاهد النتيجة'
   },
   big_five: {
     title: 'What are the big five?',
@@ -124,78 +124,78 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     }
   },
   openness_to_experience: {
-    title: 'Openness to Experience',
+    title: 'الانفتاحية',
     seo: {
       title: 'Overview of the domain Openness To Experience.',
       description: 'Read more about the Openness To Experience domain in the b5 model'
     }
   },
   conscientiousness: {
-    title: 'Conscientiousness',
+    title: 'اليقظة/التفاني',
     seo: {
       title: 'Overview of the domain Conscientiousness',
       description: 'Read more about the Conscientiousness domain in the b5 model'
     }
   },
   extraversion: {
-    title: 'Extraversion',
+    title: 'الانبساطية',
     seo: {
       title: 'Overview of the domain Extraversion',
       description: 'Read more about the Extraversion domain in the b5 model'
     }
   },
   agreeableness: {
-    title: 'Agreeableness',
+    title: 'المسايرة/الطيبة',
     seo: {
       title: 'Overview of the domain Agreeableness',
       description: 'Read more about the agreeableness domain in the b5 model'
     }
   },
   neuroticism: {
-    title: 'Neuroticism',
+    title: 'العُصابية',
     seo: {
       title: 'Overview of the domain Neuroticism',
       description: 'Read more about the Neuroticism domain in the b5 model'
     }
   },
   getCompare: {
-    title: 'Compare people or teams',
-    description1: 'Compare results from the bigfive personality test with multiple people.',
-    description2: 'Type in the ID you got from the test results i.e.',
-    description3: 'in the ID-input field',
-    needToAddPeople: 'You need to add people to compare them',
-    addAnother: 'Add another person',
-    addPerson: 'Add Person',
-    comparePeople: 'compare people',
-    nameOfPerson: 'Name of this person',
-    urlOrId: 'URL or ID for comparison',
-    name: 'Name'
+    title: 'قم بالمقارنة بين الأفراد والمجموعات',
+    description1: 'قم بمقارنة نتائج اختبار السمات الخمسة الكبرى للشخصية بين عدة أفراد',
+    description2: 'ضع الرمز الذي حصلت عليه من نتيجة الاختبار، مثل ',
+    description3: ' في الحقل المناسب',
+    needToAddPeople: 'لتمكين المقارنة يجب إضافة أكثر من شخص',
+    addAnother: 'أضف شخص آخر',
+    addPerson: 'أضف شخص',
+    comparePeople: 'قارن',
+    nameOfPerson: 'اسم الشخص',
+    urlOrId: 'رابط أو رمز النتيجة',
+    name: 'الاسم'
   },
   results: {
-    theBigFive: 'The Big Five',
-    score: 'score',
-    important: 'Important!',
-    saveResults: 'Save the following ID to see the results later or ',
-    compare: 'compare',
-    toOthers: 'yourself to others',
+    theBigFive: 'السمات الخمسة الكبرى',
+    score: 'الدرجة',
+    important: '!مهم',
+    saveResults: 'احفط الرمز التالي لتتمكن من رؤية نتيجتك في وقت لاحق أو لتتمكن من ',
+    compare: 'مقارنة ',
+    toOthers: 'نتيجتك بغيرك ',
     seo: {
       title: 'My results from the BigFive personality test',
       description: 'See my personality and compare yourself in the following five domains: Neuroticism, Openness To Experience, Conscientiousness, Extraversion, Agreeableness'
     }
   },
   getResult: {
-    result: 'Result',
-    explaination: 'If you have taken the test and saved your ID, you can see the results here by typing in the ID you got i.e. ',
-    idInput: 'in the ID-input field',
-    urlOrId: 'URL or ID of your result',
-    getResult: 'Get result'
+    result: 'النتيجة',
+    explaination: 'سبق وأخذت الاختبار واحتفظت برمز النتيجة؟ يمكنك تحصيل نتيجتك هنا عن طريق إدخال رمز النتيجة مثل ',
+    idInput: ' في الحقل أدناه',
+    urlOrId: 'رابط أو رمز النتيجة',
+    getResult: 'احصل على النتيجة'
   },
   shareLinks: {
-    copyLink: 'Copy link to clipboard',
-    shareFacebook: 'Share on Facebook',
-    shareTwitter: 'Share on Twitter',
-    copiedLink: 'Copied link',
-    shareResults: 'Share your results!'
+    copyLink: 'انسخ الرابط',
+    shareFacebook: 'Facebook شارك على',
+    shareTwitter: 'Twitter شارك على',
+    copiedLink: 'تم النسخ',
+    shareResults: '!شارك نتيجتك'
   },
   opennessToExperience: {
     quote: 'Openness to Experience describes a dimension of cognitive style that distinguishes imaginative, creative people from down-to-earth, conventional people.',
