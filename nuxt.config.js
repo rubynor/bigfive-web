@@ -106,6 +106,13 @@ export default {
             dir: 'rtl'
           },
           {
+            name: 'Deutsch',
+            code: 'de',
+            iso: 'de',
+            file: 'de.js',
+            dir: 'ltr'
+          },
+          {
             name: 'English',
             code: 'en',
             iso: 'en-US',
