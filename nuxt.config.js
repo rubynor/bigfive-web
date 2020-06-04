@@ -183,7 +183,7 @@ export default {
     }
   },
   env: {
-    API_URL: process.env.BASE_URL ? process.env.BASE_URL + '/api/' : 'https://b5.rubynor.xyz/api/'
+    API_URL: 'https://bigfive-test.com/api/' // TODO: Fix for dev environment
   },
   build: {
     extractCSS: true
