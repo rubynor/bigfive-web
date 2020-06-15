@@ -1,12 +1,19 @@
 <template>
   <div class="about">
+    <h1>About the test</h1>
+    <p>
+      Tests and evaluation is gathered from Johnson's (2014) 120-item IPIP NEO-PI-R.
+    </p>
+    <p>
+    See the <a href="https://ipip.ori.org/" rel="noopener">IPIP Website</a> for more information.
+    </p>
     <h1>Team</h1>
 
     <v-container class="my-5">
       <v-layout row wrap>
-        <v-flex xs12 sm12 md6 v-for="person in team" :key="person.name">
-          <v-card flat width="400px" class="text-xs-center ma-3">
-            <v-img :src="person.avatar" height="400px" color="#eeeeee"></v-img>
+        <v-flex xs12 sm12 md6 lg4 v-for="person in team" :key="person.name">
+          <v-card flat class="text-xs-center ma-3">
+            <v-img :src="person.avatar" color="#eeeeee" />
             <v-card-text>
               <div class="subheading">{{ person.name }}</div>
               <div class="grey--text">{{ person.role }}</div>
