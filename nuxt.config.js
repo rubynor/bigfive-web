@@ -1,5 +1,6 @@
 export default {
   mode: 'universal',
+  components: true,
   /*
   ** Headers of the page
   */

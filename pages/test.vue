@@ -1,13 +1,13 @@
 <template>
   <v-container v-resize="onResize">
-    <Language v-if="!form.language" />
+    <LazyLanguage v-if="!form.language" />
     <div v-else>
       <v-row>
         <v-col cols="10" class="pa-0">
-          <TestLanguageSwitcher />
+          <LazyTestLanguageSwitcher />
         </v-col>
         <v-col>
-          <Timer />
+          <LazyTimer />
         </v-col>
       </v-row>
       <v-progress-linear
@@ -104,11 +104,6 @@ export default {
   },
   created () {
     this.SET_INVENTORY()
-  },
-  components: {
-    Timer: () => import('../components/Timer'),
-    Language: () => import('../components/form/Language'),
-    TestLanguageSwitcher: () => import ('../components/TestLanguageSwitcher')
   },
   watch: {
     'test.done': async function (testDone) {

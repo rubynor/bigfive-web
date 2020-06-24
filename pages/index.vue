@@ -66,9 +66,6 @@
 </template>
 
 <script>
-import Highlights from '../components/Highlights.vue'
-import ShareLinks from '../components/ShareLinks.vue'
-import Wrapper from '../components/Wrapper.vue'
 import { mapState } from 'vuex'
 
 export default {
@@ -78,11 +75,6 @@ export default {
   },
   mounted () {
     this.$amplitude.getInstance().logEvent('b5.frontpage.loaded');
-  },
-  components: {
-    Highlights,
-    Wrapper,
-    ShareLinks
   },
   head () {
     return {

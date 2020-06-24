@@ -23,12 +23,12 @@
     "@aceforth/nuxt-optimized-images": "1.0.1",
     "@nuxtjs/axios": "5.11.0",
     "@nuxtjs/pwa": "3.0.0-beta.20",
-    "@nuxtjs/sitemap": "2.3.1",
+    "@nuxtjs/sitemap": "2.3.2",
     "amplitude-js": "6.2.0",
     "apexcharts": "3.19.2",
     "imagemin-mozjpeg": "9.0.0",
     "imagemin-pngquant": "9.0.0",
-    "nuxt": "2.12.2",
+    "nuxt": "2.13.1",
     "nuxt-amplitude": "0.1.2",
     "nuxt-i18n": "6.12.2",
     "nuxt-webfontloader": "1.1.0",
@@ -41,8 +41,8 @@
     "@nuxtjs/google-analytics": "2.3.0",
     "@nuxtjs/vuetify": "1.11.2",
     "@vue/test-utils": "1.0.3",
-    "babel-jest": "26.0.1",
-    "jest": "26.0.1",
+    "babel-jest": "26.1.0",
+    "jest": "26.1.0",
     "vue-jest": "4.0.0-beta.2"
   }
 }

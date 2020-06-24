@@ -20,11 +20,6 @@
 </template>
 
 <script>
-import BarChartCompare from '../../components/BarChartCompare'
-import DomainCompare from '../../components/DomainCompare'
-import ShareLinks from '../../components/ShareLinks'
-import Error from '../../components/Error'
-
 export default {
   name: 'compareResult',
   data: () => ({
@@ -40,12 +35,6 @@ export default {
     } catch (error) {
       store.commit('SET_SNACKBAR', { msg: error.message, type: 'error' })
     }
-  },
-  components: {
-    BarChartCompare,
-    DomainCompare,
-    Error,
-    ShareLinks
   },
   head: () => ({
     title: 'Team Comparison of personalities from the Big Five personality traits test',

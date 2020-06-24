@@ -35,11 +35,6 @@
 </template>
 
 <script>
-import BarChart from '../../components/BarChart'
-import Domain from '../../components/Domain'
-import ShareLinks from '../../components/ShareLinks'
-import Error from '../../components/Error'
-
 export default {
   name: 'result',
   data: () => ({
@@ -57,12 +52,6 @@ export default {
       console.log(error)
       store.commit('SET_SNACKBAR', { msg: error.message, type: 'error' })
     }
-  },
-  components: {
-    BarChart,
-    Domain,
-    ShareLinks,
-    Error
   },
   head () {
     return {
