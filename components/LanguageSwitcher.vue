@@ -5,33 +5,33 @@
         {{ $t('common.languages') }}
       </v-subheader>
     </v-list-item>
-    <v-divider></v-divider>
+    <v-divider />
     <v-list-item
       v-for="locale in availableLocales"
-      @click.native="logClick(locale.code)"
       :key="locale.code"
       link
       :to="switchLocalePath(locale.code)"
       class="text-none font-weight-regular pl-5 body-2"
+      @click="logClick(locale.code)"
     >
       {{ locale.name }}
     </v-list-item>
-    </span>
+  </span>
 </template>
 
 <script>
 export default {
   name: 'LanguageSwitcher',
+  computed: {
+    availableLocales () {
+      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
+    }
+  },
   methods: {
     logClick (code) {
       this.$amplitude.getInstance().logEvent('b5.langauge.switch', { code })
       const { dir } = this.$i18n.locales.find(i => i.code === code)
       this.$vuetify.rtl = dir === 'rtl'
-    }
-  },
-  computed: {
-    availableLocales () {
-      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
     }
   }
 }

@@ -44,6 +44,13 @@ yarn dev
 yarn test
 ```
 
+### Lint
+
+```
+yarn lint
+yarn lintfix
+```
+
 ## Run API and frontend locally
 
 Run this in root directory

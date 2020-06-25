@@ -1,5 +1,8 @@
 <template>
-  <div class="wrapper" :style="style">
+  <div
+    class="wrapper"
+    :style="style"
+  >
     <v-container>
       <slot />
     </v-container>
@@ -10,6 +13,7 @@
 export default {
   props: {
     background: {
+      type: String,
       default: 'radial-gradient(70% 70% at 50% 100%, rgb(232, 232, 232) 0px, rgb(250, 250, 250) 100%)'
     }
   },

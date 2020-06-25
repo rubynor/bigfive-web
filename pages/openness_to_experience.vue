@@ -5,7 +5,12 @@
       height="200px"
       lazy
     >
-      <v-card-title class="image-title" v-html="$t('openness_to_experience.title')">Openness To Experience</v-card-title>
+      <v-card-title
+        class="image-title"
+        v-html="$t('openness_to_experience.title')"
+      >
+        Openness To Experience
+      </v-card-title>
     </v-img>
     <v-card-text>
       <div v-html="$t('opennessToExperience.text1')" />
@@ -24,6 +29,10 @@ import { mdiFormatQuoteOpen, mdiFormatQuoteClose } from '@mdi/js'
 
 export default {
   name: 'Openness',
+  data: () => ({
+    mdiFormatQuoteClose,
+    mdiFormatQuoteOpen
+  }),
   head () {
     return {
       title: this.$t('openness_to_experience.seo.title'),
@@ -35,14 +44,10 @@ export default {
         { hid: 'og:title', name: 'og:title', content: this.$t('openness_to_experience.seo.title') },
         { hid: 'og:description', name: 'og:description', content: this.$t('openness_to_experience.seo.description') },
         { hid: 'twitter:title', name: 'twitter:title', content: this.$t('openness_to_experience.seo.title') },
-        { hid: 'twitter:description', name: 'twitter:description', content: this.$t('openness_to_experience.seo.description')  }
+        { hid: 'twitter:description', name: 'twitter:description', content: this.$t('openness_to_experience.seo.description') }
       ]
     }
-  },
-  data: () => ({
-    mdiFormatQuoteClose,
-    mdiFormatQuoteOpen
-  })
+  }
 }
 </script>
 

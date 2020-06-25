@@ -17,7 +17,7 @@
       :color="snackbar.type === 'error' ? 'error' : 'primary'"
       :bottom="true"
     >
-      {{snackbar.message}}
+      {{ snackbar.message }}
     </v-snackbar>
 
     <Footer />
@@ -35,26 +35,26 @@ export default {
     Toolbar,
     Footer
   },
+  computed: mapState(['snackbar']),
   created () {
     const { dir } = this.$i18n.locales.find(i => i.code === this.$i18n.locale)
     this.$vuetify.rtl = dir === 'rtl'
   },
-  computed: mapState(['snackbar']),
   head: () => ({
-      __dangerouslyDisableSanitizers: ['script'],
-      script: [
-        {
-          innerHTML: `{
+    __dangerouslyDisableSanitizers: ['script'],
+    script: [
+      {
+        innerHTML: `{
             "@context": "http://schema.org",
             "@type" : "Organization",
             "name" : "BigFive",
             "url" : "https://bigfive-test.com",
             "logo": "https://bigfive-test.com/icon.png"
           }`,
-          type: 'application/ld+json'
-        }
-      ]
-    })
+        type: 'application/ld+json'
+      }
+    ]
+  })
 }
 </script>
 

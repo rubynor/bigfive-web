@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h2 class="pt-12">{{ domain.title }}</h2>
+    <h2 class="pt-12">
+      {{ domain.title }}
+    </h2>
     <p>{{ domain.description }}</p>
     <BarChartCompare :data="domain.facets" />
   </div>
@@ -11,9 +13,14 @@ import BarChartCompare from './BarChartCompare'
 
 export default {
   name: 'Domain',
-  props: ['domain'],
   components: {
     BarChartCompare
+  },
+  props: {
+    domain: {
+      type: Object,
+      default: () => {}
+    }
   }
 }
 </script>

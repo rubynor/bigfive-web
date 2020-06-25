@@ -1,7 +1,12 @@
 <template>
   <v-card>
     <v-card-title>
-      <v-icon large left>{{ mdiEarth }}</v-icon>
+      <v-icon
+        large
+        left
+      >
+        {{ mdiEarth }}
+      </v-icon>
       {{ $t('form.language') }}
     </v-card-title>
     <v-card-text>
@@ -9,12 +14,12 @@
 
       <v-autocomplete
         :value="form.language"
-        @input="choseLanguage"
         :items="languages"
         :label="$t('form.selectLanguage')"
         color="secondary"
         :append-icon="mdiMenuDown"
-      ></v-autocomplete>
+        @input="choseLanguage"
+      />
     </v-card-text>
   </v-card>
 </template>
@@ -29,17 +34,17 @@ export default {
     mdiEarth,
     mdiMenuDown
   }),
-  methods: {
-    ...mapMutations(['SET_LANGUAGE', 'SET_INVENTORY']),
-    choseLanguage (lang) {
-      this.$amplitude.getInstance().logEvent('b5.test.language', { language: lang });
-      this.SET_LANGUAGE(lang)
-      this.SET_INVENTORY()
-    }
-  },
   computed: {
     ...mapState(['form', 'languages']),
     ...mapGetters(['GET_SELECTED_LANGUAGE'])
+  },
+  methods: {
+    ...mapMutations(['SET_LANGUAGE', 'SET_INVENTORY']),
+    choseLanguage (lang) {
+      this.$amplitude.getInstance().logEvent('b5.test.language', { language: lang })
+      this.SET_LANGUAGE(lang)
+      this.SET_INVENTORY()
+    }
   }
 }
 </script>

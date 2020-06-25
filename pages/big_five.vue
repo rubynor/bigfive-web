@@ -1,6 +1,6 @@
 <template>
   <v-card>
-    <v-card-title v-html="$t('big_five.title')"></v-card-title>
+    <v-card-title v-html="$t('big_five.title')" />
     <v-card-text>
       <p>
         The Big Five are five broad factors (dimensions) of personality traits. They are:

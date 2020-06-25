@@ -5,8 +5,14 @@
         <ShareLinks :id="'compare/' + $route.params.id" />
       </div>
       <h1>Overview</h1>
-      <BarChartCompare :data="result" max='120' />
-      <div v-for="domain in result" :key="domain.id">
+      <BarChartCompare
+        :data="result"
+        max="120"
+      />
+      <div
+        v-for="domain in result"
+        :key="domain.id"
+      >
         <DomainCompare :domain="domain" />
       </div>
     </div>
@@ -21,13 +27,7 @@
 
 <script>
 export default {
-  name: 'compareResult',
-  data: () => ({
-    result: false
-  }),
-  mounted () {
-    this.$amplitude.getInstance().logEvent('b5.test', { part: 'compare' });
-  },
+  name: 'CompareResult',
   async asyncData ({ params, store, $axios }) {
     try {
       const result = await $axios.$get(process.env.API_URL + 'compare/' + params.id)
@@ -35,6 +35,12 @@ export default {
     } catch (error) {
       store.commit('SET_SNACKBAR', { msg: error.message, type: 'error' })
     }
+  },
+  data: () => ({
+    result: false
+  }),
+  mounted () {
+    this.$amplitude.getInstance().logEvent('b5.test', { part: 'compare' })
   },
   head: () => ({
     title: 'Team Comparison of personalities from the Big Five personality traits test',

@@ -3,7 +3,10 @@
     <LazyLanguage v-if="!form.language" />
     <div v-else>
       <v-row>
-        <v-col cols="10" class="pa-0">
+        <v-col
+          cols="10"
+          class="pa-0"
+        >
           <LazyTestLanguageSwitcher />
         </v-col>
         <v-col>
@@ -21,52 +24,80 @@
       >
         {{ GET_PROGRESS }}%
       </v-progress-linear>
-      <div v-for="question in GET_CURRENT_QUESTIONS" :key="question.id">
+      <div
+        v-for="question in GET_CURRENT_QUESTIONS"
+        :key="question.id"
+      >
         <h2>{{ question.text }}</h2>
-        <v-radio-group @change="answer => SET_ANSWER({ id: question.id, answer } )" :value="GET_CURRENT_ANSWER(question.id)">
+        <v-radio-group
+          :value="GET_CURRENT_ANSWER(question.id)"
+          @change="answer => SET_ANSWER({ id: question.id, answer } )"
+        >
           <v-radio
             v-for="(choice, i) in question.choices"
-            :name="question.id"
             :key="i"
+            :name="question.id"
             :value="choice.score"
             :off-icon="mdiRadioboxBlank"
             :on-icon="mdiRadioboxMarked"
             color="secondary"
             :label="choice.text"
-            ></v-radio>
+          />
         </v-radio-group>
       </div>
 
       <v-row class="justify-center pt-4">
         <div v-if="!test.done">
-          <v-btn large color="primary" :disabled="BACK_BUTTON_STATE" class="mr-2" @click="PREVIOUS_QUESTIONS">
+          <v-btn
+            large
+            color="primary"
+            :disabled="BACK_BUTTON_STATE"
+            class="mr-2"
+            @click="PREVIOUS_QUESTIONS"
+          >
             {{ $t("test.back") }}
           </v-btn>
 
-          <v-btn large color="primary" :disabled="NEXT_BUTTON_STATE" @click="NEXT_QUESTIONS">
+          <v-btn
+            large
+            color="primary"
+            :disabled="NEXT_BUTTON_STATE"
+            @click="NEXT_QUESTIONS"
+          >
             {{ $t("test.next") }}
           </v-btn>
-          <v-btn v-if="development" large color="primary" class="ml-2" @click="SKIP_QUESTIONS">
+          <v-btn
+            v-if="development"
+            large
+            color="primary"
+            class="ml-2"
+            @click="SKIP_QUESTIONS"
+          >
             dev: skip to end
           </v-btn>
         </div>
 
-        <div v-else-if="loading" class="text-center">
+        <div
+          v-else-if="loading"
+          class="text-center"
+        >
           <v-progress-circular
             indeterminate
             color="secondary"
             size="128"
-          ></v-progress-circular>
-      </div>
-
-        <div v-else>
-          <v-btn large color="secondary" @click="SUBMIT_TEST">
-            {{ $t('test.seeResults') }}
-          </v-btn>
+          />
         </div>
 
+        <div v-else>
+          <v-btn
+            large
+            color="secondary"
+            @click="SUBMIT_TEST"
+          >
+            {{ $t('test.seeResults') }}
+          </v-btn>
+        </div>
       </v-row>
-
     </div>
   </v-container>
 </template>
@@ -77,33 +108,14 @@ import { mapMutations, mapState, mapGetters, mapActions } from 'vuex'
 import { sleep } from '../lib/helpers'
 
 export default {
-  name: 'test',
-  head: () => ({
-    title: 'The test'
-  }),
-  mounted () {
-    this.onResize(),
-    this.$amplitude.getInstance().logEvent('b5.test', { part: 'start' });
-  },
+  name: 'Test',
   data: () => ({
     mdiRadioboxBlank,
     mdiRadioboxMarked
   }),
-  methods: {
-    ...mapMutations(['SET_INVENTORY', 'SET_ANSWER', 'NEXT_QUESTIONS', 'PREVIOUS_QUESTIONS', 'SET_ITEMS_PER_PAGE', 'SKIP_QUESTIONS']),
-    ...mapActions(['SUBMIT_TEST']),
-    onResize () {
-      window.innerWidth < 600
-        ? this.SET_ITEMS_PER_PAGE(1)
-        : this.SET_ITEMS_PER_PAGE(3)
-    }
-  },
   computed: {
     ...mapState(['test', 'development', 'form', 'loading']),
     ...mapGetters(['GET_CURRENT_QUESTIONS', 'GET_PROGRESS', 'NEXT_BUTTON_STATE', 'BACK_BUTTON_STATE', 'GET_CURRENT_ANSWER'])
-  },
-  created () {
-    this.SET_INVENTORY()
   },
   watch: {
     'test.done': async function (testDone) {
@@ -113,6 +125,25 @@ export default {
         this.$confetti.stop()
       }
     }
-  }
+  },
+  mounted () {
+    this.onResize()
+    this.$amplitude.getInstance().logEvent('b5.test', { part: 'start' })
+  },
+  created () {
+    this.SET_INVENTORY()
+  },
+  methods: {
+    ...mapMutations(['SET_INVENTORY', 'SET_ANSWER', 'NEXT_QUESTIONS', 'PREVIOUS_QUESTIONS', 'SET_ITEMS_PER_PAGE', 'SKIP_QUESTIONS']),
+    ...mapActions(['SUBMIT_TEST']),
+    onResize () {
+      window.innerWidth < 600
+        ? this.SET_ITEMS_PER_PAGE(1)
+        : this.SET_ITEMS_PER_PAGE(3)
+    }
+  },
+  head: () => ({
+    title: 'The test'
+  })
 }
 </script>

@@ -4,31 +4,31 @@
     <div class="body-text">
       <p>{{ $t('getCompare.description1') }}</p>
       <p>{{ $t('getCompare.description2') }} <span class="font-italic secondary--text">58a70606a835c400c8b38e84</span> {{ $t('getCompare.description3') }}</p>
-      <br />
+      <br>
 
       <v-list-item-group>
         <v-list-item
-          two-line
           v-for="(person, i) in people"
           :key="i"
+          two-line
         >
           <v-list-item-avatar>
-            <v-icon large>{{ mdiAccount }}</v-icon>
+            <v-icon large>
+              {{ mdiAccount }}
+            </v-icon>
           </v-list-item-avatar>
           <v-list-item-content>
-            <v-list-item-title v-text="person.name"></v-list-item-title>
-            <v-list-item-subtitle v-text="person.id"></v-list-item-subtitle>
+            <v-list-item-title v-text="person.name" />
+            <v-list-item-subtitle v-text="person.id" />
           </v-list-item-content>
           <v-btn
-            @click="delPerson(i)"
             icon
+            @click="delPerson(i)"
           >
-          <v-icon>{{ mdiDelete }}</v-icon>
+            <v-icon>{{ mdiDelete }}</v-icon>
           </v-btn>
-
         </v-list-item>
         <v-list-item>
-
           <v-list-item-content>
             {{
               people.length === 0
@@ -41,14 +41,14 @@
             v-model="dialog"
             width="500"
           >
-            <template v-slot:activator="{ on }">
+            <template #activator="{ on }">
               <v-btn
                 color="primary"
                 dark
                 small
                 v-on="on"
               >
-              <v-icon>{{ mdiPlus }}</v-icon>
+                <v-icon>{{ mdiPlus }}</v-icon>
                 {{ $t('getCompare.addPerson') }}
               </v-btn>
             </template>
@@ -59,51 +59,51 @@
               </v-card-title>
 
               <v-card-text>
-                <v-form ref="form" v-model="isFormValid">
+                <v-form
+                  ref="form"
+                  v-model="isFormValid"
+                >
                   <v-text-field
-                    class="mt-5"
                     v-model="name"
+                    class="mt-5"
                     :label="$t('getCompare.name')"
                     :rules="[rules.uniqueName]"
                     autofocus
                     :placeholder="$t('getCompare.nameOfPerson')"
-                  ></v-text-field>
+                  />
 
                   <v-text-field
                     v-model="id"
                     label="ID"
                     :rules="[rules.validId]"
                     :placeholder="$t('getCompare.urlOrId')"
-                  ></v-text-field>
+                  />
                 </v-form>
 
                 <v-card-actions>
-                  <v-spacer></v-spacer>
+                  <v-spacer />
                   <v-btn
                     color="secondary"
                     fab
                     :disabled="!isFormValid"
-                    @click="this.addPerson"
+                    @click="addPerson"
                   >
-                  <v-icon>{{ mdiPlus }}</v-icon>
+                    <v-icon>{{ mdiPlus }}</v-icon>
                   </v-btn>
                 </v-card-actions>
-
               </v-card-text>
-
             </v-card>
           </v-dialog>
-
         </v-list-item>
       </v-list-item-group>
 
       <v-card-actions class="mt-8">
-        <v-spacer></v-spacer>
+        <v-spacer />
         <v-btn
           :disabled="!(people.length > 1)"
           color="secondary"
           large
-          @click="this.compare"
+          @click="compare"
         >
           {{ $t('getCompare.comparePeople') }}
         </v-btn>
@@ -118,12 +118,22 @@ import { validMongoId, formatId, base64url } from '../../lib/helpers.js'
 
 export default {
   name: 'ResultForm',
-  head: () => ({
-    title: 'Compare yourself with others',
-    meta: [
-      { hid: 'description', name: 'description', content: 'Compare yourself with your partner, colleagues, friends or family' }
-    ]
-  }),
+  data: function () {
+    return {
+      mdiDelete,
+      mdiAccount,
+      mdiPlus,
+      people: [],
+      isFormValid: false,
+      name: '',
+      id: '',
+      dialog: false,
+      rules: {
+        validId: value => validMongoId(formatId(value)) || 'Not a valid ID',
+        uniqueName: name => !this.people.find(person => person.name === name) || 'Need to be a unique name'
+      }
+    }
+  },
   methods: {
     validMongoId: validMongoId,
     formatId: formatId,
@@ -142,22 +152,12 @@ export default {
       this.$router.push(this.localePath({ path: `/compare/${id}` }))
     }
   },
-  data: function () {
-    return {
-      mdiDelete,
-      mdiAccount,
-      mdiPlus,
-      people: [],
-      isFormValid: false,
-      name: '',
-      id: '',
-      dialog: false,
-      rules: {
-        validId: value => validMongoId(formatId(value)) || 'Not a valid ID',
-        uniqueName: name => !this.people.find(person => person.name === name) || 'Need to be a unique name'
-      }
-    }
-  }
+  head: () => ({
+    title: 'Compare yourself with others',
+    meta: [
+      { hid: 'description', name: 'description', content: 'Compare yourself with your partner, colleagues, friends or family' }
+    ]
+  })
 }
 </script>
 

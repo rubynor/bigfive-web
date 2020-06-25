@@ -5,7 +5,10 @@
       height="200px"
       lazy
     >
-      <v-card-title class="image-title" v-html="$t('extraversion.title')"></v-card-title>
+      <v-card-title
+        class="image-title"
+        v-html="$t('extraversion.title')"
+      />
     </v-img>
     <v-card-text>
       <p>
@@ -83,7 +86,6 @@
         Persons who score high on this scale typically experience a range of positive feelings, including happiness, enthusiasm, optimism, and joy.
         Low scorers are not as prone to such energetic, high spirits.
       </p>
-
     </v-card-text>
   </v-card>
 </template>
@@ -93,6 +95,10 @@ import { mdiFormatQuoteOpen, mdiFormatQuoteClose } from '@mdi/js'
 
 export default {
   name: 'Extraversion',
+  data: () => ({
+    mdiFormatQuoteClose,
+    mdiFormatQuoteOpen
+  }),
   head () {
     return {
       title: this.$t('extraversion.seo.title'),
@@ -104,14 +110,10 @@ export default {
         { hid: 'og:title', name: 'og:title', content: this.$t('extraversion.seo.title') },
         { hid: 'og:description', name: 'og:description', content: this.$t('extraversion.seo.description') },
         { hid: 'twitter:title', name: 'twitter:title', content: this.$t('extraversion.seo.title') },
-        { hid: 'twitter:description', name: 'twitter:description', content: this.$t('extraversion.seo.description')  }
+        { hid: 'twitter:description', name: 'twitter:description', content: this.$t('extraversion.seo.description') }
       ]
     }
-  },
-  data: () => ({
-    mdiFormatQuoteClose,
-    mdiFormatQuoteOpen
-  })
+  }
 }
 </script>
 

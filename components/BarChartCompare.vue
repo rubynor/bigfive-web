@@ -1,15 +1,29 @@
 <template>
   <client-only>
-    <apexchart :height="$vuetify.breakpoint.smAndDown ? '300px' : 'auto'" type="bar" :options="options" :series="series"></apexchart>
+    <apexchart
+      :height="$vuetify.breakpoint.smAndDown ? '300px' : 'auto'"
+      type="bar"
+      :options="options"
+      :series="series"
+    />
   </client-only>
 </template>
 
 <script>
 export default {
   name: 'BarChart',
-  props: ['data', 'max'],
   components: {
     apexchart: () => process.client ? import('vue-apexcharts') : Promise.resolve({ render: h => h('div') })
+  },
+  props: {
+    data: {
+      type: Object,
+      default: () => {}
+    },
+    max: {
+      type: Number,
+      default: 20
+    }
   },
   data () {
     return {

@@ -5,7 +5,10 @@
       height="200px"
       lazy
     >
-      <v-card-title class="image-title" v-html="$t('agreeableness.title')"></v-card-title>
+      <v-card-title
+        class="image-title"
+        v-html="$t('agreeableness.title')"
+      />
     </v-img>
     <v-card-text>
       <p>
@@ -22,8 +25,8 @@
 
       <blockquote class="blockquote">
         <v-icon>{{ mdiFormatQuoteOpen }}</v-icon>
-          Agreeableness reflects individual differences in concern with cooperation and social harmony.
-          <v-icon>{{ mdiFormatQuoteClose }}</v-icon>
+        Agreeableness reflects individual differences in concern with cooperation and social harmony.
+        <v-icon>{{ mdiFormatQuoteClose }}</v-icon>
       </blockquote>
 
       <p>
@@ -83,6 +86,10 @@ import { mdiFormatQuoteOpen, mdiFormatQuoteClose } from '@mdi/js'
 
 export default {
   name: 'Agreeableness',
+  data: () => ({
+    mdiFormatQuoteClose,
+    mdiFormatQuoteOpen
+  }),
   head () {
     return {
       title: this.$t('agreeableness.seo.title'),
@@ -94,14 +101,10 @@ export default {
         { hid: 'og:title', name: 'og:title', content: this.$t('agreeableness.seo.title') },
         { hid: 'og:description', name: 'og:description', content: this.$t('agreeableness.seo.description') },
         { hid: 'twitter:title', name: 'twitter:title', content: this.$t('agreeableness.seo.title') },
-        { hid: 'twitter:description', name: 'twitter:description', content: this.$t('agreeableness.seo.description')  }
+        { hid: 'twitter:description', name: 'twitter:description', content: this.$t('agreeableness.seo.description') }
       ]
     }
   },
-  data: () => ({
-    mdiFormatQuoteClose,
-    mdiFormatQuoteOpen
-  }),
   metaInfo: {
     title: 'Read more about Agreeableness'
   }

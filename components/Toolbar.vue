@@ -5,60 +5,77 @@
       color="white"
       class="app-bar-shadow"
     >
-    <div class="toolbar-wrapper">
-      <div class="d-flex align-center">
-        <nuxt-link :to="localePath('/')">
-        <transition appear name="rotate">
-          <v-img
-            alt="BigFive logo"
-            class="shrink mr-2"
-            contain
-            :src="logoSrc"
-            transition="fade-transition"
-            width="40"
-          />
-        </transition>
-        </nuxt-link>
-      </div>
-      <v-spacer></v-spacer>
-      <v-btn text :to="localePath('result')" class="hidden-sm-and-down text-none font-weight-regular">
-        {{ $t('toolbar.see_results') }}
-      </v-btn>
-      <v-btn text :to="localePath('compare')" class="hidden-sm-and-down text-none font-weight-regular">
-        {{ $t('toolbar.compare_with') }}
-      </v-btn>
-
-    <v-menu
-      v-model="drawer"
-      bottom
-      offset-y
-      min-width="150"
-    >
-      <template v-slot:activator="{ on }">
-        <v-btn v-on="on" icon @click="drawer = !drawer" aria-label="Expand menu">
-          <v-icon>{{ icons.mdiChevronDown }}</v-icon>
-        </v-btn>
-      </template>
-      <v-list nav>
-        <v-list-item>
-          <v-subheader class="text-uppercase">{{ $t('common.pages') }}</v-subheader>
-        </v-list-item>
-        <v-divider></v-divider>
-        <v-list-item
-          v-for="item in items"
-          :key="item.title"
-          :to="localePath(item.url)"
-          link
-          class="text-none font-weight-regular pl-5 body-2"
+      <div class="toolbar-wrapper">
+        <div class="d-flex align-center">
+          <nuxt-link :to="localePath('/')">
+            <transition
+              appear
+              name="rotate"
+            >
+              <v-img
+                alt="BigFive logo"
+                class="shrink mr-2"
+                contain
+                :src="logoSrc"
+                transition="fade-transition"
+                width="40"
+              />
+            </transition>
+          </nuxt-link>
+        </div>
+        <v-spacer />
+        <v-btn
+          text
+          :to="localePath('result')"
+          class="hidden-sm-and-down text-none font-weight-regular"
         >
-          {{ item.title }}
-        </v-list-item>
-        <LanguageSwitcher />
-      </v-list>
-    </v-menu>
+          {{ $t('toolbar.see_results') }}
+        </v-btn>
+        <v-btn
+          text
+          :to="localePath('compare')"
+          class="hidden-sm-and-down text-none font-weight-regular"
+        >
+          {{ $t('toolbar.compare_with') }}
+        </v-btn>
+
+        <v-menu
+          v-model="drawer"
+          bottom
+          offset-y
+          min-width="150"
+        >
+          <template #activator="{ on }">
+            <v-btn
+              icon
+              aria-label="Expand menu"
+              v-on="on"
+              @click="drawer = !drawer"
+            >
+              <v-icon>{{ icons.mdiChevronDown }}</v-icon>
+            </v-btn>
+          </template>
+          <v-list nav>
+            <v-list-item>
+              <v-subheader class="text-uppercase">
+                {{ $t('common.pages') }}
+              </v-subheader>
+            </v-list-item>
+            <v-divider />
+            <v-list-item
+              v-for="item in items"
+              :key="item.title"
+              :to="localePath(item.url)"
+              link
+              class="text-none font-weight-regular pl-5 body-2"
+            >
+              {{ item.title }}
+            </v-list-item>
+            <LanguageSwitcher />
+          </v-list>
+        </v-menu>
       </div>
     </v-app-bar>
-
   </div>
 </template>
 

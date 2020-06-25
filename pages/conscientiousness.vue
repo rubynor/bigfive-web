@@ -5,7 +5,10 @@
       height="200px"
       lazy
     >
-      <v-card-title class="image-title" v-html="$t('conscientiousness.title')"></v-card-title>
+      <v-card-title
+        class="image-title"
+        v-html="$t('conscientiousness.title')"
+      />
     </v-img>
     <v-card-text>
       <p>
@@ -96,6 +99,10 @@ import { mdiFormatQuoteOpen, mdiFormatQuoteClose } from '@mdi/js'
 
 export default {
   name: 'Conscientiousness',
+  data: () => ({
+    mdiFormatQuoteClose,
+    mdiFormatQuoteOpen
+  }),
   head () {
     return {
       title: this.$t('conscientiousness.seo.title'),
@@ -107,14 +114,10 @@ export default {
         { hid: 'og:title', name: 'og:title', content: this.$t('conscientiousness.seo.title') },
         { hid: 'og:description', name: 'og:description', content: this.$t('conscientiousness.seo.description') },
         { hid: 'twitter:title', name: 'twitter:title', content: this.$t('conscientiousness.seo.title') },
-        { hid: 'twitter:description', name: 'twitter:description', content: this.$t('conscientiousness.seo.description')  }
+        { hid: 'twitter:description', name: 'twitter:description', content: this.$t('conscientiousness.seo.description') }
       ]
     }
-  },
-  data: () => ({
-    mdiFormatQuoteClose,
-    mdiFormatQuoteOpen
-  })
+  }
 }
 </script>
 

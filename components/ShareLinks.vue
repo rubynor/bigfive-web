@@ -1,9 +1,11 @@
 <template>
   <div class="pt-5">
-
     <v-tooltip bottom>
-      <template v-slot:activator="{ on }">
-        <a v-on="on" @click="copyLink(`https://bigfive-test.com/${id}`)">
+      <template #activator="{ on }">
+        <a
+          v-on="on"
+          @click="copyLink(`https://bigfive-test.com/${id}`)"
+        >
           <v-icon x-large>{{ mdiLink }}</v-icon>
         </a>
       </template>
@@ -11,8 +13,15 @@
     </v-tooltip>
 
     <v-tooltip bottom>
-      <template v-slot:activator="{ on }">
-        <a v-on="on" @click="logClick('facebook')" :href="'https://www.facebook.com/sharer/sharer.php?u=https://bigfive-test.com/' + id" target="_blank" rel="noopener" aria-label="Share on facebook">
+      <template #activator="{ on }">
+        <a
+          :href="'https://www.facebook.com/sharer/sharer.php?u=https://bigfive-test.com/' + id"
+          target="_blank"
+          rel="noopener"
+          aria-label="Share on facebook"
+          v-on="on"
+          @click="logClick('facebook')"
+        >
           <v-icon x-large>{{ mdiFacebook }}</v-icon>
         </a>
       </template>
@@ -20,8 +29,15 @@
     </v-tooltip>
 
     <v-tooltip bottom>
-      <template v-slot:activator="{ on }">
-        <a v-on="on" @click="logClick('twitter')" :href="'https://twitter.com/intent/tweet?text=See my personality traits!&url=https://bigfive-test.com/' + id" target="_blank" rel="noopener" aria-label="Share on twitter">
+      <template #activator="{ on }">
+        <a
+          :href="'https://twitter.com/intent/tweet?text=See my personality traits!&url=https://bigfive-test.com/' + id"
+          target="_blank"
+          rel="noopener"
+          aria-label="Share on twitter"
+          v-on="on"
+          @click="logClick('twitter')"
+        >
           <v-icon x-large>{{ mdiTwitter }}</v-icon>
         </a>
       </template>
@@ -56,6 +72,7 @@ export default {
   name: 'ShareLinks',
   props: {
     id: {
+      type: String,
       default: ''
     }
   },

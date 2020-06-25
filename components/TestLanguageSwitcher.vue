@@ -4,18 +4,28 @@
       {{ form.language }}
     </v-chip>
     <v-chip
-      @click="CHANGE_LANGUAGE(languageId)"
-      class="ma-1"
-      :key="languageId"
       v-for="languageId in languages.map(({ value }) => value).filter(langCode => langCode !== form.language).slice(0, expanded ? languages.length : 1)"
+      :key="languageId"
+      class="ma-1"
+      @click="CHANGE_LANGUAGE(languageId)"
     >
       {{ languageId }}
     </v-chip>
-    <v-chip @click="toggleExpand" v-if="!expanded">
-      ... {{languages.length - 2}} {{ $t('test.more') }}
+    <v-chip
+      v-if="!expanded"
+      @click="toggleExpand"
+    >
+      ... {{ languages.length - 2 }} {{ $t('test.more') }}
     </v-chip>
-    <v-chip v-else @click="toggleExpand" color="secondary" dark>
-      <v-icon small>{{ mdiClose }}</v-icon>
+    <v-chip
+      v-else
+      color="secondary"
+      dark
+      @click="toggleExpand"
+    >
+      <v-icon small>
+        {{ mdiClose }}
+      </v-icon>
     </v-chip>
   </div>
 </template>
@@ -27,6 +37,10 @@ import { sleep } from '../lib/helpers'
 
 export default {
   name: 'TestLanguageSwitcher',
+  data: () => ({
+    expanded: false,
+    mdiClose
+  }),
   computed: mapState(['languages', 'form']),
   methods: {
     ...mapMutations(['CHANGE_LANGUAGE']),
@@ -37,10 +51,6 @@ export default {
         this.expanded = false
       }
     }
-  },
-  data: () => ({
-    expanded: false,
-    mdiClose
-  })
+  }
 }
 </script>
