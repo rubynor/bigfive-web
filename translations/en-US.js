@@ -11,7 +11,7 @@ export default {
     title: 'Big Five Personality Test',
     call_to_action: 'Take the free test now',
     no_registration: '* No registration required',
-    tests_taken: 'Over 700.000 people has taken the test',
+    tests_taken: 'Over 700.000 people have taken the test',
     compare: {
       title: 'Compare yourself to others',
       text1: 'Compare yourself with your partner, colleagues, friends or family.',
