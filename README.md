@@ -84,6 +84,10 @@ Todo
 
 If you want to help by translating the items to other languages [this](https://github.com/Alheimsins/b5-johnson-120-ipip-neo-pi-r/blob/master/README.md#help-wanted) is how you do it.
 
+## License
+
+[MIT](LICENSE)
+
 ## About
 
 TODO
