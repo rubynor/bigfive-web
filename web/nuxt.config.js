@@ -1,6 +1,7 @@
 export default {
   mode: 'universal',
   components: true,
+  buildDir: 'dist',
   /*
   ** Headers of the page
   */
