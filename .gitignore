@@ -90,3 +90,4 @@ sw.*
 *.swp
 
 .now
+.vercel

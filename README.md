@@ -20,7 +20,7 @@ TODO
 ## Installation
 
 Download and install [nodejs](https://nodejs.org),
-[git](https://git-scm.com/downloads) and [zeit/now](https://zeit.co/now)
+[git](https://git-scm.com/downloads) and [vercel-cli](https://vercel.com/download)
 
 Make sure nodejs version is equal or greater than 12
 
@@ -28,6 +28,13 @@ The results are saved to a [mongodb](https://www.mongodb.com/) database, so for 
 
 ## Development
 
+add .env file
+
+```
+MONGODB_URI=mongodb://<your-mongodb-url>
+MONGODB_COLLECTION=results
+BASE_URL=http://localhost:3000
+```
 Run the setup script to install all dependencies
 
 ```
@@ -51,23 +58,16 @@ yarn lint
 yarn lintfix
 ```
 
-## Run API and frontend locally
-
-Run this in root directory
-```
-now dev
-```
-
-## Deploy using [Now](https://zeit.co/now)
+## Deploy using [vercel-cli](https://vercel.com/download)
 
 Add a secret with the mongodb connection. Example:
 ```
-now secrets add mongodb_uri mongodb://<username>:<password>@domain.com:53659/bigfive
+vc secrets add mongodb_uri mongodb://<username>:<password>@domain.com:53659/bigfive
 ```
 
 Run to deploy
 ```
-now
+vc --confirm
 ```
 
 ## Deploy using [Docker](https://www.docker.com/)
