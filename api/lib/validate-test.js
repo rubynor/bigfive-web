@@ -5,6 +5,7 @@ const schema = Joi.object({
   lang: Joi.string(),
   invalid: Joi.boolean(),
   answers: Joi.array().items(Joi.object({
+    questionID: Joi.string(),
     domain: Joi.string(),
     facet: Joi.number(),
     score: Joi.number()
