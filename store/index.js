@@ -103,7 +103,7 @@ export const mutations = {
 
     const lastAnswerId = Object.keys(state.test.answers).slice(-1)[0]
 
-    Vue.set(state.test.answers, id, { score: parseInt(answer), domain, facet })
+    Vue.set(state.test.answers, id, { questionID: id, score: parseInt(answer), domain, facet })
 
     if (state.test.itemsPerPage === 1) {
       // Avoids skipping question if user changes answer within 700 ms on
@@ -136,6 +136,7 @@ export const mutations = {
         test.answers,
         question.id,
         {
+          questionID: question.id,
           score: Math.floor(Math.random() * 5) + 1,
           domain: question.domain,
           facet: question.facet
