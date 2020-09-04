@@ -103,12 +103,6 @@ export default {
 }
 </script>
 
-<style>
-.v-icon svg:hover {
-  fill: #ff0080;
-}
-</style>
-
 <style scoped>
 a {
   margin-right: 30px;

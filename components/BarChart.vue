@@ -17,7 +17,7 @@ export default {
   },
   props: {
     data: {
-      type: Object,
+      type: Array,
       default: () => {}
     },
     max: {

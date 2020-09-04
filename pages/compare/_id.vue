@@ -7,7 +7,7 @@
       <h1>Overview</h1>
       <BarChartCompare
         :data="result"
-        max="120"
+        :max="Number(120)"
       />
       <div
         v-for="domain in result"

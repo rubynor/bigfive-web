@@ -21,7 +21,6 @@ module.exports = async (req, res) => {
     const scores = calculateScore(data)
     let result = getResult({ scores, lang: data.lang || 'en' })
     result.timestamp = data.dateStamp
-    console.log(result)
 
     res.json(result)
     return
