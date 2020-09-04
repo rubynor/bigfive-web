@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <div v-if="result">
+    <div v-if="results">
       <div class="text-center">
         <b>{{ $t('results.important') }}</b> {{ $t('results.saveResults') }} <nuxt-link :to="localePath('compare')">
           {{ $t('results.compare') }}
@@ -30,11 +30,11 @@
       </span>
       -->
       <BarChart
-        :data="result"
+        :data="results"
         :max="Number(120)"
       />
       <div
-        v-for="domain in result"
+        v-for="domain in results"
         :key="domain.id"
       >
         <Domain :domain="domain" />
@@ -52,15 +52,17 @@ export default {
   name: 'Result',
   async asyncData ({ params, store, $axios }) {
     try {
-      const result = await $axios.$get(process.env.API_URL + 'result/' + params.id)
-      return { result }
+      const { results } = await $axios.$get(process.env.API_URL + 'result/' + params.id)
+      console.log(process.env.API_URL)
+      console.log(results)
+      return { results }
     } catch (error) {
       console.log(error)
       store.commit('SET_SNACKBAR', { msg: error.message, type: 'error' })
     }
   },
   data: () => ({
-    result: false,
+    results: false,
     selectedLanguage: 'en'
   }),
   mounted () {

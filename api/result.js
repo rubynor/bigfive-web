@@ -19,10 +19,15 @@ module.exports = async (req, res) => {
     const collection = db.collection(dbCollection)
     const data = await collection.findOne({ _id: ObjectId(id) })
     const scores = calculateScore(data)
-    let result = getResult({ scores, lang: data.lang || 'en' })
-    result.timestamp = data.dateStamp
+    const results = getResult({ scores, lang: data.lang || 'en' })
 
-    res.json(result)
+    res.json({
+      timestamp: data.dateStamp,
+      age: '',
+      gender: '',
+      nationality: '',
+      results
+    })
     return
   } catch (error) {
     res.status(500).json({ type: 'error', message: error.message })
