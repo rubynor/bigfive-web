@@ -38,7 +38,8 @@
     "nuxt-webfontloader": "1.1.0",
     "vue-amplitude": "1.0.3",
     "vue-apexcharts": "1.6.0",
-    "vue-confetti": "2.0.11"
+    "vue-confetti": "2.0.11",
+    "vue-template-compiler": "^2.6.12"
   },
   "devDependencies": {
     "@mdi/js": "5.5.55",
@@ -46,11 +47,11 @@
     "@nuxtjs/vuetify": "1.11.2",
     "eslint": "7.8.1",
     "eslint-config-standard": "14.1.1",
+    "eslint-loader": "4.0.2",
     "eslint-plugin-import": "2.22.0",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-standard": "4.0.1",
-    "eslint-plugin-vue": "7.0.0-alpha.6",
-    "eslint-loader": "4.0.2"
+    "eslint-plugin-vue": "7.0.0-alpha.6"
   }
 }
