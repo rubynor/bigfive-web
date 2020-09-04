@@ -4,6 +4,7 @@
       <v-col
         sm="12"
         md="6"
+        class="pl-0 pt-0"
       >
         <v-row class="footer-wrapper">
           <v-col class="footer-heading">
