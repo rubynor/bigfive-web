@@ -21,7 +21,7 @@ module.exports = async (req, res) => {
     const scores = calculateScore(data)
     const result = getResult({ scores, lang: data.lang || 'en' })
 
-    res.json(result)
+    res.json({ ...result, timestamp: data.dateStamp })
     return
   } catch (error) {
     res.status(500).json({ type: 'error', message: error.message })
