@@ -12,7 +12,7 @@
   "precommit": "yarn lint",
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
+    "build": "nuxt generate",
     "start": "nuxt start",
     "setup": "yarn install --frozen-lockfile && cd api && yarn install --frozen-lockfile",
     "refresh": "rm -rf node_modules && rm yarn.lock && cd api && rm -rf node_modules && rm yarn.lock && cd .. && npm run setup",
