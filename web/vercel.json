@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "scope": "rubynor",
+  "alias": ["bigfive-test.com"],
+  "env": {
+    "MONGODB_URI": "@mongodb_uri",
+    "MONGODB_COLLECTION": "results",
+    "BASE_URL": "https://bigfive-test.com"
+  },
+  "builds": [
+    {
+      "src": "nuxt.config.js",
+      "use": "@nuxtjs/now-builder"
+    }
+  ]
+}
