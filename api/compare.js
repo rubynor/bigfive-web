@@ -21,7 +21,10 @@ module.exports = async (req, res) => {
     const scores = await Promise.all(
       people.map(async item => {
         const data = await collection.findOne({ _id: ObjectId(item.id) })
-        return { data, name: item.name }
+        return {
+          data,
+          name: item.name
+        }
       })
     )
 

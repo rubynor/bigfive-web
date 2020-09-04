@@ -42,6 +42,7 @@
           cols="12"
           xs="12"
           md="6"
+          class="text-center"
         >
           <img
             class="responsive"
@@ -80,6 +81,7 @@
           cols="12"
           xs="12"
           md="6"
+          class="text-center"
         >
           <img
             class="responsive"
