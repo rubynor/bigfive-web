@@ -13,10 +13,10 @@
     raw-loader "^4.0.1"
     url-loader "^4.1.0"
 
-"@alheimsins/b5-johnson-120-ipip-neo-pi-r@5.0.6":
-  version "5.0.6"
-  resolved "https://registry.yarnpkg.com/@alheimsins/b5-johnson-120-ipip-neo-pi-r/-/b5-johnson-120-ipip-neo-pi-r-5.0.6.tgz#6a94bedc0ae9f5f07d1eb1a8a56238322db12cb7"
-  integrity sha512-J9mL5SOFCIdyqSQA0qoaApN6zruTlhAb+l6W7PeN1+yWXp3AaDef3C4fOm3lHshP2TAEU3Qsqk8JWWaYCd2IHA==
+"@alheimsins/b5-johnson-120-ipip-neo-pi-r@5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@alheimsins/b5-johnson-120-ipip-neo-pi-r/-/b5-johnson-120-ipip-neo-pi-r-5.1.0.tgz#fa10d8346a13e2e2250de06d04d2b301772c7371"
+  integrity sha512-RcAm/iCiEsA4oqISJiFwajPBq/kDVaxL8f0L+iquoUXI/Qy89sqjapPy9RROhxDpcLDqAvQdd+1ZY36Xsk3uFg==
   dependencies:
     knuth-shuffle "1.0.8"
 
@@ -10098,10 +10098,10 @@ vue-client-only@^2.0.0:
   resolved "https://registry.yarnpkg.com/vue-client-only/-/vue-client-only-2.0.0.tgz#ddad8d675ee02c761a14229f0e440e219de1da1c"
   integrity sha512-arhk1wtWAfLsJyxGMoEYhoBowM87/i6HLSG2LH/03Yog6i2d9JEN1peMP0Ceis+/n9DxdenGYZZTxbPPJyHciA==
 
-vue-confetti@2.0.11:
-  version "2.0.11"
-  resolved "https://registry.yarnpkg.com/vue-confetti/-/vue-confetti-2.0.11.tgz#e2c532a48d82eab66892cd2a4f48c20f86d8f5d1"
-  integrity sha512-K7TgBTw/sX94Ozx38rAiFP+jl7f4YPnOFC0PbQ6pQ8YdAnktni7Pje275Hi4nDIOKrSuUX1RRDfbWqqGfreLug==
+vue-confetti@2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/vue-confetti/-/vue-confetti-2.1.1.tgz#32f5b7ec47f9441c6bcb6e793d58c065e890a79c"
+  integrity sha512-KEx7Q/t6R2g1+kmKSOBtOG99Qn7grSRqm54HAjn+wu4qvvXgUogfz9CKWzxDtvlPwdnpHRfVQo05HGfbWgvsPQ==
 
 vue-eslint-parser@^7.1.0:
   version "7.1.0"
