@@ -34,7 +34,7 @@ export default {
       },
       translated: {
         title: 'Translated',
-        text: 'Translated to over 20 languages. Help out!'
+        text: 'Translated to over 20 languages. Help out <a href="https://b5.translations.alheimsins.net/" rel="noreferrer" target="blank">here</a>!'
       }
     },
     description: {

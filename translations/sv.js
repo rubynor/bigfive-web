@@ -34,7 +34,7 @@ export default {
       },
       translated: {
         title: 'Översättningar',
-        text: 'Testet har översatts till mer än 20 språk.'
+        text: 'Testet har översatts till mer än 20 språk. Hälp till <a href="https://b5.translations.alheimsins.net/" rel="noreferrer" target="blank">här</a>!'
       }
     },
     description: {

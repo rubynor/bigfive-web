@@ -34,7 +34,7 @@ export default {
       },
       translated: {
         title: 'مترجم',
-        text: 'الاختبار مترجم إلى أكثر من ٢٠ لغة. بإمكانك المساعدة'
+        text: 'الاختبار مترجم إلى أكثر من ٢٠ لغة. بإمكانك المساعدة <a href="https://b5.translations.alheimsins.net/" rel="noreferrer" target="blank">here</a>!'
       }
     },
     description: {

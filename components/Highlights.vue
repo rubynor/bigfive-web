@@ -58,7 +58,10 @@
         loading="lazy"
       >
       <h3 v-html="$t('frontpage.cards.translated.title')" />
-      <span color="#666">{{ $t('frontpage.cards.translated.text') }}</span>
+      <span
+        color="#666"
+        v-html="$t('frontpage.cards.translated.text')"
+      />
     </v-col>
   </v-row>
 </template>
