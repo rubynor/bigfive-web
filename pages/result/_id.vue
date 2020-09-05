@@ -1,6 +1,13 @@
 <template>
   <v-container>
     <div v-if="results">
+      <p
+        v-if="metadata.timestamp"
+        class="text-right grey--text"
+      >
+        {{ new Date(metadata.timestamp).toLocaleString() }}
+      </p>
+
       <div class="text-center">
         <b>{{ $t('results.important') }}</b> {{ $t('results.saveResults') }} <nuxt-link :to="localePath('compare')">
           {{ $t('results.compare') }}
@@ -52,10 +59,13 @@ export default {
   name: 'Result',
   async asyncData ({ params, store, $axios }) {
     try {
-      const { results } = await $axios.$get(process.env.API_URL + 'result/' + params.id)
-      console.log(process.env.API_URL)
-      console.log(results)
-      return { results }
+      const data = await $axios.$get(process.env.API_URL + 'result/' + params.id)
+      return {
+        results: data.results,
+        metadata: {
+          timestamp: data.timestamp
+        }
+      }
     } catch (error) {
       console.log(error)
       store.commit('SET_SNACKBAR', { msg: error.message, type: 'error' })
