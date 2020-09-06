@@ -17,9 +17,9 @@
   "author": "Jonas Enge <jonas.enge@gmail.com> (https://github.com/maccyber)",
   "license": "MIT",
   "dependencies": {
-    "@alheimsins/b5-result-text": "3.0.6",
-    "@alheimsins/bigfive-calculate-score": "2.0.4",
+    "@alheimsins/b5-result-text": "4.0.0",
+    "@alheimsins/bigfive-calculate-score": "2.0.5",
     "joi": "17.2.1",
-    "mongodb": "3.5.9"
+    "mongodb": "3.6.1"
   }
 }

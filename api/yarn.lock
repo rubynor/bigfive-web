@@ -2,15 +2,15 @@
 # yarn lockfile v1
 
 
-"@alheimsins/b5-result-text@3.0.6":
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/@alheimsins/b5-result-text/-/b5-result-text-3.0.6.tgz#a71aca816c84904ea41a1d698f09a7d9e387b0da"
-  integrity sha512-9S7a8bo9rxeai3PKYiEiMxvwsKkiiY8yFL2nVoZA+YaAvxC1YKFI2Z3bMmvpjFsrLjppTL47sn0laTVZ0VKDEw==
+"@alheimsins/b5-result-text@4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@alheimsins/b5-result-text/-/b5-result-text-4.0.0.tgz#e6a3dbb6bc081e8ca36721506eb9d35bd302d03b"
+  integrity sha512-tj4Y02BXom5bAisBH/k5XRsv6asVIsrWE4+UThvtV401Z8UjXcoVqBO21Ih4FAfMUANb8itxkDRVMVW9WZrTsA==
 
-"@alheimsins/bigfive-calculate-score@2.0.4":
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@alheimsins/bigfive-calculate-score/-/bigfive-calculate-score-2.0.4.tgz#374e4a525e097fca5a14c0000d9bca5970c9e2d1"
-  integrity sha512-IagdTNovPQ/xKJOigkE3XRweItOb02ZjIWEewBluG7kgiBZ1CxqT3o7WM6krNW+AcXO5Nm2Xc6M9AUptbSirLg==
+"@alheimsins/bigfive-calculate-score@2.0.5":
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@alheimsins/bigfive-calculate-score/-/bigfive-calculate-score-2.0.5.tgz#b9a2ad2287203d57cd7f3b78e3a87f2cb2745493"
+  integrity sha512-bGYZHutlbON1FOyR2lNRK8xgz9fYvksH8cd4fWjSKMWc3qVsp36bIcscj0KD3dfH9XBF2tanTV8Vy+tjQS1u0Q==
 
 "@hapi/address@^4.1.0":
   version "4.1.0"
@@ -90,10 +90,10 @@ memory-pager@^1.0.2:
   resolved "https://registry.yarnpkg.com/memory-pager/-/memory-pager-1.5.0.tgz#d8751655d22d384682741c972f2c3d6dfa3e66b5"
   integrity sha512-ZS4Bp4r/Zoeq6+NLJpP+0Zzm0pR8whtGPf1XExKLJBAczGMnSi3It14OiNCStjQjM6NU1okjQGSxgEZN8eBYKg==
 
-mongodb@3.5.9:
-  version "3.5.9"
-  resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-3.5.9.tgz#799b72be8110b7e71a882bb7ce0d84d05429f772"
-  integrity sha512-vXHBY1CsGYcEPoVWhwgxIBeWqP3dSu9RuRDsoLRPTITrcrgm1f0Ubu1xqF9ozMwv53agmEiZm0YGo+7WL3Nbug==
+mongodb@3.6.1:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-3.6.1.tgz#2c5cc2a81456ba183e8c432d80e78732cc72dabd"
+  integrity sha512-uH76Zzr5wPptnjEKJRQnwTsomtFOU/kQEU8a9hKHr2M7y9qVk7Q4Pkv0EQVp88742z9+RwvsdTw6dRjDZCNu1g==
   dependencies:
     bl "^2.2.0"
     bson "^1.1.4"

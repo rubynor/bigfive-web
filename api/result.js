@@ -5,6 +5,8 @@ const getResult = require('@alheimsins/b5-result-text')
 const { getInfo } = require('@alheimsins/b5-result-text')
 const calculateScore = require('@alheimsins/bigfive-calculate-score')
 
+const { languages: availableLanguages } = getInfo()
+
 const dbCollection = process.env.MONGODB_COLLECTION
 
 module.exports = async (req, res) => {
@@ -25,7 +27,7 @@ module.exports = async (req, res) => {
     res.json({
       timestamp: data.dateStamp,
       language: data.lang,
-      availableLanguages: getInfo(),
+      availableLanguages,
       age: '',
       gender: '',
       nationality: '',
