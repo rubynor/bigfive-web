@@ -65,6 +65,12 @@ Add a secret with the mongodb connection. Example:
 vc secrets add mongodb_uri mongodb://<username>:<password>@domain.com:53659/bigfive
 ```
 
+Update [now.json](now.json) to match your environment.
+You will need to change the properties `scope`, `alias` and `env.BASE_URL`
+
+Update [nuxt.config.js](nuxt.config.js) to match your environment.
+You will need to change the `base_url` and the ids for analytics and amplitude.
+
 Run to deploy
 ```
 vc --confirm
