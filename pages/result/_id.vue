@@ -1,14 +1,28 @@
 <template>
   <v-container>
     <div v-if="results">
-      <p
-        v-if="metadata.timestamp"
-        class="text-right grey--text"
-      >
-        {{ new Date(metadata.timestamp).toLocaleString() }}
-      </p>
+      <v-row>
+        <v-col>
+          <span class="d-print-none">
+            <v-select
+              v-model="metadata.language"
+              :items="metadata.availableLanguages"
+              label="Change language"
+              @input="changeLanguage"
+            />
+          </span>
+        </v-col>
+        <v-col>
+          <p
+            v-if="metadata.timestamp"
+            class="text-right grey--text"
+          >
+            {{ new Date(metadata.timestamp).toLocaleString() }}
+          </p>
+        </v-col>
+      </v-row>
 
-      <div class="text-center">
+      <div class="text-center mt-10">
         <b>{{ $t('results.important') }}</b> {{ $t('results.saveResults') }} <nuxt-link :to="localePath('compare')">
           {{ $t('results.compare') }}
         </nuxt-link> {{ $t('results.toOthers') }}
@@ -26,16 +40,6 @@
       <div class="display-1 mt-6">
         {{ $t('results.theBigFive') }}
       </div>
-      <!-- Todo add language switcher
-      <span style="float: right;">
-        <v-select
-          :items="this.$store.state.languages"
-          label="Language"
-          v-model="selectedLanguage"
-          class="d-none"
-        ></v-select>
-      </span>
-      -->
       <BarChart
         :data="results"
         :max="Number(120)"
@@ -57,13 +61,19 @@
 <script>
 export default {
   name: 'Result',
-  async asyncData ({ params, store, $axios }) {
+  async asyncData ({ params, store, $axios, query }) {
     try {
-      const data = await $axios.$get(process.env.API_URL + 'result/' + params.id)
+      const lang = query.lang ? `/${query.lang}` : ''
+      const url = process.env.API_URL + 'result/' + params.id + lang
+
+      const data = await $axios.$get(url)
+
       return {
         results: data.results,
         metadata: {
-          timestamp: data.timestamp
+          timestamp: data.timestamp,
+          language: query.lang || data.language || 'en',
+          availableLanguages: data.availableLanguages
         }
       }
     } catch (error) {
@@ -72,11 +82,20 @@ export default {
     }
   },
   data: () => ({
-    results: false,
-    selectedLanguage: 'en'
+    results: false
   }),
   mounted () {
     this.$amplitude.getInstance().logEvent('b5.test', { part: 'result' })
+  },
+  methods: {
+    changeLanguage (lang) {
+      this.$router.replace(
+        { pathname: '/result', params: { id: this.$route.params.id }, query: { lang } },
+        () => {
+          this.$router.go(0)
+        }
+      )
+    }
   },
   head () {
     return {
