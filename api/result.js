@@ -11,7 +11,6 @@ const dbCollection = process.env.MONGODB_COLLECTION
 
 module.exports = async (req, res) => {
   const { query: { id, lang } } = req
-  console.log(lang)
 
   if (!id || !validMongoId(id)) {
     res.status(500).json({ type: 'error', message: 'Not a valid id' })
@@ -23,7 +22,7 @@ module.exports = async (req, res) => {
     const collection = db.collection(dbCollection)
     const data = await collection.findOne({ _id: ObjectId(id) })
     const scores = calculateScore(data)
-    const results = getResult({ scores, lang: data.lang || 'en' })
+    const results = getResult({ scores, lang: lang || data.lang || 'en' })
 
     res.json({
       timestamp: data.dateStamp,
