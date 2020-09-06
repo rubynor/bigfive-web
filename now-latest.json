@@ -21,6 +21,10 @@
   ],
   "rewrites": [
     {
+      "source": "/api/result/:id/:lang",
+      "destination": "/api/result.js"
+    },
+    {
       "source": "/api/result/:id",
       "destination": "/api/result.js"
     },
