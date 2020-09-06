@@ -15,11 +15,11 @@
     "personality"
   ],
   "author": "Jonas Enge <jonas.enge@gmail.com> (https://github.com/maccyber)",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@alheimsins/b5-result-text": "3.0.6",
     "@alheimsins/bigfive-calculate-score": "2.0.4",
-    "@hapi/joi": "17.1.1",
+    "joi": "17.2.1",
     "mongodb": "3.5.9"
   }
 }
