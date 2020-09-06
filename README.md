@@ -69,7 +69,7 @@ Update [now.json](now.json) to match your environment.
 You will need to change the properties `scope`, `alias` and `env.BASE_URL`
 
 Update [nuxt.config.js](nuxt.config.js) to match your environment.
-You will need to change the `base_url` and the ids for analytics and amplitude.
+You will need to change the `base_url` and `env.API_URL` and the ids for analytics and amplitude.
 
 Run to deploy
 ```
