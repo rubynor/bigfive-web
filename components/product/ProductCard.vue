@@ -34,6 +34,7 @@
                 :to="localePath('/test')"
                 dark
                 class="py-6"
+                @click="logClick('free test')"
               >
                 Take the free test
               </v-btn>
@@ -62,6 +63,7 @@
                 :to="localePath('/test')"
                 dark
                 class="py-6"
+                @click="logClick('personal pro')"
               >
                 Buy now $20
               </v-btn>
@@ -108,6 +110,7 @@
                 :to="localePath('/test')"
                 dark
                 class="py-6"
+                @click="logClick('business pro')"
               >
                 Pay as you go
               </v-btn>
@@ -136,6 +139,7 @@
                 :to="localePath('/test')"
                 dark
                 class="py-6"
+                @click="logClick('enterprise')"
               >
                 Contact the sales team
               </v-btn>
@@ -199,6 +203,11 @@ export default {
         text: 'See and compare the survey participants'
       }
     ]
-  })
+  }),
+  methods: {
+    logClick (choice) {
+      this.$amplitude.getInstance().logEvent(`goes to ${choice}`, {})
+    }
+  }
 }
 </script>
