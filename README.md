@@ -62,14 +62,8 @@ yarn lintfix
 
 Add a secret with the mongodb connection. Example:
 ```
-vc secrets add MONGODB_URI mongodb://<username>:<password>@domain.com:53659/bigfive
+vc secrets add mongodb_uri mongodb://<username>:<password>@domain.com:53659/bigfive
 ```
-
-Add a secret with the mongodb collection. Example:
-```
-vc secrets add MONGODB_COLLECTION results
-```
-
 
 Run to deploy
 ```
