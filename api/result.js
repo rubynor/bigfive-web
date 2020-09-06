@@ -23,6 +23,7 @@ module.exports = async (req, res) => {
 
     res.json({
       timestamp: data.dateStamp,
+      language: data.lang,
       age: '',
       gender: '',
       nationality: '',
