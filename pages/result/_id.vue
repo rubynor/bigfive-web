@@ -32,7 +32,10 @@
           outlined
           color="secondary"
         >
-          <span class="secondary--text headline" :class="{'title': $vuetify.breakpoint.xs}">{{ $route.params.id }}</span>
+          <span
+            class="secondary--text headline"
+            :class="{'title': $vuetify.breakpoint.xs}"
+          >{{ $route.params.id }}</span>
         </v-alert>
         <ShareLinks :id="'result/' + $route.params.id" />
       </div>
