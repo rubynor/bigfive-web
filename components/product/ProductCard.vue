@@ -32,9 +32,9 @@
                 block
                 color="#0070f3"
                 :to="localePath('/test')"
-                @click="logClick('free test')"
                 dark
                 class="py-6"
+                @click="logClick('free test')"
               >
                 Take the free test
               </v-btn>
@@ -61,9 +61,9 @@
                 block
                 color="#FF0080"
                 :to="localePath('/test')"
-                @click="logClick('personal pro')"
                 dark
                 class="py-6"
+                @click="logClick('personal pro')"
               >
                 Buy now $20
               </v-btn>
@@ -108,9 +108,9 @@
                 block
                 color="#0070f3"
                 :to="localePath('/test')"
-                @click="logClick('business pro')"
                 dark
                 class="py-6"
+                @click="logClick('business pro')"
               >
                 Pay as you go
               </v-btn>
@@ -137,9 +137,9 @@
                 block
                 color="#FF0080"
                 :to="localePath('/test')"
-                @click="logClick('enterprise')"
                 dark
                 class="py-6"
+                @click="logClick('enterprise')"
               >
                 Contact the sales team
               </v-btn>
