@@ -27,7 +27,7 @@ module.exports = async (req, res) => {
     res.json({
       timestamp: data.dateStamp,
       language: data.lang,
-      availableLanguages,
+      availableLanguages: availableLanguages.map(item => ({ value: item.id, ...item })),
       age: '',
       gender: '',
       nationality: '',
