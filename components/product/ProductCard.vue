@@ -32,6 +32,7 @@
                 block
                 color="#0070f3"
                 :to="localePath('/test')"
+                @click="logClick('free test')"
                 dark
                 class="py-6"
               >
@@ -60,6 +61,7 @@
                 block
                 color="#FF0080"
                 :to="localePath('/test')"
+                @click="logClick('personal pro')"
                 dark
                 class="py-6"
               >
@@ -106,6 +108,7 @@
                 block
                 color="#0070f3"
                 :to="localePath('/test')"
+                @click="logClick('business pro')"
                 dark
                 class="py-6"
               >
@@ -134,6 +137,7 @@
                 block
                 color="#FF0080"
                 :to="localePath('/test')"
+                @click="logClick('enterprise')"
                 dark
                 class="py-6"
               >
@@ -199,6 +203,11 @@ export default {
         text: 'See and compare the survey participants'
       }
     ]
-  })
+  }),
+  methods: {
+    logClick (choice) {
+      this.$amplitude.getInstance().logEvent(`goes to ${choice}`, {})
+    }
+  }
 }
 </script>
