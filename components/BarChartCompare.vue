@@ -23,9 +23,15 @@ export default {
     max: {
       type: Number,
       default: 20
+    },
+    min: {
+      type: Number,
+      default: null
     }
   },
   data () {
+    const max = parseInt(this.max) || 20
+    const min = parseInt(this.min) || (max / 5)
     return {
       options: {
         legend: {
@@ -40,7 +46,8 @@ export default {
           categories: this.data.map(({ title }) => title)
         },
         yaxis: {
-          max: parseInt(this.max) || 20
+          max,
+          min
         },
         plotOptions: {
           bar: {
