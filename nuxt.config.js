@@ -1,5 +1,4 @@
 export default {
-  mode: 'universal',
   components: true,
   /*
   ** Headers of the page
@@ -127,7 +126,11 @@ export default {
         strategy: 'prefix_except_default',
         lazy: true,
         langDir: 'translations/',
-        detectBrowserLanguage: false
+        detectBrowserLanguage: {
+          onlyOnRoot: true,
+          useCookie: true,
+          fallbackLocale: 'en'
+        }
       }
     ],
     '@nuxtjs/sitemap',
