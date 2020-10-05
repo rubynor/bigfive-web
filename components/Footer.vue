@@ -79,13 +79,11 @@
       </v-col>
       <v-col cols="auto">
         <h3 class="mb-2">
-          Having issues with the site?
+          Having questions about or problems with the site?
         </h3>
-        Submit an issue at <a
-          href="https://github.com/rubynor/bigfive-web"
-          rel="noopener noreferrer"
-          target="_blank"
-        >GitHub</a> or contact us at <a href="mailto:bigfive-test@rubynor.com">bigfive-test@rubynor.com</a>
+        Please read the <nuxt-link :to="localePath('faq')">
+          FAQ
+        </nuxt-link>.
       </v-col>
     </v-row>
   </v-footer>

@@ -66,6 +66,7 @@ export default {
     optimizeImages: true
   },
   modules: [
+    '@nuxt/content',
     '@nuxtjs/axios',
     'nuxt-webfontloader',
     '@nuxtjs/pwa',
