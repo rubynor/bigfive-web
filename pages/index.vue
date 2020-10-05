@@ -147,12 +147,6 @@ import { mapState } from 'vuex'
 
 export default {
   name: 'Home',
-  computed: {
-    ...mapState(['development'])
-  },
-  mounted () {
-    this.$amplitude.getInstance().logEvent('b5.frontpage.loaded')
-  },
   head () {
     return {
       title: this.$t('frontpage.seo.title'),
@@ -167,6 +161,12 @@ export default {
         { hid: 'twitter:description', name: 'twitter:description', content: this.$t('frontpage.seo.description') }
       ]
     }
+  },
+  computed: {
+    ...mapState(['development'])
+  },
+  mounted () {
+    this.$amplitude.getInstance().logEvent('b5.frontpage.loaded')
   }
 }
 </script>

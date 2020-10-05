@@ -20,7 +20,7 @@ export default {
   mounted () {
     this.timer = setInterval(() => this.tick(), 1000)
   },
-  destroyed () {
+  unmounted () {
     clearInterval(this.timer)
   },
   methods: {

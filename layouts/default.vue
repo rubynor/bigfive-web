@@ -35,11 +35,6 @@ export default {
     Toolbar,
     Footer
   },
-  computed: mapState(['snackbar']),
-  created () {
-    const { dir } = this.$i18n.locales.find(i => i.code === this.$i18n.locale)
-    this.$vuetify.rtl = dir === 'rtl'
-  },
   head: () => ({
     __dangerouslyDisableSanitizers: ['script'],
     script: [
@@ -54,7 +49,12 @@ export default {
         type: 'application/ld+json'
       }
     ]
-  })
+  }),
+  computed: mapState(['snackbar']),
+  created () {
+    const { dir } = this.$i18n.locales.find(i => i.code === this.$i18n.locale)
+    this.$vuetify.rtl = dir === 'rtl'
+  }
 }
 </script>
 

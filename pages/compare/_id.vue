@@ -39,9 +39,6 @@ export default {
   data: () => ({
     result: false
   }),
-  mounted () {
-    this.$amplitude.getInstance().logEvent('b5.test', { part: 'compare' })
-  },
   head: () => ({
     title: 'Team Comparison of personalities from the Big Five personality traits test',
     meta: [
@@ -60,6 +57,9 @@ export default {
       { name: 'twitter:image', content: 'https://bigfive-test.com/icon.png' },
       { name: 'twitter:image:alt', content: 'BigFive logo' }
     ]
-  })
+  }),
+  mounted () {
+    this.$amplitude.getInstance().logEvent('b5.test', { part: 'compare' })
+  }
 }
 </script>

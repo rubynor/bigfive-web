@@ -123,6 +123,7 @@ export const mutations = {
     }
   },
   NEXT_QUESTIONS: ({ test }) => {
+    window.scrollTo(0, 0)
     if (test.position + test.itemsPerPage <= Object.keys(test.answers).length) {
       test.position += test.itemsPerPage
     }

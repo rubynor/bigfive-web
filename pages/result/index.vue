@@ -39,10 +39,6 @@ export default {
       valid: value => validMongoId(formatId(value)) || 'Not a valid ID'
     }
   }),
-  methods: {
-    validMongoId: validMongoId,
-    formatId: formatId
-  },
   head () {
     return {
       title: this.$t('results.seo.title'),
@@ -57,6 +53,10 @@ export default {
         { hid: 'twitter:description', name: 'twitter:description', content: this.$t('results.seo.description') }
       ]
     }
+  },
+  methods: {
+    validMongoId: validMongoId,
+    formatId: formatId
   }
 }
 </script>

@@ -134,6 +134,12 @@ export default {
       }
     }
   },
+  head: () => ({
+    title: 'Compare yourself with others',
+    meta: [
+      { hid: 'description', name: 'description', content: 'Compare yourself with your partner, colleagues, friends or family' }
+    ]
+  }),
   methods: {
     validMongoId: validMongoId,
     formatId: formatId,
@@ -151,13 +157,7 @@ export default {
       const id = base64url(JSON.stringify(this.people))
       this.$router.push(this.localePath({ path: `/compare/${id}` }))
     }
-  },
-  head: () => ({
-    title: 'Compare yourself with others',
-    meta: [
-      { hid: 'description', name: 'description', content: 'Compare yourself with your partner, colleagues, friends or family' }
-    ]
-  })
+  }
 }
 </script>
 

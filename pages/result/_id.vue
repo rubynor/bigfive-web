@@ -87,19 +87,6 @@ export default {
   data: () => ({
     results: false
   }),
-  mounted () {
-    this.$amplitude.getInstance().logEvent('b5.test', { part: 'result' })
-  },
-  methods: {
-    changeLanguage (lang) {
-      this.$router.replace(
-        { pathname: '/result', params: { id: this.$route.params.id }, query: { lang } },
-        () => {
-          this.$router.go(0)
-        }
-      )
-    }
-  },
   head () {
     return {
       title: this.$t('results.seo.title'),
@@ -113,6 +100,19 @@ export default {
         { hid: 'twitter:title', name: 'twitter:title', content: this.$t('results.seo.title') },
         { hid: 'twitter:description', name: 'twitter:description', content: this.$t('results.seo.description') }
       ]
+    }
+  },
+  mounted () {
+    this.$amplitude.getInstance().logEvent('b5.test', { part: 'result' })
+  },
+  methods: {
+    changeLanguage (lang) {
+      this.$router.replace(
+        { pathname: '/result', params: { id: this.$route.params.id }, query: { lang } },
+        () => {
+          this.$router.go(0)
+        }
+      )
     }
   }
 }

@@ -113,6 +113,9 @@ export default {
     mdiRadioboxBlank,
     mdiRadioboxMarked
   }),
+  head: () => ({
+    title: 'The test'
+  }),
   computed: {
     ...mapState(['test', 'development', 'form', 'loading']),
     ...mapGetters(['GET_CURRENT_QUESTIONS', 'GET_PROGRESS', 'NEXT_BUTTON_STATE', 'BACK_BUTTON_STATE', 'GET_CURRENT_ANSWER'])
@@ -141,9 +144,6 @@ export default {
         ? this.SET_ITEMS_PER_PAGE(1)
         : this.SET_ITEMS_PER_PAGE(3)
     }
-  },
-  head: () => ({
-    title: 'The test'
-  })
+  }
 }
 </script>

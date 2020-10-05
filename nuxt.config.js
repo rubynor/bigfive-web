@@ -50,9 +50,6 @@ export default {
     // { src: '~/plugins/apexcharts', mode: 'client' },
     { src: '~/plugins/confetti', mode: 'client' }
   ],
-  // router: {
-  //   middleware: ['18n']
-  // },
   /*
   ** Nuxt.js dev-modules
   */
