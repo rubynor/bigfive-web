@@ -162,4 +162,7 @@
     <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv/result/58a7230da835c400c8b38e87" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/result/58a7230da835c400c8b38e87" />
   </url>
+  <url>
+    <loc>https://bigfive-test.com/faq</loc>
+  </url>
 </urlset>
