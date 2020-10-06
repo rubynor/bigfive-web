@@ -1,5 +1,5 @@
 export default {
-    language: 'Finish',
+    language: 'Finnish',
     seo: {
       keywords: 'iso viisi persoonallisuustesti, iso 5 persoonallisuustesti, b5-testi, bigfive-testi, persoonallisuuden piirteet, bigfive, vertaa, ilmainen, Jordan Peterson '
     },
