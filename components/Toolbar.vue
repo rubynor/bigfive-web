@@ -81,7 +81,6 @@
 
 <script>
 import { mdiChevronDown } from '@mdi/js'
-import localizations from '../translations'
 
 export default {
   components: {
@@ -100,8 +99,7 @@ export default {
         { title: this.$t('toolbar.privacy'), url: '/privacy' },
         { title: this.$t('toolbar.about'), url: '/about' },
         { title: 'FAQ', url: '/faq' }
-      ],
-      languages: Object.keys(localizations)
+      ]
     }
   }
 }
