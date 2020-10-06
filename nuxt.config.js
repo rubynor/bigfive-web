@@ -116,7 +116,14 @@ export default {
             iso: 'en-US',
             file: 'en-US.js',
             dir: 'ltr'
-          }
+          },
+          {
+            name: 'Chinese',
+            code: 'zh-Hans',
+            iso: 'zh-Hans',
+            file: 'zh-Hans.js',
+            dir: 'ltr'
+          },
         ],
         seo: true,
         baseUrl: 'https://bigfive-test.com',
