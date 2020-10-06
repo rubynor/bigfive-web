@@ -123,6 +123,13 @@ export default {
             iso: 'ru',
             file: 'ru.js',
             dir: 'ltr'
+          },
+          {
+            name: 'Chinese',
+            code: 'zh-Hans',
+            iso: 'zh-Hans',
+            file: 'zh-Hans.js',
+            dir: 'ltr'
           }
         ],
         seo: true,
