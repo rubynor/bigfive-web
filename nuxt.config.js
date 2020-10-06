@@ -123,7 +123,7 @@ export default {
             iso: 'zh-Hans',
             file: 'zh-Hans.js',
             dir: 'ltr'
-          },
+          }
         ],
         seo: true,
         baseUrl: 'https://bigfive-test.com',
