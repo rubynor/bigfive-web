@@ -122,6 +122,12 @@ export default {
             code: 'fr',
             iso: 'fr',
             file: 'fr.js',
+          },
+          {
+            name: 'Chinese',
+            code: 'zh-Hans',
+            iso: 'zh-Hans',
+            file: 'zh-Hans.js',
             dir: 'ltr'
           }
         ],
