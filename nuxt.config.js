@@ -116,6 +116,13 @@ export default {
             iso: 'en-US',
             file: 'en-US.js',
             dir: 'ltr'
+          },
+          {
+            name: 'French',
+            code: 'fr',
+            iso: 'fr',
+            file: 'fr.js',
+            dir: 'ltr'
           }
         ],
         seo: true,
