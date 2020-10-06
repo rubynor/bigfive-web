@@ -125,10 +125,18 @@ export default {
             dir: 'ltr'
           },
           {
+            name: 'Hindi',
+            code: 'hi',
+            iso: 'hi',
+            file: 'hi.js',
+            dir: 'ltr'
+          },
+          {
             name: 'French',
             code: 'fr',
             iso: 'fr',
             file: 'fr.js',
+            dir: 'ltr'
           },
           {
             name: 'Russian',
