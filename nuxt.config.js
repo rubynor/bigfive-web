@@ -165,6 +165,13 @@ export default {
             iso: 'id',
             file: 'id.js',
             dir: 'ltr'
+          },
+          {
+            name: 'Ukrainian',
+            code: 'ua',
+            iso: 'ua',
+            file: 'ua.js',
+            dir: 'ltr'
           }
         ],
         seo: true,
