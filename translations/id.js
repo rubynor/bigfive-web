@@ -1,205 +1,205 @@
 export default {
-    language: 'Bahasa Indonesia',
+  language: 'Bahasa Indonesia',
+  seo: {
+    keywords: 'tes kepribadian lima besar, tes kepribadian 5 besar, tes b5, tes bigfive, ciri-ciri kepribadian, bigfive, bandingkan, gratis, jordan peterson'
+  },
+  frontpage: {
     seo: {
-        keywords: 'tes kepribadian lima besar, tes kepribadian 5 besar, tes b5, tes bigfive, ciri-ciri kepribadian, bigfive, bandingkan, gratis, jordan peterson'
+      title: 'Tes sifat kepribadian BigFive open-source gratis',
+      description: 'Ikuti tes kepribadian Big Five open-source gratis. Belajar untuk mengetahui ciri-ciri kepribadian Anda dan bandingkan diri Anda dengan pasangan, kolega, teman atau keluarga Anda.'
     },
-    frontpage: {
-        seo: {
-            title: 'Tes sifat kepribadian BigFive open-source gratis',
-            description: 'Ikuti tes kepribadian Big Five open-source gratis. Belajar untuk mengetahui ciri-ciri kepribadian Anda dan bandingkan diri Anda dengan pasangan, kolega, teman atau keluarga Anda.'
-        },
-        title: 'Tes Kepribadian Lima Besar',
-        call_to_action: 'Ikuti tes gratis sekarang',
-        no_registration: '* Tidak perlu registrasi',
-        tests_taken: 'Lebih dari 700.000 orang telah mengikuti tes',
-        compare: {
-            title: 'Bandingkan diri Anda dengan orang lain',
-            text1: 'Bandingkan diri Anda dengan pasangan, kolega, teman, atau keluarga Anda.',
-            text2: 'Pelajari bagaimana Anda berbeda dari orang lain di lima domain:',
-            action: 'Lihat langsung beraksi'
-        },
-        share: 'Bagikan dengan teman-teman Anda dan cari tahu seberapa kompatibel Anda',
-        cards: {
-            open: {
-                title: 'Buka',
-                text: 'Ini adalah proyek open source di bawah lisensi MIT.'
-            },
-            free: {
-                title: 'Gratis',
-                text: 'Tes ini sepenuhnya gratis'
-            },
-            scientific: {
-                title: 'Ilmiah',
-                text: 'BigFive adalah model psikologis yang divalidasi secara ilmiah dan dapat diandalkan.'
-            },
-            translated: {
-                title: 'Diterjemahkan',
-                text: 'Diterjemahkan ke lebih dari 20 bahasa. Membantu <a href="https://b5.translations.alheimsins.net/" rel="noreferrer" target="blank">sini</a>!'
-            }
-        },
-        description: {
-            top: 'Belajar mengenal diri Anda lebih baik dengan tes kepribadian sumber terbuka gratis.',
-            subtop: 'Itu',
-            subtop2: ' adalah model psikologis yang paling tervalidasi secara ilmiah dan dapat diandalkan untuk mengukur kepribadian.',
-            reference: `Tes dan evaluasi untuk situs ini dikumpulkan dari
+    title: 'Tes Kepribadian Lima Besar',
+    call_to_action: 'Ikuti tes gratis sekarang',
+    no_registration: '* Tidak perlu registrasi',
+    tests_taken: 'Lebih dari 700.000 orang telah mengikuti tes',
+    compare: {
+      title: 'Bandingkan diri Anda dengan orang lain',
+      text1: 'Bandingkan diri Anda dengan pasangan, kolega, teman, atau keluarga Anda.',
+      text2: 'Pelajari bagaimana Anda berbeda dari orang lain di lima domain:',
+      action: 'Lihat langsung beraksi'
+    },
+    share: 'Bagikan dengan teman-teman Anda dan cari tahu seberapa kompatibel Anda',
+    cards: {
+      open: {
+        title: 'Buka',
+        text: 'Ini adalah proyek open source di bawah lisensi MIT.'
+      },
+      free: {
+        title: 'Gratis',
+        text: 'Tes ini sepenuhnya gratis'
+      },
+      scientific: {
+        title: 'Ilmiah',
+        text: 'BigFive adalah model psikologis yang divalidasi secara ilmiah dan dapat diandalkan.'
+      },
+      translated: {
+        title: 'Diterjemahkan',
+        text: 'Diterjemahkan ke lebih dari 20 bahasa. Membantu <a href="https://b5.translations.alheimsins.net/" rel="noreferrer" target="blank">sini</a>!'
+      }
+    },
+    description: {
+      top: 'Belajar mengenal diri Anda lebih baik dengan tes kepribadian sumber terbuka gratis.',
+      subtop: 'Itu',
+      subtop2: ' adalah model psikologis yang paling tervalidasi secara ilmiah dan dapat diandalkan untuk mengukur kepribadian.',
+      reference: `Tes dan evaluasi untuk situs ini dikumpulkan dari
   <a href="http://ipip.ori.org" rel="noopener" target="_blank">ipip.ori.org</a>,
   inventaris berasal<i>Johnson (2014) 120-item IPIP NEO-PI-R</i>.`,
-            info: 'Tes berikut berisi 120 soal yang diperkirakan membutuhkan waktu sekitar 10 menit untuk diselesaikan.',
-            result: 'Setelah Anda menyelesaikan tes, Anda akan menerima laporan kepribadian terperinci di domain berikut: ',
-            tests_taken: 'tes yang dilakukan sejauh ini'
-        }
-    },
-    about: {
-        seo: {
-            title: 'Tentang dan tim lima besar',
-            description: 'BigFive memiliki tim yang sangat aktif dan terlibat yang terus berusaha untuk mendorong BigFive ke depan.'
-        }
-    },
-    toolbar: {
-        home: 'Rumah',
-        result: 'Hasil',
-        compare: 'Membandingkan',
-        articles: 'Artikel',
-        privacy: 'Pribadi',
-        about: 'Tentang',
-        see_results: 'Lihat hasil Anda',
-        compare_with: 'Bandingkan dengan orang lain'
-    },
-    facets: {
-        openness_to_experience: {
-            title: 'Keterbukaan untuk mengalami'
-        },
-        conscientiousness: {
-            title: 'Kesadaran'
-        },
-        extraversion: {
-            title: 'Ekstraversi'
-        },
-        agreeableness: {
-            title: 'Persetujuan'
-        },
-        neuroticism: {
-            title: 'Neuroticism'
-        }
-    },
-    common: {
-        and: 'dan',
-        pages: 'halaman',
-        languages: 'bahasa'
-    },
-    form: {
-        information: 'Informasi',
-        informationText: 'Kami menggunakan informasi yang Anda berikan untuk melayani Anda',
-        mostAccurate: 'hasil yang paling akurat',
-        readMoreAbout: 'Baca lebih lanjut tentang',
-        privacy: 'pribadi',
-        nextButton: 'Oke, pertanyaan selanjutnya',
-        declineButton: 'lanjutkan tanpa berbagi',
-        prefferedLanguage: 'Bahasa pilihan saya adalah',
-        selectLanguage: 'Pilih bahasa',
-        iama: 'saya adalah seorang',
-        male: 'Pria',
-        female: 'Perempuan',
-        age: 'Usia',
-        iam: 'saya',
-        yearsOld: 'tahun',
-        ageWarning: 'Anda harus berusia 16 tahun ke atas',
-        language: 'Bahasa',
-        gender: 'Jenis kelamin',
-        confirmInfo: 'Konfirmasikan informasi',
-        confirm: 'Konfirmasi',
-        toTestButton: 'Baiklah, bawa saya ke tes'
-    },
-    test: {
-        next: 'lanjut',
-        back: 'kembali',
-        more: 'lebih',
-        seeResults: 'lihat hasilnya'
-    },
-    big_five: {
-        title: 'Apakah lima besar itu?',
-        seo: {
-            title: 'Apakah lima besar itu?',
-            description: 'Baca lebih lanjut tentang lima besar'
-        }
-    },
+      info: 'Tes berikut berisi 120 soal yang diperkirakan membutuhkan waktu sekitar 10 menit untuk diselesaikan.',
+      result: 'Setelah Anda menyelesaikan tes, Anda akan menerima laporan kepribadian terperinci di domain berikut: ',
+      tests_taken: 'tes yang dilakukan sejauh ini'
+    }
+  },
+  about: {
+    seo: {
+      title: 'Tentang dan tim lima besar',
+      description: 'BigFive memiliki tim yang sangat aktif dan terlibat yang terus berusaha untuk mendorong BigFive ke depan.'
+    }
+  },
+  toolbar: {
+    home: 'Rumah',
+    result: 'Hasil',
+    compare: 'Membandingkan',
+    articles: 'Artikel',
+    privacy: 'Pribadi',
+    about: 'Tentang',
+    see_results: 'Lihat hasil Anda',
+    compare_with: 'Bandingkan dengan orang lain'
+  },
+  facets: {
     openness_to_experience: {
-        title: 'Keterbukaan terhadap Pengalaman',
-        seo: {
-            title: 'Gambaran umum tentang domain Openness To Experience.',
-            description: 'Baca lebih lanjut tentang domain Openness To Experience dalam model b5'
-        }
+      title: 'Keterbukaan untuk mengalami'
     },
     conscientiousness: {
-        title: 'Kesadaran',
-        seo: {
-            title: 'Sekilas tentang domain Conscientiousness',
-            description: 'Baca lebih lanjut tentang domain Conscientiousness dalam model b5'
-        }
+      title: 'Kesadaran'
     },
     extraversion: {
-        title: 'Ekstraversi',
-        seo: {
-            title: 'Tinjauan tentang ekstraversi domain',
-            description: 'Baca lebih lanjut tentang domain Extraversion dalam model b5'
-        }
+      title: 'Ekstraversi'
     },
     agreeableness: {
-        title: 'Persetujuan',
-        seo: {
-            title: 'Ikhtisar domain Persetujuan',
-            description: 'Baca lebih lanjut tentang domain kesesuaian dalam model b5'
-        }
+      title: 'Persetujuan'
     },
     neuroticism: {
-        title: 'Neuroticism',
-        seo: {
-            title: 'Tinjauan tentang domain Neuroticism',
-            description: 'Baca lebih lanjut tentang domain Neuroticism dalam model b5'
-        }
-    },
-    getCompare: {
-        title: 'Bandingkan orang atau tim',
-        description1: 'Bandingkan hasil tes kepribadian bigfive dengan banyak orang.',
-        description2: 'Ketik ID yang Anda dapatkan dari hasil tes, mis.',
-        description3: 'di kolom ID-input',
-        needToAddPeople: 'Anda perlu menambahkan orang untuk membandingkan mereka',
-        addAnother: 'Tambahkan orang lain',
-        addPerson: 'Tambahkan Orang',
-        comparePeople: 'bandingkan orang',
-        nameOfPerson: 'Nama orang ini',
-        urlOrId: 'URL atau ID untuk perbandingan',
-        name: 'Nama'
-    },
-    results: {
-        theBigFive: 'Lima Besar',
-        score: 'skor',
-        important: 'Penting!',
-        saveResults: 'Simpan ID berikut untuk melihat hasilnya nanti atau',
-        compare: 'membandingkan',
-        toOthers: 'diri Anda kepada orang lain',
-        seo: {
-            title: 'Hasil saya dari tes kepribadian BigFive',
-            description: 'Lihat kepribadian saya dan bandingkan diri Anda dalam lima domain berikut: Neuroticism, Openness To Experience, Conscientiousness, Extraversion, Agreeableness'
-        }
-    },
-    getResult: {
-        result: 'Hasil',
-        explaination: 'Jika Anda telah mengikuti tes dan menyimpan ID Anda, Anda dapat melihat hasilnya di sini dengan mengetikkan ID yang Anda dapatkan, yaitu.',
-        idInput: 'di kolom ID-input',
-        urlOrId: 'URL atau ID hasil Anda',
-        getResult: 'Dapatkan hasil'
-    },
-    shareLinks: {
-        copyLink: 'Salin link ke clipboard',
-        shareFacebook: 'Bagikan di Facebook',
-        shareTwitter: 'Bagikan di Twitter',
-        copiedLink: 'Tautan disalin',
-        shareResults: 'Bagikan hasil Anda!'
-    },
-    opennessToExperience: {
-        quote: 'Openness to Experience menggambarkan dimensi gaya kognitif yang membedakan orang yang imajinatif dan kreatif dari orang yang sederhana dan konvensional.',
-        text1: `
+      title: 'Neuroticism'
+    }
+  },
+  common: {
+    and: 'dan',
+    pages: 'halaman',
+    languages: 'bahasa'
+  },
+  form: {
+    information: 'Informasi',
+    informationText: 'Kami menggunakan informasi yang Anda berikan untuk melayani Anda',
+    mostAccurate: 'hasil yang paling akurat',
+    readMoreAbout: 'Baca lebih lanjut tentang',
+    privacy: 'pribadi',
+    nextButton: 'Oke, pertanyaan selanjutnya',
+    declineButton: 'lanjutkan tanpa berbagi',
+    prefferedLanguage: 'Bahasa pilihan saya adalah',
+    selectLanguage: 'Pilih bahasa',
+    iama: 'saya adalah seorang',
+    male: 'Pria',
+    female: 'Perempuan',
+    age: 'Usia',
+    iam: 'saya',
+    yearsOld: 'tahun',
+    ageWarning: 'Anda harus berusia 16 tahun ke atas',
+    language: 'Bahasa',
+    gender: 'Jenis kelamin',
+    confirmInfo: 'Konfirmasikan informasi',
+    confirm: 'Konfirmasi',
+    toTestButton: 'Baiklah, bawa saya ke tes'
+  },
+  test: {
+    next: 'lanjut',
+    back: 'kembali',
+    more: 'lebih',
+    seeResults: 'lihat hasilnya'
+  },
+  big_five: {
+    title: 'Apakah lima besar itu?',
+    seo: {
+      title: 'Apakah lima besar itu?',
+      description: 'Baca lebih lanjut tentang lima besar'
+    }
+  },
+  openness_to_experience: {
+    title: 'Keterbukaan terhadap Pengalaman',
+    seo: {
+      title: 'Gambaran umum tentang domain Openness To Experience.',
+      description: 'Baca lebih lanjut tentang domain Openness To Experience dalam model b5'
+    }
+  },
+  conscientiousness: {
+    title: 'Kesadaran',
+    seo: {
+      title: 'Sekilas tentang domain Conscientiousness',
+      description: 'Baca lebih lanjut tentang domain Conscientiousness dalam model b5'
+    }
+  },
+  extraversion: {
+    title: 'Ekstraversi',
+    seo: {
+      title: 'Tinjauan tentang ekstraversi domain',
+      description: 'Baca lebih lanjut tentang domain Extraversion dalam model b5'
+    }
+  },
+  agreeableness: {
+    title: 'Persetujuan',
+    seo: {
+      title: 'Ikhtisar domain Persetujuan',
+      description: 'Baca lebih lanjut tentang domain kesesuaian dalam model b5'
+    }
+  },
+  neuroticism: {
+    title: 'Neuroticism',
+    seo: {
+      title: 'Tinjauan tentang domain Neuroticism',
+      description: 'Baca lebih lanjut tentang domain Neuroticism dalam model b5'
+    }
+  },
+  getCompare: {
+    title: 'Bandingkan orang atau tim',
+    description1: 'Bandingkan hasil tes kepribadian bigfive dengan banyak orang.',
+    description2: 'Ketik ID yang Anda dapatkan dari hasil tes, mis.',
+    description3: 'di kolom ID-input',
+    needToAddPeople: 'Anda perlu menambahkan orang untuk membandingkan mereka',
+    addAnother: 'Tambahkan orang lain',
+    addPerson: 'Tambahkan Orang',
+    comparePeople: 'bandingkan orang',
+    nameOfPerson: 'Nama orang ini',
+    urlOrId: 'URL atau ID untuk perbandingan',
+    name: 'Nama'
+  },
+  results: {
+    theBigFive: 'Lima Besar',
+    score: 'skor',
+    important: 'Penting!',
+    saveResults: 'Simpan ID berikut untuk melihat hasilnya nanti atau',
+    compare: 'membandingkan',
+    toOthers: 'diri Anda kepada orang lain',
+    seo: {
+      title: 'Hasil saya dari tes kepribadian BigFive',
+      description: 'Lihat kepribadian saya dan bandingkan diri Anda dalam lima domain berikut: Neuroticism, Openness To Experience, Conscientiousness, Extraversion, Agreeableness'
+    }
+  },
+  getResult: {
+    result: 'Hasil',
+    explaination: 'Jika Anda telah mengikuti tes dan menyimpan ID Anda, Anda dapat melihat hasilnya di sini dengan mengetikkan ID yang Anda dapatkan, yaitu.',
+    idInput: 'di kolom ID-input',
+    urlOrId: 'URL atau ID hasil Anda',
+    getResult: 'Dapatkan hasil'
+  },
+  shareLinks: {
+    copyLink: 'Salin link ke clipboard',
+    shareFacebook: 'Bagikan di Facebook',
+    shareTwitter: 'Bagikan di Twitter',
+    copiedLink: 'Tautan disalin',
+    shareResults: 'Bagikan hasil Anda!'
+  },
+  opennessToExperience: {
+    quote: 'Openness to Experience menggambarkan dimensi gaya kognitif yang membedakan orang yang imajinatif dan kreatif dari orang yang sederhana dan konvensional.',
+    text1: `
         <p>
         Openness to Experience menggambarkan dimensi gaya kognitif yang membedakan orang yang imajinatif dan kreatif dari orang yang sederhana dan konvensional.
         </p>
@@ -212,7 +212,7 @@ export default {
         Kaum intelektual biasanya mendapat skor tinggi pada Openness to Experience; akibatnya, faktor ini juga disebut Budaya atau Intelek.
         </p>
       `,
-        text2: `
+    text2: `
         <p>
         Meskipun demikian, Akal mungkin paling baik dianggap sebagai salah satu aspek keterbukaan terhadap pengalaman.
         Skor pada Keterbukaan terhadap Pengalaman hanya sedikit terkait dengan tahun pendidikan dan skor pada tes kecerdasan standar.
@@ -323,5 +323,5 @@ export default {
         Kaum konservatif psikologis lebih menyukai keamanan dan stabilitas yang dibawa oleh kesesuaian dengan tradisi. Liberalisme psikologis dan konservatisme tidak identik dengan afiliasi politik, tetapi yang pasti mengarahkan individu ke partai politik tertentu.
         </p>
       `
-    }
+  }
 }
