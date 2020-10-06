@@ -60,6 +60,8 @@ You could embed it in an iframe or you could set it up on your own server.
 If you need help with that, contact us at bigfive-test@rubynor.com and describe
 thoroughly what you have in mind, so we can give you a good price estimate.
 
+Our fee is $120/h.
+
 ### Where can I find more information about the questions and the evaluation?
 
 See the [IPIP Website](https://ipip.ori.org/) for more information.
