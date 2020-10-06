@@ -4,6 +4,7 @@ import da from './da.js'
 import sv from './sv.js'
 import ar from './ar'
 import de from './de'
+import id from './id'
 
 export default {
   en,
@@ -11,5 +12,6 @@ export default {
   da,
   sv,
   ar,
-  de
+  de,
+  id
 }
