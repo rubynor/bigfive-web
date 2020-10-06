@@ -116,6 +116,13 @@ export default {
             iso: 'en-US',
             file: 'en-US.js',
             dir: 'ltr'
+          },
+          {
+            name: 'Russian',
+            code: 'ru',
+            iso: 'ru',
+            file: 'ru.js',
+            dir: 'ltr'
           }
         ],
         seo: true,
