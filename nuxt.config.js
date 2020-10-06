@@ -151,6 +151,13 @@ export default {
             iso: 'zh-Hans',
             file: 'zh-Hans.js',
             dir: 'ltr'
+          },
+          {
+            name: 'Bahasa Indonesia',
+            code: 'id',
+            iso: 'id',
+            file: 'id.js',
+            dir: 'ltr'
           }
         ],
         seo: true,
