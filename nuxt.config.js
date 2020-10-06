@@ -111,10 +111,45 @@ export default {
             dir: 'ltr'
           },
           {
+            name: 'Spanish',
+            code: 'es',
+            iso: 'es',
+            file: 'es.js',
+            dir: 'ltr'
+          },
+          {
             name: 'English',
             code: 'en',
             iso: 'en-US',
             file: 'en-US.js',
+            dir: 'ltr'
+          },
+          {
+            name: 'Hindi',
+            code: 'hi',
+            iso: 'hi',
+            file: 'hi.js',
+            dir: 'ltr'
+          },
+          {
+            name: 'French',
+            code: 'fr',
+            iso: 'fr',
+            file: 'fr.js',
+            dir: 'ltr'
+          },
+          {
+            name: 'Russian',
+            code: 'ru',
+            iso: 'ru',
+            file: 'ru.js',
+            dir: 'ltr'
+          },
+          {
+            name: 'Chinese',
+            code: 'zh-Hans',
+            iso: 'zh-Hans',
+            file: 'zh-Hans.js',
             dir: 'ltr'
           }
         ],

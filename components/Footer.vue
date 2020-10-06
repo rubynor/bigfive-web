@@ -81,7 +81,10 @@
         <h3 class="mb-2">
           Having questions about or problems with the site?
         </h3>
-        Please read the <nuxt-link :to="localePath('faq')" @click="logClick('FAQ')">
+        Please read the <nuxt-link
+          :to="localePath('faq')"
+          @click="logClick('FAQ')"
+        >
           FAQ
         </nuxt-link>.
       </v-col>

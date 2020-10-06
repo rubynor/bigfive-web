@@ -6,7 +6,9 @@
         :key="link.id"
         class
       >
-        <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
+        <NuxtLink :to="`#${link.id}`">
+          {{ link.text }}
+        </NuxtLink>
       </v-list-item>
     </v-list>
     <nuxt-content :document="page" />
