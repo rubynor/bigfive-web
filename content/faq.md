@@ -1,14 +1,14 @@
 # Frequently Asked Questions
 
 
-### I have an error or issue with this website
+### I got an error on this website
 
 Submit an issue at [GitHub](https://github.com/rubynor/bigfive-web) or send us
 and e-mail at bigfive-test@rubynor.com
 
-### Can I use bigfive-test.com for Commercial Purposes?
+### Can I use this for Commercial Purposes?
 
-Yes, the project is licensed under the [MIT
+Yes, this [project](https://github.com/rubynor/bigfive-web) is licensed under the [MIT
 license](https://en.wikipedia.org/wiki/MIT_License).
 
 ### How do I print my test results?
@@ -28,7 +28,7 @@ This will generate a file and download it to your computer.
 
 Send the downloaded file to bigfive-test@rubynor.com and tell us which language you have translated
 
-If you want to translate it on github instead, you can follow the description
+If you want to translate it directly on github instead, you can follow the description
 [here](https://github.com/Alheimsins/b5-johnson-120-ipip-neo-pi-r/blob/master/README.md#help-wanted).
 
 ### I want to translate the result text to my language
