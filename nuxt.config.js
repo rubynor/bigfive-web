@@ -111,6 +111,13 @@ export default {
             dir: 'ltr'
           },
           {
+            name: 'Spanish',
+            code: 'es',
+            iso: 'es',
+            file: 'es.js',
+            dir: 'ltr'
+          },
+          {
             name: 'English',
             code: 'en',
             iso: 'en-US',
