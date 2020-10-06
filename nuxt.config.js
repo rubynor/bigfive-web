@@ -111,6 +111,13 @@ export default {
             dir: 'ltr'
           },
           {
+            name: 'Finnish',
+            code: 'fi',
+            iso: 'fi',
+            file: 'fi.js',
+            dir: 'ltr'
+          },
+          {
             name: 'Spanish',
             code: 'es',
             iso: 'es',
