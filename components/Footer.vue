@@ -81,7 +81,7 @@
         <h3 class="mb-2">
           Having questions about or problems with the site?
         </h3>
-        Please read the <nuxt-link :to="localePath('faq')">
+        Please read the <nuxt-link :to="localePath('faq')" @click="logClick('FAQ')">
           FAQ
         </nuxt-link>.
       </v-col>
@@ -99,7 +99,12 @@ export default {
     mdiTwitter,
     mdiLinkedin,
     mdiGithub
-  })
+  }),
+  methods: {
+    logClick (choice) {
+      this.$amplitude.getInstance().logEvent(`goes to ${choice}`, {})
+    }
+  }
 }
 </script>
 
