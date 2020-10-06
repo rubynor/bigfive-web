@@ -122,6 +122,19 @@ export default {
             code: 'hi',
             iso: 'hi',
             file: 'hi.js',
+          },
+          {
+            name: 'Russian',
+            code: 'ru',
+            iso: 'ru',
+            file: 'ru.js',
+            dir: 'ltr'
+          },
+          {
+            name: 'Chinese',
+            code: 'zh-Hans',
+            iso: 'zh-Hans',
+            file: 'zh-Hans.js',
             dir: 'ltr'
           }
         ],
