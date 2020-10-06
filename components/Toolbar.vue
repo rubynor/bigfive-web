@@ -38,7 +38,7 @@
         >
           {{ $t('toolbar.compare_with') }}
         </v-btn>
-
+        <LanguageSwitcher />
         <v-menu
           v-model="drawer"
           bottom
@@ -52,7 +52,7 @@
               v-on="on"
               @click="drawer = !drawer"
             >
-              <v-icon>{{ icons.mdiChevronDown }}</v-icon>
+              <v-icon>{{ icons.mdiMenu }}</v-icon>
             </v-btn>
           </template>
           <v-list nav>
@@ -71,7 +71,6 @@
             >
               {{ item.title }}
             </v-list-item>
-            <LanguageSwitcher />
           </v-list>
         </v-menu>
       </div>
@@ -80,14 +79,14 @@
 </template>
 
 <script>
-import { mdiChevronDown } from '@mdi/js'
+import { mdiMenu } from '@mdi/js'
 
 export default {
   components: {
     LanguageSwitcher: () => import('./LanguageSwitcher')
   },
   data: function () {
-    const icons = { mdiChevronDown }
+    const icons = { mdiMenu }
     return {
       drawer: false,
       logoSrc: require('@/assets/logo.svg'),

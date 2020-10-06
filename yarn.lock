@@ -10360,6 +10360,11 @@ supports-color@^7.0.0, supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
+svg-country-flags@1.2.9:
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/svg-country-flags/-/svg-country-flags-1.2.9.tgz#f50136f33e6e9c036943a293b17d4c2e745cbbfb"
+  integrity sha512-P/0e635dopb0Yqt2qGbx88KiRG1+xou+QOiS4qiCLRE985zk4sxKQeMJYjc9/2PuUSOqvBv+roSklG7ZfglRmA==
+
 svg-tags@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/svg-tags/-/svg-tags-1.0.0.tgz#58f71cee3bd519b59d4b2a843b6c7de64ac04764"
