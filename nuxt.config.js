@@ -116,6 +116,13 @@ export default {
             iso: 'en-US',
             file: 'en-US.js',
             dir: 'ltr'
+          },
+          {
+            name: 'Hindi',
+            code: 'hi',
+            iso: 'hi',
+            file: 'hi.js',
+            dir: 'ltr'
           }
         ],
         seo: true,
