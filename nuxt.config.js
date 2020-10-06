@@ -118,6 +118,13 @@ export default {
             dir: 'ltr'
           },
           {
+            name: 'Russian',
+            code: 'ru',
+            iso: 'ru',
+            file: 'ru.js',
+            dir: 'ltr'
+          },
+          {
             name: 'Chinese',
             code: 'zh-Hans',
             iso: 'zh-Hans',
