@@ -125,6 +125,12 @@ export default {
             dir: 'ltr'
           },
           {
+            name: 'French',
+            code: 'fr',
+            iso: 'fr',
+            file: 'fr.js',
+          },
+          {
             name: 'Russian',
             code: 'ru',
             iso: 'ru',
