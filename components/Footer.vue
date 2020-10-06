@@ -83,9 +83,8 @@
         </h3>
         Please read the <nuxt-link
           :to="localePath('faq')"
-          @click="logClick('FAQ')"
         >
-          FAQ
+          <a @click="logClick('FAQ')">FAQ</a>
         </nuxt-link>.
       </v-col>
     </v-row>
@@ -105,6 +104,7 @@ export default {
   }),
   methods: {
     logClick (choice) {
+      console.log(choice)
       this.$amplitude.getInstance().logEvent(`goes to ${choice}`, {})
     }
   }
