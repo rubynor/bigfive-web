@@ -6,7 +6,7 @@ export default {
   frontpage: {
     seo: {
       title: 'Prueba gratuita de rasgos de personalidad BigFive de código abierto',
-      description: 'Realice una prueba de personalidad de los Cinco Grandes de código abierto y gratuita. Aprende a conocer tus rasgos de personalidad y compárate con tu pareja, compañeros, amigos o familiares.'
+      description: 'Realiza la prueba de personalidad de los Cinco Grandes de código abierto y gratuita. Aprende a conocer tus rasgos de personalidad y compárate con tu pareja, compañeros, amigos o familiares.'
     },
     title: 'Prueba de personalidad de los cinco grandes',
     call_to_action: 'Haz la prueba gratis ahora',
@@ -30,28 +30,28 @@ export default {
       },
       scientific: {
         title: 'Científico',
-        text: 'BigFive es un modelo psicológico confiable y científicamente validado.'
+        text: 'Los Cinco Grandes es un modelo psicológico confiable y científicamente validado.'
       },
       translated: {
         title: 'Traducido',
-        text: 'Traducido a más de 20 idiomas. Ayudar <a href="https://b5.translations.alheimsins.net/" rel="noreferrer" target="blank">aquí</a>!'
+        text: 'Traducido a más de 20 idiomas. Puedes ayudar <a href="https://b5.translations.alheimsins.net/" rel="noreferrer" target="blank">aquí</a>!'
       }
     },
     description: {
-      top: 'Aprenda a conocerse mejor a sí mismo con un test de personalidad de código abierto gratuito.',
+      top: 'Aprende a conocerte mejor con un test de personalidad gratuito y de código abierto',
       subtop: 'el',
       subtop2: ' es el modelo psicológico más confiable y científicamente validado para medir la personalidad.',
       reference: `Las pruebas y la evaluación de este sitio se obtienen de
 <a href="http://ipip.ori.org" rel="noopener" target="_blank">ipip.ori.org</a>,
 el inventario es de<i>Johnson's (2014) IPIP NEO-PI-R de 120 elementos</i>.`,
-      info: 'La siguiente prueba contiene 120 preguntas que se estima que le llevará unos 10 minutos completar.',
+      info: 'La siguiente prueba contiene 120 preguntas que estimamos le tomará unos 10 minutos completar.',
       result: 'Una vez que haya completado la prueba, recibirá un informe de personalidad detallado en los siguientes dominios:',
       tests_taken: 'pruebas tomadas hasta ahora'
     }
   },
   about: {
     seo: {
-      title: 'Acerca de y el equipo de los cinco grandes',
+      title: 'Acerca de y el equipo de BigFive',
       description: 'BigFive tiene un equipo muy activo y comprometido que se esfuerza constantemente por impulsar BigFive adelante'
     }
   },
@@ -67,7 +67,7 @@ el inventario es de<i>Johnson's (2014) IPIP NEO-PI-R de 120 elementos</i>.`,
   },
   facets: {
     openness_to_experience: {
-      title: 'Abierto a la experiencia'
+      title: 'Apertura a la Experiencia'
     },
     conscientiousness: {
       title: 'Escrupulosidad'
@@ -119,15 +119,15 @@ el inventario es de<i>Johnson's (2014) IPIP NEO-PI-R de 120 elementos</i>.`,
   big_five: {
     title: 'Que son los cinco grandes?',
     seo: {
-      title: 'Que son los cinco grandes?',
+      title: 'Que son los Cinco Grandes?',
       description: 'Leer más sobre los cinco grandes'
     }
   },
   openness_to_experience: {
-    title: 'Abierto a la experiencia',
+    title: 'Apertura a la Experiencia',
     seo: {
-      title: 'Descripción general del dominio Apertura a la experiencia.',
-      description: 'Más información sobre el dominio Apertura a la experiencia en el modelo b5'
+      title: 'Descripción general del dominio Apertura a la Experiencia.',
+      description: 'Más información sobre el dominio Apertura a la Experiencia en el modelo b5'
     }
   },
   conscientiousness: {
@@ -145,7 +145,7 @@ el inventario es de<i>Johnson's (2014) IPIP NEO-PI-R de 120 elementos</i>.`,
     }
   },
   agreeableness: {
-    title: 'Agreeableness',
+    title: 'Amabilidad',
     seo: {
       title: 'Descripción general del dominio Amabilidad',
       description: 'Leer más sobre el dominio de la amabilidad en el modelo b5'
@@ -179,7 +179,7 @@ el inventario es de<i>Johnson's (2014) IPIP NEO-PI-R de 120 elementos</i>.`,
     compare: 'comparar',
     toOthers: 'usted mismo a los demás',
     seo: {
-      title: 'Mis resultados de la prueba de personalidad BigFive',
+      title: 'Mis resultados de la prueba de personalidad de los Cinco Grandes',
       description: 'Vea mi personalidad y compárese en los siguientes cinco dominios: neuroticismo, apertura a la experiencia, escrupulosidad, extraversión, amabilidad'
     }
   },
@@ -198,129 +198,129 @@ el inventario es de<i>Johnson's (2014) IPIP NEO-PI-R de 120 elementos</i>.`,
     shareResults: 'Comparte tus resultados!'
   },
   opennessToExperience: {
-    quote: 'Openness to Experience describes a dimension of cognitive style that distinguishes imaginative, creative people from down-to-earth, conventional people.',
+    quote: 'Abierto a la Experiencia describe una dimensión del estilo cognitivo que distingue a las personas imaginativas, aquellas con los pies en la tierra y personas convencionales.',
     text1: `
       <p>
-        Openness to Experience describes a dimension of cognitive style that distinguishes imaginative, creative people from down-to-earth, conventional people.
+        Abierto a la Experiencia describe una dimensión del estilo cognitivo que distingue a las personas imaginativas, aquellas con los pies en la tierra y personas convencionales.
       </p>
       <p>
-        Open people are <b>intellectually curious, appreciative of art, and sensitive to beauty</b>.
-        They tend to be, compared to closed people, more <b>aware of their feelings</b>.
-        They tend to think and act in individualistic and nonconforming ways.
+        Las personas abiertas son <b>intelectualmente curiosas, aprecian el arte y son sensibles a la belleza</b>.
+        Tienden a ser, en comparación con las personas cerradas, más <b>consciente de sus sentimientos</b>.
+        Tienden a pensar y actuar de manera individualista e inconforme.
       </p>
       <p>
-        Intellectuals typically score high on Openness to Experience; consequently, this factor has also been called Culture or Intellect.
+        Los intelectuales suelen puntuar alto en Abierto a la Experiencia; en consecuencia, a este factor también se le ha llamado Cultura o Intelecto.
       </p>
     `,
     text2: `
       <p>
-        Nonetheless, Intellect is probably best regarded as one aspect of openness to experience.
-        Scores on Openness to Experience are only modestly related to years of education and scores on standard intelligent tests.
+        No obstante, probablemente se considere mejor al intelecto como un aspecto de Abierto a la experiencia.
+        Los puntajes en Abierto a la Experiencia están solo modestamente relacionados con los años de educación y los puntajes en las pruebas estándar inteligentes.
       </p>
       <p>
-        Another characteristic of the open cognitive style is a facility for thinking in symbols and abstractions far removed from concrete experience.
+        Otra característica del estilo cognitivo abierto es la facilidad para pensar en símbolos y abstracciones muy lejos de la experiencia concreta.
       </p>
       <p>
-        Depending on the individual's specific intellectual abilities, this symbolic cognition may take the form of mathematical, logical, or geometric thinking, artistic and metaphorical use of language, music composition or performance, or one of the many visual or performing arts.
+        Dependiendo de las habilidades intelectuales específicas del individuo, esta cognición simbólica puede tomar la forma de pensamiento matemático, lógico o geométrico, uso artístico y metafórico del lenguaje, composición o interpretación musical, o una de las muchas artes visuales o escénicas.
       </p>
       <div class="title">
-        Low scores
+        Puntuaciones bajas
       </div>
       <p>
-        People with <b>low scores</b> on openness to experience tend to have <b>narrow, common interests</b>.
+        Personas con <b>puntuaciones bajas</b> en Abierto a la experiencia, tienden a tener <b>intereses comunes y estrechos</b>.
       </p>
       <p>
-        They prefer the <b>plain, straightforward</b>, and obvious over the complex, ambiguous, and subtle.
+        Prefieren lo <b>sencillo, directo</b>, y obvio sobre lo complejo, ambiguo y sutil.
       </p>
       <p>
-        They may regard the arts and sciences with suspicion, regarding these endeavors as abstruse or of no practical use.
+        Pueden considerar las artes y las ciencias con sospecha, considerando estos esfuerzos como difícil de comprender o sin utilidad práctica.
       </p>
       <p>
-        Closed people prefer familiarity over novelty; they are conservative and resistant to change.
+        Las personas cerradas prefieren la familiaridad a la novedad; son conservadores y resistentes al cambio.
       </p>
       <p>
-        Openness is often presented as healthier or more mature by psychologists, who are often themselves open to experience. However, open and closed styles of thinking are useful in different environments.
+        Los psicólogos suelen presentar la Apertura como algo más saludable o más maduro, que a menudo están abiertos a la experiencia. Sin embargo, los estilos de pensamiento abiertos y cerrados son útiles en diferentes entornos.
       </p>
       <p>
-      The intellectual style of the open person may serve a professor well, but research has shown that closed thinking is related to superior job performance in police work, sales, and a number of service occupations.
+      El estilo intelectual de la persona abierta puede serle útil a un profesor, pero las investigaciones han demostrado que el pensamiento cerrado está relacionado con un desempeño laboral superior en el trabajo de policía, ventas y una serie de ocupaciones de servicios.
       </p>
 
       <div class="title">
-        Imagination
+        Imaginación
       </div>
       <p>
-        To imaginative individuals, the real world is often too plain and ordinary.
+        Para los individuos imaginativos, el mundo real suele ser demasiado simple y ordinario..
       </p>
       <p>
-        <b>High scorers</b> on this scale use fantasy as a way of creating a richer, more interesting world.
+        <b>Altos puntajes</b> en esta escala, utilice la fantasía como una forma de crear un mundo más rico e interesante..
       </p>
       <p>
-      <b>Low scorers</b> are on this scale are more oriented to facts than fantasy.
+      <b>Bajos puntajes</b> están en esta escala están más orientados a los hechos que a la fantasía.
       </p>
 
       <div class="title">
-        Artistic Interests
+        Intereses Artísticos
       </div>
       <p>
-      <b>High scorers</b> on this scale love beauty, both in art and in nature. They become easily involved and absorbed in artistic and natural events.
+      <b>Altos puntajes</b> en esta escala ama la belleza, tanto en el arte como en la naturaleza. Se involucran y absorben fácilmente en eventos artísticos y naturales.
       </p>
       <p>
-        They are not necessarily artistically trained nor talented, although many will be. The defining features of this scale are interest in, and appreciation of natural and artificial beauty.
+        No tienen necesariamente formación artística ni talento, aunque muchos lo estarán. Las características definitorias de esta escala son el interés y la apreciación de la belleza natural y artificial.
       </p>
       <p>
-        <b>Low scorers</b> lack aesthetic sensitivity and interest in the arts.
+        <b>Bajos puntajes</b> falta de sensibilidad estética e interés por las artes.
       </p>
 
       <div class="title">
-        Emotionality
+        Emocionalidad
       </div>
       <p>
         Persons high on Emotionality have good access to and awareness of their own feelings.
       </p>
       <p>
-        Low scorers are less aware of their feelings and tend not to express their emotions openly.
+        Las personas con alto nivel de Emocionalidad tienen buen acceso y conciencia de sus propios sentimientos.
       </p>
 
       <div class="title">
-        Adventurousness
+        Aventura
       </div>
       <p>
-        High scorers on adventurousness are eager to try new activities, travel to foreign lands, and experience different things.
+        Las personas con puntajes altos en aventureros están ansiosas por probar nuevas actividades, viajar a tierras extranjeras y experimentar cosas diferentes.
       </p>
       <p>
-        They find familiarity and routine boring, and will take a new route home just because it is different.
+        Encuentran aburrida la familiaridad y la rutina, y tomarán una nueva ruta a casa solo porque es diferente.
       </p>
       <p>
-        Low scorers tend to feel uncomfortable with change and prefer familiar routines.
+        Los que obtienen puntuaciones bajas tienden a sentirse incómodos con el cambio y prefieren las rutinas familiares.
       </p>
 
       <div class="title">
         Intellect
       </div>
       <p>
-        Intellect and artistic interests are the two most important, central aspects of openness to experience. High scorers on Intellect love to play with ideas.
+        El intelecto y los intereses artísticos son los dos aspectos centrales más importantes de la Apertura a la Experiencia. A los que obtienen puntuaciones altas en Intelecto les encanta jugar con las ideas.
       </p>
       <p>
-        They are open-minded to new and unusual ideas, and like to debate intellectual issues. They enjoy riddles, puzzles, and brain teasers. Low scorers on Intellect prefer dealing with either people or things rather than ideas.
+        Tienen la mente abierta a ideas nuevas e inusuales y les gusta debatir sobre cuestiones intelectuales. Disfrutan de acertijos, acertijos y acertijos. Los que obtienen puntuaciones bajas en intelecto prefieren tratar con personas o cosas en lugar de ideas.
       </p>
       <p>
-        They regard intellectual exercises as a waste of time.
+        Consideran los ejercicios intelectuales como una pérdida de tiempo.
       </p>
       <p>
-        Intellect should not be equated with intelligence. Intellect is an intellectual style, not an intellectual ability, although high scorers on Intellect score slightly higher than low-Intellect individuals on standardized intelligence tests.
+        El intelecto no debe equipararse con la inteligencia. El intelecto es un estilo intelectual, no una habilidad intelectual, aunque los puntajes altos en Intelecto obtienen un puntaje ligeramente más alto que los individuos con bajo Intelecto en las pruebas de inteligencia estandarizadas.
       </p>
 
       <div class="title">
-        Liberalism
+        Liberalismo
       </div>
       <p>
-        Psychological liberalism refers to a readiness to challenge authority, convention, and traditional values.
+        El liberalismo psicológico se refiere a la disposición a desafiar la autoridad, las convenciones y los valores tradicionales.
       </p>
       <p>
-        In its most extreme form, psychological liberalism can even represent outright hostility toward rules, sympathy for law-breakers, and love of ambiguity, chaos, and disorder.
+        En su forma más extrema, el liberalismo psicológico puede incluso representar una abierta hostilidad hacia las reglas, simpatía por los infractores de la ley y amor por la ambigüedad, el caos y el desorden.
       </p>
       <p>
-        Psychological conservatives prefer the security and stability brought by conformity to tradition. Psychological liberalism and conservatism are not identical to political affiliation, but certainly incline individuals toward certain political parties.
+        Los conservadores psicológicos prefieren la seguridad y la estabilidad que brinda la conformidad con la tradición. El liberalismo psicológico y el conservadurismo no son idénticos a la afiliación política, pero ciertamente inclinan a los individuos hacia ciertos partidos políticos.
       </p>
     `
   }
