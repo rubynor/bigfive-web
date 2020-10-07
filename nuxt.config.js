@@ -179,6 +179,13 @@ export default {
             iso: 'ja',
             file: 'ja.js',
             dir: 'ltr'
+          },
+          {
+            name: 'Brazilian Portuguese',
+            code: 'pt',
+            iso: 'pt-br',
+            file: 'pt-BR.js',
+            dir: 'ltr'
           }
         ],
         seo: true,
