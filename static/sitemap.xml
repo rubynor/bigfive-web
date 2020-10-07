@@ -14,6 +14,9 @@
     <xhtml:link rel="alternate" hreflang="hi" href="https://bigfive-test.com/hi" />
     <xhtml:link rel="alternate" hreflang="id" href="https://bigfive-test.com/id" />
     <xhtml:link rel="alternate" hreflang="fi" href="https://bigfive-test.com/fi" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bigfive-test.com/ja" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bigfive-test.com/uk" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bigfive-test.com/pt" />
     <xhtml:link rel="alternate" hreflang="zh-hans" href="https://bigfive-test.com/zh-Hans" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com" />
   </url>

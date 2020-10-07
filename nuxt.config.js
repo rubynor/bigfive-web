@@ -168,9 +168,9 @@ export default {
           },
           {
             name: 'Ukrainian',
-            code: 'ua',
-            iso: 'ua',
-            file: 'ua.js',
+            code: 'uk',
+            iso: 'uk',
+            file: 'uk.js',
             dir: 'ltr'
           },
           {
