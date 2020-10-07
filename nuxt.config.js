@@ -172,6 +172,13 @@ export default {
             iso: 'ua',
             file: 'ua.js',
             dir: 'ltr'
+          },
+          {
+            name: 'Japanese',
+            code: 'ja',
+            iso: 'ja',
+            file: 'ja.js',
+            dir: 'ltr'
           }
         ],
         seo: true,
