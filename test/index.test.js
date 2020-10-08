@@ -1,6 +1,5 @@
 const { resolve } = require('path')
 const { Nuxt, Builder } = require('nuxt')
-const { JSDOM } = require('jsdom')
 const test = require('ava')
 
 // We keep the nuxt and server instance
