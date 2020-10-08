@@ -186,6 +186,13 @@ export default {
             iso: 'pt-br',
             file: 'pt-BR.js',
             dir: 'ltr'
+          },
+          {
+            name: 'Italian',
+            code: 'it',
+            iso: 'it',
+            file: 'it.js',
+            dir: 'ltr'
           }
         ],
         seo: true,
