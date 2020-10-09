@@ -1,8 +1,8 @@
 # bigfive-web
 
-Prod: https://bigfive-test.com
+<img src="https://github.com/rubynor/bigfive-web/blob/master/static/icon.png?raw=true" width="160" height="160" alt="sharp logo" align="right">
 
-Latest: https://latest.bigfive-test.com
+Prod: https://bigfive-test.com
 
 Website for five factor model of personality based on work from [IPIP-NEO-PI](https://github.com/kholia/IPIP-NEO-PI).
 
