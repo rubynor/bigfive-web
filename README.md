@@ -1,6 +1,6 @@
 # bigfive-web
 
-<img src="https://github.com/rubynor/bigfive-web/blob/master/static/icon.png?raw=true" width="160" height="160" alt="sharp logo" align="right">
+<img src="https://github.com/rubynor/bigfive-web/blob/master/static/icon.png?raw=true" width="160" height="160" alt="Bigfive logo" align="right">
 
 Prod: https://bigfive-test.com
 
