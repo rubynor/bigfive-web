@@ -11,7 +11,7 @@
   ],
   "precommit": "yarn lint",
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt dev",
     "build": "nuxt build",
     "start": "nuxt start",
     "setup": "yarn install --frozen-lockfile && cd api && yarn install --frozen-lockfile",
@@ -48,7 +48,6 @@
     "@nuxtjs/google-analytics": "2.4.0",
     "@nuxtjs/vuetify": "1.11.2",
     "ava": "3.13.0",
-    "babel-core": "7.0.0-bridge.0",
     "eslint": "7.10.0",
     "eslint-config-standard": "14.1.1",
     "eslint-loader": "4.0.2",
