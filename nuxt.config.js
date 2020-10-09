@@ -181,6 +181,13 @@ export default {
             dir: 'ltr'
           },
           {
+            name: 'Polish',
+            code: 'pl',
+            iso: 'pl',
+            file: 'pl.js',
+            dir: 'ltr'
+          },
+          {
             name: 'Brazilian Portuguese',
             code: 'pt',
             iso: 'pt-br',
