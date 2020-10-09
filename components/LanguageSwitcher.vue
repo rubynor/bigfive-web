@@ -68,6 +68,7 @@ import idIcon from 'svg-country-flags/svg/id.svg'
 import ptIcon from 'svg-country-flags/svg/pt.svg'
 import itIcon from 'svg-country-flags/svg/it.svg'
 import plIcon from 'svg-country-flags/svg/pl.svg'
+import isIcon from 'svg-country-flags/svg/is.svg'
 
 export default {
   name: 'LanguageSwitcher',
@@ -92,7 +93,8 @@ export default {
         id: idIcon,
         pt: ptIcon,
         it: itIcon,
-        pl: plIcon
+        pl: plIcon,
+        is: isIcon
       }
     }
   },
