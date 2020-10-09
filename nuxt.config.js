@@ -179,6 +179,13 @@ export default {
             iso: 'ja',
             file: 'ja.js',
             dir: 'ltr'
+          },
+          {
+            name: 'Polish',
+            code: 'pl',
+            iso: 'pl',
+            file: 'pl.js',
+            dir: 'ltr'
           }
         ],
         seo: true,
