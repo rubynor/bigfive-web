@@ -200,6 +200,13 @@ export default {
             iso: 'it',
             file: 'it.js',
             dir: 'ltr'
+          },
+          {
+            name: 'Icelandic',
+            code: 'is',
+            iso: 'is',
+            file: 'is.js',
+            dir: 'ltr'
           }
         ],
         seo: true,
