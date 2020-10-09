@@ -17,7 +17,7 @@
     "setup": "yarn install --frozen-lockfile && cd api && yarn install --frozen-lockfile",
     "refresh": "rm -rf node_modules && rm yarn.lock && cd api && rm -rf node_modules && rm yarn.lock && cd .. && npm run setup",
     "generate": "nuxt generate",
-    "test": "yarn lint",
+    "test": "yarn lint && ava -v",
     "debug-build": "nuxt build -a",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
@@ -47,6 +47,8 @@
     "@mdi/js": "5.6.55",
     "@nuxtjs/google-analytics": "2.4.0",
     "@nuxtjs/vuetify": "1.11.2",
+    "ava": "3.13.0",
+    "babel-core": "7.0.0-bridge.0",
     "eslint": "7.10.0",
     "eslint-config-standard": "14.1.1",
     "eslint-loader": "4.0.2",

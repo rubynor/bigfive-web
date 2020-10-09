@@ -65,6 +65,8 @@ import cnIcon from 'svg-country-flags/svg/cn.svg'
 import uaIcon from 'svg-country-flags/svg/ua.svg'
 import inIcon from 'svg-country-flags/svg/in.svg'
 import idIcon from 'svg-country-flags/svg/id.svg'
+import ptIcon from 'svg-country-flags/svg/pt.svg'
+import itIcon from 'svg-country-flags/svg/it.svg'
 
 export default {
   name: 'LanguageSwitcher',
@@ -84,9 +86,11 @@ export default {
         fr: frIcon,
         ru: ruIcon,
         'zh-Hans': cnIcon,
-        ua: uaIcon,
+        uk: uaIcon,
         hi: inIcon,
-        id: idIcon
+        id: idIcon,
+        pt: ptIcon,
+        it: itIcon
       }
     }
   },

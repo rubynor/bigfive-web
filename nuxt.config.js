@@ -168,9 +168,9 @@ export default {
           },
           {
             name: 'Ukrainian',
-            code: 'ua',
-            iso: 'ua',
-            file: 'ua.js',
+            code: 'uk',
+            iso: 'uk',
+            file: 'uk.js',
             dir: 'ltr'
           },
           {
@@ -185,6 +185,20 @@ export default {
             code: 'pl',
             iso: 'pl',
             file: 'pl.js',
+            dir: 'ltr'
+          },
+          {
+            name: 'Brazilian Portuguese',
+            code: 'pt',
+            iso: 'pt-br',
+            file: 'pt-BR.js',
+            dir: 'ltr'
+          },
+          {
+            name: 'Italian',
+            code: 'it',
+            iso: 'it',
+            file: 'it.js',
             dir: 'ltr'
           }
         ],

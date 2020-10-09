@@ -90,8 +90,12 @@ export default {
     return {
       drawer: false,
       logoSrc: require('@/assets/logo.svg'),
-      icons,
-      items: [
+      icons
+    }
+  },
+  computed: {
+    items () {
+      return [
         { title: this.$t('toolbar.result'), url: '/result' },
         { title: this.$t('toolbar.compare'), url: '/compare' },
         { title: this.$t('toolbar.articles'), url: '/articles' },
