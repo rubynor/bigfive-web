@@ -3,7 +3,7 @@ import { languages, getItems, sleep, getInfo, elapsedTimeInSeconds } from '../li
 
 export const strict = false
 
-export const state = () => ({
+const getDefaultState = () => ({
   development: process.env.NODE_ENV === 'development',
   slide: 0,
   loading: false,
@@ -33,6 +33,8 @@ export const state = () => ({
   }
 })
 
+export const state = () => getDefaultState()
+
 export const getters = {
   FORM_IS_VALID: state => {
     return !!(state.form.gender && state.form.language && state.form.age && state.form.age > 15)
@@ -61,6 +63,9 @@ export const getters = {
 }
 
 export const mutations = {
+  RESET_STATE: (state) => {
+    Object.assign(state, getDefaultState())
+  },
   SET_SNACKBAR: (state, { msg, type = 'info' }) => {
     state.snackbar = {
       message: msg,
@@ -181,6 +186,7 @@ export const actions = {
 
       const { id } = await this.$axios.$post(process.env.API_URL + 'save', result)
 
+      context.commit('RESET_STATE')
       context.commit('SET_LOADING', false)
       $nuxt.$router.push({ path: `/result/${id}` })
     } catch (error) {
