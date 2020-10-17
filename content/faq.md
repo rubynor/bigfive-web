@@ -70,6 +70,10 @@ Our fee is $120/h.
 
 See the [IPIP Website](https://ipip.ori.org/) for more information.
 
+### Where can I find the question?
+
+All questtion and translations are in [this repo](https://github.com/Alheimsins/b5-johnson-120-ipip-neo-pi-r) in the data folder.
+
 ### Where can I find the code?
 
 The code is found [here](https://github.com/rubynor/bigfive-web) at GitHub.
