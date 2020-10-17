@@ -6,7 +6,7 @@
 Submit an issue at [GitHub](https://github.com/rubynor/bigfive-web) or send us
 and e-mail at bigfive-test@rubynor.com
 
-### Can I use this for Commercial Purposes?
+### Can I use the code for this website for Commercial Purposes?
 
 Yes, this [project](https://github.com/rubynor/bigfive-web) is licensed under the [MIT
 license](https://en.wikipedia.org/wiki/MIT_License).
