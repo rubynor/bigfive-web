@@ -6,10 +6,14 @@
 Submit an issue at [GitHub](https://github.com/rubynor/bigfive-web) or send us
 and e-mail at bigfive-test@rubynor.com
 
-### Can I use this for Commercial Purposes?
+### Can I use the code for this website for Commercial Purposes?
 
 Yes, this [project](https://github.com/rubynor/bigfive-web) is licensed under the [MIT
 license](https://en.wikipedia.org/wiki/MIT_License).
+
+### Can I use the quiestions for Commercial Purposes?
+
+Yes, the [questions](https://github.com/Alheimsins/b5-johnson-120-ipip-neo-pi-r) and translations are licensed under the [MIT license](https://en.wikipedia.org/wiki/MIT_License).
 
 ### How do I print my test results?
 
@@ -65,6 +69,12 @@ Our fee is $120/h.
 ### Where can I find more information about the questions and the evaluation?
 
 See the [IPIP Website](https://ipip.ori.org/) for more information.
+
+### Where can I find the questions?
+
+All questions and translations are in [this repo](https://github.com/Alheimsins/b5-johnson-120-ipip-neo-pi-r) in the data folder.
+
+The questions and scoring is taken from [ipip.ori.org](https://ipip.ori.org/30FacetNEO-PI-RItems.htm)
 
 ### Where can I find the code?
 
