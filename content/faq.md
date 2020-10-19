@@ -70,9 +70,11 @@ Our fee is $120/h.
 
 See the [IPIP Website](https://ipip.ori.org/) for more information.
 
-### Where can I find the question?
+### Where can I find the questions?
 
-All questtion and translations are in [this repo](https://github.com/Alheimsins/b5-johnson-120-ipip-neo-pi-r) in the data folder.
+All questions and translations are in [this repo](https://github.com/Alheimsins/b5-johnson-120-ipip-neo-pi-r) in the data folder.
+
+The questions and scoring is taken from [ipip.ori.org](https://ipip.ori.org/30FacetNEO-PI-RItems.htm)
 
 ### Where can I find the code?
 
