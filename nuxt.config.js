@@ -207,6 +207,13 @@ export default {
             iso: 'is',
             file: 'is.js',
             dir: 'ltr'
+          },
+          {
+            name: 'Thai',
+            code: 'th',
+            iso: 'th',
+            file: 'th.js',
+            dir: 'ltr'
           }
         ],
         seo: true,
