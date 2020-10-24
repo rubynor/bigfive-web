@@ -185,10 +185,11 @@ export default {
   },
   getResult: {
     result: 'Résultat',
-    explaination: 'Si vous avez passé le test et enregistré votre identifiant, vous pouvez voir les résultats ici en tapant l\'identifiant que vous avez obtenu, c\'est-à-dire',
+    explanation: 'Si vous avez passé le test et enregistré votre identifiant, vous pouvez voir les résultats ici en tapant l\'identifiant que vous avez obtenu, c\'est-à-dire',
     idInput: 'dans le champ de saisie ID',
     urlOrId: 'URL ou ID de votre résultat',
-    getResult: 'Obtenez le résultat'
+    getResult: 'Obtenez le résultat',
+    viewPrevious: 'Afficher le résultat précédent'
   },
   shareLinks: {
     copyLink: 'Copier le lien dans le presse-papiers',

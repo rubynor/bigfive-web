@@ -185,10 +185,11 @@ export default {
   },
   getResult: {
     result: 'Tulos',
-    explaination: 'Jos olet suorittanut testin ja tallentanut henkilötodistuksesi, näet tulokset täältä kirjoittamalla saamasi henkilötodistuksen.',
+    explanation: 'Jos olet suorittanut testin ja tallentanut henkilötodistuksesi, näet tulokset täältä kirjoittamalla saamasi henkilötodistuksen.',
     idInput: 'ID-syöttökentässä',
     urlOrId: 'Tuloksesi URL-osoite tai tunniste',
-    getResult: 'Hanki tulos'
+    getResult: 'Hanki tulos',
+    viewPrevious: 'Näytä edellinen tulos'
   },
   shareLinks: {
     copyLink: 'Kopioi linkki leikepöydälle',
@@ -244,7 +245,7 @@ export default {
         <p>
         The intellectual style of the open person may serve a professor well, but research has shown that closed thinking is related to superior job performance in police work, sales, and a number of service occupations.
         </p>
-  
+
         <div class="title">
           Imagination
         </div>
@@ -257,7 +258,7 @@ export default {
         <p>
         <b>Low scorers</b> are on this scale are more oriented to facts than fantasy.
         </p>
-  
+
         <div class="title">
           Artistic Interests
         </div>
@@ -270,7 +271,7 @@ export default {
         <p>
           <b>Low scorers</b> lack aesthetic sensitivity and interest in the arts.
         </p>
-  
+
         <div class="title">
           Emotionality
         </div>
@@ -280,7 +281,7 @@ export default {
         <p>
           Low scorers are less aware of their feelings and tend not to express their emotions openly.
         </p>
-  
+
         <div class="title">
           Adventurousness
         </div>
@@ -293,7 +294,7 @@ export default {
         <p>
           Low scorers tend to feel uncomfortable with change and prefer familiar routines.
         </p>
-  
+
         <div class="title">
           Intellect
         </div>
@@ -309,7 +310,7 @@ export default {
         <p>
           Intellect should not be equated with intelligence. Intellect is an intellectual style, not an intellectual ability, although high scorers on Intellect score slightly higher than low-Intellect individuals on standardized intelligence tests.
         </p>
-  
+
         <div class="title">
           Liberalism
         </div>

@@ -2,7 +2,7 @@
   <div>
     <h1>{{ $t('getResult.result') }}</h1>
     <div class="body-text">
-      {{ $t('getResult.explaination') }} <span class="font-italic secondary--text">58a70606a835c400c8b38e84</span> {{ $t('getResult.idInput') }}
+      {{ $t('getResult.explanation') }} <span class="font-italic secondary--text">58a70606a835c400c8b38e84</span> {{ $t('getResult.idInput') }}
       <br>
       <v-text-field
         v-model="id"
@@ -11,10 +11,16 @@
         hide-details="auto"
         :placeholder="$t('getResult.urlOrId')"
         :rules="[rules.valid]"
-        autofocus
       />
       <v-card-actions>
         <v-spacer />
+        <v-btn
+          color="secondary"
+          :to="localePath(`/result/${resultId()}`)"
+          large
+        >
+          {{ $t('getResult.viewPrevious') }}
+        </v-btn>
         <v-btn
           color="primary"
           :to="localePath('/result/' + formatId(id))"
@@ -35,6 +41,7 @@ export default {
   name: 'ResultForm',
   data: () => ({
     id: '',
+    resultId: () => process.browser ? localStorage.getItem('resultId') : '',
     rules: {
       valid: value => validMongoId(formatId(value)) || 'Not a valid ID'
     }

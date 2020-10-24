@@ -185,10 +185,11 @@ export default {
   },
   getResult: {
     result: 'Hasil',
-    explaination: 'Jika Anda telah mengikuti tes dan menyimpan ID Anda, Anda dapat melihat hasilnya di sini dengan mengetikkan ID yang Anda dapatkan, yaitu.',
+    explanation: 'Jika Anda telah mengikuti tes dan menyimpan ID Anda, Anda dapat melihat hasilnya di sini dengan mengetikkan ID yang Anda dapatkan, yaitu.',
     idInput: 'di kolom ID-input',
     urlOrId: 'URL atau ID hasil Anda',
-    getResult: 'Dapatkan hasil'
+    getResult: 'Dapatkan hasil',
+    viewPrevious: 'Lihat Hasil Sebelumnya'
   },
   shareLinks: {
     copyLink: 'Salin link ke clipboard',
@@ -244,7 +245,7 @@ export default {
         <p>
         Gaya intelektual orang terbuka mungkin dapat melayani seorang profesor dengan baik, tetapi penelitian telah menunjukkan bahwa pemikiran tertutup terkait dengan kinerja kerja yang unggul dalam pekerjaan polisi, penjualan, dan sejumlah pekerjaan layanan.
         </p>
-  
+
         <div class="title">
         Imajinasi
         </div>
@@ -257,7 +258,7 @@ export default {
         <p>
         <b> Pencetak skor rendah </b> pada skala ini lebih berorientasi pada fakta daripada fantasi.
         </p>
-  
+
         <div class="title">
         Minat Artistik
         </div>
@@ -270,7 +271,7 @@ export default {
         <p>
         <b> Pencetak skor rendah </b> kurang memiliki kepekaan estetika dan minat pada seni.
         </p>
-  
+
         <div class="title">
         Emosionalitas
         </div>
@@ -280,7 +281,7 @@ export default {
         <p>
         Skor rendah kurang menyadari perasaan mereka dan cenderung tidak mengekspresikan emosi mereka secara terbuka.
         </p>
-  
+
         <div class="title">
         Kepetualangan
         </div>
@@ -293,7 +294,7 @@ export default {
         <p>
         Peraih skor rendah cenderung merasa tidak nyaman dengan perubahan dan lebih menyukai rutinitas yang sudah biasa.
         </p>
-  
+
         <div class="title">
         Intelek
         </div>
@@ -309,7 +310,7 @@ export default {
         <p>
         Akal tidak boleh disamakan dengan kecerdasan. Akal adalah gaya intelektual, bukan kemampuan intelektual, meskipun skor tinggi pada Kecerdasan mendapat skor sedikit lebih tinggi daripada individu dengan Kecerdasan rendah pada tes kecerdasan standar.
         </p>
-  
+
         <div class="title">
         Liberalisme
         </div>

@@ -185,6 +185,7 @@ export const actions = {
       }
 
       const { id } = await this.$axios.$post(process.env.API_URL + 'save', result)
+      localStorage.setItem('resultId', id)
 
       context.commit('RESET_STATE')
       context.commit('SET_LOADING', false)

@@ -185,10 +185,11 @@ innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
   },
   getResult: {
     result: 'Hent resultater',
-    explaination: 'Hvis du tidligere har taget testen og gemt ID, kan du se dine resultater her ved at indsætte det ID, du fik f.eks.',
+    explanation: 'Hvis du tidligere har taget testen og gemt ID, kan du se dine resultater her ved at indsætte det ID, du fik f.eks.',
     idInput: 'i ID-tekstfeltet',
     urlOrId: 'Lenken eller ID til resultatet',
-    getResult: 'Hent resultat'
+    getResult: 'Hent resultat',
+    viewPrevious: 'Se forrige resultat'
   },
   shareLinks: {
     copyLink: 'Kopièr lenken',
