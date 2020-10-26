@@ -15,8 +15,9 @@
       <v-card-actions>
         <v-spacer />
         <v-btn
+          v-if="resultId"
           color="secondary"
-          :to="localePath(`/result/${resultId()}`)"
+          :to="localePath(`/result/${resultId}`)"
           large
         >
           {{ $t('getResult.viewPrevious') }}
@@ -41,7 +42,7 @@ export default {
   name: 'ResultForm',
   data: () => ({
     id: '',
-    resultId: () => process.browser ? localStorage.getItem('resultId') : '',
+    resultId: false,
     rules: {
       valid: value => validMongoId(formatId(value)) || 'Not a valid ID'
     }
@@ -59,6 +60,11 @@ export default {
         { hid: 'twitter:title', name: 'twitter:title', content: this.$t('results.seo.title') },
         { hid: 'twitter:description', name: 'twitter:description', content: this.$t('results.seo.description') }
       ]
+    }
+  },
+  mounted () {
+    if (validMongoId(localStorage.getItem('resultId'))) {
+      this.resultId = localStorage.getItem('resultId')
     }
   },
   methods: {
