@@ -185,10 +185,11 @@ el inventario es de<i>Johnson's (2014) IPIP NEO-PI-R de 120 elementos</i>.`,
   },
   getResult: {
     result: 'Resultado',
-    explaination: 'Si ha realizado la prueba y ha guardado su identificación, puede ver los resultados aquí escribiendo la identificación que obtuvo, es decir, ',
+    explanation: 'Si ha realizado la prueba y ha guardado su identificación, puede ver los resultados aquí escribiendo la identificación que obtuvo, es decir, ',
     idInput: 'en el campo de entrada de ID',
     urlOrId: 'URL o ID de su resultado',
-    getResult: 'Obtener resultado'
+    getResult: 'Obtener resultado',
+    viewPrevious: 'Ver resultado anterior'
   },
   shareLinks: {
     copyLink: 'Copiar enlace al portapapeles',

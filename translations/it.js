@@ -185,10 +185,11 @@ l'inventario proviene da <i>Johnson's (2014) IPIP NEO-PI-R di 120 elementi</i>.`
   },
   getResult: {
     result: 'Risultati',
-    explaination: 'Se hai eseguito il test e salvato il tuo ID, puoi vedere i risultati qui digitando l\'ID che hai ottenuto, ad es.',
+    explanation: 'Se hai eseguito il test e salvato il tuo ID, puoi vedere i risultati qui digitando l\'ID che hai ottenuto, ad es.',
     idInput: 'nel campo di immissione ID',
     urlOrId: 'URL o ID del risultato',
-    getResult: 'Ottieni risultato'
+    getResult: 'Ottieni risultato',
+    viewPrevious: 'Visualizza risultato precedente'
   },
   shareLinks: {
     copyLink: 'Copia il link negli appunti',

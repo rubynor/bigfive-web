@@ -185,10 +185,11 @@ inventário é de <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
   },
   getResult: {
     result: 'Resultado',
-    explaination: 'Se você fez o teste e salvou sua ID, pode ver os resultados aqui digitando a ID que obteve, ou seja, ',
+    explanation: 'Se você fez o teste e salvou sua ID, pode ver os resultados aqui digitando a ID que obteve, ou seja, ',
     idInput: 'no campo ID',
     urlOrId: 'URL ou ID do seu resultado',
-    getResult: 'Obter resultado'
+    getResult: 'Obter resultado',
+    viewPrevious: 'Ver Resultado Anterior'
   },
   shareLinks: {
     copyLink: 'Copiar link para a área de transferência',
