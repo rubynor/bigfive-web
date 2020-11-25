@@ -105,7 +105,7 @@ inventário é de <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     yearsOld: 'anos de idade',
     ageWarning: 'Você deve ter 16 anos ou mais',
     language: 'Idioma',
-    gender: 'exo',
+    gender: 'sexo',
     confirmInfo: 'Confirme a informação',
     confirm: 'Confirme',
     toTestButton: 'Tudo certo, leve-me para o teste'
@@ -256,7 +256,7 @@ inventário é de <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
         <b>Pessoas com pontuação alta</b> nesta escala usam a fantasia como uma forma de criar um mundo mais rico e interessante.
       </p>
       <p>
-        <b>Pessoas com pontuação baixa</b> estão nesta escala são mais orientadas para os fatos do que para a fantasia.
+        <b>Pessoas com pontuação baixa</b> nesta escala são mais orientadas para os fatos do que para a fantasia.
       </p>
 
       <div class="title">
@@ -269,7 +269,7 @@ inventário é de <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
         Eles não são necessariamente treinados artisticamente nem talentosos, embora muitos sejam. As características definidoras desta escala são o interesse e a apreciação da beleza natural e artificial.
       </p>
       <p>
-        <b>Pessoas com pontuação baixa</b> carecem de sensibilidade estética e interesse nas artes.
+        <b>Pessoas com pontuação baixa</b> carecem de sensibilidade estética e interesse pelas artes.
       </p>
 
       <div class="title">
