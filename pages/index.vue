@@ -119,7 +119,7 @@
           <p>
             <v-btn
               outlined
-              :to="localePath('/compare/W3sibmFtZSI6Ik1hcnZpbiIsImlkIjoiNThhNzA2MDZhODM1YzQwMGM4YjM4ZTg0In0seyJuYW1lIjoiQXJ0aHVyIERlbnQiLCJpZCI6IjVlNTZiYTdhYjA5NjEzMDAwN2Q1ZDZkOCJ9LHsibmFtZSI6IkZvcmQgUGVyZmVjdCIsImlkIjoiNWRlYTllODhlMTA4Y2IwMDYyMTgzYWYzIn0seyJuYW1lIjoiU2xhcnRpYmFydGZhc3QiLCJpZCI6IjVlNTZiNjUwYjA5NjEzMDAwN2Q1ZDZkMCJ9XQ%3D%3D')"
+              :to="localePath('/compare/W3sibmFtZSI6Ik11aGFtbWVkIiwiaWQiOiI1ZmQ4MDYyNTVhNzk4NDAwMDliNjI5NmIifSx7Im5hbWUiOiJFbWlyaGFuIiwiaWQiOiI1ZmQ4MDViNDVhNzk4NDAwMDliNjI5NmEifV0%3D')"
             >
               {{ $t('frontpage.compare.action') }}
             </v-btn>
