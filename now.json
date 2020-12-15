@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "scope": "rubynor",
-  "alias": ["bigfive-test.com"],
+  "scope": "emskaplann",
+  "alias": ["bigfive-web.emskaplann.vercel.app"],
   "env": {
     "MONGODB_URI": "@mongodb_uri",
     "MONGODB_COLLECTION": "results",
-    "BASE_URL": "https://bigfive-test.com"
+    "BASE_URL": "bigfive-web.emskaplann.vercel.app"
   },
   "builds": [
     {
