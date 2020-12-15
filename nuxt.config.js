@@ -291,11 +291,7 @@ export default {
     }
   },
   env: {
-<<<<<<< HEAD
     API_URL: 'https://bigfive-web.emskaplann.vercel.app/api/' // TODO: Fix for dev environment
-=======
-    API_URL: 'https://test-mypersonality.com/api/' // TODO: Fix for dev environment
->>>>>>> 7d808cc720574f038cc704d11c6e4e77b6e6a860
   },
   build: {
     extractCSS: true,
