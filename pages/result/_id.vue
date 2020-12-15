@@ -1,33 +1,7 @@
 <template>
   <v-container>
     <div v-if="results">
-      <v-row>
-        <v-col>
-          <span class="d-print-none">
-            <v-select
-              v-model="metadata.language"
-              :items="metadata.availableLanguages"
-              label="Change language"
-              @input="changeLanguage"
-            />
-          </span>
-        </v-col>
-        <v-col>
-          <p
-            v-if="metadata.timestamp"
-            class="text-right grey--text"
-          >
-            {{ new Date(metadata.timestamp).toLocaleString() }}
-          </p>
-        </v-col>
-      </v-row>
-
-      <div class="text-center mt-10">
-        <b>{{ $t('results.important') }}</b> {{ $t('results.saveResults') }} <nuxt-link :to="localePath('compare')">
-          {{ $t('results.compare') }}
-        </nuxt-link> {{ $t('results.toOthers') }}
-        <br>
-        <br>
+      <div v-if="notFound">
         <v-alert
           outlined
           color="secondary"
@@ -35,27 +9,66 @@
           <span
             class="secondary--text headline"
             :class="{'title': $vuetify.breakpoint.xs}"
-          >{{ $route.params.id }}</span>
+          >Record not found</span>
         </v-alert>
+      </div>
+      <div v-else>
+        <v-row>
+          <v-col>
+            <span class="d-print-none">
+              <v-select
+                v-model="metadata.language"
+                :items="metadata.availableLanguages"
+                label="Change language"
+                @input="changeLanguage"
+              />
+            </span>
+          </v-col>
+          <v-col>
+            <p
+              v-if="metadata.timestamp"
+              class="text-right grey--text"
+            >
+              {{ new Date(metadata.timestamp).toLocaleString() }}
+            </p>
+          </v-col>
+        </v-row>
+
+        <div class="text-center mt-10">
+          <b>{{ $t('results.important') }}</b> {{ $t('results.saveResults') }} <nuxt-link :to="localePath('compare')">
+            {{ $t('results.compare') }}
+          </nuxt-link> {{ $t('results.toOthers') }}
+          <br>
+          <br>
+          <v-alert
+            outlined
+            color="secondary"
+          >
+            <span
+              class="secondary--text headline"
+              :class="{'title': $vuetify.breakpoint.xs}"
+            >{{ $route.params.id }}</span>
+          </v-alert>
+          <ShareLinks :id="'result/' + $route.params.id" />
+        </div>
+
+        <div class="display-1 mt-6">
+          {{ $t('results.theBigFive') }}
+        </div>
+        <BarChart
+          :data="results"
+          :max="Number(120)"
+        />
+        <div
+          v-for="domain in results"
+          :key="domain.id"
+        >
+          <Domain :domain="domain" />
+        </div>
+        <br>
+        <span class="headline">{{ $t('shareLinks.shareResults') }}</span>
         <ShareLinks :id="'result/' + $route.params.id" />
       </div>
-
-      <div class="display-1 mt-6">
-        {{ $t('results.theBigFive') }}
-      </div>
-      <BarChart
-        :data="results"
-        :max="Number(120)"
-      />
-      <div
-        v-for="domain in results"
-        :key="domain.id"
-      >
-        <Domain :domain="domain" />
-      </div>
-      <br>
-      <span class="headline">{{ $t('shareLinks.shareResults') }}</span>
-      <ShareLinks :id="'result/' + $route.params.id" />
     </div>
     <Error v-else />
   </v-container>
@@ -73,6 +86,7 @@ export default {
 
       return {
         results: data.results,
+        notFound: data.type === 'notFound',
         metadata: {
           timestamp: data.timestamp,
           language: query.lang || data.language || 'en',
@@ -85,7 +99,8 @@ export default {
     }
   },
   data: () => ({
-    results: false
+    results: false,
+    notFound: false
   }),
   head () {
     return {

@@ -6,8 +6,8 @@ const base64url = require('./lib/base64url')
 const dbCollection = process.env.MONGODB_COLLECTION
 
 module.exports = async (req, res) => {
-  const { query: { id } } = req
-
+  const { params: { id } } = req;
+  
   if (!id) {
     res.status(500).json({ type: 'error', message: 'Not a valid id' })
     return
@@ -27,10 +27,14 @@ module.exports = async (req, res) => {
         }
       })
     )
+    
+    if (scores[0] && scores[0].data) {
+      const results = repackResults(scores, scores[0].data.lang)
+      res.json(results)     
+    } else {
+      res.json({ results: [],  type: 'notFound'})
+    }
 
-    const results = repackResults(scores, scores[0].data.lang)
-
-    res.json(results)
     return
   } catch (error) {
     res.status(500).json({ type: 'error', message: error.message })

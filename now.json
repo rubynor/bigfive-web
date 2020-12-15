@@ -5,7 +5,7 @@
   "env": {
     "MONGODB_URI": "@mongodb_uri",
     "MONGODB_COLLECTION": "results",
-    "BASE_URL": "bigfive-web.emskaplann.vercel.app"
+    "BASE_URL": "/"
   },
   "builds": [
     {

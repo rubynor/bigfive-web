@@ -1,6 +1,9 @@
 <template>
   <v-container v-resize="onResize">
-    <LazyLanguage v-if="!form.language" />
+    <LazyLanguage v-if="slide === 0" />
+    <div v-else-if="slide === 1">
+      <LazyPersonalInfo />
+    </div>
     <div v-else>
       <v-row>
         <v-col
@@ -117,7 +120,7 @@ export default {
     title: 'The test'
   }),
   computed: {
-    ...mapState(['test', 'development', 'form', 'loading']),
+    ...mapState(['test', 'development', 'form', 'loading', 'slide']),
     ...mapGetters(['GET_CURRENT_QUESTIONS', 'GET_PROGRESS', 'NEXT_BUTTON_STATE', 'BACK_BUTTON_STATE', 'GET_CURRENT_ANSWER'])
   },
   watch: {

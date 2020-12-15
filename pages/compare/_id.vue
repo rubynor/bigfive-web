@@ -1,24 +1,35 @@
 <template>
   <v-container>
     <div v-if="result">
-      <div class="text-right">
-        <ShareLinks :id="'compare/' + $route.params.id" />
+      <div v-if="notFound">
+        <v-alert
+          outlined
+          color="secondary"
+        >
+          <span
+            class="secondary--text headline"
+            :class="{'title': $vuetify.breakpoint.xs}"
+          >Record not found</span>
+        </v-alert>
       </div>
-      <h1>Overview</h1>
-      <BarChartCompare
-        :data="result"
-        :max="Number(120)"
-      />
-      <div
-        v-for="domain in result"
-        :key="domain.id"
-      >
-        <DomainCompare :domain="domain" />
+      <div v-else>
+        <div class="text-right">
+          <ShareLinks :id="'compare/' + $route.params.id" />
+        </div>
+        <h1>Overview</h1>
+        <BarChartCompare
+          :data="result"
+          :max="Number(120)"
+        />
+        <div
+          v-for="domain in result"
+          :key="domain.id"
+        >
+          <DomainCompare :domain="domain" />
+        </div>
       </div>
     </div>
-
     <Error v-else />
-
     <div class="text-right">
       <ShareLinks :id="'compare/' + $route.params.id" />
     </div>
@@ -31,13 +42,15 @@ export default {
   async asyncData ({ params, store, $axios }) {
     try {
       const result = await $axios.$get(process.env.API_URL + 'compare/' + params.id)
-      return { result }
+      console.log(result)
+      return { result, notFound: result.type === 'notFound' }
     } catch (error) {
       store.commit('SET_SNACKBAR', { msg: error.message, type: 'error' })
     }
   },
   data: () => ({
-    result: false
+    result: false,
+    notFound: false
   }),
   head: () => ({
     title: 'Team Comparison of personalities from the Big Five personality traits test',

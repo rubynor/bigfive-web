@@ -16,9 +16,14 @@ const getDefaultState = () => ({
   },
   form: {
     age: 0,
+    name: '',
     language: '',
     gender: '',
-    accepted: false
+    accepted: false,
+    twitterUsername: '',
+    country: '',
+    city: '',
+    occupation: ''
   },
   languages,
   test: {
@@ -88,13 +93,35 @@ export const mutations = {
   },
   SET_GENDER: (state, gender) => {
     state.form.gender = gender
-    state.slide++
+  },
+  SET_NAME: (state, name) => {
+    state.form.name = name
   },
   SET_AGE: (state, age) => {
     state.form.age = age
-    if (age > 15) {
+  },
+  SET_CITY: (state, city) => {
+    state.form.city = city
+  },
+  SET_OCCUPATION: (state, occupation) => {
+    state.form.occupation = occupation
+  },
+  SUBMIT_FORM: (state) => {
+    if (
+      state.form.name &&
+      state.form.twitterUsername &&
+      state.form.age > 15 &&
+      state.form.city &&
+      state.form.country &&
+      state.form.occupation) {
       state.slide++
     }
+  },
+  SET_TWITTER_USERNAME: (state, twitterUsername) => {
+    state.form.twitterUsername = twitterUsername
+  },
+  SET_COUNTRY: (state, country) => {
+    state.form.country = country
   },
   SET_ITEMS_PER_PAGE: (state, itemsPerPage) => {
     state.test.itemsPerPage = itemsPerPage
@@ -181,7 +208,13 @@ export const actions = {
         invalid: context.state.test.invalid,
         answers: Object.keys(answers).map(key => answers[key]),
         timeElapsed: elapsedTimeInSeconds(context.state.test.testStart),
-        dateStamp: Date.now()
+        dateStamp: Date.now(),
+        name: context.state.form.name,
+        age: context.state.form.age,
+        city: context.state.form.city,
+        country: context.state.form.country,
+        twitterUsername: context.state.form.twitterUsername,
+        occupation: context.state.form.occupation
       }
 
       const { id } = await this.$axios.$post(process.env.API_URL + 'save', result)

@@ -108,7 +108,11 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     gender: 'Gender',
     confirmInfo: 'Confirm information',
     confirm: 'Confirm',
-    toTestButton: 'Alrighty, take me to the test'
+    toTestButton: 'Alrighty, take me to the test',
+    twitterUsername: 'Twitter username',
+    yourcountry: 'Where is your country ?',
+    yourcity: 'Where is your city ?',
+    youroccupation: 'What is your occupation ?'
   },
   test: {
     next: 'next',

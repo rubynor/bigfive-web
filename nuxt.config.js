@@ -48,7 +48,8 @@ export default {
   */
   plugins: [
     // { src: '~/plugins/apexcharts', mode: 'client' },
-    { src: '~/plugins/confetti', mode: 'client' }
+    { src: '~/plugins/confetti', mode: 'client' },
+    { src: '~/plugins/gtm.js', mode: 'client' }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -217,7 +218,7 @@ export default {
           }
         ],
         seo: true,
-        baseUrl: 'https://bigfive-web.emskaplann.vercel.app',
+        baseUrl: '/',
         defaultLocale: 'en',
         strategy: 'prefix_except_default',
         lazy: true,
@@ -232,7 +233,7 @@ export default {
     '@nuxtjs/sitemap',
     [
       'nuxt-amplitude', {
-        apiKey: '2ceb7de83dc2b9a3f73bbece2eaf0d94',
+        apiKey: '63c7cc020ddc344e506ec56240190bf1',
         config: {
           saveEvents: true,
           includeUtm: true,
@@ -290,8 +291,11 @@ export default {
     }
   },
   env: {
-    API_URL: 'https://bigfive-web.emskaplann.vercel.app/api/' // TODO: Fix for dev environment
+    API_URL: '/api/' // TODO: Fix for dev environment
   },
+  serverMiddleware: [
+    { path: "/api", handler: "~/api" },
+  ],
   build: {
     extractCSS: true,
     extend (config, ctx) {

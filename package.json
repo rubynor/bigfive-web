@@ -27,6 +27,7 @@
     "@alheimsins/b5-johnson-120-ipip-neo-pi-r": "5.2.4",
     "@nuxt/content": "1.10.0",
     "@nuxtjs/axios": "5.12.2",
+    "@nuxtjs/gtm": "^2.4.0",
     "@nuxtjs/pwa": "3.2.2",
     "@nuxtjs/sitemap": "2.4.0",
     "amplitude-js": "7.3.0",
