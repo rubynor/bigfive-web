@@ -1,7 +1,6 @@
 {
   "version": 2,
   "scope": "emskaplann",
-  "alias": ["test-mypersonality.com"],
   "env": {
     "MONGODB_URI": "@mongodb_uri",
     "MONGODB_COLLECTION": "results",
