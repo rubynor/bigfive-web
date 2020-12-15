@@ -291,11 +291,8 @@ export default {
     }
   },
   env: {
-    API_URL: '/api/' // TODO: Fix for dev environment
+    API_URL: 'https://test-mypersonality.com//api/' // TODO: Fix for dev environment
   },
-  serverMiddleware: [
-    { path: "/api", handler: "~/api" },
-  ],
   build: {
     extractCSS: true,
     extend (config, ctx) {

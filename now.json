@@ -5,7 +5,7 @@
   "env": {
     "MONGODB_URI": "@mongodb_uri",
     "MONGODB_COLLECTION": "results",
-    "BASE_URL": "/"
+    "BASE_URL": "https://test-mypersonality.com/"
   },
   "builds": [
     {
