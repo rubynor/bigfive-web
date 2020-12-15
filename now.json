@@ -4,7 +4,7 @@
   "env": {
     "MONGODB_URI": "@mongodb_uri",
     "MONGODB_COLLECTION": "results",
-    "BASE_URL": "https://test-mypersonality.com/"
+    "BASE_URL": "https://bigfive-web.emskaplann.vercel.app"
   },
   "builds": [
     {

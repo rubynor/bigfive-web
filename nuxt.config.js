@@ -218,7 +218,7 @@ export default {
           }
         ],
         seo: true,
-        baseUrl: '/',
+        baseUrl: 'https://bigfive-web.emskaplann.vercel.app',
         defaultLocale: 'en',
         strategy: 'prefix_except_default',
         lazy: true,
@@ -291,7 +291,7 @@ export default {
     }
   },
   env: {
-    API_URL: 'https://test-mypersonality.com//api/' // TODO: Fix for dev environment
+    API_URL: 'https://bigfive-web.emskaplann.vercel.app/api/' // TODO: Fix for dev environment
   },
   build: {
     extractCSS: true,
