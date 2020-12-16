@@ -33,6 +33,7 @@
           :placeholder="$t('form.twitterUsername') || 'Twitter Handle'"
           @input="SET_TWITTER_USERNAME"
         />
+        <br>
         <p>{{ $t("form.iam") }} <b>{{ form.age }}</b> {{ $t("form.yearsOld") }}</p>
         <v-slider
           v-model="age"
@@ -44,6 +45,7 @@
           thumb-label
           @change="SET_AGE"
         />
+        <br>
         <p>{{ $t("form.iama") }} <b>{{ form.gender }}</b></p>
         <v-radio-group
           v-model="gender"
@@ -108,10 +110,10 @@ export default {
         this.errors.push('Twitter username is required.')
       }
       if (this.age < 15) {
-        this.errors.push('You must be 16 or older')
+        this.errors.push('You must be 16 or older.')
       }
       if (!this.gender) {
-        this.errors.push('Gender is required')
+        this.errors.push('Gender is required.')
       }
 
       if (!this.errors.length) {
