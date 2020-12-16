@@ -1,4 +1,7 @@
 const fetch = require('isomorphic-unfetch');
+const calculateScore = require('@alheimsins/bigfive-calculate-score')
+const getResult = require('@alheimsins/b5-result-text')
+
 const connectToDb = require('./lib/connect-to-db')
 const validate = require('./lib/validate-test')
 const dbCollection = process.env.MONGODB_COLLECTION
@@ -36,6 +39,9 @@ module.exports = async (req, res) => {
       payload['region'] = geoLocations['geoplugin_region']
       payload['country'] = geoLocations['geoplugin_countryName']
     }
+    const scores = calculateScore(payload)
+    const results = getResult({ scores, lang: payload.lang || 'en' })
+    payload['results'] = results;
     const data = await collection.insertOne(payload)
     res.send({ id: data.insertedId })
     return

@@ -44,13 +44,25 @@
           thumb-label
           @change="SET_AGE"
         />
-        <v-text-field
-          v-model="occupation"
-          class="mt-5"
-          :rules="[rules.required]"
-          :placeholder="$t('form.youroccupation') || 'Your occupation'"
-          @input="SET_OCCUPATION"
-        />
+        <p>{{ $t("form.iama") }} <b>{{ form.gender }}</b></p>
+        <v-radio-group
+          v-model="gender"
+        >
+          <v-radio
+            :label="$t('form.female')"
+            color="secondary"
+            value="Female"
+            :off-icon="mdiRadioboxBlank"
+            :on-icon="mdiRadioboxMarked"
+          />
+          <v-radio
+            :label="$t('form.male')"
+            color="secondary"
+            value="Male"
+            :off-icon="mdiRadioboxBlank"
+            :on-icon="mdiRadioboxMarked"
+          />
+        </v-radio-group>
       </v-card-text>
       <v-card-actions>
         <v-spacer />
@@ -77,7 +89,7 @@ export default {
     mdiRadioboxMarked,
     age: 0,
     twitterUsername: '',
-    occupation: '',
+    gender: '',
     isFormValid: false,
     errors: [],
     rules: {
@@ -89,7 +101,7 @@ export default {
     this.$amplitude.getInstance().logEvent('b5.form', { part: 'personal' })
   },
   methods: {
-    ...mapMutations(['SET_AGE', 'SUBMIT_FORM', 'SET_TWITTER_USERNAME', 'SET_OCCUPATION']),
+    ...mapMutations(['SET_AGE', 'SUBMIT_FORM', 'SET_TWITTER_USERNAME', 'SET_GENDER']),
     checkForm: function (e) {
       this.errors = []
       if (!this.twitterUsername) {
@@ -98,14 +110,14 @@ export default {
       if (this.age < 15) {
         this.errors.push('You must be 16 or older')
       }
-      if (!this.occupation) {
-        this.errors.push('Occupation is required')
+      if (!this.gender) {
+        this.errors.push('Gender is required')
       }
 
       if (!this.errors.length) {
         this.SET_AGE(this.age)
         this.SET_TWITTER_USERNAME(this.twitterUsername)
-        this.SET_OCCUPATION(this.occupation)
+        this.SET_GENDER(this.gender)
         this.SUBMIT_FORM()
       }
 

@@ -14,7 +14,7 @@ const schema = Joi.object({
   dateStamp: Joi.number(),
   age: Joi.number(),
   twitterUsername: Joi.string(),
-  occupation: Joi.string()
+  gender: Joi.string()
 })
 
 module.exports = data => schema.validate(data)

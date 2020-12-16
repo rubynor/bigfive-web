@@ -110,7 +110,7 @@ export const mutations = {
     if (
       state.form.twitterUsername &&
       state.form.age > 15 &&
-      state.form.occupation) {
+      state.form.gender) {
       state.slide++
     }
   },
@@ -208,7 +208,7 @@ export const actions = {
         dateStamp: Date.now(),
         age: context.state.form.age,
         twitterUsername: context.state.form.twitterUsername,
-        occupation: context.state.form.occupation
+        gender: context.state.form.gender
       }
 
       const { id } = await this.$axios.$post(process.env.API_URL + 'save', result)
