@@ -14,7 +14,7 @@ export default {
       { hid: 'og:title', name: 'og:title', content: 'Free open-source BigFive personality traits test' },
       { hid: 'og:description', name: 'og:description', content: 'Take a free, open-source Big Five personality test. Learn to know your personality traits and compare yourself with your partner, colleagues, friends or family' },
       { hid: 'og:type', name: 'og:type', content: 'website' },
-      { hid: 'og:url', name: 'og:url', content: 'https://bigfive-test.com' },
+      { hid: 'og:url', name: 'og:url', content: 'https://test-mypersonality.com' },
       { hid: 'og:image', name: 'og:image', content: 'https://bigfive-test.com/icon.png' },
       { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
       { hid: 'twitter:site', name: 'twitter:site', content: '@maccyber' },
@@ -57,7 +57,7 @@ export default {
   buildModules: [
     '@nuxtjs/vuetify',
     ['@nuxtjs/google-analytics', {
-      id: 'UA-92177881-2'
+      id: 'UA-185649681-1'
     }]
   ],
   /*
@@ -218,7 +218,7 @@ export default {
           }
         ],
         seo: true,
-        baseUrl: 'https://bigfive-web.emskaplann.vercel.app',
+        baseUrl: 'https://test-mypersonality.com',
         defaultLocale: 'en',
         strategy: 'prefix_except_default',
         lazy: true,
@@ -291,7 +291,7 @@ export default {
     }
   },
   env: {
-    API_URL: 'https://bigfive-web.emskaplann.vercel.app/api/' // TODO: Fix for dev environment
+    API_URL: 'https://test-mypersonality.com/api/' // TODO: Fix for dev environment
   },
   build: {
     extractCSS: true,

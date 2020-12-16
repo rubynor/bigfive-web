@@ -38,7 +38,7 @@
           v-model="twitterUsername"
           class="mt-5"
           :rules="[rules.required]"
-          :placeholder="$t('form.twitterUsername') || 'twitter username'"
+          :placeholder="$t('form.twitterUsername') || 'Twitter Handle'"
           @input="SET_TWITTER_USERNAME"
         />
         <p>{{ $t("form.iam") }} <b>{{ form.age }}</b> {{ $t("form.yearsOld") }}</p>
@@ -56,21 +56,21 @@
           v-model="country"
           class="mt-5"
           :rules="[rules.required]"
-          :placeholder="$t('form.yourcountry') || 'Where is your country ?'"
+          :placeholder="$t('form.yourcountry') || 'Your country'"
           @input="SET_COUNTRY"
         />
         <v-text-field
           v-model="city"
           class="mt-5"
           :rules="[rules.required]"
-          :placeholder="$t('form.yourcity') || 'Where is your city ?'"
+          :placeholder="$t('form.yourcity') || 'Your city'"
           @input="SET_CITY"
         />
         <v-text-field
           v-model="occupation"
           class="mt-5"
           :rules="[rules.required]"
-          :placeholder="$t('form.youroccupation') || 'What is your occupation ?'"
+          :placeholder="$t('form.youroccupation') || 'Your occupation'"
           @input="SET_OCCUPATION"
         />
       </v-card-text>
@@ -80,7 +80,7 @@
           color="secondary"
           type="submit"
         >
-          Submit
+          Next
         </v-btn>
       </v-card-actions>
     </v-form>
