@@ -43,8 +43,8 @@ export default {
             "@context": "http://schema.org",
             "@type" : "Organization",
             "name" : "BigFive",
-            "url" : "https://bigfive-test.com",
-            "logo": "https://bigfive-test.com/icon.png"
+            "url" : "https://test-mypersonality.com",
+            "logo": "https://test-mypersonality.com/icon.png"
           }`,
         type: 'application/ld+json'
       }

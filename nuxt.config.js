@@ -15,12 +15,12 @@ export default {
       { hid: 'og:description', name: 'og:description', content: 'Take a free, open-source Big Five personality test. Learn to know your personality traits and compare yourself with your partner, colleagues, friends or family' },
       { hid: 'og:type', name: 'og:type', content: 'website' },
       { hid: 'og:url', name: 'og:url', content: 'https://test-mypersonality.com' },
-      { hid: 'og:image', name: 'og:image', content: 'https://bigfive-test.com/icon.png' },
+      { hid: 'og:image', name: 'og:image', content: 'https://test-mypersonality.com/icon.png' },
       { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
       { hid: 'twitter:site', name: 'twitter:site', content: '@maccyber' },
       { hid: 'twitter:title', name: 'twitter:title', content: 'Free open-source BigFive personality traits test' },
       { hid: 'twitter:description', name: 'twitter:description', content: 'Take a free, open-source Big Five personality test. Learn to know your personality traits and compare yourself with your partner, colleagues, friends or family' },
-      { hid: 'twitter:image', name: 'twitter:image', content: 'https://bigfive-test.com/icon.png' },
+      { hid: 'twitter:image', name: 'twitter:image', content: 'https://test-mypersonality.com/icon.png' },
       { hid: 'twitter:image:alt', name: 'twitter:image:alt', content: 'BigFive logo' }
     ],
     link: [
@@ -254,7 +254,7 @@ export default {
   axios: {
   },
   sitemap: {
-    hostname: 'https://bigfive-test.com'
+    hostname: 'https://test-mypersonality.com'
   },
   webfontloader: {
     google: {

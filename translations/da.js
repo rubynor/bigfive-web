@@ -41,7 +41,7 @@ export default {
       top: 'Forstå dig selv og andre bedre med en gratis open source-personlighedstest.',
       subtop: '',
       subtop2: ' er en videnskabelig og troværdig psykologisk model til måling af personlighed.',
-      reference: `Tester og evalueringer for bigfive-test.com er hentet fra
+      reference: `Tester og evalueringer for test-mypersonality.com er hentet fra
 <a href="http://ipip.ori.org" rel="noopener" target="_blank">ipip.ori.org</a>,
 innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
       info: 'Den følgende test har 120 spørgsmål, og den estimerede tid er 10 minutter.',

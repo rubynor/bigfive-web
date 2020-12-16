@@ -4,7 +4,7 @@
       <template #activator="{ on }">
         <a
           v-on="on"
-          @click="copyLink(`https://bigfive-test.com/${id}`)"
+          @click="copyLink(`https://test-mypersonality.com/${id}`)"
         >
           <v-icon x-large>{{ mdiLink }}</v-icon>
         </a>
@@ -15,7 +15,7 @@
     <v-tooltip bottom>
       <template #activator="{ on }">
         <a
-          :href="'https://www.facebook.com/sharer/sharer.php?u=https://bigfive-test.com/' + id"
+          :href="'https://www.facebook.com/sharer/sharer.php?u=https://test-mypersonality.com/' + id"
           target="_blank"
           rel="noopener"
           aria-label="Share on facebook"
@@ -31,7 +31,7 @@
     <v-tooltip bottom>
       <template #activator="{ on }">
         <a
-          :href="'https://twitter.com/intent/tweet?text=See my personality traits!&url=https://bigfive-test.com/' + id"
+          :href="'https://twitter.com/intent/tweet?text=See my personality traits!&url=https://test-mypersonality.com/' + id"
           target="_blank"
           rel="noopener"
           aria-label="Share on twitter"

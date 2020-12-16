@@ -1,178 +1,178 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
-    <loc>https://bigfive-test.com/</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://bigfive-test.com/ar" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://bigfive-test.com/de" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://bigfive-test.com/ru" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://bigfive-test.com/es" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bigfive-test.com/fr" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bigfive-test.com/hi" />
-    <xhtml:link rel="alternate" hreflang="id" href="https://bigfive-test.com/id" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://bigfive-test.com/fi" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://bigfive-test.com/ja" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://bigfive-test.com/uk" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://bigfive-test.com/pt" />
-    <xhtml:link rel="alternate" hreflang="zh-hans" href="https://bigfive-test.com/zh-Hans" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com" />
+    <loc>https://test-mypersonality.com/</loc>
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://test-mypersonality.com/no" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://test-mypersonality.com/no" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://test-mypersonality.com/da" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://test-mypersonality.com/sv" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://test-mypersonality.com/ar" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://test-mypersonality.com/de" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://test-mypersonality.com/ru" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://test-mypersonality.com/es" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://test-mypersonality.com/fr" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://test-mypersonality.com/hi" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://test-mypersonality.com/id" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://test-mypersonality.com/fi" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://test-mypersonality.com/ja" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://test-mypersonality.com/uk" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://test-mypersonality.com/pt" />
+    <xhtml:link rel="alternate" hreflang="zh-hans" href="https://test-mypersonality.com/zh-Hans" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://test-mypersonality.com" />
   </url>
   <url>
-    <loc>https://bigfive-test.com/about</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/about" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/about" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da/about" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv/about" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://bigfive-test.com/ar/about" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://bigfive-test.com/de/about" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/about" />
+    <loc>https://test-mypersonality.com/about</loc>
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://test-mypersonality.com/no/about" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://test-mypersonality.com/no/about" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://test-mypersonality.com/da/about" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://test-mypersonality.com/sv/about" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://test-mypersonality.com/ar/about" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://test-mypersonality.com/de/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://test-mypersonality.com/about" />
   </url>
   <url>
-    <loc>https://bigfive-test.com/agreeableness</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/agreeableness" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/agreeableness" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da/agreeableness" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv/agreeableness" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://bigfive-test.com/ar/agreeableness" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://bigfive-test.com/de/agreeableness" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/agreeableness" />
+    <loc>https://test-mypersonality.com/agreeableness</loc>
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://test-mypersonality.com/no/agreeableness" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://test-mypersonality.com/no/agreeableness" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://test-mypersonality.com/da/agreeableness" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://test-mypersonality.com/sv/agreeableness" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://test-mypersonality.com/ar/agreeableness" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://test-mypersonality.com/de/agreeableness" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://test-mypersonality.com/agreeableness" />
   </url>
   <url>
-    <loc>https://bigfive-test.com/articles</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/articles" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/articles" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/da/articles" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv/articles" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://bigfive-test.com/ar/articles" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://bigfive-test.com/de/articles" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/articles" />
+    <loc>https://test-mypersonality.com/articles</loc>
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://test-mypersonality.com/no/articles" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://test-mypersonality.com/no/articles" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://test-mypersonality.com/da/articles" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://test-mypersonality.com/sv/articles" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://test-mypersonality.com/ar/articles" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://test-mypersonality.com/de/articles" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://test-mypersonality.com/articles" />
   </url>
   <url>
-    <loc>https://bigfive-test.com/big_five</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/big_five" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da/big_five" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv/big_five" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://bigfive-test.com/ar/big_five" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://bigfive-test.com/de/big_five" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/big_five" />
+    <loc>https://test-mypersonality.com/big_five</loc>
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://test-mypersonality.com/no/big_five" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://test-mypersonality.com/da/big_five" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://test-mypersonality.com/sv/big_five" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://test-mypersonality.com/ar/big_five" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://test-mypersonality.com/de/big_five" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://test-mypersonality.com/big_five" />
   </url>
   <url>
-    <loc>https://bigfive-test.com/compare</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/compare" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/compare" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da/compare" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv/compare" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://bigfive-test.com/ar/compare" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://bigfive-test.com/de/compare" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/compare" />
+    <loc>https://test-mypersonality.com/compare</loc>
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://test-mypersonality.com/no/compare" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://test-mypersonality.com/no/compare" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://test-mypersonality.com/da/compare" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://test-mypersonality.com/sv/compare" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://test-mypersonality.com/ar/compare" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://test-mypersonality.com/de/compare" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://test-mypersonality.com/compare" />
   </url>
   <url>
-    <loc>https://bigfive-test.com/conscientiousness</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/conscientiousness" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/conscientiousness" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da/conscientiousness" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv/conscientiousness" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://bigfive-test.com/ar/conscientiousness" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://bigfive-test.com/de/conscientiousness" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/conscientiousness" />
+    <loc>https://test-mypersonality.com/conscientiousness</loc>
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://test-mypersonality.com/no/conscientiousness" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://test-mypersonality.com/no/conscientiousness" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://test-mypersonality.com/da/conscientiousness" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://test-mypersonality.com/sv/conscientiousness" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://test-mypersonality.com/ar/conscientiousness" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://test-mypersonality.com/de/conscientiousness" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://test-mypersonality.com/conscientiousness" />
   </url>
   <url>
-    <loc>https://bigfive-test.com/extraversion</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/extraversion" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/extraversion" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da/extraversion" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv/extraversion" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://bigfive-test.com/ar/extraversion" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://bigfive-test.com/de/extraversion" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/extraversion" />
+    <loc>https://test-mypersonality.com/extraversion</loc>
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://test-mypersonality.com/no/extraversion" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://test-mypersonality.com/no/extraversion" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://test-mypersonality.com/da/extraversion" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://test-mypersonality.com/sv/extraversion" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://test-mypersonality.com/ar/extraversion" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://test-mypersonality.com/de/extraversion" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://test-mypersonality.com/extraversion" />
   </url>
   <url>
-    <loc>https://bigfive-test.com/neuroticism</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/neuroticism" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/neuroticism" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da/neuroticism" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv/neuroticism" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://bigfive-test.com/ar/neuroticism" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://bigfive-test.com/de/neuroticism" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/neuroticism" />
+    <loc>https://test-mypersonality.com/neuroticism</loc>
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://test-mypersonality.com/no/neuroticism" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://test-mypersonality.com/no/neuroticism" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://test-mypersonality.com/da/neuroticism" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://test-mypersonality.com/sv/neuroticism" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://test-mypersonality.com/ar/neuroticism" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://test-mypersonality.com/de/neuroticism" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://test-mypersonality.com/neuroticism" />
   </url>
   <url>
-    <loc>https://bigfive-test.com/openness_to_experience</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/openness_to_experience" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/openness_to_experience" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da/openness_to_experience" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv/openness_to_experience" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://bigfive-test.com/ar/openness_to_experience" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://bigfive-test.com/de/openness_to_experience" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/openness_to_experience" />
+    <loc>https://test-mypersonality.com/openness_to_experience</loc>
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://test-mypersonality.com/no/openness_to_experience" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://test-mypersonality.com/no/openness_to_experience" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://test-mypersonality.com/da/openness_to_experience" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://test-mypersonality.com/sv/openness_to_experience" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://test-mypersonality.com/ar/openness_to_experience" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://test-mypersonality.com/de/openness_to_experience" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://test-mypersonality.com/openness_to_experience" />
   </url>
   <url>
-    <loc>https://bigfive-test.com/privacy</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/privacy" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/privacy" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da/privacy" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv/privacy" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://bigfive-test.com/ar/privacy" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://bigfive-test.com/de/privacy" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/privacy" />
+    <loc>https://test-mypersonality.com/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://test-mypersonality.com/no/privacy" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://test-mypersonality.com/no/privacy" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://test-mypersonality.com/da/privacy" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://test-mypersonality.com/sv/privacy" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://test-mypersonality.com/ar/privacy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://test-mypersonality.com/de/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://test-mypersonality.com/privacy" />
   </url>
   <url>
-    <loc>https://bigfive-test.com/result</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/result" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/result" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da/result" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv/result" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://bigfive-test.com/ar/result" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://bigfive-test.com/de/result" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/result" />
+    <loc>https://test-mypersonality.com/result</loc>
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://test-mypersonality.com/no/result" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://test-mypersonality.com/no/result" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://test-mypersonality.com/da/result" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://test-mypersonality.com/sv/result" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://test-mypersonality.com/ar/result" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://test-mypersonality.com/de/result" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://test-mypersonality.com/result" />
   </url>
   <url>
-    <loc>https://bigfive-test.com/test</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/test" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/test" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da/test" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv/test" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://bigfive-test.com/ar/test" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://bigfive-test.com/de/test" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/test" />
+    <loc>https://test-mypersonality.com/test</loc>
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://test-mypersonality.com/no/test" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://test-mypersonality.com/no/test" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://test-mypersonality.com/da/test" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://test-mypersonality.com/sv/test" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://test-mypersonality.com/ar/test" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://test-mypersonality.com/de/test" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://test-mypersonality.com/test" />
   </url>
   <url>
-    <loc>https://bigfive-test.com/result/58a70606a835c400c8b38e84</loc>
-    <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/result/58a70606a835c400c8b38e84" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://bigfive-test.com/result/58aa015414722d009f6be1e9" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da/result/5e52f1d66d74ea00076a6d13" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://bigfive-test.com/de/result/5b105f54c0fffe005a0c775d" />
-    <xhtml:link rel="alternate" hreflang="el" href="https://bigfive-test.com/result/5e6618cfb5ff210008940590" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bigfive-test.com/result/5b304f3bbe6411005a5e004c" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://bigfive-test.com/result/5e661a44b5ff210008940592" />
-    <xhtml:link rel="alternate" hreflang="is" href="https://bigfive-test.com/result/59de60be696a13007a29bd45" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://bigfive-test.com/result/5bc214747d132c00bea8c98c" />
-    <xhtml:link rel="alternate" hreflang="nl" href="https://bigfive-test.com/result/58a72a64a835c400c8b38e88" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://bigfive-test.com/ar/result/5ece3e6a0f8ad40007f95153" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/result/58a70606a835c400c8b38e84" />
+    <loc>https://test-mypersonality.com/result/58a70606a835c400c8b38e84</loc>
+    <xhtml:link rel="alternate" hreflang="no" href="https://test-mypersonality.com/no/result/58a70606a835c400c8b38e84" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://test-mypersonality.com/result/58aa015414722d009f6be1e9" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://test-mypersonality.com/da/result/5e52f1d66d74ea00076a6d13" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://test-mypersonality.com/de/result/5b105f54c0fffe005a0c775d" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://test-mypersonality.com/result/5e6618cfb5ff210008940590" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://test-mypersonality.com/result/5b304f3bbe6411005a5e004c" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://test-mypersonality.com/result/5e661a44b5ff210008940592" />
+    <xhtml:link rel="alternate" hreflang="is" href="https://test-mypersonality.com/result/59de60be696a13007a29bd45" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://test-mypersonality.com/result/5bc214747d132c00bea8c98c" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://test-mypersonality.com/result/58a72a64a835c400c8b38e88" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://test-mypersonality.com/ar/result/5ece3e6a0f8ad40007f95153" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://test-mypersonality.com/result/58a70606a835c400c8b38e84" />
   </url>
   <url>
-    <loc>https://bigfive-test.com/compare/W3sibmFtZSI6Ik1hcnZpbiIsImlkIjoiNThhNzA2MDZhODM1YzQwMGM4YjM4ZTg0In0seyJuYW1lIjoiQXJ0aHVyIERlbnQiLCJpZCI6IjVlNTZiYTdhYjA5NjEzMDAwN2Q1ZDZkOCJ9LHsibmFtZSI6IkZvcmQgUGVyZmVjdCIsImlkIjoiNWRlYTllODhlMTA4Y2IwMDYyMTgzYWYzIn0seyJuYW1lIjoiU2xhcnRpYmFydGZhc3QiLCJpZCI6IjVlNTZiNjUwYjA5NjEzMDAwN2Q1ZDZkMCJ9XQ%3D%3D</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/compare/W3sibmFtZSI6Ik1hcnZpbiIsImlkIjoiNThhNzA2MDZhODM1YzQwMGM4YjM4ZTg0In0seyJuYW1lIjoiQXJ0aHVyIERlbnQiLCJpZCI6IjVlNTZiYTdhYjA5NjEzMDAwN2Q1ZDZkOCJ9LHsibmFtZSI6IkZvcmQgUGVyZmVjdCIsImlkIjoiNWRlYTllODhlMTA4Y2IwMDYyMTgzYWYzIn0seyJuYW1lIjoiU2xhcnRpYmFydGZhc3QiLCJpZCI6IjVlNTZiNjUwYjA5NjEzMDAwN2Q1ZDZkMCJ9XQ%3D%3D" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/compare/W3sibmFtZSI6Ik1hcnZpbiIsImlkIjoiNThhNzA2MDZhODM1YzQwMGM4YjM4ZTg0In0seyJuYW1lIjoiQXJ0aHVyIERlbnQiLCJpZCI6IjVlNTZiYTdhYjA5NjEzMDAwN2Q1ZDZkOCJ9LHsibmFtZSI6IkZvcmQgUGVyZmVjdCIsImlkIjoiNWRlYTllODhlMTA4Y2IwMDYyMTgzYWYzIn0seyJuYW1lIjoiU2xhcnRpYmFydGZhc3QiLCJpZCI6IjVlNTZiNjUwYjA5NjEzMDAwN2Q1ZDZkMCJ9XQ%3D%3D" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da/compare/W3sibmFtZSI6Ik1hcnZpbiIsImlkIjoiNThhNzA2MDZhODM1YzQwMGM4YjM4ZTg0In0seyJuYW1lIjoiQXJ0aHVyIERlbnQiLCJpZCI6IjVlNTZiYTdhYjA5NjEzMDAwN2Q1ZDZkOCJ9LHsibmFtZSI6IkZvcmQgUGVyZmVjdCIsImlkIjoiNWRlYTllODhlMTA4Y2IwMDYyMTgzYWYzIn0seyJuYW1lIjoiU2xhcnRpYmFydGZhc3QiLCJpZCI6IjVlNTZiNjUwYjA5NjEzMDAwN2Q1ZDZkMCJ9XQ%3D%3D" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv/compare/W3sibmFtZSI6Ik1hcnZpbiIsImlkIjoiNThhNzA2MDZhODM1YzQwMGM4YjM4ZTg0In0seyJuYW1lIjoiQXJ0aHVyIERlbnQiLCJpZCI6IjVlNTZiYTdhYjA5NjEzMDAwN2Q1ZDZkOCJ9LHsibmFtZSI6IkZvcmQgUGVyZmVjdCIsImlkIjoiNWRlYTllODhlMTA4Y2IwMDYyMTgzYWYzIn0seyJuYW1lIjoiU2xhcnRpYmFydGZhc3QiLCJpZCI6IjVlNTZiNjUwYjA5NjEzMDAwN2Q1ZDZkMCJ9XQ%3D%3D" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://bigfive-test.com/ar/compare/W3sibmFtZSI6IlBlcnNvbiAxIiwiaWQiOiI1ZWNlM2U2YTBmOGFkNDAwMDdmOTUxNTMifSx7Im5hbWUiOiJQZXJzb24gMiIsImlkIjoiNThhNzA2MDZhODM1YzQwMGM4YjM4ZTg0In1d" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://bigfive-test.com/de/compare/W3sibmFtZSI6ImFkcyIsImlkIjoiNWVkOTU3YTIxZGQ4NmMwMDA3NTIwZWUyIn0seyJuYW1lIjoiYXNkMiIsImlkIjoiNWVkOTU3YTIxZGQ4NmMwMDA3NTIwZWUyIn1d" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/compare/W3sibmFtZSI6Ik1hcnZpbiIsImlkIjoiNThhNzA2MDZhODM1YzQwMGM4YjM4ZTg0In0seyJuYW1lIjoiQXJ0aHVyIERlbnQiLCJpZCI6IjVlNTZiYTdhYjA5NjEzMDAwN2Q1ZDZkOCJ9LHsibmFtZSI6IkZvcmQgUGVyZmVjdCIsImlkIjoiNWRlYTllODhlMTA4Y2IwMDYyMTgzYWYzIn0seyJuYW1lIjoiU2xhcnRpYmFydGZhc3QiLCJpZCI6IjVlNTZiNjUwYjA5NjEzMDAwN2Q1ZDZkMCJ9XQ%3D%3D" />
+    <loc>https://test-mypersonality.com/compare/W3sibmFtZSI6Ik1hcnZpbiIsImlkIjoiNThhNzA2MDZhODM1YzQwMGM4YjM4ZTg0In0seyJuYW1lIjoiQXJ0aHVyIERlbnQiLCJpZCI6IjVlNTZiYTdhYjA5NjEzMDAwN2Q1ZDZkOCJ9LHsibmFtZSI6IkZvcmQgUGVyZmVjdCIsImlkIjoiNWRlYTllODhlMTA4Y2IwMDYyMTgzYWYzIn0seyJuYW1lIjoiU2xhcnRpYmFydGZhc3QiLCJpZCI6IjVlNTZiNjUwYjA5NjEzMDAwN2Q1ZDZkMCJ9XQ%3D%3D</loc>
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://test-mypersonality.com/no/compare/W3sibmFtZSI6Ik1hcnZpbiIsImlkIjoiNThhNzA2MDZhODM1YzQwMGM4YjM4ZTg0In0seyJuYW1lIjoiQXJ0aHVyIERlbnQiLCJpZCI6IjVlNTZiYTdhYjA5NjEzMDAwN2Q1ZDZkOCJ9LHsibmFtZSI6IkZvcmQgUGVyZmVjdCIsImlkIjoiNWRlYTllODhlMTA4Y2IwMDYyMTgzYWYzIn0seyJuYW1lIjoiU2xhcnRpYmFydGZhc3QiLCJpZCI6IjVlNTZiNjUwYjA5NjEzMDAwN2Q1ZDZkMCJ9XQ%3D%3D" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://test-mypersonality.com/no/compare/W3sibmFtZSI6Ik1hcnZpbiIsImlkIjoiNThhNzA2MDZhODM1YzQwMGM4YjM4ZTg0In0seyJuYW1lIjoiQXJ0aHVyIERlbnQiLCJpZCI6IjVlNTZiYTdhYjA5NjEzMDAwN2Q1ZDZkOCJ9LHsibmFtZSI6IkZvcmQgUGVyZmVjdCIsImlkIjoiNWRlYTllODhlMTA4Y2IwMDYyMTgzYWYzIn0seyJuYW1lIjoiU2xhcnRpYmFydGZhc3QiLCJpZCI6IjVlNTZiNjUwYjA5NjEzMDAwN2Q1ZDZkMCJ9XQ%3D%3D" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://test-mypersonality.com/da/compare/W3sibmFtZSI6Ik1hcnZpbiIsImlkIjoiNThhNzA2MDZhODM1YzQwMGM4YjM4ZTg0In0seyJuYW1lIjoiQXJ0aHVyIERlbnQiLCJpZCI6IjVlNTZiYTdhYjA5NjEzMDAwN2Q1ZDZkOCJ9LHsibmFtZSI6IkZvcmQgUGVyZmVjdCIsImlkIjoiNWRlYTllODhlMTA4Y2IwMDYyMTgzYWYzIn0seyJuYW1lIjoiU2xhcnRpYmFydGZhc3QiLCJpZCI6IjVlNTZiNjUwYjA5NjEzMDAwN2Q1ZDZkMCJ9XQ%3D%3D" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://test-mypersonality.com/sv/compare/W3sibmFtZSI6Ik1hcnZpbiIsImlkIjoiNThhNzA2MDZhODM1YzQwMGM4YjM4ZTg0In0seyJuYW1lIjoiQXJ0aHVyIERlbnQiLCJpZCI6IjVlNTZiYTdhYjA5NjEzMDAwN2Q1ZDZkOCJ9LHsibmFtZSI6IkZvcmQgUGVyZmVjdCIsImlkIjoiNWRlYTllODhlMTA4Y2IwMDYyMTgzYWYzIn0seyJuYW1lIjoiU2xhcnRpYmFydGZhc3QiLCJpZCI6IjVlNTZiNjUwYjA5NjEzMDAwN2Q1ZDZkMCJ9XQ%3D%3D" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://test-mypersonality.com/ar/compare/W3sibmFtZSI6IlBlcnNvbiAxIiwiaWQiOiI1ZWNlM2U2YTBmOGFkNDAwMDdmOTUxNTMifSx7Im5hbWUiOiJQZXJzb24gMiIsImlkIjoiNThhNzA2MDZhODM1YzQwMGM4YjM4ZTg0In1d" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://test-mypersonality.com/de/compare/W3sibmFtZSI6ImFkcyIsImlkIjoiNWVkOTU3YTIxZGQ4NmMwMDA3NTIwZWUyIn0seyJuYW1lIjoiYXNkMiIsImlkIjoiNWVkOTU3YTIxZGQ4NmMwMDA3NTIwZWUyIn1d" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://test-mypersonality.com/compare/W3sibmFtZSI6Ik1hcnZpbiIsImlkIjoiNThhNzA2MDZhODM1YzQwMGM4YjM4ZTg0In0seyJuYW1lIjoiQXJ0aHVyIERlbnQiLCJpZCI6IjVlNTZiYTdhYjA5NjEzMDAwN2Q1ZDZkOCJ9LHsibmFtZSI6IkZvcmQgUGVyZmVjdCIsImlkIjoiNWRlYTllODhlMTA4Y2IwMDYyMTgzYWYzIn0seyJuYW1lIjoiU2xhcnRpYmFydGZhc3QiLCJpZCI6IjVlNTZiNjUwYjA5NjEzMDAwN2Q1ZDZkMCJ9XQ%3D%3D" />
   </url>
   <url>
-    <loc>https://bigfive-test.com/result/58a7230da835c400c8b38e87</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://bigfive-test.com/no/result/58a7230da835c400c8b38e87" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://bigfive-test.com/no/result/58a7230da835c400c8b38e87" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://bigfive-test.com/da/result/58a7230da835c400c8b38e87" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://bigfive-test.com/sv/result/58a7230da835c400c8b38e87" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bigfive-test.com/result/58a7230da835c400c8b38e87" />
+    <loc>https://test-mypersonality.com/result/58a7230da835c400c8b38e87</loc>
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://test-mypersonality.com/no/result/58a7230da835c400c8b38e87" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://test-mypersonality.com/no/result/58a7230da835c400c8b38e87" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://test-mypersonality.com/da/result/58a7230da835c400c8b38e87" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://test-mypersonality.com/sv/result/58a7230da835c400c8b38e87" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://test-mypersonality.com/result/58a7230da835c400c8b38e87" />
   </url>
   <url>
-    <loc>https://bigfive-test.com/faq</loc>
+    <loc>https://test-mypersonality.com/faq</loc>
   </url>
 </urlset>
