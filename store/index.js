@@ -108,11 +108,8 @@ export const mutations = {
   },
   SUBMIT_FORM: (state) => {
     if (
-      state.form.name &&
       state.form.twitterUsername &&
       state.form.age > 15 &&
-      state.form.city &&
-      state.form.country &&
       state.form.occupation) {
       state.slide++
     }
@@ -209,10 +206,7 @@ export const actions = {
         answers: Object.keys(answers).map(key => answers[key]),
         timeElapsed: elapsedTimeInSeconds(context.state.test.testStart),
         dateStamp: Date.now(),
-        name: context.state.form.name,
         age: context.state.form.age,
-        city: context.state.form.city,
-        country: context.state.form.country,
         twitterUsername: context.state.form.twitterUsername,
         occupation: context.state.form.occupation
       }

@@ -27,14 +27,6 @@
           </ul>
         </p>
         <v-text-field
-          v-model="name"
-          class="mt-5"
-          autofocus
-          :rules="[rules.required]"
-          :placeholder="$t('getCompare.nameOfPerson')"
-          @input="SET_NAME"
-        />
-        <v-text-field
           v-model="twitterUsername"
           class="mt-5"
           :rules="[rules.required]"
@@ -51,20 +43,6 @@
           persistent-hint
           thumb-label
           @change="SET_AGE"
-        />
-        <v-text-field
-          v-model="country"
-          class="mt-5"
-          :rules="[rules.required]"
-          :placeholder="$t('form.yourcountry') || 'Your country'"
-          @input="SET_COUNTRY"
-        />
-        <v-text-field
-          v-model="city"
-          class="mt-5"
-          :rules="[rules.required]"
-          :placeholder="$t('form.yourcity') || 'Your city'"
-          @input="SET_CITY"
         />
         <v-text-field
           v-model="occupation"
@@ -97,12 +75,9 @@ export default {
     mdiAccountOutline,
     mdiRadioboxBlank,
     mdiRadioboxMarked,
-    name: '',
     age: 0,
     twitterUsername: '',
-    city: '',
     occupation: '',
-    country: '',
     isFormValid: false,
     errors: [],
     rules: {
@@ -114,23 +89,14 @@ export default {
     this.$amplitude.getInstance().logEvent('b5.form', { part: 'personal' })
   },
   methods: {
-    ...mapMutations(['SET_AGE', 'SUBMIT_FORM', 'SET_NAME', 'SET_TWITTER_USERNAME', 'SET_CITY', 'SET_OCCUPATION', 'SET_COUNTRY']),
+    ...mapMutations(['SET_AGE', 'SUBMIT_FORM', 'SET_TWITTER_USERNAME', 'SET_OCCUPATION']),
     checkForm: function (e) {
       this.errors = []
-      if (!this.name) {
-        this.errors.push('Name is required.')
-      }
       if (!this.twitterUsername) {
         this.errors.push('Twitter username is required.')
       }
       if (this.age < 15) {
         this.errors.push('You must be 16 or older')
-      }
-      if (!this.country) {
-        this.errors.push('Country is required')
-      }
-      if (!this.city) {
-        this.errors.push('City is required')
       }
       if (!this.occupation) {
         this.errors.push('Occupation is required')
@@ -138,10 +104,7 @@ export default {
 
       if (!this.errors.length) {
         this.SET_AGE(this.age)
-        this.SET_NAME(this.name)
         this.SET_TWITTER_USERNAME(this.twitterUsername)
-        this.SET_CITY(this.city)
-        this.SET_COUNTRY(this.country)
         this.SET_OCCUPATION(this.occupation)
         this.SUBMIT_FORM()
       }

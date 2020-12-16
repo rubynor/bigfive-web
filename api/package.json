@@ -19,6 +19,7 @@
   "dependencies": {
     "@alheimsins/b5-result-text": "4.0.0",
     "@alheimsins/bigfive-calculate-score": "2.0.5",
+    "isomorphic-unfetch": "^3.1.0",
     "joi": "17.2.1",
     "mongodb": "3.6.1"
   }

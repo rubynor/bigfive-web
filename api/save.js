@@ -1,8 +1,11 @@
+const fetch = require('isomorphic-unfetch');
 const connectToDb = require('./lib/connect-to-db')
 const validate = require('./lib/validate-test')
 const dbCollection = process.env.MONGODB_COLLECTION
 
 module.exports = async (req, res) => {
+  const ipAdd = req.headers['x-real-ip']
+ 
   if (req.method === 'OPTIONS') {
     res.send('ok!')
     return
@@ -26,7 +29,13 @@ module.exports = async (req, res) => {
   try {
     const db = await connectToDb()
     const collection = db.collection(dbCollection)
-
+    if (ipAdd) {
+      const geoLocationResp = await fetch(`http://www.geoplugin.net/json.gp?ip=${ipAdd}`)
+      const geoLocations = await geoLocationResp.json()
+      payload['city'] = geoLocations['geoplugin_city']
+      payload['region'] = geoLocations['geoplugin_region']
+      payload['country'] = geoLocations['geoplugin_countryName']
+    }
     const data = await collection.insertOne(payload)
     res.send({ id: data.insertedId })
     return
