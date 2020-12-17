@@ -95,7 +95,7 @@ export default {
     isFormValid: false,
     errors: [],
     rules: {
-      required: name => !name ? 'The field is required' : ''
+      required: name => !name ? 'Please enter a valid twitter handle' : ''
     }
   }),
   computed: mapState(['form']),

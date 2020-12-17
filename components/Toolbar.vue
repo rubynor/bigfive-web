@@ -96,6 +96,7 @@ export default {
   computed: {
     items () {
       return [
+        { title: 'Test', url: '/test' },
         { title: this.$t('toolbar.result'), url: '/result' },
         { title: this.$t('toolbar.compare'), url: '/compare' },
         { title: this.$t('toolbar.articles'), url: '/articles' },
