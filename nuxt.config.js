@@ -77,6 +77,13 @@ export default {
       {
         locales: [
           {
+            name: 'Turkish',
+            code: 'tr',
+            iso: 'tr',
+            file: 'tr.js',
+            dir: 'ltr'
+          },
+          {
             name: 'Norsk',
             code: 'no',
             iso: 'nb-NO',
@@ -241,7 +248,7 @@ export default {
           trackingOptions: {
             country: true,
             city: true,
-            ip_address: false
+            ip_address: true
           }
         }
       }
