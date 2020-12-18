@@ -97,22 +97,23 @@ export default {
     declineButton: 'paylaşmadan devam et',
     prefferedLanguage: 'Tercih ettiğim dil',
     selectLanguage: 'Bir dil seç',
-    iama: 'Ben bir',
+    iama: 'Cinsiyet',
     male: 'Erkek',
     female: 'Kadın',
     age: 'Yaş',
     iam: 'Ben',
-    yearsOld: 'yaşındayım',
-    ageWarning: '16 yaşından daha büyük olmalısın',
+    yearsOld: 'yaşındayım.',
+    ageWarning: '16 yaşından daha büyük olmalısınız ve sonuçlarınız için gerçek yaşınız önemlidir.',
     language: 'Dil',
     gender: 'Cinsiyet',
     confirmInfo: 'Bilgileri onayla',
     confirm: 'Onayla',
     toTestButton: 'Tamamdır, beni teste götür',
     twitterUsername: 'Twitter kullanıcı adı',
-    yourcountry: 'Ülken?',
-    yourcity: 'Şehrin?',
-    youroccupation: 'Mesleğin?'
+    twitterErr: 'Lütfen geçerli bir Twitter adresi giriniz.',
+    ageErr: '16 yaşından büyük olmalısınız ve sonuçlarınız için gerçek yaşınız önemlidir.',
+    genderErr: 'Lütfen cinsiyetinizi belirtiniz.',
+    correctTheErrors: 'Lütfen aşağıda yazılanları düzeltin:'
   },
   test: {
     next: 'sıradaki',
@@ -128,7 +129,7 @@ export default {
     }
   },
   openness_to_experience: {
-    title: 'Yeni deneyimlere açıklık',
+    title: 'YenI deneyImlere açıklık',
     seo: {
       title: 'Yeni deneyimlere açıklık hakkında genel bakış.',
       description: 'Büyük beşli altındaki Yeni deneyimlere açıklık hakkında daha fazla öğren'
@@ -267,7 +268,7 @@ export default {
     Sanatsal İlgi Alanları
     </div>
     <p>
-    Bu ölçekte <b>yüksek puan alanla</b>, hem sanatta hem de doğada güzelliği severler. Sanatsal ve doğa olaylarına kolayca dahil olur ve emilirler.
+    Bu ölçekte <b>yüksek puan alanlar</b>, hem sanatta hem de doğada güzelliği severler. Sanatsal ve doğa olaylarına kolayca dahil olur ve emilirler.
     </p>
     <p>
     Birçoğu olsa da, sanatsal olarak eğitilmiş veya yetenekli olmaları gerekmez. Bu ölçeğin belirleyici özellikleri, doğal ve yapay güzelliğe ilgi ve beğenidir.

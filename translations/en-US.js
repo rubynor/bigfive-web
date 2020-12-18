@@ -110,9 +110,10 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     confirm: 'Confirm',
     toTestButton: 'Alrighty, take me to the test',
     twitterUsername: 'Twitter username',
-    yourcountry: 'Where is your country ?',
-    yourcity: 'Where is your city ?',
-    youroccupation: 'What is your occupation ?'
+    twitterErr: 'Please enter a valid Twitter handle.',
+    ageErr: 'You need to be older than 16.',
+    genderErr: 'Please indicate your gender.',
+    correctTheErrors: 'Please correct the following error(s):'
   },
   test: {
     next: 'next',

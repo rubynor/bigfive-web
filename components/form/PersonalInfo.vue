@@ -16,7 +16,7 @@
     >
       <v-card-text>
         <p v-if="errors.length">
-          <b>Please correct the following error(s):</b>
+          <b>{{ this.$t('form.correctTheErrors') }}</b>
           <ul>
             <li
               v-for="error in errors"
@@ -95,7 +95,7 @@ export default {
     isFormValid: false,
     errors: [],
     rules: {
-      required: name => !name ? 'Please enter a valid twitter handle' : ''
+      required: name => !name ? 'Lütfen geçerli bir Twitter adresi girin' : ''
     }
   }),
   computed: mapState(['form']),
@@ -107,13 +107,13 @@ export default {
     checkForm: function (e) {
       this.errors = []
       if (!this.twitterUsername) {
-        this.errors.push('Twitter username is required.')
+        this.errors.push(this.$t('form.twitterErr'))
       }
       if (this.age < 15) {
-        this.errors.push('You must be 16 or older.')
+        this.errors.push(this.$t('form.ageErr'))
       }
       if (!this.gender) {
-        this.errors.push('Gender is required.')
+        this.errors.push(this.$t('form.genderErr'))
       }
 
       if (!this.errors.length) {
