@@ -1,7 +1,7 @@
 export default {
   language: 'Turkish',
   seo: {
-    keywords: 'big five personality test türkçe, beş büyük faktör kişilik testi, beş büyük faktör kişilik testi türkçe, b5 testi, beş büyük faktör testi, büyük beşli kişilik testi, kişilik özellikleri, büyük beşli, karşılaştır, ücretsiz, bedava, jordan peterson'
+    keywords: 'big five personality test türkçe, test my personality, my personality, test mypersonality, personality test, türkçe karakter testi, türkçe kişiliğini öğren, kişiliğini öğren, onaylanmış kişilik testi, kişilik testi, türkçe kişilik testi, bilimsel kişilik testi, beş büyük faktör kişilik testi, beş büyük faktör kişilik testi türkçe, b5 testi, beş büyük faktör testi, büyük beşli kişilik testi, kişilik özellikleri, büyük beşli, karşılaştır, ücretsiz, bedava, jordan peterson'
   },
   frontpage: {
     seo: {
