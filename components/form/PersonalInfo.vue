@@ -7,7 +7,7 @@
       >
         {{ mdiAccountOutline }}
       </v-icon>
-      Personal Info
+      Kişisel Bilgi
       <v-spacer />
     </v-card-title>
     <v-form

@@ -38,7 +38,7 @@
         >
           {{ $t('toolbar.compare_with') }}
         </v-btn>
-        <LanguageSwitcher />
+        <!-- <LanguageSwitcher /> -->
         <v-menu
           v-model="drawer"
           bottom
@@ -83,7 +83,7 @@ import { mdiMenu } from '@mdi/js'
 
 export default {
   components: {
-    LanguageSwitcher: () => import('./LanguageSwitcher')
+    // LanguageSwitcher: () => import('./LanguageSwitcher')
   },
   data: function () {
     const icons = { mdiMenu }
