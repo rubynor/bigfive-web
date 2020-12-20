@@ -101,8 +101,7 @@ export default {
         { title: this.$t('toolbar.compare'), url: '/compare' },
         { title: this.$t('toolbar.articles'), url: '/articles' },
         { title: this.$t('toolbar.privacy'), url: '/privacy' },
-        { title: this.$t('toolbar.about'), url: '/about' },
-        { title: 'FAQ', url: '/faq' }
+        { title: this.$t('toolbar.about'), url: '/about' }
       ]
     }
   }

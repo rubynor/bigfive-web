@@ -21,7 +21,7 @@ module.exports = async (req, res) => {
     const collection = db.collection(dbCollection)
     const data = await collection.findOne({ _id: ObjectId(id) })
     if (!data) {
-      res.json({ type: 'notFound', message: 'Record not found', results: [] })
+      res.json({ type: 'notFound', message: 'Kayıt bulunamadı. Lütfen farklı bir ID veya Link deneyin.', results: [] })
       return
     }
     const scores = calculateScore(data)

@@ -1,71 +1,54 @@
 <template>
   <div>
-    <h1>Privacy Policy</h1>
-    This privacy policy will explain how we use the personal data we collect from you
-    when you use our website.
-    <h2>What data do we collect?</h2>
-    We collect the following data
+    <h1>Gizlilik Politikası</h1>
+    Bu gizlilik politikası, web sitemizi kullandığımız zaman topladığımız verileri nasıl ve nerede kullandığımızı açıklamaktadır.
+    <h2>Ne tür veriler topluyoruz?</h2>
+    Aşağıda listelenen verileri topluyoruz:
     <br><br>
     <ul>
       <li>
-        Age <span class="grey--text">(if submitted)</span>
+        Twitter Kullanıcı Adınız <span class="grey--text">(eğer çekilişe katıldıysanız)</span>
       </li>
       <li>
-        Nationality <span class="grey--text">(if submitted)</span>
+        Yaş
       </li>
       <li>
-        Gender <span class="grey--text">(if submitted)</span>
+        Eğitim Durumunuz
       </li>
       <li>
-        Choosen test language
+        Cinsiyet
       </li>
       <li>
-        Test answers
+        Test Cevaplarınız
       </li>
       <li>
-        Datetime of submitted test
+        Testi bitirdiğiniz tarih ve saat
       </li>
     </ul>
     <br>
-    We also use Google Analytics to measure traffic to our site and how users interact with our site. The Google Analytics terms specify that no personally identifiable information may be collected through the Google Analytics software.
+    Yapılan kişilik testlerinde kişinin yaşı, eğitim durumu ve cinsiyeti verilen sonuçların işlenmesinde farklı sonuçlara yol açacağı için belirtilmesi istenmekte ve asla testin işlenişi dışında bir yerde depolayanmayacak veya kullanılmayacaktır.
     <br><br>
-    Read more about Google Analytics privacy policy <a
-      href="https://policies.google.com/privacy"
+    Toplanılan yaş, eğitim durumu ve cinsiyet bilgileri herhangi bir şekilde kişiliğiniz ile bağdaştırılamayacağı için ve genel bilgiler olduğu için herhangi bir risk grubu içerisinde yer almamaktadır.
+    <h2>Testin İşlenişi</h2>
+    Verilen cevaplar belli bir puan cetvelinde değerlendirip tüm dünya otoritelerince kabul edilmiş şekli ile kategorize etmektedir.
+    <br>
+    <br>
+    Test hakkında daha detaylı bilgi almak isterseniz, bu web sitesini ziyaret edebilirsiniz: <a
+      href="https://ipip.ori.org/"
       rel="noopener noreferrer"
       target="_blank"
-    >here</a>.
-    <h2>How do we collect your data?</h2>
-    Google Analytics sets the following cookies:
+    >ipip.ori.org</a>
     <br>
     <br>
-    <ul>
-      <li>
-        "_ga" is used to distingusih users. The cookie is set the first time a user access the website and has a lifetime of 2 until years
-      </li>
-      <li>
-        "_gat" is used to limit the traffic from Google Analytics, this cookie has a lifetime of 10 minutes.
-      </li>
-    </ul>
+    Çözülen testlerin sonuçları, kişiler ile bağdaştırılmadan toplu sonuç verileri üzerinden değerlendirilecektir.
     <br>
-
-    Your web browser also automatically sends information to our hosting provider Zeit.
-    <br>
-    This can i.e. be information about wich browser and version you are using and your Internet address (IP-address). For each page that is displayed, the date and time information, which page you came from, which page you are on, etc. are also stored.
-    <br>
-    <br>
-    When you submit the test the information you provide (described above) is stored in our database.
-    <h2>How will we use your data?</h2>
-    We use Google Analytics to get statistics on how visitors use the site.
-    <br>
-    <br>
-    We will create statistical, aggregated data from the test results for analytical purposes.
-    <h2>How do we store your data?</h2>
-    <h2>How to contact us?</h2>
-    If you have any questions about this privacy policy, please <a
+    <span class="grey--text">Örnek: "Sonuçların 66%'sı yeniliğe açık kişilik tipi çıkmıştır. -> Yeniliğe açık kişilik tipindeki bireyler bu tarz testlere daha fazla rağbet göstermektedir."</span>
+    <h2>İletişim</h2>
+    Gizlilik politikası hakkında herhangi bir sorunuz var ise, lütfen bizimle <a
       href="mailto:bigfive-test@rubynor.com"
       rel="noopener noreferrer"
       target="_blank"
-    >contact</a> us.
+    >buradan</a> iletişime geçin.
   </div>
 </template>
 

@@ -10,12 +10,7 @@
         rel="noopener"
       >IPIP Website</a> for more information.
     </p>
-    <p>
-      If you have a question please read the <nuxt-link :to="localePath('faq')">
-        FAQ
-      </nuxt-link> first.
-    </p>
-    <h1>Team</h1>
+    <!-- <h1>Team</h1>
 
     <v-container class="my-5">
       <v-layout
@@ -55,7 +50,7 @@
           </v-card>
         </v-flex>
       </v-layout>
-    </v-container>
+    </v-container> -->
   </div>
 </template>
 

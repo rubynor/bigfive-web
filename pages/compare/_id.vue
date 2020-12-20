@@ -9,7 +9,7 @@
           <span
             class="secondary--text headline"
             :class="{'title': $vuetify.breakpoint.xs}"
-          >Record not found</span>
+          >Kayıt bulunamadı. Lütfen farklı bir ID veya Link deneyin.</span>
         </v-alert>
       </div>
       <div v-else>

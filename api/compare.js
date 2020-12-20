@@ -9,7 +9,7 @@ module.exports = async (req, res) => {
   const { query: { id } } = req
   
   if (!id) {
-    res.status(500).json({ type: 'error', message: 'Not a valid id' })
+    res.status(500).json({ type: 'error', message: 'ID geçerli değil' })
     return
   }
 

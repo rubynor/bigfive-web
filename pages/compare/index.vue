@@ -3,7 +3,7 @@
     <h1>{{ $t('getCompare.title') }}</h1>
     <div class="body-text">
       <p>{{ $t('getCompare.description1') }}</p>
-      <p>{{ $t('getCompare.description2') }} <span class="font-italic secondary--text">58a70606a835c400c8b38e84</span> {{ $t('getCompare.description3') }}</p>
+      <p>{{ $t('getCompare.description2') }} <span class="font-italic secondary--text">5fd99bdf3213e60008068d13</span> {{ $t('getCompare.description3') }}</p>
       <br>
 
       <v-list-item-group>

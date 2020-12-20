@@ -8,9 +8,9 @@ export default {
       title: 'Ücretsiz Büyük Beşli Kişilik Testi',
       description: 'Ücretsiz büyük beşli kişilik testini deneyin. Kişiliğiniz hakkında daha detaylı bir fikre sahip olun ve kendi kişiliğinizi arkadaşlarınızla, eşinizle veya iş arkadaşlarınızla karşılaştırın.'
     },
-    title: 'Büyük Beşli Kişilik Testi',
+    title: 'Big Five Kişilik Testi',
     call_to_action: 'Ücretsiz testi deneyin',
-    no_registration: '* Kayıt olmanız gerekmiyor',
+    no_registration: '*Kayıt olmanız gerekmiyor',
     tests_taken: "700.000'den fazla kişi testi çözdü",
     compare: {
       title: 'Kendini başkalarıyla karşılaştır',
@@ -21,24 +21,24 @@ export default {
     share: 'Arkadaşlarınla paylaş ve ne kadar uyumlu olduğunuzu öğren',
     cards: {
       open: {
-        title: 'Açık',
-        text: 'Bu proje açık kaynaklı olup MIT Lisansı altındadır.'
+        title: 'Farkındalık',
+        text: 'Testi çözen bireylerde kişisel farkındalığın arttığı otoritelerce kanıtlanmıştır.'
       },
       free: {
-        title: 'Ücretsiz',
-        text: 'Test tamamen ücretsiz'
+        title: 'Sosyal Sorumluluk',
+        text: 'Testi çözen bireylerin daha sağlıklı bir toplum oluşturacağına inanıyoruz ve test tamamen ücretsizdir!'
       },
       scientific: {
         title: 'Bilimsel',
-        text: 'Büyük beşli kişilik testi tamamen bilimsel, onaylanmış ve güvenilir bir psikolojik modeldir.'
+        text: 'Big Five Kişilik Testi tamamen bilimsel, onaylanmış ve güvenilir bir psikolojik modeldir.'
       },
       translated: {
-        title: 'Çevrildi',
-        text: "20'den fazla dile çevrildi!"
+        title: 'Global',
+        text: "Bu test 40'tan fazla ülke vatandaşlarınca çözülmüş ve kültür farklılığının sonuca olumsuz bir etkisi olmadığı kanıtlanmıştır."
       }
     },
     description: {
-      top: 'Kendini ücretsiz ve açık kaynaklı bir kişilik testi ile daha iyi tanı.',
+      top: 'Dünya otoritelerince kabul edilmiş Big Five Kişilik Testi ile kendini hiç olmadığı kadar iyi tanı.',
       subtop: '',
       subtop2: ' insanların kişiliğini ölçmek için bilimsel olarak test edilmiş ve en çok onaylanan aynı zamanda güvenilir olan psikolojik bir modeldir.',
       reference: `Test ve ölçme algoritması bu siteden alınmıştır
@@ -70,7 +70,7 @@ export default {
       title: 'Yeni deneyimlere açıklık'
     },
     conscientiousness: {
-      title: 'Vicdanlılık'
+      title: 'Özdenetim'
     },
     extraversion: {
       title: 'Dışa-dönüklük'
@@ -79,7 +79,7 @@ export default {
       title: 'Uyumluluk'
     },
     neuroticism: {
-      title: 'Karasızlık'
+      title: 'Kararsızlık'
     }
   },
   common: {
@@ -190,9 +190,9 @@ export default {
   },
   getResult: {
     result: 'Sonuç',
-    explanation: "Daha önce testi çözüp sonuçta çıkan ID'nizi kaydettiyseniz, buraya elinizdeki ID'yi yazarak sonuçlarınızı görebilirsiniz, örnek olarak, ",
-    idInput: 'bu ID alanının içine',
-    urlOrId: "Sonucunuzun link veya ID'si",
+    explanation: "Daha önce testi çözüp sonuçta çıkan ID'nizi kaydettiyseniz, buraya elinizdeki ID'yi yazarak sonuçlarınızı görebilirsiniz, örnek olarak bu ID'yi aşağıda gördüğünüz alanın içine yapıştırın. ",
+    idInput: '',
+    urlOrId: "Sonucunuzun linki veya ID'si",
     getResult: 'Sonucunu gör',
     viewPrevious: 'Önceden Baktığınız Sonucu Görün'
   },

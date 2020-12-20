@@ -140,8 +140,8 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://test-mypersonality.com/test" />
   </url>
   <url>
-    <loc>https://test-mypersonality.com/result/58a70606a835c400c8b38e84</loc>
-    <xhtml:link rel="alternate" hreflang="no" href="https://test-mypersonality.com/no/result/58a70606a835c400c8b38e84" />
+    <loc>https://test-mypersonality.com/result/5fd99bdf3213e60008068d13</loc>
+    <xhtml:link rel="alternate" hreflang="no" href="https://test-mypersonality.com/no/result/5fd99bdf3213e60008068d13" />
     <xhtml:link rel="alternate" hreflang="es" href="https://test-mypersonality.com/result/58aa015414722d009f6be1e9" />
     <xhtml:link rel="alternate" hreflang="da" href="https://test-mypersonality.com/da/result/5e52f1d66d74ea00076a6d13" />
     <xhtml:link rel="alternate" hreflang="de" href="https://test-mypersonality.com/de/result/5b105f54c0fffe005a0c775d" />
@@ -152,7 +152,7 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://test-mypersonality.com/result/5bc214747d132c00bea8c98c" />
     <xhtml:link rel="alternate" hreflang="nl" href="https://test-mypersonality.com/result/58a72a64a835c400c8b38e88" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://test-mypersonality.com/ar/result/5ece3e6a0f8ad40007f95153" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://test-mypersonality.com/result/58a70606a835c400c8b38e84" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://test-mypersonality.com/result/5fd99bdf3213e60008068d13" />
   </url>
   <url>
     <loc>https://test-mypersonality.com/compare/W3sibmFtZSI6Ik1hcnZpbiIsImlkIjoiNThhNzA2MDZhODM1YzQwMGM4YjM4ZTg0In0seyJuYW1lIjoiQXJ0aHVyIERlbnQiLCJpZCI6IjVlNTZiYTdhYjA5NjEzMDAwN2Q1ZDZkOCJ9LHsibmFtZSI6IkZvcmQgUGVyZmVjdCIsImlkIjoiNWRlYTllODhlMTA4Y2IwMDYyMTgzYWYzIn0seyJuYW1lIjoiU2xhcnRpYmFydGZhc3QiLCJpZCI6IjVlNTZiNjUwYjA5NjEzMDAwN2Q1ZDZkMCJ9XQ%3D%3D</loc>
@@ -171,8 +171,5 @@
     <xhtml:link rel="alternate" hreflang="da" href="https://test-mypersonality.com/da/result/58a7230da835c400c8b38e87" />
     <xhtml:link rel="alternate" hreflang="sv" href="https://test-mypersonality.com/sv/result/58a7230da835c400c8b38e87" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://test-mypersonality.com/result/58a7230da835c400c8b38e87" />
-  </url>
-  <url>
-    <loc>https://test-mypersonality.com/faq</loc>
   </url>
 </urlset>

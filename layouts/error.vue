@@ -16,7 +16,7 @@
       class="mt-5"
       color="secondary"
     >
-      Go to home page
+      Ana sayfaya dön
     </v-btn>
   </v-app>
 </template>
@@ -32,8 +32,8 @@ export default {
   },
   data () {
     return {
-      pageNotFound: '404 Not Found',
-      otherError: 'An error occurred'
+      pageNotFound: '404 Sayfa Bulunamadı',
+      otherError: 'Bir şeyler yanlış gitti.'
     }
   },
   head () {

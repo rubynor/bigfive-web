@@ -2,7 +2,7 @@
   <div>
     <h1>{{ $t('getResult.result') }}</h1>
     <div class="body-text">
-      {{ $t('getResult.explanation') }} <span class="font-italic secondary--text">58a70606a835c400c8b38e84</span> {{ $t('getResult.idInput') }}
+      {{ $t('getResult.explanation') }} <span class="font-italic secondary--text">5fd99bdf3213e60008068d13</span> {{ $t('getResult.idInput') }}
       <br>
       <v-text-field
         v-model="id"
@@ -44,7 +44,7 @@ export default {
     id: '',
     resultId: false,
     rules: {
-      valid: value => validMongoId(formatId(value)) || 'Not a valid ID'
+      valid: value => validMongoId(formatId(value)) || 'ID geçerli değil'
     }
   }),
   head () {
