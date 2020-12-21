@@ -1,6 +1,6 @@
 const fetch = require('isomorphic-unfetch');
 const calculateScore = require('@alheimsins/bigfive-calculate-score')
-const getResult = require('@alheimsins/b5-result-text')
+const getResult = require('b5-result-text-custom')
 
 const connectToDb = require('./lib/connect-to-db')
 const validate = require('./lib/validate-test')
@@ -40,7 +40,7 @@ module.exports = async (req, res) => {
       payload['country'] = geoLocations['geoplugin_countryName']
     }
     const scores = calculateScore(payload)
-    const results = getResult({ scores, lang: payload.lang || 'en' })
+    const results = getResult({ scores, lang: 'tr' })
     payload['results'] = results;
     const data = await collection.insertOne(payload)
     res.send({ id: data.insertedId })

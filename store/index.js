@@ -5,7 +5,7 @@ export const strict = false
 
 const getDefaultState = () => ({
   development: process.env.NODE_ENV === 'development',
-  slide: 0,
+  slide: 1,
   loading: false,
   result: false,
   compareResult: false,
@@ -17,7 +17,7 @@ const getDefaultState = () => ({
   form: {
     age: 0,
     name: '',
-    language: '',
+    language: 'tr',
     gender: '',
     accepted: false,
     twitterUsername: '',

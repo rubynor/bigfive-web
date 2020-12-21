@@ -1,8 +1,8 @@
 const { ObjectId } = require('mongodb')
 const validMongoId = require('./lib/valid-mongoid')
 const connectToDb = require('./lib/connect-to-db')
-const getResult = require('@alheimsins/b5-result-text')
-const { getInfo } = require('@alheimsins/b5-result-text')
+const getResult = require('b5-result-text-custom')
+const { getInfo } = require('b5-result-text-custom')
 const calculateScore = require('@alheimsins/bigfive-calculate-score')
 
 const { languages: availableLanguages } = getInfo()
@@ -25,7 +25,7 @@ module.exports = async (req, res) => {
       return
     }
     const scores = calculateScore(data)
-    const results = getResult({ scores, lang: lang || data.lang || 'en' })
+    const results = getResult({ scores, lang: 'tr' })
 
     res.json({
       timestamp: data.dateStamp,

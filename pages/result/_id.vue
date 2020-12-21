@@ -9,19 +9,20 @@
           <span
             class="secondary--text headline"
             :class="{'title': $vuetify.breakpoint.xs}"
-          >Kayıt Bulunamadı. Lütfen farklı bir ID veya Link deneyin.</span>
+            @click="$router.go(-1)"
+          >Sonucunuz bulunamadı. Lütfen farklı bir ID veya Link deneyin. Geri dönmek için yazıya tıklayın.</span>
         </v-alert>
       </div>
       <div v-else>
         <v-row>
           <v-col>
             <span class="d-print-none">
-              <v-select
+              <!-- <v-select
                 v-model="metadata.language"
                 :items="metadata.availableLanguages"
                 label="Change language"
                 @input="changeLanguage"
-              />
+              /> -->
             </span>
           </v-col>
           <v-col>
@@ -29,15 +30,15 @@
               v-if="metadata.timestamp"
               class="text-right grey--text"
             >
-              {{ new Date(metadata.timestamp).toLocaleString() }}
+              {{ new Date(metadata.timestamp).toLocaleString('tr-TR') }}
             </p>
           </v-col>
         </v-row>
 
         <div class="text-center mt-10">
-          <b>{{ $t('results.important') }}</b> {{ $t('results.saveResults') }} <nuxt-link :to="localePath('compare')">
-            {{ $t('results.compare') }}
-          </nuxt-link> {{ $t('results.toOthers') }}
+          <b>{{ $t('results.important') }}</b> {{ $t('results.saveResults') }} {{ $t('results.toOthers') }} <nuxt-link :to="localePath('compare')">
+            {{ $t('results.compare') }}.
+          </nuxt-link>
           <br>
           <br>
           <v-alert

@@ -9,7 +9,8 @@
           <span
             class="secondary--text headline"
             :class="{'title': $vuetify.breakpoint.xs}"
-          >Kayıt bulunamadı. Lütfen farklı bir ID veya Link deneyin.</span>
+            @click="$router.go(-1)"
+          >Sonuç karşılaştırma kayıtı bulunamadı. Lütfen farklı bir ID veya Link deneyin. Geri dönmek için yazıya tıklayın.</span>
         </v-alert>
       </div>
       <div v-else>

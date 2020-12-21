@@ -166,8 +166,8 @@ export default {
   getCompare: {
     title: 'İnsanları veya takımları karşılaştır',
     description1: 'Büyük beşli kişilik testi sonuçlarını birden fazla insanla karşılaştır.',
-    description2: "Testi çözdükten sonra kaydettiğin ID'yi örnek olarak, ",
-    description3: 'bu alanın içine yaz',
+    description2: "Testi çözdükten sonra kaydettiğin ID'yi veya Linki örnek olarak, ",
+    description3: 'aşağıda gördüğün birisini ekle butonu ile açılan alana kopyala yapıştır.',
     needToAddPeople: 'İnsanları karşılaştırmak için sonuçlarını eklemeniz gerekiyor',
     addAnother: 'Başka birisini ekle',
     addPerson: 'Birisini ekle',
