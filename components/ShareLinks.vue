@@ -31,7 +31,7 @@
     <v-tooltip bottom>
       <template #activator="{ on }">
         <a
-          :href="'https://twitter.com/intent/tweet?text=See my personality traits!&url=https://test-mypersonality.com/' + id"
+          :href="'https://twitter.com/intent/tweet?text=Kişilik testimin sonuçlarına bak!&url=https://test-mypersonality.com/' + id"
           target="_blank"
           rel="noopener"
           aria-label="Share on twitter"
@@ -48,7 +48,7 @@
       v-model="dialog"
       hide-overlay
       persistent
-      width="155"
+      width="207"
       origin="top left"
       transition="fade-transition"
     >

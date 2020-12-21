@@ -6,7 +6,7 @@
       <nuxt />
     </v-content>
     <v-content v-else>
-      <v-container class="container pt-12">
+      <v-container class="container">
         <nuxt />
       </v-container>
     </v-content>

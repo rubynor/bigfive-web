@@ -1,12 +1,12 @@
 export default {
   language: 'Turkish',
   seo: {
-    keywords: 'big five personality test türkçe, test my personality, my personality, test mypersonality, personality test, türkçe karakter testi, türkçe kişiliğini öğren, kişiliğini öğren, onaylanmış kişilik testi, kişilik testi, türkçe kişilik testi, bilimsel kişilik testi, beş büyük faktör kişilik testi, beş büyük faktör kişilik testi türkçe, b5 testi, beş büyük faktör testi, büyük beşli kişilik testi, kişilik özellikleri, büyük beşli, karşılaştır, ücretsiz, bedava, jordan peterson'
+    keywords: 'big five personality test türkçe, test my personality, my personality, test mypersonality, personality test, türkçe karakter testi, türkçe kişiliğini öğren, kişiliğini öğren, onaylanmış kişilik testi, kişilik testi, türkçe kişilik testi, bilimsel kişilik testi, beş büyük faktör kişilik testi, beş büyük faktör kişilik testi türkçe, b5 testi, beş büyük faktör testi, Big Five kişilik testi, kişilik özellikleri, büyük beşli, karşılaştır, ücretsiz, bedava, jordan peterson'
   },
   frontpage: {
     seo: {
-      title: 'Ücretsiz Büyük Beşli Kişilik Testi',
-      description: 'Ücretsiz büyük beşli kişilik testini deneyin. Kişiliğiniz hakkında daha detaylı bir fikre sahip olun ve kendi kişiliğinizi arkadaşlarınızla, eşinizle veya iş arkadaşlarınızla karşılaştırın.'
+      title: 'Ücretsiz Big Five Kişilik Testi',
+      description: 'Ücretsiz Big Five Kişilik Testini deneyin. Kişiliğiniz hakkında daha detaylı bir fikre sahip olun ve kendi kişiliğinizi arkadaşlarınızla, eşinizle veya iş arkadaşlarınızla karşılaştırın.'
     },
     title: 'Big Five Kişilik Testi',
     call_to_action: 'Ücretsiz testi deneyin',
@@ -51,8 +51,8 @@ export default {
   },
   about: {
     seo: {
-      title: 'Bu testi ortaya koyan takım hakkında',
-      description: 'Bu testi sizlerle buluşturan takım çok aktif ve her zaman testi bir adım ileriye taşımaya çalışan insanlardan oluşuyor.'
+      title: 'Hakkımızda',
+      description: 'Bu testi sizlerle buluşturan takımımız çok aktif ve her zaman testi bir adım ileriye taşımaya çalışan insanlardan oluşuyor.'
     }
   },
   toolbar: {
@@ -122,50 +122,50 @@ export default {
     seeResults: 'sonuçları gör'
   },
   big_five: {
-    title: 'Büyük beşli nedir?',
+    title: 'Big Five nedir?',
     seo: {
-      title: 'Büyük beşli nedir?',
-      description: 'Büyük beşli hakkında daha fazla öğren'
+      title: 'Big Five nedir?',
+      description: 'Big Five hakkında daha fazla öğren.'
     }
   },
   openness_to_experience: {
     title: 'YenI deneyImlere açıklık',
     seo: {
       title: 'Yeni deneyimlere açıklık hakkında genel bakış.',
-      description: 'Büyük beşli altındaki Yeni deneyimlere açıklık hakkında daha fazla öğren'
+      description: 'Büyük beşli altındaki Yeni deneyimlere açıklık hakkında daha fazla öğren.'
     }
   },
   conscientiousness: {
-    title: 'Vicdanlılık',
+    title: 'Öz-denetim',
     seo: {
-      title: 'Vicdanlılık hakkında genel bakış.',
-      description: 'Büyük beşli altındaki Vicdanlılık hakkında daha fazla öğren'
+      title: 'Öz-denetim hakkında genel bakış.',
+      description: 'Big Five altındaki Vicdanlılık hakkında daha fazla öğren.'
     }
   },
   extraversion: {
     title: 'Dışa-dönüklülük',
     seo: {
       title: 'Dışa-dönüklülük hakkında genel bakış.',
-      description: 'Büyük beşli altındaki Dışa-dönüklülük hakkında daha fazla öğren'
+      description: 'Big Five altındaki Dışa-dönüklülük hakkında daha fazla öğren.'
     }
   },
   agreeableness: {
     title: 'Uyumluluk',
     seo: {
       title: 'Uyumluluk hakkında genel bakış.',
-      description: 'Büyük beşli altındaki Uyumluluk hakkında daha fazla öğren'
+      description: 'Big Five altındaki Uyumluluk hakkında daha fazla öğren.'
     }
   },
   neuroticism: {
-    title: 'Kararsızlık',
+    title: 'Duygusal Denge',
     seo: {
-      title: 'Kararsızlık hakkında genel bakış',
-      description: 'Büyük beşli altındaki Kararsızlık hakkında daha fazla öğren'
+      title: 'Duygusal Denge hakkında genel bakış',
+      description: 'Big Five altındaki Duygusal Denge hakkında daha fazla öğren.'
     }
   },
   getCompare: {
     title: 'İnsanları veya takımları karşılaştır',
-    description1: 'Büyük beşli kişilik testi sonuçlarını birden fazla insanla karşılaştır.',
+    description1: 'Big Five kişilik testi sonuçlarını birden fazla insanla karşılaştır.',
     description2: "Testi çözdükten sonra kaydettiğin ID'yi veya Linki örnek olarak, ",
     description3: 'aşağıda gördüğün birisini ekle butonu ile açılan alana kopyala yapıştır.',
     needToAddPeople: 'İnsanları karşılaştırmak için sonuçlarını eklemeniz gerekiyor',
@@ -177,15 +177,15 @@ export default {
     name: 'İsim'
   },
   results: {
-    theBigFive: 'Büyük Beşli',
+    theBigFive: 'Big Five',
     score: 'puan',
     important: 'Önemli!',
     saveResults: "Sonradan sonuçlarını görmek için burda gördüğün ID'yi kaydet veya ",
     compare: 'karşılaştır',
     toOthers: 'kendini başkalarıyla',
     seo: {
-      title: 'Büyük Beşli Kişilik Testi Sonuçlarım',
-      description: 'Kişiliğimi gör ve kendini başkalarıyla bu beş alanda karşılaştır: Kararsızlık, Yeni Deneyimlere Açıklık, Vicdanlılık, Dışa-Dönüklük, Uyumluluk'
+      title: 'Big Five Kişilik Testi Sonuçlarım',
+      description: 'Kişiliğini derinden gör ve kendini başkalarıyla bu beş alanda karşılaştır: Duygusal Denge, Yeni Deneyimlere Açıklık, Öz-denetim, Dışadönüklük, Yumuşak Başlılık'
     }
   },
   getResult: {
@@ -200,7 +200,7 @@ export default {
     copyLink: 'Linki kopyala',
     shareFacebook: "Facebook'da paylaş",
     shareTwitter: "Twitter'da paylaş",
-    copiedLink: 'Link kopyalandı',
+    copiedLink: 'Link kopyalandı!',
     shareResults: 'Sonuçlarını paylaş!'
   },
   opennessToExperience: {

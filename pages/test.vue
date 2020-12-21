@@ -10,7 +10,7 @@
           cols="10"
           class="pa-0"
         >
-          <LazyTestLanguageSwitcher />
+          <!-- <LazyTestLanguageSwitcher /> -->
         </v-col>
         <v-col>
           <LazyTimer />
@@ -117,7 +117,7 @@ export default {
     mdiRadioboxMarked
   }),
   head: () => ({
-    title: 'The test'
+    title: 'Test Sayfası'
   }),
   computed: {
     ...mapState(['test', 'development', 'form', 'loading', 'slide']),
