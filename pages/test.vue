@@ -2,6 +2,7 @@
   <v-container v-resize="onResize">
     <LazyLanguage v-if="slide === 0" />
     <div v-else-if="slide === 1">
+      <Modal />
       <LazyPersonalInfo />
     </div>
     <div v-else>
