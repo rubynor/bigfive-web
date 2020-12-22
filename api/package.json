@@ -21,6 +21,7 @@
     "@alheimsins/bigfive-calculate-score": "2.0.5",
     "isomorphic-unfetch": "^3.1.0",
     "joi": "17.2.1",
-    "mongodb": "3.6.1"
+    "mongodb": "3.6.1",
+    "twitter": "^1.7.1"
   }
 }

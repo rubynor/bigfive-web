@@ -15,9 +15,7 @@
       "src": "nuxt.config.js",
       "use": "@nuxtjs/now-builder",
       "config": {
-        "serverFiles": [
-          "content/**"
-        ]
+        "serverFiles": ["content/**"]
       }
     },
     {
@@ -26,6 +24,10 @@
     }
   ],
   "rewrites": [
+    {
+      "source": "/api/is-username-valid/:username",
+      "destination": "/api/isUsernameValid.js"
+    },
     {
       "source": "/api/result/:id/:lang",
       "destination": "/api/result.js"
@@ -50,10 +52,10 @@
   "headers": [
     {
       "source": "/api/(.*)",
-      "headers" : [
+      "headers": [
         {
-          "key" : "Access-Control-Allow-Origin",
-          "value" : "*"
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
         },
         {
           "key": "Access-Control-Allow-Headers",
