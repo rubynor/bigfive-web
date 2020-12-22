@@ -36,10 +36,10 @@
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
-b5-result-text-custom@4.1.3:
-  version "4.1.3"
-  resolved "https://registry.yarnpkg.com/b5-result-text-custom/-/b5-result-text-custom-4.1.3.tgz#45defe087ac58d36ce7f36c4721918cf27bd16c1"
-  integrity sha512-Na2gV5sZxyVIKOLsgwUJjUuBVx1yKfwvefIMdeO5+WY9usnKSailLBtyFqXTvmzDdZJC3zkFJCfllmbmQdNRjA==
+b5-result-text-custom@4.1.6:
+  version "4.1.6"
+  resolved "https://registry.yarnpkg.com/b5-result-text-custom/-/b5-result-text-custom-4.1.6.tgz#f902fa8c70b29492505c1cf32c337f7b22381b0b"
+  integrity sha512-yVWv5uPSFA6GTG6PApkF6SkCd7Ew47KzNZ/QScKREKJucBbQLQKAMzXvltbz1YpUCNP3rJM4d4T+ztDMXkTrQA==
 
 bl@^2.2.0:
   version "2.2.1"
