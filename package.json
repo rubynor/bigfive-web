@@ -30,7 +30,7 @@
     "@nuxtjs/pwa": "3.2.2",
     "@nuxtjs/sitemap": "2.4.0",
     "amplitude-js": "7.3.0",
-    "apexcharts": "3.22.0",
+    "apexcharts": "3.24.0",
     "imagemin-mozjpeg": "9.0.0",
     "imagemin-pngquant": "9.0.1",
     "nuxt": "2.14.7",
