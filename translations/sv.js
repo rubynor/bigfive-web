@@ -13,10 +13,10 @@ export default {
     no_registration: '* Ingen registrering krävs',
     tests_taken: 'Över 700 000 personer har tagit testet',
     compare: {
-      title: 'Sammenlign deg med andre',
+      title: 'Jämför dig med andra',
       text1: 'Jämför dig själv med din partner, kollegor, vänner eller familj.',
       text2: 'Lär dig hur du kan skilja dig från andra människor inom de fem domänerna:',
-      action: 'Se sammenligning i aksjon'
+      action: 'Se jämförelse i praktiken'
     },
     share: 'Dela med dina vänner och ta reda på hur kompatibel du är.',
     cards: {
@@ -30,11 +30,11 @@ export default {
       },
       scientific: {
         title: 'Vetenskaplig',
-        text: 'Big Five er en vitenskapelig validert og pålitelig psykologisk modell.'
+        text: 'Big Five är en validerad i vetenskap och pålitlig psykologisk model.'
       },
       translated: {
         title: 'Översättningar',
-        text: 'Testet har översatts till mer än 20 språk. Hälp till <a href="https://b5.translations.alheimsins.net/" rel="noreferrer" target="blank">här</a>!'
+        text: 'Testet har översatts till mer än 20 språk. Hjälp till <a href="https://b5.translations.alheimsins.net/" rel="noreferrer" target="blank">här</a>!'
       }
     },
     description: {
