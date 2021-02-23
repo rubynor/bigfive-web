@@ -1,6 +1,6 @@
 <template>
   <v-container v-resize="onResize">
-    <LazyLanguage v-if="!form.language" />
+    <LazyFormLanguage v-if="!form.language" />
     <div v-else>
       <v-row>
         <v-col

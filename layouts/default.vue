@@ -2,14 +2,14 @@
   <v-app>
     <Toolbar />
 
-    <v-content v-if="$nuxt.$route && $nuxt.$route.name && $nuxt.$route.name.includes('index')">
+    <v-main v-if="$nuxt.$route && $nuxt.$route.name && $nuxt.$route.name.includes('index')">
       <nuxt />
-    </v-content>
-    <v-content v-else>
+    </v-main>
+    <v-main v-else>
       <v-container class="container pt-12">
         <nuxt />
       </v-container>
-    </v-content>
+    </v-main>
 
     <!-- Snackbar -->
     <v-snackbar
