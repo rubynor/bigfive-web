@@ -8,6 +8,7 @@
               v-model="metadata.language"
               :items="metadata.availableLanguages"
               label="Change language"
+              :append-icon="mdiMenuDown"
               @input="changeLanguage"
             />
           </span>
@@ -62,6 +63,8 @@
 </template>
 
 <script>
+import { mdiMenuDown } from '@mdi/js'
+
 export default {
   name: 'Result',
   async asyncData ({ params, store, $axios, query }) {
@@ -85,7 +88,8 @@ export default {
     }
   },
   data: () => ({
-    results: false
+    results: false,
+    mdiMenuDown
   }),
   head () {
     return {
