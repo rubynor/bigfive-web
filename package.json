@@ -31,6 +31,7 @@
     "@nuxtjs/sitemap": "2.4.0",
     "amplitude-js": "7.4.2",
     "apexcharts": "3.25.0",
+    "esm": "^3.2.25",
     "imagemin-mozjpeg": "9.0.0",
     "imagemin-pngquant": "9.0.1",
     "nuxt": "2.15.2",
