@@ -18,7 +18,7 @@
 export default {
   name: 'BigFive',
   head: () => ({
-    title: 'Overview of the Big Five personality test'
+    title: 'Teste de personalidade - Big Five'
   })
 }
 </script>
