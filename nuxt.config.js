@@ -218,7 +218,7 @@ export default {
         ],
         seo: true,
         baseUrl: 'https://bigfive-test.com',
-        defaultLocale: 'en',
+        defaultLocale: 'pt',
         strategy: 'prefix_except_default',
         lazy: true,
         langDir: 'translations/',
