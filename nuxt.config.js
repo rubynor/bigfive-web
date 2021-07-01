@@ -225,7 +225,7 @@ export default {
         detectBrowserLanguage: {
           onlyOnRoot: true,
           useCookie: true,
-          fallbackLocale: 'en'
+          fallbackLocale: 'pt'
         }
       }
     ],
