@@ -4,6 +4,10 @@ Calculate score for big five tests.
 
 See https://bigfive-test.com
 
+## Scoring Logic
+
+For detailed information about the scoring methodology and classification criteria, see [LOGIC.md](LOGIC.md)
+
 ## Installation
 
 ```
