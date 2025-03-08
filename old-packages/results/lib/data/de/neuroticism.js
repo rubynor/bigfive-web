@@ -98,7 +98,7 @@ nicht nervös.`
 Triebe, denen sie nur schwer widerstehen können. Sie neigen zu 
 kurzzeitigen Befriedigungen und Belohnungen statt langfristigen Zielen. 
 Menschen mit niedriger Punktzahl erleben keine starken, 
-unwiderstehlichen Gelüsten und können diesen somit nicht verfallen.`
+unwiderstehlichen Gelüste und können diesen somit nicht verfallen.`
     },
     {
       facet: 6,
