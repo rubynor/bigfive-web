@@ -24,8 +24,8 @@ export default function LocaleSwitcher() {
         name='localeSelectSmall'
       >
         {languages.map((lang) => (
-          <SelectItem key={lang.code} value={lang.code} textValue={lang.code}>
-            {lang.code}
+          <SelectItem key={lang.code} value={lang.code} textValue={lang.name}>
+            {lang.name}
           </SelectItem>
         ))}
       </Select>

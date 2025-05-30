@@ -29,9 +29,15 @@ export const languages: Language[] = [
   { code: 'no', name: 'Norwegian', countryCode: 'no', map: ['nb', 'nn'] },
   {
     code: 'pt',
-    name: 'Portuguese',
+    name: 'Português (Portugal)',
     countryCode: 'pt',
-    map: ['pt-BR', 'pt-PT']
+    map: ['pt-PT']
+  },
+  {
+    code: 'pt-br',
+    name: 'Português (Brasil)',
+    countryCode: 'br',
+    map: ['pt-BR']
   },
   { code: 'sv', name: 'Swedish', countryCode: 'se' },
   { code: 'uk', name: 'Ukrainian', countryCode: 'ua' },

@@ -8,7 +8,7 @@ const extraversion: TemplateDomain = {
 de energia, e normalmente seus dias são carregados de emoções positivas. Eles 
 tendem a ser animados, orientados para a ação. Provavelmente você vai escutar 
 deles palavras motivadoras, como 'Bora!' e 'Vamos? Vamos!' Quando estão em 
-grupos eles gostam de falar, se destacar e chamar a atenção. Ao contrátio, os 
+grupos eles gostam de falar, se destacar e chamar a atenção. Ao contrário, os
 introvertidos tendem a ser discretos e mais quietos, gostam de passar o tempo 
 sozinhos. Sua falta de envolvimento social não deve ser interpretado como timidez 
 ou depressão. O introvertido simplesmente precisa de menos estímulo do que um 
@@ -19,10 +19,7 @@ que não busca ajuda de outros, mas será bastante simpático e solicito quando 
   results: [
     {
       score: 'low', // do not translate this line
-      text: `Sua pontuação para "extroversão" é baixa, indicando que 
-você tende a ser mais introvertido, reservado e tranquilo. Você curte 
-a solidão e atividades individuais. Ter alguns amigos próximos pra 
-você já é um grande nível de socialização.`
+      text: 'Sua pontuação para "extroversão" é baixa, indicando que você tende a ser mais introvertido, reservado e tranquilo. Você curte a solidão e atividades individuais. Ter alguns amigos próximos para você já é um grande nível de socialização.'
     },
     {
       score: 'neutral', // do not translate this line

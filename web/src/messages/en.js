@@ -185,7 +185,8 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     comparePeople: 'Compare people',
     nameOfPerson: 'Name of this person',
     urlOrId: 'URL or ID for comparison',
-    name: 'Name'
+    name: 'Name',
+    loadingText: 'Loading...'
   },
   results: {
     theBigFive: 'The Big Five',
@@ -215,6 +216,45 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     shareTwitter: 'Share on Twitter',
     copiedLink: 'Copied link',
     shareResults: 'Share your results!'
+  },
+  navbar: {
+    ariaHome: 'Home',
+    ariaTwitter: 'Twitter',
+    ariaGithub: 'Github',
+    closeMenu: 'Close menu',
+    openMenu: 'Open menu'
+  },
+  footer: {
+    ariaLinkedIn: 'LinkedIn',
+    ariaFacebook: 'Facebook',
+    allRightsReserved: 'all rights reserved'
+  },
+  metadata: {
+    ogImageAlt: 'People comparing personality tests',
+    twitterImageAlt: 'People comparing personality tests'
+  },
+  cookieConsent: {
+    bannerTitle: 'Cookie consent',
+    bannerDescription: 'We use cookies on our site.',
+    readMore: 'Read more in our ',
+    privacyPolicyLinkText: 'privacy policy',
+    preferencesButton: 'Preferences',
+    declineButton: 'Decline',
+    acceptAllButton: 'Accept all',
+    settingsTitle: 'Cookie Preferences',
+    settingsDescription: 'Manage your cookie settings. You can enable or disable different types of cookies below.',
+    essentialCookiesLabel: 'Essential Cookies',
+    essentialCookiesDescription: 'These cookies are necessary for the website to function and cannot be switched off.',
+    analyticsCookiesLabel: 'Analytics Cookies',
+    analyticsCookiesDescription: 'These cookies allow us to count visits and traffic sources, so we can measure and improve the performance of our site.',
+    marketingCookiesLabel: 'Marketing Cookies',
+    marketingCookiesDescription: 'These cookies help us show you relevant ads.',
+    savePreferencesButton: 'Save Preferences'
+  },
+  resultPage: {
+    errorAlertTitle: 'Could not retrieve report',
+    errorAlertIdText: 'We could not retrieve the following id {id}.',
+    errorAlertContactText: 'Please check that it is correct or contact us at {email}.'
   }
 };
 

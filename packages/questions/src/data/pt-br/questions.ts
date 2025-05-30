@@ -414,7 +414,7 @@ const questions = [
   },
   {
     id: '956f3e17-ff17-4af5-a52f-9222b8968106',
-    text: 'Tomo decisões difíceis',
+    text: 'Adio tomar decisões difíceis',
     keyed: 'minus',
     domain: 'C',
     facet: 6

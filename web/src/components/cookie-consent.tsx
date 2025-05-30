@@ -12,11 +12,13 @@ import { Link } from '@nextui-org/link';
 import { useEffect, useState } from 'react';
 import { SettingsIcon } from './icons';
 import { CookieConsentSettings } from './cookie-consent-settings';
+import { useTranslations } from 'next-intl';
 
 export default function CookieBanner() {
   const [showBanner, setShowBanner] = useState(false);
   const [showCookieConsentSettings, setShowCookieConsentSettings] =
     useState(false);
+  const t = useTranslations('cookieConsent');
 
   useEffect(() => {
     const storedCookieConsent = localStorage.getItem('cookie_consent');
@@ -53,12 +55,13 @@ export default function CookieBanner() {
       >
         <ModalContent>
           <ModalHeader className='flex flex-col gap-1'>
-            Cookie consent
+            {t('bannerTitle')}
           </ModalHeader>
           <ModalBody>
-            <p>We use cookies on our site.</p>
+            <p>{t('bannerDescription')}</p>
             <p>
-              Read more in our <Link href='/privacy'>privacy policy</Link>.
+              {t('readMore')}
+              <Link href='/privacy'>{t('privacyPolicyLinkText')}</Link>.
             </p>
           </ModalBody>
           <ModalFooter className='justify-start'>
@@ -68,7 +71,7 @@ export default function CookieBanner() {
                 startContent={<SettingsIcon />}
                 onPress={handleSettings}
               >
-                Preferences
+                {t('preferencesButton')}
               </Button>
             </div>
             <Button
@@ -76,10 +79,10 @@ export default function CookieBanner() {
               variant='light'
               onPress={handleDeclineCookies}
             >
-              Decline
+              {t('declineButton')}
             </Button>
             <Button color='primary' onPress={handleAllowCookies}>
-              Accept all
+              {t('acceptAllButton')}
             </Button>
           </ModalFooter>
         </ModalContent>

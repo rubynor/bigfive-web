@@ -9,6 +9,7 @@ import {
   Logo
 } from '@/components/icons';
 import { siteConfig } from '@/config/site';
+import { useTranslations } from 'next-intl';
 
 interface FooterProps {
   footerLinks: {
@@ -19,6 +20,8 @@ interface FooterProps {
 
 export default function Footer({ footerLinks }: FooterProps) {
   const year = new Date().getFullYear();
+  const t = useTranslations('footer');
+  const tNavbar = useTranslations('navbar');
   return (
     <footer className='container mx-auto max-w-7xl py-24 px-12'>
       <div className='container mx-auto flex justify-between'>
@@ -31,28 +34,28 @@ export default function Footer({ footerLinks }: FooterProps) {
           <NextUILink
             isExternal
             href={siteConfig.links.twitter}
-            aria-label='Twitter'
+            aria-label={tNavbar('ariaTwitter')}
           >
             <TwitterIcon size={48} className='text-default-500' />
           </NextUILink>
           <NextUILink
             isExternal
             href={siteConfig.links.github}
-            aria-label='Github'
+            aria-label={tNavbar('ariaGithub')}
           >
             <GithubIcon size={48} className='text-default-500' />
           </NextUILink>
           <NextUILink
             isExternal
             href={siteConfig.links.linkedIn}
-            aria-label='LinkedIn'
+            aria-label={t('ariaLinkedIn')}
           >
             <LinkedInIcon size={48} className='text-default-500' />
           </NextUILink>
           <NextUILink
             isExternal
             href={siteConfig.links.facebook}
-            aria-label='Facebook'
+            aria-label={t('ariaFacebook')}
           >
             <FacebookIcon size={48} className='text-default-500' />
           </NextUILink>
@@ -72,7 +75,7 @@ export default function Footer({ footerLinks }: FooterProps) {
       </div>
 
       <div className='flex text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:py-2 mt-14 justify-center'>
-        © {year} — B5 Holding AS - all rights reserved.
+        {`© ${year} — B5 Holding AS - ${t('allRightsReserved')}.`}
       </div>
     </footer>
   );
