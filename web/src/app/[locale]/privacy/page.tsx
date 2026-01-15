@@ -40,7 +40,7 @@ export default function PrivacyPage() {
         <br />
         <ul>
           <li>
-            &quot;_ga&quot; is used to distingusih users. The cookie is set the
+            &quot;_ga&quot; is used to distinguish users. The cookie is set the
             first time a user access the website and has a lifetime of 2 until
             years
           </li>
@@ -53,7 +53,7 @@ export default function PrivacyPage() {
         Your web browser also automatically sends information to our hosting
         provider Zeit.
         <br />
-        This can i.e. be information about wich browser and version you are
+        This can i.e. be information about which browser and version you are
         using and your Internet address (IP-address). For each page that is
         displayed, the date and time information, which page you came from,
         which page you are on, etc. are also stored.
