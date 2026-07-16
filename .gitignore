@@ -1,0 +1,16 @@
+# local mise config
+mise.local.toml
+mise.*.local.toml
+
+# deps
+node_modules/
+
+# build output
+build/
+dist/
+.output/
+.vinxi/
+
+# env
+.env
+.env.local

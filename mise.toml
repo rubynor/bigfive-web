@@ -1,0 +1,50 @@
+# Toolchain + task runner for Project Speculum (norm-based bigfive-web).
+# mise is not on the non-interactive PATH here; prefix ad-hoc shells with
+#   export PATH="$HOME/.local/bin:$PATH"
+[tools]
+bun = "latest"
+node = "latest"
+
+[env]
+# Plain Postgres connection (docker compose service `db`). NOT NEXT_PUBLIC_* /
+# not VITE_*: the DB URL must never reach a client bundle.
+DATABASE_URL = "postgres://bigfive:bigfive@127.0.0.1:5432/bigfive"
+
+# --- pure-core tasks (no DB, no app; Phases 1-3 live here) ---
+[tasks."score:test"]
+dir = "packages/score"
+run = "bun run test"
+
+# --- local Postgres via docker compose (repo-root docker-compose.yml) ---
+# `--wait` blocks until the container reports healthy so db:migrate can follow.
+[tasks."db:start"]
+run = "docker compose up -d --wait db"
+
+[tasks."db:stop"]
+run = "docker compose down"
+
+# db:generate / db:migrate come online in Phase 3 once web/ has drizzle-kit.
+[tasks."db:generate"]
+dir = "web"
+run = "bun run db:generate"
+
+[tasks."db:migrate"]
+dir = "web"
+run = "bun run db:migrate"
+
+# --- app tasks (web/ becomes SolidStart in Phase 4) ---
+[tasks."dev"]
+dir = "web"
+run = "bun run dev"
+
+[tasks."build"]
+dir = "web"
+run = "bun run build"
+
+[tasks."test"]
+dir = "web"
+run = "bun run test"
+
+[tasks."setup"]
+dir = "web"
+run = "bun install"

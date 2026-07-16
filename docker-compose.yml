@@ -1,0 +1,26 @@
+# Local Postgres for Project Speculum (norm-based bigfive-web).
+# Usage:
+#   docker compose up -d --wait db   # start + wait until healthy
+#   docker compose down              # stop
+# Connection string (see mise.toml [env] DATABASE_URL):
+#   postgres://bigfive:bigfive@127.0.0.1:5432/bigfive
+services:
+  db:
+    image: postgres:16
+    container_name: speculum-db
+    environment:
+      POSTGRES_USER: bigfive
+      POSTGRES_PASSWORD: bigfive
+      POSTGRES_DB: bigfive
+    ports:
+      - '5432:5432'
+    volumes:
+      - speculum-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U bigfive -d bigfive']
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  speculum-pgdata:
