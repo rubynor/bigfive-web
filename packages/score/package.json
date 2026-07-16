@@ -1,21 +1,22 @@
 {
   "name": "@bigfive-org/score",
-  "version": "1.0.1",
-  "description": "Calculate score for big five tests",
+  "version": "2.0.0",
+  "description": "Norm-based percentile scoring for IPIP-NEO-120 (Project Speculum)",
   "files": [
     "build/src/"
   ],
   "keywords": [
     "bigfive",
     "personality",
-    "calculate score"
+    "ipip-neo",
+    "norms",
+    "percentile"
   ],
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "eslint-fix": "eslint --ext .ts --fix src/**/** test/**/**",
-    "eslint": "eslint --ext .ts src/**/** test/**/**",
+    "generate-norms": "bun run scripts/generate-norms.ts",
     "build": "tsc -p .",
-    "test": "jest"
+    "typecheck": "tsc --noEmit -p tsconfig.check.json",
+    "test": "vitest run"
   },
   "author": {
     "name": "Jonas Maccyber Enge",
@@ -24,17 +25,8 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/jest": "29.5.12",
-    "@typescript-eslint/eslint-plugin": "7.4.0",
-    "eslint": "8.57.0",
-    "eslint-config-love": "43.1.0",
-    "eslint-plugin-import": "2.29.1",
-    "eslint-plugin-json-files": "4.1.0",
-    "eslint-plugin-n": "16.6.2",
-    "eslint-plugin-promise": "6.1.1",
-    "jest": "29.7.0",
-    "ts-jest": "29.1.2",
-    "ts-node": "10.9.2",
-    "typescript": "5.4.3"
+    "@types/node": "20.14.0",
+    "typescript": "5.9.2",
+    "vitest": "2.1.8"
   }
 }

@@ -1,53 +1,29 @@
-interface Answer {
-  domain: string
-  facet?: number
-  score: number
-}
+// @bigfive-org/score — norm-based percentile scoring for IPIP-NEO-120.
+//
+// Pipeline: raw item sums -> T-score (per norm stratum) -> percentile (exact
+// normal CDF) -> band. Pure and deterministic. See ARCHITECTURE.md.
 
-interface Result {
-  score: number
-  count: number
-  result: string
-  facet: Record<string, { score: number, count: number, result: string }>
-}
+export * from './types';
+export * from './norms';
+export * from './stats';
+export * from './bands';
+export * from './facet-map';
+export * from './scoring';
+export * from './adapter';
+export * from './key-validation';
 
-export function processAnswers (answers: Answer[]): Record<string, Result> {
-  const result: Record<string, Result> = {}
+// Legacy raw-threshold scorer (superseded; kept for back-compat + fixtures).
+export { processAnswers, calculateResult } from './legacy';
 
-  answers.forEach(answer => {
-    if (result[answer.domain] === undefined) {
-      result[answer.domain] = { score: 0, count: 0, result: 'neutral', facet: {} }
-    }
-    const domain = result[answer.domain]
-    domain.score += answer.score
-    domain.count++
+import type { ScoreInput } from './types';
+import { scoreAssessment } from './scoring';
+import { toLegacyScores, type LegacyScores } from './adapter';
 
-    if (answer.facet === undefined) return
-
-    if (domain.facet[answer.facet] === undefined) {
-      domain.facet[answer.facet] = { score: 0, count: 0, result: 'neutral' }
-    }
-    const facet = domain.facet[answer.facet]
-    facet.score += answer.score
-    facet.count++
-  })
-
-  Object.values(result).forEach(domain => {
-    domain.result = calculateResult(domain.score, domain.count)
-    Object.values(domain.facet).forEach(facet => {
-      facet.result = calculateResult(facet.score, facet.count)
-    })
-  })
-
-  return result
-}
-
-export function calculateResult (score: number, count: number): string {
-  const avgScore = score / count
-  if (avgScore > 3.5) {
-    return 'high'
-  } else if (avgScore < 2.5) {
-    return 'low'
-  }
-  return 'neutral'
+/**
+ * Back-compat default export: same call shape as upstream calculateScore, but
+ * now norm-based. Returns the legacy scores object (raw sums + low|neutral|high
+ * bands) so existing @bigfive-org/results consumers keep working.
+ */
+export default function calculateScore(input: ScoreInput): LegacyScores {
+  return toLegacyScores(scoreAssessment(input));
 }
