@@ -14,8 +14,8 @@ rubynor (no fork pushed yet).
 |---|---|---|
 | 0 — relocate, infra, ARCHITECTURE.md | ✅ done, gate passed | `c7ecdda` |
 | 1 — norm-based score engine | ✅ done, gate passed | `169d4ad` |
-| 2 — typology + composites | ⬅ **NEXT** (started, nothing committed) | — |
-| 3 — persistence (Drizzle/Postgres) | pending | — |
+| 2 — typology + composites | ✅ done | `0ad03af` |
+| 3 — persistence (Drizzle/Postgres) | ⬅ **NEXT** | — |
 | 4 — SolidStart rebuild | pending | — |
 | 5 — Speculum UI (typology view, demographics, series) | pending | — |
 | 5b — adaptive local norms | pending (new requirement, see below) | — |
@@ -57,34 +57,23 @@ rubynor (no fork pushed yet).
 6. **Adaptive local norms** (2026-07-17): the norm tables must be able to adjust
    with data we collect — see Phase 5b below.
 
-## Next: Phase 2 — `packages/typology` (pure, no I/O)
+### What Phase 2 delivered (`packages/typology`, 21 vitest tests green)
 
-Derive from `AssessmentResult` percentiles (midpoint 50):
+- `computeTypology(assessment)`: axes E/I←Extraversion, N/S←Openness,
+  T/F←Agreeableness (≥50→F), A/T←Neuroticism (≥50→T), J/P←jScore =
+  `0.40·C2 + 0.40·C6 + 0.20·(100−Openness pct)` (weights in output meta).
+  Type string `${EI}${NS}${TF}${JP}-${AT}`; per-axis {letter, basisPercentile,
+  strengthTowardLetter, distanceFromMidpoint, borderline on [45,55]} plus
+  aggregate `borderline` (OR across axes).
+- `computeComposites(assessment)`: Perfectionism `0.35·C4+0.35·C2+0.30·N4`,
+  Ambition `0.40·C4+0.30·E3+0.30·C1`, Motivation `0.40·C5+0.30·C4+0.30·C1`,
+  Desire to Lead `0.45·E3+0.25·C4+0.15·E4+0.15·E2`; each `heuristic: true`
+  with formula string + weighted components; weights sum to 1 (tested).
+- Imports score types via relative `../../score/src/*` (like score→questions);
+  `tsc` build therefore nests `build/score/` + `build/typology/` — fine until
+  workspace resolution lands in Phase 3/4. `mise run typology:test` runs it.
 
-- Axes: E/I ← Extraversion pct (≥50→E) · N/S ← Openness (≥50→N) ·
-  T/F ← Agreeableness (≥50→F) · A/T ← Neuroticism (≥50→T) ·
-  J/P ← weighted composite `0.40·C2(Orderliness) + 0.40·C6(Cautiousness) +
-  0.20·(100−Openness pct)` (≥50→J) — weights documented in code + output meta.
-- Output: type string (e.g. `INTP-T`), per-axis {letter, basis percentile,
-  strength toward letter, distance from midpoint}, `borderline: true` within ±5
-  of 50, plus a top-level `borderline` if any axis is.
-- Composites (heuristic:true, formula string in output, weights sum to 1):
-  - Perfectionism: 0.35·C4 + 0.35·C2 + 0.30·N4
-  - Ambition: 0.40·C4 + 0.30·E3 + 0.30·C1
-  - Motivation: 0.40·C5 + 0.30·C4 + 0.30·C1
-  - Desire to Lead: 0.45·E3 + 0.25·C4 + 0.15·E4 + 0.15·E2
-- Reference implementations exist in the abandoned fork
-  (`/Users/freddy/.dev/Rust/bigfive-web/packages/score/src/typology.ts` and
-  `composites.ts`) — re-derive cleanly into a NEW package `packages/typology`
-  (the brief wants it as its own package), importing types from
-  `@bigfive-org/score` via a relative/workspace path like the score tests do
-  for questions.
-- Tests: axis selection at/around midpoint, borderline fires exactly at ±5
-  (45/55 inclusive), type-string assembly, J/P weight sum = 1, composite
-  weights sum to 1, composite score ∈ [0,100], vectors with independently
-  precomputed expected values.
-
-## Then: Phase 3 — persistence (see plan for detail)
+## Next: Phase 3 — persistence (see plan for detail)
 
 Drizzle/Postgres: `results(id text PK ObjectId, lang, created_at, answers
 jsonb, demographics jsonb NULL, series_token text NULL indexed)` + `feedback`;
