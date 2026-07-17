@@ -15,6 +15,10 @@ DATABASE_URL = "postgres://bigfive:bigfive@127.0.0.1:5432/bigfive"
 dir = "packages/score"
 run = "bun run test"
 
+[tasks."typology:test"]
+dir = "packages/typology"
+run = "bun run test"
+
 # --- local Postgres via docker compose (repo-root docker-compose.yml) ---
 # `--wait` blocks until the container reports healthy so db:migrate can follow.
 [tasks."db:start"]

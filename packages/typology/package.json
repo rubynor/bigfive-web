@@ -1,0 +1,25 @@
+{
+  "name": "@bigfive-org/typology",
+  "version": "2.0.0",
+  "description": "16P-style typology and heuristic composite traits derived from norm-based percentiles (Project Speculum)",
+  "files": [
+    "build/"
+  ],
+  "keywords": [
+    "bigfive",
+    "personality",
+    "typology",
+    "ipip-neo"
+  ],
+  "scripts": {
+    "build": "tsc -p .",
+    "typecheck": "tsc --noEmit -p tsconfig.check.json",
+    "test": "vitest run"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "20.14.0",
+    "typescript": "5.9.2",
+    "vitest": "2.1.8"
+  }
+}
