@@ -166,8 +166,23 @@ feedback(id text PK, name, email, message, created_at)
 - **Series token** links sessions into a longitudinal series **without an
   account** (a client-held random token). `getSeries(token)` re-scores every
   session with its own stored demographics, oldest first → chart input.
-- **Demographics** are optional; absent → the combined + 21–40 fallback stratum
+- **Demographics** are collected on a **pre-test screen** (sex + age, before the
+  first item). A **Skip** option exists and warns that results may be slightly
+  less accurate; skipping → the combined-sexes stratum derived on the fly
+  (avg means + pooled SD). Absent age → the 21–40 fallback stratum
   (`meta.fallbackApplied = true`).
+
+### Adaptive local norms (planned, Phase 5b)
+
+The norm tables adjust with the data we collect: a `local` norm source
+(same swappable `NormSet` interface — scoring logic untouched) aggregates
+mean/SD of domain+facet raw sums per (sex × ageBracket) from stored
+`results.answers`. A stratum is usable only above a minimum sample size
+(≥200; below that, per-stratum fallback to Johnson). A `norms:refresh` job
+writes a snapshot table — scoring reads the snapshot, never aggregates
+per-request. Provenance label: *"local sample norms (self-selected web
+sample, N=…)"* — honest that this is a convenience sample. Raw answers stay
+the sole source of truth; local norms are derived and recomputable.
 
 ---
 

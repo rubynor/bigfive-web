@@ -1,0 +1,124 @@
+# HANDOFF — Project Speculum (updated 2026-07-17)
+
+State + next steps for a fresh session. Companion docs: `CLAUDE.md` (rules),
+`ARCHITECTURE.md` (technical map), and the master plan at
+`/Users/freddy/.claude/plans/project-speculum-mighty-goblet.md`.
+
+## Where things stand
+
+Repo: `/Users/freddy/.dev/Rust/speculum`, branch **`speculum`** off upstream
+`rubynor/bigfive-web` master ("v2 genesis commit"). Remote still points at
+rubynor (no fork pushed yet).
+
+| Phase | Status | Commit |
+|---|---|---|
+| 0 — relocate, infra, ARCHITECTURE.md | ✅ done, gate passed | `c7ecdda` |
+| 1 — norm-based score engine | ✅ done, gate passed | `169d4ad` |
+| 2 — typology + composites | ⬅ **NEXT** (started, nothing committed) | — |
+| 3 — persistence (Drizzle/Postgres) | pending | — |
+| 4 — SolidStart rebuild | pending | — |
+| 5 — Speculum UI (typology view, demographics, series) | pending | — |
+| 5b — adaptive local norms | pending (new requirement, see below) | — |
+| 6 — LLM interpretation (OFF) + CI | pending | — |
+
+### What Phase 1 delivered (`packages/score`, 108 vitest tests green)
+
+- `scoreAssessment`: raw sums → T = 10·(raw−mean)/SD + 50 → percentile =
+  100·Φ((T−50)/10) via inline erf (replaces five-factor-e's buggy cubic; strict
+  monotonicity is property-tested) → bands (<10 very low, 10–30 low, 30–70
+  average, 70–90 high, ≥90 very high).
+- Norm data: 8 Johnson strata (sex × age lt21/a21_40/a41_60/gt60) generated
+  from `norms-source/five-factor-e-norm.py` by `scripts/generate-norms.ts`
+  (`bun run generate-norms`). Do NOT hand-edit
+  `src/norms/sources/johnson-webreport.ts`.
+- **Combined (sex unknown) strata are DERIVED AT RUNTIME** (`combineStrata`):
+  mean = avg(M,F), SD = pooled `sqrt(0.5(sd_m²+sd_f²)+0.25(Δmean)²)` — a
+  documented deviation from five-factor-e (which averages SDs). User approved.
+- Fallbacks: missing age → `a21_40` reference (`meta.fallbackApplied`); missing
+  sex → combined derived (`meta.combinedDerived`).
+- Fidelity harness `test/norms.test.ts`: parseNormPy(norm.py) == gold JSON ==
+  generated TS for the 8 base strata; combined means match gold within
+  banker's-rounding ±0.005; pooled ≥ averaged SD.
+- `toLegacyScores` adapter feeds `@bigfive-org/results` unchanged; default
+  export `calculateScore` keeps the upstream call shape.
+- Key validation (`key-validation.ts`) pins the questions item set to the norm
+  index map.
+
+## User decisions locked in (do not re-litigate)
+
+1. Web app: **migrate to SolidJS/SolidStart** (full rewrite, not a Next upgrade).
+2. IDs: **Mongo-ObjectId-shaped**, minted in-app (no mongodb dep).
+3. Norm engine: re-derived from five-factor-e source (done, Phase 1).
+4. Combined-stratum policy: derive at runtime, pooled SD (done, Phase 1).
+5. **Demographics are asked BEFORE the test** (2026-07-17): a pre-test screen
+   collects sex + age. A **Skip** option must exist and show a warning that the
+   result may be a bit less accurate; skipping → combined-sexes norms computed
+   on the fly. (Belongs to Phase 5 UI; the scoring side already supports it.)
+6. **Adaptive local norms** (2026-07-17): the norm tables must be able to adjust
+   with data we collect — see Phase 5b below.
+
+## Next: Phase 2 — `packages/typology` (pure, no I/O)
+
+Derive from `AssessmentResult` percentiles (midpoint 50):
+
+- Axes: E/I ← Extraversion pct (≥50→E) · N/S ← Openness (≥50→N) ·
+  T/F ← Agreeableness (≥50→F) · A/T ← Neuroticism (≥50→T) ·
+  J/P ← weighted composite `0.40·C2(Orderliness) + 0.40·C6(Cautiousness) +
+  0.20·(100−Openness pct)` (≥50→J) — weights documented in code + output meta.
+- Output: type string (e.g. `INTP-T`), per-axis {letter, basis percentile,
+  strength toward letter, distance from midpoint}, `borderline: true` within ±5
+  of 50, plus a top-level `borderline` if any axis is.
+- Composites (heuristic:true, formula string in output, weights sum to 1):
+  - Perfectionism: 0.35·C4 + 0.35·C2 + 0.30·N4
+  - Ambition: 0.40·C4 + 0.30·E3 + 0.30·C1
+  - Motivation: 0.40·C5 + 0.30·C4 + 0.30·C1
+  - Desire to Lead: 0.45·E3 + 0.25·C4 + 0.15·E4 + 0.15·E2
+- Reference implementations exist in the abandoned fork
+  (`/Users/freddy/.dev/Rust/bigfive-web/packages/score/src/typology.ts` and
+  `composites.ts`) — re-derive cleanly into a NEW package `packages/typology`
+  (the brief wants it as its own package), importing types from
+  `@bigfive-org/score` via a relative/workspace path like the score tests do
+  for questions.
+- Tests: axis selection at/around midpoint, borderline fires exactly at ±5
+  (45/55 inclusive), type-string assembly, J/P weight sum = 1, composite
+  weights sum to 1, composite score ∈ [0,100], vectors with independently
+  precomputed expected values.
+
+## Then: Phase 3 — persistence (see plan for detail)
+
+Drizzle/Postgres: `results(id text PK ObjectId, lang, created_at, answers
+jsonb, demographics jsonb NULL, series_token text NULL indexed)` + `feedback`;
+`object-id.ts` minting; og-fallback (scrape bigfive-test.com RSC payload by
+facet title, synthesize 4 items/facet, cache under same id — reference:
+fork's `web/src/lib/og-fallback.ts`, pin the regex behind a fixture);
+actions getTestResult/saveTest/getSeries/saveFeedback; round-trip determinism
+test against Docker Postgres.
+
+## Phase 5b — adaptive local norms (new requirement, design sketch)
+
+- New norm source `local` implementing the existing `NormSet` interface (the
+  registry in `packages/score/src/norms/index.ts` was built for this; scoring
+  logic must not change).
+- Aggregate mean/SD of domain+facet raw sums per (sex × ageBracket) from stored
+  `results.answers`. Raw answers remain the sole source of truth; local norms
+  are a derived, recomputable snapshot.
+- **Min-N gate:** stratum usable only with ≥200 samples; below that fall back
+  per-stratum to Johnson. Report meta must state norm set + stratum + N.
+- `norms:refresh` job (mise task, later cron) writes a snapshot table; scoring
+  reads the snapshot, never aggregates per-request.
+- Provenance label: "local sample norms (self-selected web sample, N=…)".
+
+## Gotchas
+
+- Toolchain: `export PATH="$HOME/.local/bin:$PATH"`; run things via
+  `mise exec -- bun …` or `mise run <task>`. See CLAUDE.md.
+- `packages/score` tests import questions data via relative path
+  `../../questions/src/data/en/questions` (no workspace setup yet — there is no
+  root package.json; web pins published npm versions of the packages. Phase 3/4
+  should wire local workspace resolution so web consumes OUR score package).
+- `packages/results` has a latent facet bug upstream (`generateResult` reads
+  `facet[key]` instead of `scores[key].facet[facet]` → facet texts silently
+  dropped). Fix it when web starts rendering facet text (the fork fixed the
+  vendored copy the same way).
+- Old jest tests in `packages/questions`/`packages/results` still exist and
+  are untouched; only `packages/score` moved to vitest.
