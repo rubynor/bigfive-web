@@ -24,8 +24,8 @@ bigfive-test.com, and rebuilds the web app on **SolidStart + Postgres**.
 | Scoring | `packages/score` — naive averaging, raw thresholds 2.5/3.5 → low/neutral/high (~60 lines) | norm-based engine (T-score → exact-CDF percentile → band) | **REPLACE internals**, keep package name + default `calculateScore` export so `results` keeps working. |
 | Result text | `packages/results` — per domain/facet text from a `{score,count,result}` shape | unchanged, fed via a compatibility **adapter** | **KEEP** — `toLegacyScores()` collapses 5 bands → `low\|neutral\|high`. |
 | Typology | — (none upstream) | `packages/typology` — axes + composites, pure | **NEW.** |
-| Persistence | `web/src/db` MongoDB + `mongodb` driver | Postgres via Drizzle ORM (`results`, `feedback`) | **REPLACE.** IDs stay ObjectId-shaped (minted in-app, no `mongodb` dep). |
-| Server logic | `web/src/actions/index.ts` (`getTestResult`/`saveTest`/`saveFeedback`) | SolidStart `"use server"` actions + `getSeries` + og-fallback | **REPLACE.** |
+| Persistence | `web/src/db` MongoDB + `mongodb` driver | Postgres via Drizzle ORM in `packages/data` (`results`, `feedback`) | **REPLACE.** IDs stay ObjectId-shaped (minted in-app, no `mongodb` dep). |
+| Server logic | `web/src/actions/index.ts` (`getTestResult`/`saveTest`/`saveFeedback`) | framework-agnostic actions in `packages/data`, wrapped as SolidStart `"use server"` in Phase 4 (+ `getSeries` + og-fallback) | **REPLACE.** |
 | Web app | Next.js 14 App Router, next-intl, NextUI, Contentlayer, ApexCharts | SolidStart, Kobalte, `@solid-primitives/i18n`, solid-apexcharts | **REBUILD** (functional core first; articles/blog deferred). |
 | Dead legacy | `old-packages/` (pre-v2 duplicate of `packages/`) | — | **REMOVED** in Phase 0. |
 
@@ -146,10 +146,12 @@ averaged-means + pooled-SD formulas. Source materials live in
 
 ---
 
-## 6. Persistence
+## 6. Persistence (`packages/data`)
 
 Drizzle ORM over Postgres (`node-postgres` Pool, lazy singleton `getDb()` so
-builds work without a live DB).
+builds work without a live DB). Framework-agnostic: schema, migrations,
+object-id minting, og-fallback, and the four actions all live in
+`packages/data`; Phase 4 only wraps the actions as SolidStart server functions.
 
 ```
 results(

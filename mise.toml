@@ -19,6 +19,15 @@ run = "bun run test"
 dir = "packages/typology"
 run = "bun run test"
 
+[tasks."data:test"]
+dir = "packages/data"
+run = "bun run test"
+
+# Needs db:start + db:migrate first (round-trip tests against real Postgres).
+[tasks."data:test:integration"]
+dir = "packages/data"
+run = "bun run test:integration"
+
 # --- local Postgres via docker compose (repo-root docker-compose.yml) ---
 # `--wait` blocks until the container reports healthy so db:migrate can follow.
 [tasks."db:start"]
@@ -27,13 +36,13 @@ run = "docker compose up -d --wait db"
 [tasks."db:stop"]
 run = "docker compose down"
 
-# db:generate / db:migrate come online in Phase 3 once web/ has drizzle-kit.
+# Drizzle migrations live in packages/data (framework-agnostic data layer).
 [tasks."db:generate"]
-dir = "web"
+dir = "packages/data"
 run = "bun run db:generate"
 
 [tasks."db:migrate"]
-dir = "web"
+dir = "packages/data"
 run = "bun run db:migrate"
 
 # --- app tasks (web/ becomes SolidStart in Phase 4) ---

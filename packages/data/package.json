@@ -1,0 +1,34 @@
+{
+  "name": "@bigfive-org/data",
+  "version": "2.0.0",
+  "description": "Framework-agnostic persistence + actions for Project Speculum (Drizzle/Postgres)",
+  "files": [
+    "build/"
+  ],
+  "keywords": [
+    "bigfive",
+    "personality",
+    "drizzle",
+    "postgres"
+  ],
+  "scripts": {
+    "build": "tsc -p .",
+    "typecheck": "tsc --noEmit -p tsconfig.check.json",
+    "test": "vitest run",
+    "test:integration": "vitest run -c vitest.integration.config.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "drizzle-orm": "^0.45.2",
+    "pg": "^8.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.0",
+    "@types/pg": "^8.20.0",
+    "drizzle-kit": "^0.31.10",
+    "typescript": "5.9.2",
+    "vitest": "2.1.8"
+  }
+}
