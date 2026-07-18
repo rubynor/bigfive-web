@@ -92,7 +92,7 @@ rubynor (no fork pushed yet).
 - Cross-package imports remain relative (`../../score/src/*` etc.); proper
   workspace resolution is Phase 4 work.
 
-## Next: Phase 4 — SolidStart rebuild (largest phase; see plan)
+## Current: Phase 4 — SolidStart rebuild (largest phase; see plan)
 
 Rebuild `web/` on SolidStart: foundation (Tailwind/theme/fonts) → wire
 `packages/data` actions as `"use server"` → i18n (20 locales,
@@ -100,6 +100,30 @@ Rebuild `web/` on SolidStart: foundation (Tailwind/theme/fonts) → wire
 (solid-apexcharts) → result/compare/home/static pages. Defer articles/blog +
 view counter. The plan's Phase 4 section has the ordered dependency list and
 risk notes; `ARCHITECTURE.md` §7 maps the migration surface.
+
+Progress within Phase 4:
+
+- [x] **Step 1 — foundation** (`432015f`): Next app deleted from `web/`
+  (React sources remain in git history and in the read-only fork);
+  `@solidjs/start` 1.3 scaffold with vinxi, Tailwind 3 kept. NextUI theme
+  plugin replaced by semantic tokens in `tailwind.config.cjs` + CSS vars in
+  `src/app.css` (background/foreground/content1-4/divider vary with `.dark`;
+  primary=blue, secondary=violet, default=zinc scales). Fonts via
+  `@fontsource-variable` (Inter/Fira Code). Theme = signal in
+  `src/lib/theme.ts` + no-FOUC script in `entry-server.tsx`.
+  `primitives.ts` and de-Next-ed `config/site.ts` ported. Kept for later
+  steps: `public/`, `src/messages/` (20 locales), `posts/` (deferred
+  articles). `bun run build` = `tsc --noEmit && vinxi build` (typecheck
+  preserved). Verified: build green, dev SSR serves home + 404, all
+  package tests green (108/21/9). `@parcel/watcher` postinstall
+  intentionally left blocked (prebuilt binaries suffice).
+- [ ] Step 2 — wire `packages/data` actions as `"use server"` + workspace
+  resolution so web consumes local packages (not published npm versions)
+- [ ] Step 3 — i18n (20 locales, `@solid-primitives/i18n`, locale routing, RTL)
+- [ ] Step 4 — UI kit on Kobalte (navbar/footer/modals/selects/radio/…)
+- [ ] Step 5 — survey state machine
+- [ ] Step 6 — charts (solid-apexcharts, clientOnly)
+- [ ] Step 7 — result/get-result/compare/home/static pages
 
 ## Phase 5b — adaptive local norms (new requirement, design sketch)
 
