@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme-varying semantic tokens (rgb triplets so Tailwind opacity works).
+   Consumed by tailwind.config.cjs; .dark is toggled on <html> by the theme
+   signal (src/lib/theme.ts) and the no-FOUC script in entry-server.tsx. */
+:root {
+  --background: 255 255 255;
+  --foreground: 24 24 27; /* zinc-900 */
+  --divider: 228 228 231; /* zinc-200 */
+  --content1: 255 255 255;
+  --content2: 244 244 245; /* zinc-100 */
+  --content3: 228 228 231; /* zinc-200 */
+  --content4: 212 212 216; /* zinc-300 */
+}
+
+.dark {
+  --background: 9 9 11; /* zinc-950 */
+  --foreground: 244 244 245; /* zinc-100 */
+  --divider: 39 39 42; /* zinc-800 */
+  --content1: 24 24 27; /* zinc-900 */
+  --content2: 39 39 42; /* zinc-800 */
+  --content3: 63 63 70; /* zinc-700 */
+  --content4: 82 82 91; /* zinc-600 */
+}
+
+h3 {
+  @apply text-xl;
+}
+
+.articlePage blockquote {
+  @apply p-4 my-4 border-s-4 border-secondary bg-gray-100 dark:bg-gray-800;
+  p {
+    @apply text-xl italic leading-relaxed;
+  }
+}
+
+.articlePage a {
+  @apply underline;
+}
+
+.articlePage ul {
+  @apply list-disc pl-6;
+}

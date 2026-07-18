@@ -1,5 +1,3 @@
-import { getTranslations } from 'next-intl/server';
-
 export type SiteConfig = typeof siteConfig;
 
 export const basePath = 'https://bigfive-test.com';
@@ -72,10 +70,6 @@ export const siteConfig = {
       href: '/compare'
     },
     {
-      label: 'articles',
-      href: '/articles'
-    },
-    {
       label: 'about',
       href: '/about'
     }
@@ -92,10 +86,6 @@ export const siteConfig = {
     {
       label: 'compare_with',
       href: '/compare'
-    },
-    {
-      label: 'articles',
-      href: '/articles'
     },
     {
       label: 'privacy',
@@ -116,10 +106,6 @@ export const siteConfig = {
       href: '/'
     },
     {
-      label: 'articles',
-      href: '/articles'
-    },
-    {
       label: 'privacy',
       href: '/privacy'
     },
@@ -133,23 +119,6 @@ export const siteConfig = {
     }
   ],
   links: {
-    github: 'https://github.com/rubynor/bigfive-web',
-    twitter: 'https://twitter.com/rubynor',
-    linkedIn: 'https://www.linkedin.com/company/rubynor-as/',
-    facebook: 'https://www.facebook.com/rubynorno'
+    github: 'https://github.com/rubynor/bigfive-web'
   }
-};
-
-export const getNavItems = async ({
-  locale,
-  linkType
-}: {
-  locale: string;
-  linkType: 'navItems' | 'navMenuItems' | 'footerLinks';
-}) => {
-  const t = await getTranslations({ locale, namespace: 'toolbar' });
-  return siteConfig[linkType].map((link) => ({
-    label: t(`${link.label}`),
-    href: link.href
-  }));
 };
