@@ -15,8 +15,8 @@ rubynor (no fork pushed yet).
 | 0 — relocate, infra, ARCHITECTURE.md | ✅ done, gate passed | `c7ecdda` |
 | 1 — norm-based score engine | ✅ done, gate passed | `169d4ad` |
 | 2 — typology + composites | ✅ done | `0ad03af` |
-| 3 — persistence (Drizzle/Postgres) | ⬅ **NEXT** | — |
-| 4 — SolidStart rebuild | pending | — |
+| 3 — persistence (Drizzle/Postgres) | ✅ done | `2a6d727` |
+| 4 — SolidStart rebuild | ⬅ **NEXT** | — |
 | 5 — Speculum UI (typology view, demographics, series) | pending | — |
 | 5b — adaptive local norms | pending (new requirement, see below) | — |
 | 6 — LLM interpretation (OFF) + CI | pending | — |
@@ -73,15 +73,33 @@ rubynor (no fork pushed yet).
   `tsc` build therefore nests `build/score/` + `build/typology/` — fine until
   workspace resolution lands in Phase 3/4. `mise run typology:test` runs it.
 
-## Next: Phase 3 — persistence (see plan for detail)
+### What Phase 3 delivered (`packages/data`, 9 unit + 8 integration tests green)
 
-Drizzle/Postgres: `results(id text PK ObjectId, lang, created_at, answers
-jsonb, demographics jsonb NULL, series_token text NULL indexed)` + `feedback`;
-`object-id.ts` minting; og-fallback (scrape bigfive-test.com RSC payload by
-facet title, synthesize 4 items/facet, cache under same id — reference:
-fork's `web/src/lib/og-fallback.ts`, pin the regex behind a fixture);
-actions getTestResult/saveTest/getSeries/saveFeedback; round-trip determinism
-test against Docker Postgres.
+- Framework-agnostic data layer (NOT inside `web/` — the Next app is doomed;
+  Phase 4 wraps these actions as SolidStart `"use server"` functions).
+- Drizzle schema `results` + `feedback`, two additive migrations
+  (`drizzle/0000_*`, `0001_*`), lazy `getDb()` over node-postgres.
+  `mise run db:generate|db:migrate` now point at `packages/data`.
+- `object-id.ts` (mint + isObjectId, no mongodb dep), `og-fallback.ts`
+  (RSC-payload parse by facet title, regex pinned behind a fixture test;
+  verified live against upstream example `58a70606a835c400c8b38e84`),
+  `actions.ts` getTestResult/saveTest/getSeries/saveFeedback — score at read
+  time via scoreAssessment→computeTypology→computeComposites→toLegacyScores→
+  generateResult. `SaveTestInput` drops the fork's dead fields
+  (testId/invalid/timeElapsed/dateStamp) — re-add nothing.
+- Round-trip determinism gate passed vs Docker Postgres
+  (`mise run db:start && mise run db:migrate && mise run data:test:integration`).
+- Cross-package imports remain relative (`../../score/src/*` etc.); proper
+  workspace resolution is Phase 4 work.
+
+## Next: Phase 4 — SolidStart rebuild (largest phase; see plan)
+
+Rebuild `web/` on SolidStart: foundation (Tailwind/theme/fonts) → wire
+`packages/data` actions as `"use server"` → i18n (20 locales,
+`@solid-primitives/i18n`) → UI kit on Kobalte → survey state machine → charts
+(solid-apexcharts) → result/compare/home/static pages. Defer articles/blog +
+view counter. The plan's Phase 4 section has the ordered dependency list and
+risk notes; `ARCHITECTURE.md` §7 maps the migration surface.
 
 ## Phase 5b — adaptive local norms (new requirement, design sketch)
 
