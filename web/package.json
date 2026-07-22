@@ -19,6 +19,7 @@
     "@bigfive-org/typology": "workspace:*",
     "@fontsource-variable/fira-code": "^5.2.5",
     "@fontsource-variable/inter": "^5.2.5",
+    "@kobalte/core": "^0.13.12",
     "@solid-primitives/i18n": "^2.2.1",
     "@solidjs/meta": "^0.29.4",
     "@solidjs/router": "^0.15.3",
