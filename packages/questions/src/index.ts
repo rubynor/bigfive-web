@@ -1,5 +1,7 @@
 import languages, { Language, LanguageCode } from './data/languages';
 
+export type { Language, LanguageCode };
+
 type RawItem = Omit<Question, 'num' | 'choices'>;
 
 type QuestionsModule = { default: RawItem[] };

@@ -27,11 +27,17 @@ export type RawDictionary = typeof en;
 export type Dictionary = Flatten<RawDictionary>;
 export type MessageKey = keyof Dictionary & string;
 
+// Non-en bundles are allowed to be partial at any nesting depth — missing
+// keys fall back to English at lookup time.
+type DeepPartial<T> = {
+  [K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K];
+};
+
 // Static loader map: a fully dynamic import(`~/messages/${locale}`) is
 // unbundleable by vite (same lesson as packages/results getTemplate).
 const dictionaryLoaders: Record<
   string,
-  () => Promise<{ default: Partial<RawDictionary> }>
+  () => Promise<{ default: DeepPartial<RawDictionary> }>
 > = {
   ar: () => import('~/messages/ar'),
   da: () => import('~/messages/da'),
@@ -59,7 +65,9 @@ const enDict = flatten(en);
 const fetchDictionary = async (locale: string): Promise<Partial<Dictionary>> =>
   locale === 'en'
     ? {}
-    : flatten((await dictionaryLoaders[locale]()).default as RawDictionary);
+    : flatten(
+        (await dictionaryLoaders[locale]()).default as RawDictionary
+      );
 
 // next-intl-style single-brace interpolation from the kept message bundles:
 // 'Over {n} people' + { n: 3000 }. Unknown params stay as-is.

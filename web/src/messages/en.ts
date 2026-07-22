@@ -127,7 +127,31 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     next: 'next',
     back: 'back',
     more: 'more',
-    seeResults: 'see results'
+    seeResults: 'see results',
+    language: 'Test language',
+    demographics: {
+      title: 'Optional: about you',
+      description:
+        'Your result is compared against norm groups. With your sex and age we score you against your exact group instead of the general average.',
+      sex: 'Sex',
+      male: 'Male',
+      female: 'Female',
+      age: 'Age',
+      under21: 'Under 21',
+      age21to40: '21–40',
+      age41to60: '41–60',
+      over60: 'Over 60',
+      preferNotToSay: 'Prefer not to say',
+      skip: 'Skip',
+      skipWarning:
+        'No problem — the combined reference group will be used, so your percentiles may be a bit less accurate.'
+    },
+    restored: {
+      message: 'Your answers have been restored.',
+      startNew: 'start a new test'
+    },
+    saveError: 'Something went wrong saving your result. Please try again.',
+    devSkip: 'Skip to end (dev)'
   },
   big_five: {
     title: 'What are the big five?',
