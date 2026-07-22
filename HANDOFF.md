@@ -117,8 +117,20 @@ Progress within Phase 4:
   preserved). Verified: build green, dev SSR serves home + 404, all
   package tests green (108/21/9). `@parcel/watcher` postinstall
   intentionally left blocked (prebuilt binaries suffice).
-- [ ] Step 2 — wire `packages/data` actions as `"use server"` + workspace
-  resolution so web consumes local packages (not published npm versions)
+- [x] **Step 2 — workspace resolution + server actions**: root bun workspace
+  (`package.json` workspaces `["web", "packages/*"]`; per-package bun.locks
+  removed, one root lock; `mise run setup` installs at root). Each package
+  exposes TS source via `exports` (`"." → ./src/index.ts`; data also
+  `./compare-people`, `./result-id` for client-safe imports — the barrel
+  pulls pg/drizzle, never import it from client code). web depends on all
+  five via `workspace:*`. `web/src/lib/actions.ts` wraps the four data
+  actions as `query`/`action` server functions (dynamic import behind
+  `"use server"` keeps pg/drizzle out of the client bundle). Scaffold route
+  `GET /api/health[?id=]` proves the wiring — **delete it in step 7**.
+  `fix(results)`: `getTemplate` now uses a static loader map (fully dynamic
+  `import(`./data/${language}`)` is unbundleable by vite). Verified: all
+  unit + integration suites green, `mise run build` green, dev server
+  served `/api/health?id=` with a fully scored report vs Docker Postgres.
 - [ ] Step 3 — i18n (20 locales, `@solid-primitives/i18n`, locale routing, RTL)
 - [ ] Step 4 — UI kit on Kobalte (navbar/footer/modals/selects/radio/…)
 - [ ] Step 5 — survey state machine
@@ -178,13 +190,21 @@ The remaining fork commits are Next.js UI — throwaway code, but they encode
 
 - Toolchain: `export PATH="$HOME/.local/bin:$PATH"`; run things via
   `mise exec -- bun …` or `mise run <task>`. See CLAUDE.md.
-- `packages/score` tests import questions data via relative path
-  `../../questions/src/data/en/questions` (no workspace setup yet — there is no
-  root package.json; web pins published npm versions of the packages. Phase 3/4
-  should wire local workspace resolution so web consumes OUR score package).
+- Root bun workspace exists since Phase 4 step 2 (one root lockfile,
+  `mise run setup` at root). `packages/score` tests still import questions
+  data via relative path `../../questions/src/data/en/questions` — fine,
+  cross-package relative imports remain the norm inside packages/*.
+- `packages/questions` `getItems` loads via `path.join(__dirname, …)` +
+  dynamic import — CJS-only, **breaks under vite/vinxi**. Must be rewritten
+  (static per-language loaders, like the `getTemplate` fix in results)
+  before the Step 5 survey imports it. Item TEXT is untouchable.
 - `packages/results` has a latent facet bug upstream (`generateResult` reads
   `facet[key]` instead of `scores[key].facet[facet]` → facet texts silently
   dropped). Fix it when web starts rendering facet text (the fork fixed the
   vendored copy the same way).
 - Old jest tests in `packages/questions`/`packages/results` still exist and
   are untouched; only `packages/score` moved to vitest.
+- The old fork's `bigfive-db` Docker container can squat on port 5432 and
+  block `db:start` (`docker stop bigfive-db`; currently stopped). Never drop
+  tables manually without also clearing `drizzle.__drizzle_migrations` —
+  drizzle-kit then considers migrations applied and no-ops.

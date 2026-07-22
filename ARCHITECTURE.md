@@ -196,9 +196,11 @@ equivalents). Recreated, ordered by dependency; **highest-risk marked ⚠**:
 - **Foundation:** SolidStart (vinxi) scaffold, Tailwind + `tailwind-variants`
   (`primitives.ts` moves ~as-is), global CSS, fonts (`@fontsource`), theme
   signal (replaces `next-themes`).
-- **Data layer:** Postgres/Drizzle `getDb()` + `"use server"` actions (Mongo code
-  is framework-agnostic and moves with minimal change); env `DB_URL`/
-  `NEXT_PUBLIC_*` → `DATABASE_URL` + SolidStart conventions.
+- **Data layer:** ✅ done (Phase 4 step 2) — root bun workspace; web consumes
+  `packages/*` via `workspace:*` + `exports` → TS source; data actions wrapped
+  as `query`/`action` server functions in `web/src/lib/actions.ts` (dynamic
+  import behind `"use server"` keeps pg/drizzle server-only); `DATABASE_URL`
+  via mise env.
 - ⚠ **i18n:** 20 locale message bundles + namespaces → `@solid-primitives/i18n`
   + `intl-messageformat`; `as-needed` locale-prefix routing + redirect; ICU /
   `t.rich` component interpolation; RTL (`rtl-detect`).
@@ -223,6 +225,9 @@ equivalents). Recreated, ordered by dependency; **highest-risk marked ⚠**:
 
 - **mise** (`mise.toml`) provides `bun` + `node` and task shortcuts. Tools are
   not on the default PATH — `export PATH="$HOME/.local/bin:$PATH"`.
+- **Root bun workspace** (`package.json` workspaces `["web", "packages/*"]`):
+  one root lockfile, `mise run setup` installs everything; packages expose TS
+  source via `exports` (no build step needed for local dev).
 - **Postgres** runs via `docker-compose.yml` (Postgres 16, `speculum-db`).
   `DATABASE_URL=postgres://bigfive:bigfive@127.0.0.1:5432/bigfive`.
 - **Tasks:** `mise run score:test` (pure engine, no DB) · `mise run db:start` /
