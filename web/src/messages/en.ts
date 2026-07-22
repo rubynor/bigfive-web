@@ -128,7 +128,6 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     back: 'back',
     more: 'more',
     seeResults: 'see results',
-    language: 'Test language',
     demographics: {
       title: 'Optional: about you',
       description:
@@ -218,11 +217,77 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     saveResults: 'Save the following ID to see the results later or ',
     compare: 'compare',
     toOthers: 'yourself to others',
+    all: 'All',
+    selectDomain: 'Select domain',
+    readMore: 'Read more',
+    readLess: 'Read less',
+    percentile: '{percentile}th percentile',
+    normNote: 'Scored against norms: {stratum}',
+    normCombinedHint:
+      '(combined reference — provide sex & age when taking the test for an exact match)',
+    notFoundTitle: 'Could not retrieve report',
+    notFoundId: 'We could not retrieve the following id {id}.',
+    notFoundContact: 'Please check that it is correct or contact us at {email}.',
+    loadErrorTitle: 'Something went wrong',
+    loadErrorBody:
+      'The report could not be loaded due to a technical problem. Please try again later or contact us at {email}.',
     seo: {
       title: 'My results from the BigFive personality test',
       description:
         'See my personality and compare yourself in the following five domains: Neuroticism, Openness To Experience, Conscientiousness, Extraversion, Agreeableness'
     }
+  },
+  typology: {
+    yourType: 'Your type',
+    breakdown: 'Breakdown',
+    borderline: 'borderline',
+    borderlineNote:
+      'One or more axes sit close to the midpoint (±{radius}) — small answer changes could flip that letter. Treat the type as a tendency, not a verdict.',
+    percentileAria: '{label}: {percentile}th percentile',
+    axes: {
+      EI: 'Energy',
+      NS: 'Mind',
+      TF: 'Nature',
+      JP: 'Tactics',
+      AT: 'Identity'
+    }
+  },
+  share: {
+    viewSource: 'View source on GitHub',
+    downloadPdf: 'Download PDF',
+    copyLink: 'Copy link',
+    copiedLink: 'Copied link'
+  },
+  compare: {
+    overview: 'Overview',
+    editComparison: 'Edit Comparison',
+    noRows: 'No rows to display.',
+    invalidId: 'Please enter a valid ID and not a duplicate.',
+    invalidIdPlain: 'Please enter a valid ID.',
+    editPerson: 'Edit person',
+    reorder: 'Reorder {name}',
+    reorderHint: 'Drag to reorder, or focus and use arrow keys',
+    listLabel: 'List of persons to compare',
+    invalidLinkTitle: 'Invalid comparison link',
+    invalidLinkBody:
+      'This comparison link is malformed. You can build a new one or contact us at {email}.',
+    loadErrorTitle: 'Could not load comparison',
+    loadErrorBody:
+      'At least one result in this comparison could not be loaded. You can build a new comparison or contact us at {email}.',
+    buildNew: 'Build a new comparison'
+  },
+  feedback: {
+    title: 'We love feedback!',
+    intro:
+      'Send us feedback about how our features can be improved or specific issues.',
+    name: 'Name',
+    email: 'Email',
+    message: 'Message',
+    messagePlaceholder: 'Enter your message',
+    invalidEmail: 'Please enter a valid email',
+    submit: 'Submit',
+    success: 'Sent successfully!',
+    error: 'Error sending feedback!'
   },
   getResult: {
     result: 'Result',
@@ -231,7 +296,8 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     idInput: 'in the ID-input field',
     urlOrId: 'URL or ID of your result',
     getResult: 'Get result',
-    viewPrevious: 'View Previous Result'
+    viewPrevious: 'View Previous Result',
+    invalidId: 'Please enter a valid ID'
   },
   shareLinks: {
     copyLink: 'Copy link to clipboard',

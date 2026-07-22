@@ -72,10 +72,17 @@ export function generateResult(scores: Scores, template: TemplateDomain[]) {
     }
     const resultText = domainTemplate.results.find(res => res.score === result)?.text;
     const mappedFacets = domainTemplate.facets.map(({ facet, title, text }) => {
-      // @ts-ignore
-      const { score, count, result } = facet[key] || {};
+      // Latent upstream bug fix: facet scores live under scores[key].facet,
+      // keyed by facet number — the old `facet[key]` read undefined and
+      // silently dropped every facet (score/count/scoreText lost).
+      const { score, count, result } = scores[key].facet[String(facet)] || {};
       return { facet, title, text, score, count, scoreText: result };
-    }).filter(({ score }) => score);
+    }).filter(
+      // Every input facet is always present, so a missing score means bad
+      // input; the predicate narrows score to number for chart consumers.
+      (facet): facet is typeof facet & { score: number } =>
+        facet.score !== undefined
+    );
 
     return {
       domain: domainTemplate.domain,

@@ -1,0 +1,67 @@
+{
+  "N": {
+    "score": 69,
+    "count": 24,
+    "result": "neutral",
+    "facet": {
+      "1": { "score": 12, "count": 4, "result": "neutral" },
+      "2": { "score": 14, "count": 4, "result": "neutral" },
+      "3": { "score": 9, "count": 4, "result": "low" },
+      "4": { "score": 11, "count": 4, "result": "neutral" },
+      "5": { "score": 13, "count": 4, "result": "neutral" },
+      "6": { "score": 10, "count": 4, "result": "neutral" }
+    }
+  },
+  "E": {
+    "score": 85,
+    "count": 24,
+    "result": "high",
+    "facet": {
+      "1": { "score": 15, "count": 4, "result": "high" },
+      "2": { "score": 13, "count": 4, "result": "neutral" },
+      "3": { "score": 16, "count": 4, "result": "high" },
+      "4": { "score": 14, "count": 4, "result": "neutral" },
+      "5": { "score": 12, "count": 4, "result": "neutral" },
+      "6": { "score": 15, "count": 4, "result": "high" }
+    }
+  },
+  "O": {
+    "score": 96,
+    "count": 24,
+    "result": "high",
+    "facet": {
+      "1": { "score": 17, "count": 4, "result": "high" },
+      "2": { "score": 16, "count": 4, "result": "high" },
+      "3": { "score": 15, "count": 4, "result": "high" },
+      "4": { "score": 18, "count": 4, "result": "high" },
+      "5": { "score": 14, "count": 4, "result": "neutral" },
+      "6": { "score": 16, "count": 4, "result": "high" }
+    }
+  },
+  "A": {
+    "score": 66,
+    "count": 24,
+    "result": "neutral",
+    "facet": {
+      "1": { "score": 11, "count": 4, "result": "neutral" },
+      "2": { "score": 10, "count": 4, "result": "neutral" },
+      "3": { "score": 12, "count": 4, "result": "neutral" },
+      "4": { "score": 9, "count": 4, "result": "low" },
+      "5": { "score": 13, "count": 4, "result": "neutral" },
+      "6": { "score": 11, "count": 4, "result": "neutral" }
+    }
+  },
+  "C": {
+    "score": 83,
+    "count": 24,
+    "result": "high",
+    "facet": {
+      "1": { "score": 13, "count": 4, "result": "neutral" },
+      "2": { "score": 15, "count": 4, "result": "high" },
+      "3": { "score": 14, "count": 4, "result": "neutral" },
+      "4": { "score": 12, "count": 4, "result": "neutral" },
+      "5": { "score": 16, "count": 4, "result": "high" },
+      "6": { "score": 13, "count": 4, "result": "neutral" }
+    }
+  }
+}

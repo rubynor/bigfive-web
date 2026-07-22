@@ -22,7 +22,7 @@ import { saveTestAction } from '~/lib/actions';
 import { localePath } from '~/lib/i18n/nav';
 import { useI18n } from '~/lib/i18n';
 import { Alert, Button, card } from '~/components/ui';
-import { LikertScale, RadioCards } from '~/components/ui/radio';
+import { RadioCards } from '~/components/ui/radio';
 import { ProgressBar } from '~/components/ui/overlays';
 import { CloseIcon } from '~/components/icons';
 
@@ -351,17 +351,13 @@ export function Survey(props: { questions: Question[]; language: string }) {
         {(question) => (
           <div>
             <h2 class='my-4 text-2xl'>{question.text}</h2>
-            <LikertScale
+            <RadioCards
               name={`q${question.num}`}
               options={likertOptions(question)}
               value={answerFor(question.id)}
               onChange={(value) => void handleAnswer(question.id, value)}
               aria-label={question.text}
             />
-            <div class='mt-2 flex justify-between text-xs text-default-400'>
-              <span>{question.choices.at(0)?.text}</span>
-              <span>{question.choices.at(-1)?.text}</span>
-            </div>
           </div>
         )}
       </For>

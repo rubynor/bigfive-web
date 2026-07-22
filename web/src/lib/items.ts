@@ -1,8 +1,8 @@
 // Server-side loading of the question inventories (Phase 4 step 5).
-// The inventory ships in 31 languages, the UI in 20 — the test page offers a
-// language switcher (?lang=) so any inventory can be taken from any UI locale.
-// pt/zh UI locales map to their pt-br/zh-cn inventories (upstream fell back
-// to English there).
+// The inventory ships in 31 languages, the UI in 20 — the inventory simply
+// follows the UI locale (the ?lang= switcher was removed 2026-07-23: two
+// language dropdowns on one page confused users). pt/zh UI locales map to
+// their pt-br/zh-cn inventories (upstream fell back to English there).
 
 import { query } from '@solidjs/router';
 import type { LanguageCode, Question } from '@bigfive-org/questions';
@@ -12,7 +12,7 @@ const LOCALE_TO_INVENTORY: Record<string, string> = {
   zh: 'zh-cn'
 };
 
-// Resolve a UI locale (or an explicit ?lang= override) to an inventory code.
+// Resolve a code to a known inventory, falling back to English.
 export function inventoryLanguage(
   code: string | undefined,
   available: string[]

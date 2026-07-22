@@ -2,7 +2,10 @@ export type SiteConfig = typeof siteConfig;
 
 export const basePath = 'https://bigfive-test.com';
 
-export const supportEmail = 'bigfive-test@rubynor.com';
+// Deliberately greppable sentinel: every deployment must override this via
+// VITE_SUPPORT_EMAIL (fork decision — never ship the upstream address).
+export const supportEmail =
+  import.meta.env.VITE_SUPPORT_EMAIL || 'REPLACE_ME@example.com';
 
 export type Language = {
   code: string;
