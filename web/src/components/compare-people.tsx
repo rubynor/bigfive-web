@@ -3,8 +3,9 @@
 // result page's "compare yourself to others" link). The list is mirrored back
 // into ?people= via history.replaceState so it survives reloads and locale
 // switches (the locale switcher re-appends the query string). Reorder by
-// dragging the grip handle (native DnD) or with arrow keys on the focused
-// grip (moveItem = remove-and-reinsert, not swap).
+// dragging a row (pointer-based, like the fork's framer-motion Reorder: the
+// whole row grabs except on buttons, translate-only, works on touch) or with
+// arrow keys on the focused grip (moveItem = remove-and-reinsert, not swap).
 
 import { useNavigate } from '@solidjs/router';
 import { createEffect, createMemo, createSignal, For, Show } from 'solid-js';
@@ -53,7 +54,68 @@ export function ComparePeople(props: {
   const [rows, setRows] = createSignal<ComparePerson[]>(props.initialRows);
   const [name, setName] = createSignal('');
   const [id, setId] = createSignal(props.initialId ?? '');
-  const [dragIndex, setDragIndex] = createSignal<number | null>(null);
+
+  // Pointer-drag state (from = grabbed row, to = live target slot, delta =
+  // px the pointer has moved, rowH = grabbed row's height incl. no gap).
+  const [drag, setDrag] = createSignal<{
+    from: number;
+    to: number;
+    delta: number;
+    rowH: number;
+  } | null>(null);
+  let dragStartY = 0;
+
+  const onRowPointerDown = (e: PointerEvent, index: number) => {
+    // Primary button only; Edit/Delete keep their own press handling (a drag
+    // started on Delete must not delete on release) — everywhere else grabs
+    // the row, mirroring the fork's Reorder.Item. The grip is also a <button>
+    // (keyboard fallback) but must start drags, hence the data-grip escape.
+    if (!e.isPrimary || e.button !== 0) return;
+    if ((e.target as HTMLElement).closest('button:not([data-grip])')) return;
+    const li = e.currentTarget as HTMLElement;
+    li.setPointerCapture(e.pointerId);
+    dragStartY = e.clientY;
+    setDrag({ from: index, to: index, delta: 0, rowH: li.offsetHeight });
+  };
+
+  const onRowPointerMove = (e: PointerEvent) => {
+    const d = drag();
+    if (!d) return;
+    const delta = e.clientY - dragStartY;
+    const to = Math.min(
+      rows().length - 1,
+      Math.max(0, d.from + Math.round(delta / d.rowH))
+    );
+    setDrag({ ...d, delta, to });
+  };
+
+  const endDrag = (commit: boolean) => {
+    const d = drag();
+    setDrag(null);
+    if (commit && d && d.to !== d.from) {
+      setRows(moveItem(rows(), d.from, d.to));
+    }
+  };
+
+  // Translate-only visuals (same reason the fork pinned layout='position'):
+  // the dragged row follows the pointer, rows in between shift one slot.
+  const rowStyle = (index: number) => {
+    const d = drag();
+    if (!d) return {};
+    if (index === d.from) {
+      return {
+        position: 'relative',
+        'z-index': 1,
+        transform: `translateY(${d.delta}px)`,
+        'box-shadow': '0px 10px 24px rgba(0, 0, 0, 0.3)'
+      } as const;
+    }
+    if (d.from < index && index <= d.to)
+      return { transform: `translateY(${-d.rowH}px)` } as const;
+    if (d.to <= index && index < d.from)
+      return { transform: `translateY(${d.rowH}px)` } as const;
+    return {};
+  };
 
   // Edit modal state
   const [editIndex, setEditIndex] = createSignal<number | null>(null);
@@ -135,6 +197,7 @@ export function ComparePeople(props: {
               class={inputClass}
               placeholder='Arthur Dent'
               value={name()}
+              autofocus
               onInput={(e) => setName(e.currentTarget.value)}
             />
           </div>
@@ -183,27 +246,22 @@ export function ComparePeople(props: {
               {(row, index) => (
                 <li
                   class={clsx(
-                    'grid grid-cols-[auto_1fr_auto] items-center gap-2 px-3 py-2 md:grid-cols-[auto_1fr_1.5fr_auto]',
-                    index() % 2 === 0 ? 'bg-content1' : 'bg-default-100',
-                    dragIndex() === index() && 'opacity-50'
+                    'grid cursor-grab grid-cols-[auto_1fr_auto] touch-none items-center gap-2 px-3 py-2 active:cursor-grabbing md:grid-cols-[auto_1fr_1.5fr_auto]',
+                    // Zebra via content2 (theme-var) — default-100 is static
+                    // zinc in this tailwind config, not theme-aware like
+                    // NextUI's was in the fork.
+                    index() % 2 === 0 ? 'bg-content1' : 'bg-content2',
+                    drag() && drag()!.from !== index() && 'transition-transform'
                   )}
-                  onDragOver={(e) => e.preventDefault()}
-                  onDrop={() => {
-                    const from = dragIndex();
-                    setDragIndex(null);
-                    if (from !== null) {
-                      setRows(moveItem(rows(), from, index()));
-                    }
-                  }}
+                  style={rowStyle(index())}
+                  onPointerDown={(e) => onRowPointerDown(e, index())}
+                  onPointerMove={onRowPointerMove}
+                  onPointerUp={() => endDrag(true)}
+                  onPointerCancel={() => endDrag(false)}
                 >
                   <button
                     type='button'
-                    draggable
-                    onDragStart={(e) => {
-                      setDragIndex(index());
-                      if (e.dataTransfer) e.dataTransfer.effectAllowed = 'move';
-                    }}
-                    onDragEnd={() => setDragIndex(null)}
+                    data-grip
                     onKeyDown={(e) => {
                       if (e.key === 'ArrowUp') {
                         e.preventDefault();
