@@ -16,7 +16,7 @@ rubynor (no fork pushed yet).
 | 1 — norm-based score engine | ✅ done, gate passed | `169d4ad` |
 | 2 — typology + composites | ✅ done | `0ad03af` |
 | 3 — persistence (Drizzle/Postgres) | ✅ done | `2a6d727` |
-| 4 — SolidStart rebuild | ⬅ **NEXT** | — |
+| 4 — SolidStart rebuild | 🟡 in progress (steps 1–4 of 7 done) | `432015f`…`eaa75c5` |
 | 5 — Speculum UI (typology view, demographics, series) | pending | — |
 | 5b — adaptive local norms | pending (new requirement, see below) | — |
 | 6 — LLM interpretation (OFF) + CI | pending | — |
@@ -131,11 +131,47 @@ Progress within Phase 4:
   `import(`./data/${language}`)` is unbundleable by vite). Verified: all
   unit + integration suites green, `mise run build` green, dev server
   served `/api/health?id=` with a fully scored report vs Docker Postgres.
-- [ ] Step 3 — i18n (20 locales, `@solid-primitives/i18n`, locale routing, RTL)
-- [ ] Step 4 — UI kit on Kobalte (navbar/footer/modals/selects/radio/…)
-- [ ] Step 5 — survey state machine
-- [ ] Step 6 — charts (solid-apexcharts, clientOnly)
-- [ ] Step 7 — result/get-result/compare/home/static pages
+- [x] **Step 3 — i18n** (`8478172`): `I18nProvider` on
+  `@solid-primitives/i18n` (flatten + custom `{param}` resolver for the kept
+  next-intl bundles; English fallback for partial translations). Locale =
+  first path segment, as-needed prefix (en unprefixed); `localeRoute()`
+  guard wraps root pages for their `/[locale]/` alias: `/en/*` → canonical
+  unprefixed redirect (query preserved), unknown locale → /404.
+  `<html lang/dir>` client-side (rtl-detect; only 'ar' is RTL). Message
+  bundles renamed .js→.ts (ar.ts had a duplicate `language` key — kept the
+  later object, matching JS runtime semantics). Verified: /de + /ar SSR
+  translated, /en?x=1 → /?x=1, /xx → /404.
+- [x] **Step 4 — UI kit + chrome** (`eaa75c5`): Navbar (hand-rolled
+  Tailwind, sticky, mobile menu), Footer, ThemeSwitch (icon client-only to
+  avoid hydration mismatch), LocaleSwitcher (Kobalte Select, compact/full,
+  flag avatars, `useLocaleHref` keeps path+query+hash on switch). Kit in
+  `components/ui/`: Button/Card/Chip/Alert (tv), RadioCards + LikertScale
+  (Kobalte RadioGroup), ProgressBar, Modal, FaqAccordion, Snippet.
+  `icons.tsx` ported wholesale from fork via sed (30 icons). Chrome wired
+  into app root. Nav labels via `toolbar.*` keys.
+- [ ] **Step 5 — survey state machine** ⬅ IN PROGRESS. First task:
+  rewrite `packages/questions` `getItems` loader (currently CJS
+  `path.join(__dirname,…)` + dynamic import — breaks under vite; use static
+  per-language loaders like the results `getTemplate` fix; item TEXT stays
+  untouched). Then port fork `survey.tsx` (`359c9b5` has the optional
+  sex+age card) → Solid signals: LikertScale + ProgressBar from step 4,
+  auto-advance, elapsed timer, localStorage restore, saveTestAction →
+  redirect to /result/[id]. Remember decision #5: Skip option + accuracy
+  warning on the demographics card.
+- [ ] Step 6 — charts (solid-apexcharts, clientOnly; pin ApexCharts-3
+  palette, fork `cde47b8`)
+- [ ] Step 7 — result/get-result/compare/home/static pages (specs below;
+  also: delete `/api/health`, fix packages/results facet bug)
+
+### Open loose ends (not blocking)
+
+- Untracked strays at repo root: `.DS_Store` ×4, `compass_artifact_…md`
+  (delete + add `.DS_Store` to .gitignore — user hasn't confirmed yet).
+- Home page is still the step-1 placeholder; real home lands in step 7.
+- SSR ships the active locale's full dictionary in the hydration payload
+  (~10 KB); fine for now, revisit if pages get heavy.
+- Accept-Language negotiation on first visit (upstream redirects / → /de
+  for German browsers) not implemented; URLs work, detection TODO.
 
 ### Fork UX pass ported (2026-07-22)
 

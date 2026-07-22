@@ -201,12 +201,12 @@ equivalents). Recreated, ordered by dependency; **highest-risk marked ⚠**:
   as `query`/`action` server functions in `web/src/lib/actions.ts` (dynamic
   import behind `"use server"` keeps pg/drizzle server-only); `DATABASE_URL`
   via mise env.
-- ⚠ **i18n:** 20 locale message bundles + namespaces → `@solid-primitives/i18n`
-  + `intl-messageformat`; `as-needed` locale-prefix routing + redirect; ICU /
-  `t.rich` component interpolation; RTL (`rtl-detect`).
-- ⚠ **UI kit:** every `@nextui-org/*` + `@react-aria/*` component (navbar,
-  footer, radio, progress, select, table, modal, card, chip, snippet, switch,
-  accordion) rebuilt on **Kobalte** + Tailwind.
+- ⚠ **i18n:** ✅ done (step 3) — `I18nProvider` on `@solid-primitives/i18n`,
+  `{param}` resolver + English fallback, as-needed locale prefix via
+  `localeRoute()` guard, RTL via rtl-detect.
+- ⚠ **UI kit:** ✅ done (step 4) — chrome (navbar/footer/theme/locale
+  switcher) + Kobalte kit (radio, progress, dialog, accordion, select) +
+  tv primitives (button/card/chip/alert/snippet) in `web/src/components/ui/`.
 - ⚠ **Test flow:** `survey.tsx` state machine → Solid signals (auto-advance
   timing, elapsed timer, `localStorage` restore banner, confetti,
   submit→redirect).
