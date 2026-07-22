@@ -1,4 +1,4 @@
-# HANDOFF — Project Speculum (updated 2026-07-17)
+# HANDOFF — Project Speculum (updated 2026-07-23)
 
 State + next steps for a fresh session. Companion docs: `CLAUDE.md` (rules),
 `ARCHITECTURE.md` (technical map), and the master plan at
@@ -16,7 +16,7 @@ rubynor (no fork pushed yet).
 | 1 — norm-based score engine | ✅ done, gate passed | `169d4ad` |
 | 2 — typology + composites | ✅ done | `0ad03af` |
 | 3 — persistence (Drizzle/Postgres) | ✅ done | `2a6d727` |
-| 4 — SolidStart rebuild | 🟡 in progress (steps 1–6 of 7 done) | `432015f`…`9359a7d` |
+| 4 — SolidStart rebuild | ✅ done (steps 1–7 of 7) | `432015f`… |
 | 5 — Speculum UI (typology view, demographics, series) | pending | — |
 | 5b — adaptive local norms | pending (new requirement, see below) | — |
 | 6 — LLM interpretation (OFF) + CI | pending | — |
@@ -183,14 +183,55 @@ Progress within Phase 4:
   applied, both palettes present. No page consumes the charts yet — that is
   step 7. (Headless `--dump-dom` does NOT run the chart's async init —
   verify with puppeteer, not curl/dump-dom.)
-- [ ] Step 7 — result/get-result/compare/home/static pages (specs below;
-  also: delete `/api/health`, fix packages/results facet bug)
+- [x] **Step 7 — result/get-result/compare/home/static pages** (specs below;
+  `/api/health` deleted, packages/results facet bug fixed + pinned by test).
+  Landed together with the review-fix round below.
+
+### Step-7 review-fix round (2026-07-23, committed with step 7)
+
+Full review of the step-7 diff + three live-reported bugs; all fixed and
+verified (unit suites 108/21/28 + 8 integration + results 8 green, `mise run
+build` green, puppeteer smoke against dev server + Docker Postgres):
+
+- **Route shadowing (the "incompatible compare link" report):** `/compare/<id>`
+  and `/result/<id>` rendered the builder/get-result pages — SolidStart nests
+  `compare/[id].tsx` under a same-named `compare.tsx` with no outlet. Moved to
+  `compare/index.tsx` / `result/index.tsx` (+ `[locale]` twins). Rule recorded
+  in ARCHITECTURE §7. Verified: the exact reported
+  `/de/compare/Andreas-…_Bella-…_Cathrin-…` link loads all three upstream ids
+  via og-fallback, in German.
+- **Radio rows dead-zone click fix:** Kobalte selects only via ItemControl /
+  ItemLabel, so card padding never registered. `RadioCards` now forwards any
+  row click to the hidden input; the survey Likert scale switched from
+  unlabeled circles to the upstream-style vertical labeled rows (same
+  component) per user preference. Verified by synthetic padding clicks.
+- **Test-language select showed the wrong language:** SSR `<select value>`
+  is ignored by browsers; added `selected` on the matching `<option>` so
+  /de/test shows "German", not "English". **Then removed entirely** (user
+  decision 2026-07-23): two language dropdowns on one page confused users —
+  the inventory now always follows the UI locale, `?lang=` on /test is gone,
+  and the `test.language` message key was dropped from en.ts.
+- `packages/results` facet fix pinned by a regression test + full 5-domain ×
+  6-facet fixture (`scores-full.json`) asserting facets.length === 6 with
+  score/count/scoreText carried through.
+- `/compare/[id]` now passes the viewer locale to `getTestResultQuery`
+  (was: each person's taken-language; chart categories labelled every series
+  in person #1's language).
+- Compare builder: delete by index (duplicate ids no longer both vanish),
+  duplicate guard mirrored into the edit path.
+- Share-bar copies `window.location.href` (keeps locale prefix + ?lang=).
+- Result page splits NotFound ("check the id") from technical errors (new
+  `results.loadError*` en keys; verified both branches live, incl. DB down).
+- Date chip rendered with `timeZone: 'UTC'` (SSR/browser TZ mismatch).
+- `domain-tabs` facet percentile lookup guarded with `<Show>` (skip, not
+  crash, on divergence).
+- `.DS_Store` added to .gitignore and strays deleted; `compass_artifact_…md`
+  still pending user confirmation for deletion.
 
 ### Open loose ends (not blocking)
 
-- Untracked strays at repo root: `.DS_Store` ×4, `compass_artifact_…md`
-  (delete + add `.DS_Store` to .gitignore — user hasn't confirmed yet).
-- Home page is still the step-1 placeholder; real home lands in step 7.
+- Untracked stray at repo root: `compass_artifact_…md` — user chose to KEEP
+  it (2026-07-23); leave untracked. `.DS_Store` handled: gitignored + removed.
 - SSR ships the active locale's full dictionary in the hydration payload
   (~10 KB); fine for now, revisit if pages get heavy.
 - Accept-Language negotiation on first visit (upstream redirects / → /de

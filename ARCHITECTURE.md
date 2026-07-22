@@ -217,6 +217,10 @@ equivalents). Recreated, ordered by dependency; **highest-risk marked ⚠**:
   collapsible typology view) · get-result · compare (og `Name-id_Name-id`
   links, codec lives in `packages/data/src/compare-people.ts`) · home
   (SonarPulse) · about · feedback · faq · privacy.
+- ⚠ **File-route rule:** a page with children must live at `<name>/index.tsx`,
+  never `<name>.tsx` next to `<name>/` — SolidStart nests `compare/[id].tsx`
+  under `compare.tsx` by path prefix, and the parent component has no outlet,
+  so `/compare/<id>` silently rendered the builder (fixed 2026-07-23).
 - **Deferred:** Contentlayer articles/blog, Vercel-KV view counter.
 
 ---
