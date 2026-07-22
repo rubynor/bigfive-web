@@ -16,7 +16,7 @@ rubynor (no fork pushed yet).
 | 1 — norm-based score engine | ✅ done, gate passed | `169d4ad` |
 | 2 — typology + composites | ✅ done | `0ad03af` |
 | 3 — persistence (Drizzle/Postgres) | ✅ done | `2a6d727` |
-| 4 — SolidStart rebuild | 🟡 in progress (steps 1–5 of 7 done) | `432015f`…`6c0af84` |
+| 4 — SolidStart rebuild | 🟡 in progress (steps 1–6 of 7 done) | `432015f`…`9359a7d` |
 | 5 — Speculum UI (typology view, demographics, series) | pending | — |
 | 5b — adaptive local norms | pending (new requirement, see below) | — |
 | 6 — LLM interpretation (OFF) + CI | pending | — |
@@ -170,8 +170,19 @@ Progress within Phase 4:
   DeepPartial so partial locales typecheck. Verified: all suites green
   (108/21/28 + 8 integration vs Docker Postgres), build green, dev SSR
   served /test, /de/test (German items) and /test?lang=de.
-- [ ] Step 6 — charts (solid-apexcharts, clientOnly; pin ApexCharts-3
-  palette, fork `cde47b8`)
+- [x] **Step 6 — charts** (`9359a7d`): `components/charts/ — `BarChart`
+  (single result, distributed bars, domain palette
+  `#9353d3/#006FEE/#f31260/#f5a524/#17c964/#E2711D`, no legend/toolbar) and
+  `BarChartCompare` (one series per person, ApexCharts-3 palette pinned per
+  fork `cde47b8`, legend + download-only toolbar) on `solid-apexcharts` 0.6 +
+  `apexcharts` 6.5. Both wrapped in `clientOnly` from `./index.tsx` (import
+  charts only from there). Shared theme-aware options in
+  `charts/options.ts` read the `theme()` signal (fork lesson: resolvedTheme,
+  not raw). Verified headless (puppeteer-core + Brave, script was in
+  /tmp/chart-test): 3 canvases render, dark-mode label color `#e4e4e7`
+  applied, both palettes present. No page consumes the charts yet — that is
+  step 7. (Headless `--dump-dom` does NOT run the chart's async init —
+  verify with puppeteer, not curl/dump-dom.)
 - [ ] Step 7 — result/get-result/compare/home/static pages (specs below;
   also: delete `/api/health`, fix packages/results facet bug)
 
