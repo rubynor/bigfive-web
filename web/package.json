@@ -12,6 +12,11 @@
     "format:fix": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {
+    "@bigfive-org/data": "workspace:*",
+    "@bigfive-org/questions": "workspace:*",
+    "@bigfive-org/results": "workspace:*",
+    "@bigfive-org/score": "workspace:*",
+    "@bigfive-org/typology": "workspace:*",
     "@fontsource-variable/fira-code": "^5.2.5",
     "@fontsource-variable/inter": "^5.2.5",
     "@solidjs/meta": "^0.29.4",

@@ -3,6 +3,9 @@
   "version": "1.0.12",
   "description": "Module for returning Big Five Johnson 120 IPIP-NEO-PI-R items",
   "main": "build/index.js",
+  "exports": {
+    ".": "./src/index.ts"
+  },
   "files": [
     "build",
     "src"

@@ -54,10 +54,10 @@ run = "bun run dev"
 dir = "web"
 run = "bun run build"
 
+# Whole-tree unit gate: the pure packages (web has no test suite yet).
 [tasks."test"]
-dir = "web"
-run = "bun run test"
+run = "mise run score:test && mise run typology:test && mise run data:test"
 
+# Root bun workspace: one install links web -> packages/* (workspace:*).
 [tasks."setup"]
-dir = "web"
 run = "bun install"

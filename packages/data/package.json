@@ -2,6 +2,11 @@
   "name": "@bigfive-org/data",
   "version": "2.0.0",
   "description": "Framework-agnostic persistence + actions for Project Speculum (Drizzle/Postgres)",
+  "exports": {
+    ".": "./src/index.ts",
+    "./compare-people": "./src/compare-people.ts",
+    "./result-id": "./src/result-id.ts"
+  },
   "files": [
     "build/"
   ],

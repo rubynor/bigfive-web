@@ -2,6 +2,9 @@
   "name": "@bigfive-org/typology",
   "version": "2.0.0",
   "description": "16P-style typology and heuristic composite traits derived from norm-based percentiles (Project Speculum)",
+  "exports": {
+    ".": "./src/index.ts"
+  },
   "files": [
     "build/"
   ],

@@ -2,6 +2,9 @@
   "name": "@bigfive-org/score",
   "version": "2.0.0",
   "description": "Norm-based percentile scoring for IPIP-NEO-120 (Project Speculum)",
+  "exports": {
+    ".": "./src/index.ts"
+  },
   "files": [
     "build/src/"
   ],
