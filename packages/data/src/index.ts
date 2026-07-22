@@ -4,6 +4,8 @@
 
 export * from './types';
 export * from './object-id';
+export * from './result-id';
+export * from './compare-people';
 export * from './og-fallback';
 export * from './schema';
 export { getDb } from './db';
