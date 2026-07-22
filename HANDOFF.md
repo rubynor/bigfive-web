@@ -217,8 +217,14 @@ build` green, puppeteer smoke against dev server + Docker Postgres):
 - `/compare/[id]` now passes the viewer locale to `getTestResultQuery`
   (was: each person's taken-language; chart categories labelled every series
   in person #1's language).
-- Compare builder: delete by index (duplicate ids no longer both vanish),
-  duplicate guard mirrored into the edit path.
+ - Compare builder: delete by index (duplicate ids no longer both vanish),
+   duplicate guard mirrored into the edit path.
+ - Compare builder reorder: pointer-based row drag (whole row grabs except on
+   buttons, pointer capture + translate-only shifts, touch works via
+   `touch-none`) — the earlier native-HTML5-DnD grip never started a drag in
+   Firefox (no `dataTransfer.setData`) and had no touch support. Zebra rows
+   use `bg-content2` (theme-var); `default-100` is static zinc in this
+   tailwind config, not theme-aware like NextUI's was in the fork.
 - Share-bar copies `window.location.href` (keeps locale prefix + ?lang=).
 - Result page splits NotFound ("check the id") from technical errors (new
   `results.loadError*` en keys; verified both branches live, incl. DB down).
@@ -227,6 +233,55 @@ build` green, puppeteer smoke against dev server + Docker Postgres):
   crash, on divergence).
 - `.DS_Store` added to .gitignore and strays deleted; `compass_artifact_…md`
   still pending user confirmation for deletion.
+
+### Eval-display extension round (2026-07-23, uncommitted)
+
+- **Survey submit was broken since step 5** (live-reported "Something went
+  wrong saving your result"): `saveTestAction`/`saveFeedbackAction` were
+  called as raw `action()` functions from event handlers, which throws
+  client-side before any request (`Cannot read properties of undefined
+  (reading 'r')` — no router context in a handler). Fixed by binding with
+  `useAction(...)` at render time in `survey.tsx` + `feedback-form.tsx`; the
+  step-5 gate had only verified SSR serving, never a live submit. The submit
+  catch now also `console.error`s the cause (alert stays generic). Verified
+  headless end-to-end: 120 answers → save → redirect → scored result page.
+
+Verified: score 108 / typology 29 / data 28 + 8 integration green, `mise run
+build` green, puppeteer smoke on /result/58a70606a835c400c8b38e84 (og-fallback).
+
+- **Compare grip-drag fix:** the grip is a `<button>` (keyboard fallback), so
+  the pointer-down guard `closest('button')` blocked drags from the one element
+  styled as the drag handle. Grip now carries `data-grip`; guard excludes only
+  `button:not([data-grip])`. Body-drag, grip-drag up/down all verified headless.
+- **Norm-hint union (fork-parity fix):** hint now shows when
+  `fallbackApplied || combinedDerived` (fork keyed on the former, we keyed on
+  the latter — either means an inexact reference group). Key renamed
+  `results.normCombinedHint` → `normApproxHint`, wording generalized.
+  Also adopted the fork's `autofocus` on the compare Name input.
+- **16P role + strategy** (`packages/typology`): letter-derived, no new
+  constants. Role: N-types split by T/F (Analyst/Diplomat), S-types by J/P
+  (Sentinel/Explorer); Strategy: Mind × Identity (Confident Individualism /
+  People Mastery / Constant Improvement / Social Engagement). Shown as chips
+  under the type string in `typology-view`.
+- **Composites overhauled** per the user's research digest
+  (`compass_artifact_…md`, repo root — KEEP, it is now cited by code):
+  - Perfectionism **split** into `perfectionisticStrivings` (1.00·C, Smith et
+    al. 2019 rc+ .44) and `perfectionisticConcerns` (.50·N + .26·(100−A) +
+    .24·(100−E), the cited magnitudes sum to exactly 1) — the meta-analysis
+    explicitly warns against a single composite. Old `perfectionism` key gone.
+  - New `selfControl` (Tangney SCS correlations .54C/−.50N/.29A normalized by
+    1.33) and `procrastination` (1.00·(100−C), Steel 2007 r≈−.62).
+  - **Grit deliberately absent** (ρ=.84 with C — a jangle re-label, per doc).
+  - Component model extended: domain-level terms (`facet` optional), `reversed`
+    flag (uses 100−percentile), per-trait `provenance` citation string.
+    Weight sets still sum to 1; scores stay convex in [0,100].
+  - `ambition`/`motivation`/`desireToLead` unchanged, provenance marked
+    "Editorial heuristic (Phase 2, user-approved)".
+- **Result page renders composites** for the first time (`composites-view.tsx`:
+  card grid, meter bar, band, `<details>` with formula + provenance, honesty
+  disclaimer up top). Placed between typology and domain tabs. New en.ts
+  namespaces `typology.roles/strategies` + `composites.*` (other locales fall
+  back to English). Integration test now expects 7 composites.
 
 ### Open loose ends (not blocking)
 
