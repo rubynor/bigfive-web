@@ -2,6 +2,7 @@
 // Posts to saveFeedbackAction (Drizzle feedback table); a chip below the form
 // reports success/error.
 
+import { useAction } from '@solidjs/router';
 import { createMemo, createSignal, Show } from 'solid-js';
 import { Button, Chip } from '~/components/ui';
 import { saveFeedbackAction } from '~/lib/actions';
@@ -14,6 +15,9 @@ const fieldClass =
 
 export function FeedbackForm() {
   const { t } = useI18n();
+  // Bind at render time — calling the raw action() from an event handler
+  // throws (no router context there); same fix as the survey submit.
+  const saveFeedback = useAction(saveFeedbackAction);
   const [name, setName] = createSignal('');
   const [email, setEmail] = createSignal('');
   const [message, setMessage] = createSignal('');
@@ -36,7 +40,7 @@ export function FeedbackForm() {
     setPending(true);
     setStatus(null);
     try {
-      await saveFeedbackAction({
+      await saveFeedback({
         name: name(),
         email: email(),
         message: message()

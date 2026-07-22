@@ -14,7 +14,7 @@ import {
   onMount,
   Show
 } from 'solid-js';
-import { useNavigate } from '@solidjs/router';
+import { useAction, useNavigate } from '@solidjs/router';
 import type { Question } from '@bigfive-org/questions';
 import type { Answer, SaveTestInput } from '@bigfive-org/data';
 import type { AgeBracket, Demographics, Sex } from '@bigfive-org/score';
@@ -45,6 +45,9 @@ type AgeChoice = AgeBracket | DemographicChoice;
 export function Survey(props: { questions: Question[]; language: string }) {
   const { t, locale } = useI18n();
   const navigate = useNavigate();
+  // Router actions must be bound with useAction at render time — calling the
+  // raw action() from an event handler throws (no router context there).
+  const saveTest = useAction(saveTestAction);
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = createSignal(0);
   const [questionsPerPage, setQuestionsPerPage] = createSignal(1);
@@ -202,12 +205,14 @@ export function Survey(props: { questions: Question[]; language: string }) {
         answers: answers(),
         ...(Object.keys(d).length > 0 ? { demographics: d } : {})
       };
-      const result = await saveTestAction(input);
+      const result = await saveTest(input);
       localStorage.removeItem('inProgress');
       localStorage.removeItem('b5data');
       localStorage.setItem('resultId', result.id);
       navigate(localePath(locale(), `/result/${result.id}`));
-    } catch {
+    } catch (error) {
+      // Surface the cause in the console — the alert itself stays generic.
+      console.error('saveTest failed:', error);
       setFailed(true);
       setLoading(false);
     }
