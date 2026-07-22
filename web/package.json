@@ -19,15 +19,18 @@
     "@bigfive-org/typology": "workspace:*",
     "@fontsource-variable/fira-code": "^5.2.5",
     "@fontsource-variable/inter": "^5.2.5",
+    "@solid-primitives/i18n": "^2.2.1",
     "@solidjs/meta": "^0.29.4",
     "@solidjs/router": "^0.15.3",
     "@solidjs/start": "^1.1.0",
     "clsx": "^2.1.1",
+    "rtl-detect": "^1.1.2",
     "solid-js": "^1.9.5",
     "tailwind-variants": "^0.2.1",
     "vinxi": "^0.5.3"
   },
   "devDependencies": {
+    "@types/rtl-detect": "^1.0.3",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
     "prettier": "^3.2.5",

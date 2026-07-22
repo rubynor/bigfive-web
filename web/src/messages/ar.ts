@@ -1,5 +1,4 @@
 const arabic = {
-  language: 'Arabic',
   language: {
     label: 'Arabic',
     locale: 'ar'
