@@ -30,13 +30,35 @@ export async function getDomain(options: DomainOptions) {
   return template.find((item) => item.domain.toLowerCase() === domainId)
 }
 
+// Static loader map: bundlers (vite/vinxi) cannot resolve a fully dynamic
+// import(`./data/${language}`) — every template must be a static specifier.
+const templateLoaders: Record<
+  string,
+  () => Promise<{ default: TemplateDomain[] }>
+> = {
+  ar: () => import("./data/ar"),
+  da: () => import("./data/da"),
+  de: () => import("./data/de"),
+  el: () => import("./data/el"),
+  en: () => import("./data/en"),
+  es: () => import("./data/es"),
+  fr: () => import("./data/fr"),
+  he: () => import("./data/he"),
+  id: () => import("./data/id"),
+  is: () => import("./data/is"),
+  it: () => import("./data/it"),
+  nl: () => import("./data/nl"),
+  no: () => import("./data/no"),
+  "pt-br": () => import("./data/pt-br"),
+  ro: () => import("./data/ro")
+};
+
 export async function getTemplate(language: string): Promise<TemplateDomain[]> {
+  const loader = templateLoaders[language] ?? templateLoaders.en;
   try {
-    const template = (await import(`./data/${language}`)).default;
-    return template
+    return (await loader()).default;
   } catch (error) {
-    const template = (await import(`./data/en`)).default;
-    return template
+    return (await templateLoaders.en()).default;
   }
 }
 
