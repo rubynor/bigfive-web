@@ -79,6 +79,55 @@ describe('computeTypology — type string', () => {
   });
 });
 
+describe('computeTypology — 16P role and strategy', () => {
+  // Letter drivers: E←E, N/S←O, T/F←A (≥50→F), A/T←N (≥50→T),
+  // J/P←jScore(.4·C2+.4·C6+.2·(100−O)).
+  it('INTP-T → Analyst (N_T) / Constant Improvement (I + Turbulent)', () => {
+    const t = computeTypology(
+      makeAssessment({
+        domains: { E: 20, O: 80, A: 20, N: 80 },
+        facets: { C: { 2: 30, 6: 30 } }
+      })
+    );
+    expect(t.type).toBe('INTP-T');
+    expect(t.role).toBe('analyst');
+    expect(t.strategy).toBe('constantImprovement');
+  });
+
+  it('ENFJ-T (all-50) → Diplomat (N_F) / Social Engagement (E + Turbulent)', () => {
+    const t = computeTypology(makeAssessment({ default: 50 }));
+    expect(t.type).toBe('ENFJ-T');
+    expect(t.role).toBe('diplomat');
+    expect(t.strategy).toBe('socialEngagement');
+  });
+
+  it('ISTJ-A → Sentinel (S_J) / Confident Individualism (I + Assertive)', () => {
+    const t = computeTypology(
+      makeAssessment({
+        domains: { E: 20, O: 20, A: 20, N: 20 },
+        facets: { C: { 2: 90, 6: 90 } }
+      })
+    );
+    // jScore = .4·90 + .4·90 + .2·(100−20) = 88 → J
+    expect(t.type).toBe('ISTJ-A');
+    expect(t.role).toBe('sentinel');
+    expect(t.strategy).toBe('confidentIndividualism');
+  });
+
+  it('ESFP-A → Explorer (S_P) / People Mastery (E + Assertive)', () => {
+    const t = computeTypology(
+      makeAssessment({
+        domains: { E: 80, O: 30, A: 80, N: 20 },
+        facets: { C: { 2: 10, 6: 10 } }
+      })
+    );
+    // jScore = .4·10 + .4·10 + .2·(100−30) = 22 → P
+    expect(t.type).toBe('ESFP-A');
+    expect(t.role).toBe('explorer');
+    expect(t.strategy).toBe('peopleMastery');
+  });
+});
+
 describe('computeTypology — J/P composite math', () => {
   it('jScore = 0.40·C2 + 0.40·C6 + 0.20·(100 − O), weights surfaced in meta', () => {
     const t = computeTypology(

@@ -3,11 +3,30 @@
 // five axis bars behind a collapsed-by-default "Breakdown" toggle.
 
 import { createSignal, For, Show } from 'solid-js';
-import type { Typology, TypologyAxis } from '@bigfive-org/typology';
+import type {
+  RoleKey,
+  StrategyKey,
+  Typology,
+  TypologyAxis
+} from '@bigfive-org/typology';
 import { ChevronRightLinearIcon } from '~/components/icons';
 import { Chip } from '~/components/ui';
 import { useI18n, type MessageKey } from '~/lib/i18n';
 import clsx from 'clsx';
+
+const ROLE_KEYS: Record<RoleKey, MessageKey> = {
+  analyst: 'typology.roles.analyst',
+  diplomat: 'typology.roles.diplomat',
+  sentinel: 'typology.roles.sentinel',
+  explorer: 'typology.roles.explorer'
+};
+
+const STRATEGY_KEYS: Record<StrategyKey, MessageKey> = {
+  confidentIndividualism: 'typology.strategies.confidentIndividualism',
+  peopleMastery: 'typology.strategies.peopleMastery',
+  constantImprovement: 'typology.strategies.constantImprovement',
+  socialEngagement: 'typology.strategies.socialEngagement'
+};
 
 const AXIS_TITLE_KEYS: Record<TypologyAxis['key'], MessageKey> = {
   EI: 'typology.axes.EI',
@@ -75,6 +94,15 @@ export function TypologyView(props: { typology: Typology }) {
       <p class='mt-2 text-4xl font-extrabold tracking-wide text-secondary'>
         {props.typology.type}
       </p>
+      <div class='mt-3 flex flex-wrap justify-center gap-2'>
+        <Chip color='secondary'>
+          {t('typology.roleLabel')}: {t(ROLE_KEYS[props.typology.role])}
+        </Chip>
+        <Chip>
+          {t('typology.strategyLabel')}:{' '}
+          {t(STRATEGY_KEYS[props.typology.strategy])}
+        </Chip>
+      </div>
       <Show when={props.typology.borderline}>
         <p class='mt-2 max-w-xl text-sm text-warning-600 dark:text-warning'>
           {t('typology.borderlineNote', {

@@ -16,6 +16,17 @@ import type {
 
 export type AxisKey = 'EI' | 'NS' | 'TF' | 'JP' | 'AT';
 
+// 16P grouping layers, derived purely from the axis letters (no new numeric
+// constants). Roles follow the 16personalities scheme: intuitive types split
+// by Nature (N_T Analyst / N_F Diplomat), observant types by Tactics
+// (S_J Sentinel / S_P Explorer). Strategies cross Mind with Identity.
+export type RoleKey = 'analyst' | 'diplomat' | 'sentinel' | 'explorer';
+export type StrategyKey =
+  | 'confidentIndividualism'
+  | 'peopleMastery'
+  | 'constantImprovement'
+  | 'socialEngagement';
+
 /** The two-letter poles of an axis and the domain/label its basis comes from. */
 export interface TypologyAxis {
   key: AxisKey;
@@ -45,6 +56,8 @@ export interface TypologyMeta {
 
 export interface Typology {
   type: string; // e.g. 'INTP-T'
+  role: RoleKey; // letter-derived 16P role group
+  strategy: StrategyKey; // letter-derived 16P strategy group
   axes: TypologyAxis[]; // canonical order: EI, NS, TF, JP, AT
   borderline: boolean; // true if ANY axis is borderline
   meta: TypologyMeta;
@@ -111,8 +124,30 @@ export function computeTypology(assessment: AssessmentResult): Typology {
   ];
 
   const [ei, ns, tf, jp, at] = axes;
+
+  // Role: N-types split by the T/F letter, S-types by the J/P letter.
+  const role: RoleKey =
+    ns.letter === 'N'
+      ? tf.letter === 'T'
+        ? 'analyst'
+        : 'diplomat'
+      : jp.letter === 'J'
+        ? 'sentinel'
+        : 'explorer';
+  // Strategy: Mind (E/I) × Identity (A/T).
+  const strategy: StrategyKey =
+    ei.letter === 'I'
+      ? at.letter === 'A'
+        ? 'confidentIndividualism'
+        : 'constantImprovement'
+      : at.letter === 'A'
+        ? 'peopleMastery'
+        : 'socialEngagement';
+
   return {
     type: `${ei.letter}${ns.letter}${tf.letter}${jp.letter}-${at.letter}`,
+    role,
+    strategy,
     axes,
     borderline: axes.some((a) => a.borderline),
     meta: {

@@ -223,8 +223,8 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     readLess: 'Read less',
     percentile: '{percentile}th percentile',
     normNote: 'Scored against norms: {stratum}',
-    normCombinedHint:
-      '(combined reference — provide sex & age when taking the test for an exact match)',
+    normApproxHint:
+      '(approximate reference group — provide sex & age when taking the test for an exact match)',
     notFoundTitle: 'Could not retrieve report',
     notFoundId: 'We could not retrieve the following id {id}.',
     notFoundContact: 'Please check that it is correct or contact us at {email}.',
@@ -250,6 +250,44 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
       TF: 'Nature',
       JP: 'Tactics',
       AT: 'Identity'
+    },
+    roleLabel: 'Role',
+    strategyLabel: 'Strategy',
+    roles: {
+      analyst: 'Analyst',
+      diplomat: 'Diplomat',
+      sentinel: 'Sentinel',
+      explorer: 'Explorer'
+    },
+    strategies: {
+      confidentIndividualism: 'Confident Individualism',
+      peopleMastery: 'People Mastery',
+      constantImprovement: 'Constant Improvement',
+      socialEngagement: 'Social Engagement'
+    }
+  },
+  composites: {
+    title: 'Derived traits',
+    disclaimer:
+      'Estimates projected from your Big Five percentiles — linear blends, not administered questionnaires. Traits with a citation use weights from published meta-analytic correlations; the rest are editorial heuristics. Treat all of them as rough indications.',
+    details: 'How this number is built',
+    formulaLabel: 'Formula',
+    provenanceLabel: 'Basis',
+    names: {
+      perfectionisticStrivings: 'Perfectionistic Strivings',
+      perfectionisticConcerns: 'Perfectionistic Concerns',
+      selfControl: 'Self-Control',
+      procrastination: 'Procrastination',
+      ambition: 'Ambition',
+      motivation: 'Motivation',
+      desireToLead: 'Desire to Lead'
+    },
+    bands: {
+      veryLow: 'very low',
+      low: 'low',
+      average: 'average',
+      high: 'high',
+      veryHigh: 'very high'
     }
   },
   share: {

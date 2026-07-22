@@ -79,7 +79,7 @@ describe('saveTest → getTestResult round-trip', () => {
 
     // the Phase 2 typology/composites ride along
     expect(report.typology.type).toMatch(/^[EI][NS][FT][JP]-[AT]$/);
-    expect(report.composites).toHaveLength(4);
+    expect(report.composites).toHaveLength(7);
     // and the rendered result text is present for all five domains
     expect(report.results).toHaveLength(5);
   });

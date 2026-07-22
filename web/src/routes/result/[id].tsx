@@ -9,6 +9,7 @@ import { createAsync, useParams, useSearchParams, A } from '@solidjs/router';
 import { createMemo, createSignal, Show } from 'solid-js';
 import type { Report } from '@bigfive-org/data';
 import { BarChart } from '~/components/charts';
+import { CompositesView } from '~/components/composites-view';
 import { DomainTabs } from '~/components/domain-tabs';
 import { ShareBar } from '~/components/share-bar';
 import { TypologyView } from '~/components/typology-view';
@@ -113,12 +114,22 @@ export default function ResultPage() {
             <BarChart max={120} results={results()} />
             <p class='mt-2 text-center text-sm text-default-500'>
               {t('results.normNote', { stratum: r().assessment.meta.stratum })}
-              <Show when={r().assessment.meta.combinedDerived}>
+              {/* Fork parity + fix: the hint belongs to BOTH approximation
+                  paths — sex unknown (combinedDerived) and age unknown
+                  (fallbackApplied). Either one means the reference group is
+                  not the taker's exact stratum. */}
+              <Show
+                when={
+                  r().assessment.meta.combinedDerived ||
+                  r().assessment.meta.fallbackApplied
+                }
+              >
                 {' '}
-                {t('results.normCombinedHint')}
+                {t('results.normApproxHint')}
               </Show>
             </p>
             <TypologyView typology={r().typology} />
+            <CompositesView composites={r().composites} />
             <DomainTabs
               domains={results()}
               assessment={r().assessment}
