@@ -209,10 +209,12 @@ equivalents). Recreated, ordered by dependency; **highest-risk marked ⚠**:
   timing, elapsed timer, `localStorage` restore banner, confetti,
   submit→redirect).
 - ⚠ **Charts:** `bar-chart` via `solid-apexcharts` + `clientOnly`,
-  theme-reactive.
-- **Pages:** result (+ percentile numbers, norm note, DomainTabs/ReadMore/
-  ShareBar) · get-result · compare (base64url) · home (SonarPulse) · about ·
-  feedback · faq · privacy.
+  theme-reactive; pin the classic ApexCharts 3 default palette (v5 retuned
+  palette1 away from the OG look — fork commit `cde47b8`).
+- **Pages:** result (+ percentile numbers, norm note, OCEAN domain order,
+  collapsible typology view) · get-result · compare (og `Name-id_Name-id`
+  links, codec lives in `packages/data/src/compare-people.ts`) · home
+  (SonarPulse) · about · feedback · faq · privacy.
 - **Deferred:** Contentlayer articles/blog, Vercel-KV view counter.
 
 ---

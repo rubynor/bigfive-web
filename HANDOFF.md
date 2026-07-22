@@ -73,7 +73,7 @@ rubynor (no fork pushed yet).
   `tsc` build therefore nests `build/score/` + `build/typology/` — fine until
   workspace resolution lands in Phase 3/4. `mise run typology:test` runs it.
 
-### What Phase 3 delivered (`packages/data`, 9 unit + 8 integration tests green)
+### What Phase 3 delivered (`packages/data`, 28 unit + 8 integration tests green)
 
 - Framework-agnostic data layer (NOT inside `web/` — the Next app is doomed;
   Phase 4 wraps these actions as SolidStart `"use server"` functions).
@@ -124,6 +124,41 @@ Progress within Phase 4:
 - [ ] Step 5 — survey state machine
 - [ ] Step 6 — charts (solid-apexcharts, clientOnly)
 - [ ] Step 7 — result/get-result/compare/home/static pages
+
+### Fork UX pass ported (2026-07-22)
+
+The reference fork (`../bigfive-web`, branch `feat/speculum`) got a 7-commit
+UX-polish pass after our Phase 3 handoff (`e1c2ea6`..`4a0e042`, + README). The
+portable logic is now in `packages/data` (28 unit tests green, +19):
+
+- `src/result-id.ts` — `formatId` / `validId` / `formatAndValidateId`;
+  validId accepts all three historical id schemes (ObjectId 24-hex, UUID,
+  nanoid-21) so og links and legacy ids resolve. Isomorphic (no node builtins).
+- `src/compare-people.ts` — `encodeComparePeople` / `decodeComparePeople`:
+  og-style `Name-id_Name-id` links (bigfive-test.com compatible) with legacy
+  base64url(JSON) fallback, defensive (null, never throws), percent-encoded
+  names handled; plus `moveItem` (re-insert, not swap) for compare reorder.
+
+The remaining fork commits are Next.js UI — throwaway code, but they encode
+**design specs** for the SolidJS rebuild (reference impls readable in the fork):
+
+- **Step 5 (survey):** `359c9b5` — optional sex+age card on the first test
+  page, persisted with the result, survives localStorage restore. (Realizes
+  decision #5; remember the Skip + accuracy-warning requirement is ours.)
+- **Step 6 (charts):** `cde47b8` — pin the classic ApexCharts 3 default
+  palette; apexcharts 5 retuned palette1 away from the OG look.
+- **Step 7 (result page):** `544030f` — domains in OCEAN order (template
+  ships N,E,O,A,C); typology section = centered type string + five axis bars
+  behind a "Breakdown" toggle, borderline chip + honesty note when any axis is
+  within ±5 of midpoint; norm stratum stated under the chart with a hint to
+  provide sex & age when the combined reference was used.
+- **Step 7 (compare):** `e1c2ea6` + `4a0e042` — share bar with "Edit
+  Comparison" that re-seeds the builder via `?people=`; builder mirrors its
+  list into `?people=` via replaceState (survives reloads); locale switchers
+  must re-append the query string; drag-to-reorder rows (translate-only
+  animation, keyboard arrow fallback on a grip handle).
+- **Site config:** supportEmail sentinel `REPLACE_ME@example.com`, overridable
+  via env (fork: `NEXT_PUBLIC_SUPPORT_EMAIL`).
 
 ## Phase 5b — adaptive local norms (new requirement, design sketch)
 
