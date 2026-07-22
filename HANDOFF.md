@@ -16,7 +16,7 @@ rubynor (no fork pushed yet).
 | 1 — norm-based score engine | ✅ done, gate passed | `169d4ad` |
 | 2 — typology + composites | ✅ done | `0ad03af` |
 | 3 — persistence (Drizzle/Postgres) | ✅ done | `2a6d727` |
-| 4 — SolidStart rebuild | 🟡 in progress (steps 1–4 of 7 done) | `432015f`…`eaa75c5` |
+| 4 — SolidStart rebuild | 🟡 in progress (steps 1–5 of 7 done) | `432015f`…`6c0af84` |
 | 5 — Speculum UI (typology view, demographics, series) | pending | — |
 | 5b — adaptive local norms | pending (new requirement, see below) | — |
 | 6 — LLM interpretation (OFF) + CI | pending | — |
@@ -149,15 +149,27 @@ Progress within Phase 4:
   (Kobalte RadioGroup), ProgressBar, Modal, FaqAccordion, Snippet.
   `icons.tsx` ported wholesale from fork via sed (30 icons). Chrome wired
   into app root. Nav labels via `toolbar.*` keys.
-- [ ] **Step 5 — survey state machine** ⬅ IN PROGRESS. First task:
-  rewrite `packages/questions` `getItems` loader (currently CJS
-  `path.join(__dirname,…)` + dynamic import — breaks under vite; use static
-  per-language loaders like the results `getTemplate` fix; item TEXT stays
-  untouched). Then port fork `survey.tsx` (`359c9b5` has the optional
-  sex+age card) → Solid signals: LikertScale + ProgressBar from step 4,
-  auto-advance, elapsed timer, localStorage restore, saveTestAction →
-  redirect to /result/[id]. Remember decision #5: Skip option + accuracy
-  warning on the demographics card.
+- [x] **Step 5 — survey state machine** (`e4528e4`, `6c0af84`): `getItems`
+  rewritten to static per-language loader maps (same pattern as the
+  getTemplate fix; also re-exports `Language`/`LanguageCode`; jest suite
+  still green). `/test` route (+ `/[locale]/test` alias) loads the
+  inventory via `getItemsQuery` server fn (`lib/items.ts`); UI locale →
+  inventory mapping pt→pt-br, zh→zh-cn (upstream fell back to English),
+  `?lang=<code>` override via a plain-select switcher of all 31
+  inventories. `components/survey.tsx` ports the fork survey to Solid
+  signals: demographics card on page 1 as RadioCards (sex/age each with
+  an explicit "Prefer not to say" + a card-level Skip button — either
+  shows the accuracy-warning Alert, realizing decision #5), LikertScale
+  with pole anchors, 3-per-page on desktop / 1 + 700 ms auto-advance on
+  mobile, elapsed timer, localStorage restore (inProgress + b5data,
+  demographics included, malformed JSON guarded), dev-only skip-to-end
+  (`import.meta.env.DEV`). Submit posts the lean `SaveTestInput`
+  (lang/answers/demographics? — no dead fork fields) via saveTestAction
+  and navigates locale-aware to `/result/[id]` (page lands in step 7).
+  i18n: new `test.*` keys in en.ts; i18n loader typing switched to
+  DeepPartial so partial locales typecheck. Verified: all suites green
+  (108/21/28 + 8 integration vs Docker Postgres), build green, dev SSR
+  served /test, /de/test (German items) and /test?lang=de.
 - [ ] Step 6 — charts (solid-apexcharts, clientOnly; pin ApexCharts-3
   palette, fork `cde47b8`)
 - [ ] Step 7 — result/get-result/compare/home/static pages (specs below;
@@ -230,10 +242,10 @@ The remaining fork commits are Next.js UI — throwaway code, but they encode
   `mise run setup` at root). `packages/score` tests still import questions
   data via relative path `../../questions/src/data/en/questions` — fine,
   cross-package relative imports remain the norm inside packages/*.
-- `packages/questions` `getItems` loads via `path.join(__dirname, …)` +
-  dynamic import — CJS-only, **breaks under vite/vinxi**. Must be rewritten
-  (static per-language loaders, like the `getTemplate` fix in results)
-  before the Step 5 survey imports it. Item TEXT is untouchable.
+- `packages/questions` `getItems` uses static per-language loader maps
+  (rewritten in step 5, vite-safe). Never reintroduce
+  `path.join(__dirname, …)` or fully dynamic imports there; item TEXT is
+  untouchable.
 - `packages/results` has a latent facet bug upstream (`generateResult` reads
   `facet[key]` instead of `scores[key].facet[facet]` → facet texts silently
   dropped). Fix it when web starts rendering facet text (the fork fixed the
