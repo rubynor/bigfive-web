@@ -40,6 +40,12 @@ export type Report = {
   assessment: AssessmentResult;
   typology: Typology;
   composites: CompositeTrait[];
+  // Whether the stored row carries a norm group of its own. False for results
+  // pulled from upstream (bigfive-test.com shares raw answers only, never the
+  // taker's sex/age) and for takers who skipped the demographics card — both
+  // are scored against the combined reference group until a group is picked.
+  // Reflects storage, so it stays false while a read-time override is active.
+  demographicsProvided: boolean;
 };
 
 // `demographicsOverride` re-scores an existing result against a different norm
@@ -119,7 +125,12 @@ export async function getTestResult(
     results: domainResults,
     assessment,
     typology,
-    composites
+    composites,
+    // An empty object counts as absent: it selects the same combined stratum
+    // a null does, so offering "change your group" over it would be a lie.
+    demographicsProvided: Boolean(
+      report.demographics?.sex || report.demographics?.ageBracket
+    )
   };
 }
 

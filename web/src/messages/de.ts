@@ -242,13 +242,19 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     normApproxHint:
       '(ungefähre Referenzgruppe — geben Sie beim Test Geschlecht & Alter an für eine exakte Zuordnung)',
     normGroupChange: 'Referenzgruppe ändern',
+    normGroupChoose: 'Referenzgruppe wählen',
     normGroupClose: 'Schließen',
     normGroupExplainer:
       'Perzentile zeigen, wo Sie innerhalb einer Vergleichsgruppe stehen. Wählen Sie eine andere Gruppe, um dieselben Antworten daran gemessen zu sehen — das ändert nur die Ansicht, Ihr gespeichertes Ergebnis bleibt unberührt.',
+    normGroupMissing:
+      'Zu diesem Ergebnis wurden weder Geschlecht noch Alter erfasst, daher wird es am kombinierten Durchschnitt aller Personen gemessen. Wählen Sie eine Gruppe, um dieselben Antworten daran gemessen zu sehen — das ändert nur die Ansicht, es wird nichts gespeichert.',
     normPreviewBadge: 'Vorschau',
     normGroupPreviewNote:
       'Sie sehen eine Vorschau mit einer anderen Referenzgruppe. Es wurde nichts gespeichert.',
+    normGroupPickedNote:
+      'Bewertet anhand der von Ihnen gewählten Gruppe. Es wurde nichts gespeichert — der Link allein zeigt immer den kombinierten Durchschnitt.',
     normGroupReset: 'Zurück zu meiner Gruppe',
+    normGroupClear: 'Zurücksetzen',
     notFoundTitle: 'Bericht konnte nicht abgerufen werden',
     notFoundId: 'Wir konnten die folgende ID nicht abrufen: {id}.',
     notFoundContact:

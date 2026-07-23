@@ -464,6 +464,7 @@ export default function ResultPage() {
                 <BarChart max={120} results={results()} />
                 <NormGroup
                   meta={r().assessment.meta}
+                  provided={r().demographicsProvided}
                   overridden={normOverridden()}
                   onChange={setNormGroup}
                   onReset={resetNormGroup}

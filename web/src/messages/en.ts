@@ -235,13 +235,19 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     normApproxHint:
       '(approximate reference group — provide sex & age when taking the test for an exact match)',
     normGroupChange: 'Change reference group',
+    normGroupChoose: 'Choose reference group',
     normGroupClose: 'Close',
     normGroupExplainer:
       'Percentiles say where you stand within a comparison group. Pick a different group to see the same answers scored against it — this only changes the view, your saved result is untouched.',
+    normGroupMissing:
+      'No sex or age was recorded with this result, so it is scored against the combined average of everyone. Pick a group to see the same answers scored against it — this only changes the view, nothing is saved.',
     normPreviewBadge: 'Preview',
     normGroupPreviewNote:
       'You are viewing a preview against another reference group. Nothing has been saved.',
+    normGroupPickedNote:
+      'Scored against the group you picked. Nothing has been saved — the link on its own always shows the combined average.',
     normGroupReset: 'Back to my group',
+    normGroupClear: 'Clear',
     notFoundTitle: 'Could not retrieve report',
     notFoundId: 'We could not retrieve the following id {id}.',
     notFoundContact:
