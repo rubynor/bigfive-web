@@ -197,11 +197,102 @@ l'inventario proviene da <i>Johnson's (2014) IPIP NEO-PI-R di 120 elementi</i>.`
       'Salva il seguente IS per vedere i risultati in un secondo momento o ',
     compare: 'compara',
     toOthers: 'te stesso agli altri',
+    heroEyebrow: 'Il tuo rapporto di personalità',
+    domainDetails: 'I cinque domini in dettaglio',
+    percentileLabel: 'percentile',
+    higherThan: 'più alto del {percentile}% delle persone',
+    rawScore: 'punteggio grezzo {score} / {max}',
+    tScore: 'punteggio T {t}',
+    modeLabel: 'Livello di dettaglio',
+    modeSimple: 'Semplice',
+    modeAdvanced: 'Avanzato',
+    all: 'Tutti',
+    selectDomain: 'Seleziona dominio',
+    readMore: 'Leggi di più',
+    readLess: 'Leggi di meno',
+    percentile: '{percentile}° percentile',
+    normNote: 'Punteggio calcolato rispetto alle norme: {stratum}',
+    normApproxHint:
+      '(gruppo di riferimento approssimativo — fornisci sesso ed età durante il test per una corrispondenza esatta)',
+    notFoundTitle: 'Impossibile recuperare il rapporto',
+    notFoundId: 'Non siamo riusciti a recuperare il seguente id {id}.',
+    notFoundContact: 'Verifica che sia corretto o contattaci a {email}.',
+    loadErrorTitle: 'Qualcosa è andato storto',
+    loadErrorBody:
+      'Il rapporto non è stato caricato a causa di un problema tecnico. Riprova più tardi o contattaci a {email}.',
     seo: {
       title: 'I miei risultati dal test della personalità dei Big Five',
       description:
         "Guarda la mia personalità e confrontati nei seguenti cinque domini: nevroticismo, apertura all'esperienza, coscienziosità, estroversione, gradevolezza"
     }
+  },
+  typology: {
+    yourType: 'Il tuo tipo',
+    breakdown: 'Analisi',
+    breakdownIntro:
+      'Ogni barra ti colloca tra due tendenze opposte. Il punto indica dove ti trovi rispetto alle altre persone e la lettera su quel lato forma il tuo tipo. Se un punto si trova vicino al centro, piccoli cambiamenti nelle tue risposte potrebbero invertire quella lettera — quegli assi sono contrassegnati come borderline.',
+    borderline: 'borderline',
+    borderlineNote:
+      'Uno o più assi si trovano vicino al punto medio (±{radius}) — piccoli cambiamenti nelle risposte potrebbero invertire quella lettera. Considera il tipo come una tendenza, non un verdetto.',
+    percentileAria: '{label}: {percentile}° percentile',
+    axes: {
+      EI: 'Energia',
+      NS: 'Mente',
+      TF: 'Natura',
+      JP: 'Tattiche',
+      AT: 'Identità'
+    },
+    poles: {
+      EI: 'Introverso ↔ Estroverso',
+      NS: 'Osservatore ↔ Intuitivo',
+      TF: 'Pensiero ↔ Sentimento',
+      JP: 'Esplorazione ↔ Giudizio',
+      AT: 'Assertivo ↔ Turbolento'
+    },
+    roleLabel: 'Ruolo',
+    strategyLabel: 'Strategia',
+    roles: {
+      analyst: 'Analista',
+      diplomat: 'Diplomatico',
+      sentinel: 'Sentinella',
+      explorer: 'Esploratore'
+    },
+    strategies: {
+      confidentIndividualism: 'Individualismo Fiducioso',
+      peopleMastery: 'Padronanza delle Persone',
+      constantImprovement: 'Miglioramento Costante',
+      socialEngagement: 'Coinvolgimento Sociale'
+    }
+  },
+  composites: {
+    title: 'Tratti derivati',
+    disclaimer:
+      'Stime proiettate dai tuoi percentili Big Five — combinazioni lineari, non questionari somministrati. I tratti con una citazione usano pesi da correlazioni meta-analitiche pubblicate; gli altri sono euristiche editoriali. Considerali tutti come indicazioni approssimative.',
+    details: 'Come è costruito questo numero',
+    formulaLabel: 'Formula',
+    provenanceLabel: 'Base',
+    names: {
+      perfectionisticStrivings: 'Slanci Perfezionistici',
+      perfectionisticConcerns: 'Preoccupazioni Perfezionistiche',
+      selfControl: 'Autocontrollo',
+      procrastination: 'Procrastinazione',
+      ambition: 'Ambizione',
+      motivation: 'Motivazione',
+      desireToLead: 'Desiderio di Guidare'
+    },
+    bands: {
+      veryLow: 'molto basso',
+      low: 'basso',
+      average: 'medio',
+      high: 'alto',
+      veryHigh: 'molto alto'
+    }
+  },
+  share: {
+    viewSource: 'Vedi il codice sorgente su GitHub',
+    downloadPdf: 'Scarica PDF',
+    copyLink: 'Copia link',
+    copiedLink: 'Link copiato'
   },
   getResult: {
     result: 'Risultati',

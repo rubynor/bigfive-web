@@ -187,6 +187,29 @@ innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
   },
   results: {
     theBigFive: 'De fem stora',
+    heroEyebrow: 'Din personlighetsrapport',
+    domainDetails: 'De fem domänerna i detalj',
+    percentileLabel: 'percentil',
+    higherThan: 'högre än {percentile} % av alla',
+    rawScore: 'råpoäng {score} / {max}',
+    tScore: 'T-poäng {t}',
+    modeLabel: 'Detaljnivå',
+    modeSimple: 'Enkel',
+    modeAdvanced: 'Avancerad',
+    all: 'Alla',
+    selectDomain: 'Välj domän',
+    readMore: 'Läs mer',
+    readLess: 'Läs mindre',
+    percentile: '{percentile}:e percentilen',
+    normNote: 'Beräknat mot normer: {stratum}',
+    normApproxHint:
+      '(ungefärlig referensgrupp — ange kön och ålder när du gör testet för en exakt matchning)',
+    notFoundTitle: 'Kunde inte hämta rapporten',
+    notFoundId: 'Vi kunde inte hämta följande id {id}.',
+    notFoundContact: 'Kontrollera att det är korrekt eller kontakta oss på {email}.',
+    loadErrorTitle: 'Något gick fel',
+    loadErrorBody:
+      'Rapporten kunde inte laddas på grund av ett tekniskt problem. Försök igen senare eller kontakta oss på {email}.',
     score: 'Värdering',
     important: 'Viktigt!',
     saveResults: 'Spara följande ID för att se dina resultat senare eller till',
@@ -197,6 +220,74 @@ innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
       description:
         'Se min personlighet och jämför dig på följande fem domäner: Neuroticism, öppenhet för upplevelse, samvetsgrannhet, extraversion och tillmötesgående'
     }
+  },
+  typology: {
+    yourType: 'Din typ',
+    breakdown: 'Uppdelning',
+    breakdownIntro:
+      'Varje stapel placerar dig mellan två motsatta tendenser. Punkten visar var du står jämfört med andra människor, och bokstaven på den sidan bildar din typ. Om en punkt hamnar nära mitten kan små förändringar i dina svar vända den bokstaven — dessa axlar markeras som gränsfall.',
+    borderline: 'gränsfall',
+    borderlineNote:
+      'En eller flera axlar ligger nära mittpunkten (±{radius}) — små förändringar i svaren kan vända den bokstaven. Se typen som en tendens, inte ett utlåtande.',
+    percentileAria: '{label}: {percentile}:e percentilen',
+    axes: {
+      EI: 'Energi',
+      NS: 'Sinne',
+      TF: 'Natur',
+      JP: 'Taktik',
+      AT: 'Identitet'
+    },
+    poles: {
+      EI: 'Introvert ↔ Extravert',
+      NS: 'Observerande ↔ Intuitiv',
+      TF: 'Tänkande ↔ Kännande',
+      JP: 'Utforskande ↔ Planerande',
+      AT: 'Självsäker ↔ Oroande'
+    },
+    roleLabel: 'Roll',
+    strategyLabel: 'Strategi',
+    roles: {
+      analyst: 'Analytiker',
+      diplomat: 'Diplomat',
+      sentinel: 'Väktare',
+      explorer: 'Utforskare'
+    },
+    strategies: {
+      confidentIndividualism: 'Självständig individualism',
+      peopleMastery: 'Människomästerskap',
+      constantImprovement: 'Ständig förbättring',
+      socialEngagement: 'Socialt engagemang'
+    }
+  },
+  composites: {
+    title: 'Härledda drag',
+    disclaimer:
+      'Uppskattningar projicerade från dina Big Five-percentiler — linjära kombinationer, inte genomförda frågeformulär. Drag med en källa använder vikter från publicerade metaanalytiska korrelationer; resten är redaktionella tumregler. Betrakta alla som grova indikationer.',
+    details: 'Så här byggs siffran',
+    formulaLabel: 'Formel',
+    provenanceLabel: 'Grund',
+    names: {
+      perfectionisticStrivings: 'Perfektionistiska strävanden',
+      perfectionisticConcerns: 'Perfektionistiska bekymmer',
+      selfControl: 'Självkontroll',
+      procrastination: 'Prokrastinering',
+      ambition: 'Ambition',
+      motivation: 'Motivation',
+      desireToLead: 'Lust att leda'
+    },
+    bands: {
+      veryLow: 'mycket låg',
+      low: 'låg',
+      average: 'genomsnittlig',
+      high: 'hög',
+      veryHigh: 'mycket hög'
+    }
+  },
+  share: {
+    viewSource: 'Visa källkod på GitHub',
+    downloadPdf: 'Ladda ner PDF',
+    copyLink: 'Kopiera länk',
+    copiedLink: 'Länk kopierad'
   },
   getResult: {
     result: 'Se resultat',

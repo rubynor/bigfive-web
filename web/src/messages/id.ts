@@ -197,11 +197,103 @@ const indonesian = {
     saveResults: 'Simpan ID berikut untuk melihat hasilnya nanti atau',
     compare: 'membandingkan',
     toOthers: 'diri Anda kepada orang lain',
+    heroEyebrow: 'Laporan kepribadian Anda',
+    domainDetails: 'Lima domain secara rinci',
+    percentileLabel: 'persentil',
+    higherThan: 'lebih tinggi dari {percentile}% orang',
+    rawScore: 'skor mentah {score} / {max}',
+    tScore: 'skor-T {t}',
+    modeLabel: 'Tingkat detail',
+    modeSimple: 'Sederhana',
+    modeAdvanced: 'Lanjutan',
+    all: 'Semua',
+    selectDomain: 'Pilih domain',
+    readMore: 'Baca selengkapnya',
+    readLess: 'Baca lebih sedikit',
+    percentile: 'persentil ke-{percentile}',
+    normNote: 'Diskor terhadap norma: {stratum}',
+    normApproxHint:
+      '(kelompok referensi perkiraan — berikan jenis kelamin & usia saat mengikuti tes untuk kecocokan yang tepat)',
+    notFoundTitle: 'Tidak dapat mengambil laporan',
+    notFoundId: 'Kami tidak dapat mengambil id berikut {id}.',
+    notFoundContact:
+      'Silakan periksa apakah sudah benar atau hubungi kami di {email}.',
+    loadErrorTitle: 'Terjadi kesalahan',
+    loadErrorBody:
+      'Laporan tidak dapat dimuat karena masalah teknis. Silakan coba lagi nanti atau hubungi kami di {email}.',
     seo: {
       title: 'Hasil saya dari tes kepribadian BigFive',
       description:
         'Lihat kepribadian saya dan bandingkan diri Anda dalam lima domain berikut: Neurotisisme, Keterbukaan terhadap Pengalaman, Kehati-hatian, Ekstraversi, Kepersetujuan'
     }
+  },
+  typology: {
+    yourType: 'Tipe Anda',
+    breakdown: 'Rincian',
+    breakdownIntro:
+      'Setiap batang menempatkan Anda di antara dua kecenderungan yang berlawanan. Titik menandai posisi Anda dibandingkan orang lain, dan huruf di sisi itu membentuk tipe Anda. Jika titik berada di dekat tengah, perubahan kecil pada jawaban Anda dapat membalik huruf tersebut — sumbu-sumbu itu ditandai sebagai batas.',
+    borderline: 'batas',
+    borderlineNote:
+      'Satu atau lebih sumbu berada dekat titik tengah (±{radius}) — perubahan kecil pada jawaban dapat membalik huruf itu. Anggap tipe sebagai kecenderungan, bukan vonis.',
+    percentileAria: '{label}: persentil ke-{percentile}',
+    axes: {
+      EI: 'Energi',
+      NS: 'Pikiran',
+      TF: 'Watak',
+      JP: 'Taktik',
+      AT: 'Identitas'
+    },
+    poles: {
+      EI: 'Introvert ↔ Ekstrovert',
+      NS: 'Observan ↔ Intuitif',
+      TF: 'Berpikir ↔ Merasakan',
+      JP: 'Prospek ↔ Menilai',
+      AT: 'Asertif ↔ Turbulen'
+    },
+    roleLabel: 'Peran',
+    strategyLabel: 'Strategi',
+    roles: {
+      analyst: 'Analis',
+      diplomat: 'Diplomat',
+      sentinel: 'Sentinel',
+      explorer: 'Penjelajah'
+    },
+    strategies: {
+      confidentIndividualism: 'Individualisme Percaya Diri',
+      peopleMastery: 'Penguasaan Orang',
+      constantImprovement: 'Perbaikan Berkelanjutan',
+      socialEngagement: 'Keterlibatan Sosial'
+    }
+  },
+  composites: {
+    title: 'Sifat turunan',
+    disclaimer:
+      'Estimasi yang diproyeksikan dari persentil Big Five Anda — gabungan linier, bukan kuesioner yang diberikan. Sifat dengan kutipan menggunakan bobot dari korelasi meta-analitik yang dipublikasikan; sisanya adalah heuristik editorial. Anggap semuanya sebagai indikasi kasar.',
+    details: 'Bagaimana angka ini dibangun',
+    formulaLabel: 'Rumus',
+    provenanceLabel: 'Dasar',
+    names: {
+      perfectionisticStrivings: 'Upaya Perfeksionis',
+      perfectionisticConcerns: 'Kekhawatiran Perfeksionis',
+      selfControl: 'Pengendalian Diri',
+      procrastination: 'Prokrastinasi',
+      ambition: 'Ambisi',
+      motivation: 'Motivasi',
+      desireToLead: 'Keinginan Memimpin'
+    },
+    bands: {
+      veryLow: 'sangat rendah',
+      low: 'rendah',
+      average: 'rata-rata',
+      high: 'tinggi',
+      veryHigh: 'sangat tinggi'
+    }
+  },
+  share: {
+    viewSource: 'Lihat sumber di GitHub',
+    downloadPdf: 'Unduh PDF',
+    copyLink: 'Salin tautan',
+    copiedLink: 'Tautan disalin'
   },
   getResult: {
     result: 'Hasil',

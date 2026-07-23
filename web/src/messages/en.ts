@@ -212,6 +212,15 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
   },
   results: {
     theBigFive: 'The Big Five',
+    heroEyebrow: 'Your personality report',
+    domainDetails: 'The five domains in detail',
+    percentileLabel: 'percentile',
+    higherThan: 'higher than {percentile}% of people',
+    rawScore: 'raw score {score} / {max}',
+    tScore: 'T-score {t}',
+    modeLabel: 'Detail level',
+    modeSimple: 'Simple',
+    modeAdvanced: 'Advanced',
     score: 'score',
     important: 'Important!',
     saveResults: 'Save the following ID to see the results later or ',
@@ -240,6 +249,8 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
   typology: {
     yourType: 'Your type',
     breakdown: 'Breakdown',
+    breakdownIntro:
+      'Each bar places you between two opposite tendencies. The dot marks where you stand compared to other people, and the letter on that side forms your type. If a dot sits near the middle, small changes in your answers could flip that letter — those axes are marked as borderline.',
     borderline: 'borderline',
     borderlineNote:
       'One or more axes sit close to the midpoint (±{radius}) — small answer changes could flip that letter. Treat the type as a tendency, not a verdict.',
@@ -250,6 +261,13 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
       TF: 'Nature',
       JP: 'Tactics',
       AT: 'Identity'
+    },
+    poles: {
+      EI: 'Introverted ↔ Extraverted',
+      NS: 'Observant ↔ Intuitive',
+      TF: 'Thinking ↔ Feeling',
+      JP: 'Prospecting ↔ Judging',
+      AT: 'Assertive ↔ Turbulent'
     },
     roleLabel: 'Role',
     strategyLabel: 'Strategy',

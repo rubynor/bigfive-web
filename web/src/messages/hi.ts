@@ -192,11 +192,102 @@ const hindi = {
     saveResults: 'निम्नलिखित आईडी को बाद में परिणाम देखने के लिए सहेजें या ',
     compare: 'तुलना',
     toOthers: 'खुद दूसरों के लिए',
+    heroEyebrow: 'आपकी व्यक्तित्व रिपोर्ट',
+    domainDetails: 'पाँच डोमेन विस्तार से',
+    percentileLabel: 'प्रतिशतक',
+    higherThan: '{percentile}% लोगों से अधिक',
+    rawScore: 'कच्चा स्कोर {score} / {max}',
+    tScore: 'टी-स्कोर {t}',
+    modeLabel: 'विवरण स्तर',
+    modeSimple: 'सरल',
+    modeAdvanced: 'उन्नत',
+    all: 'सभी',
+    selectDomain: 'डोमेन चुनें',
+    readMore: 'और पढ़ें',
+    readLess: 'कम पढ़ें',
+    percentile: '{percentile}वां प्रतिशतक',
+    normNote: 'मानदंडों के अनुरूप स्कोर: {stratum}',
+    normApproxHint:
+      '(अनुमानित संदर्भ समूह — सटीक मिलान के लिए परीक्षण देते समय लिंग और आयु बताएं)',
+    notFoundTitle: 'रिपोर्ट प्राप्त नहीं हो सकी',
+    notFoundId: 'हम निम्नलिखित आईडी {id} प्राप्त नहीं कर सके।',
+    notFoundContact: 'कृपया जांचें कि यह सही है या {email} पर हमसे संपर्क करें।',
+    loadErrorTitle: 'कुछ गलत हो गया',
+    loadErrorBody:
+      'तकनीकी समस्या के कारण रिपोर्ट लोड नहीं हो सकी। कृपया बाद में पुनः प्रयास करें या {email} पर हमसे संपर्क करें।',
     seo: {
       title: 'My results from the BigFive personality test',
       description:
         'See my personality and compare yourself in the following five domains: Neuroticism, Openness To Experience, Conscientiousness, Extraversion, Agreeableness'
     }
+  },
+  typology: {
+    yourType: 'आपका प्रकार',
+    breakdown: 'विश्लेषण',
+    breakdownIntro:
+      'प्रत्येक पट्टी आपको दो विपरीत प्रवृत्तियों के बीच रखती है। बिंदु दिखाता है कि आप अन्य लोगों की तुलना में कहां खड़े हैं, और उस ओर का अक्षर आपका प्रकार बनाता है। यदि कोई बिंदु बीच के पास है, तो आपके उत्तरों में छोटे बदलाव उस अक्षर को पलट सकते हैं — ऐसे अक्ष सीमा पर माने जाते हैं।',
+    borderline: 'सीमा पर',
+    borderlineNote:
+      'एक या अधिक अक्ष मध्य बिंदु के पास हैं (±{radius}) — उत्तरों में छोटे बदलाव उस अक्षर को पलट सकते हैं। प्रकार को निर्णय नहीं, प्रवृत्ति मानें।',
+    percentileAria: '{label}: {percentile}वां प्रतिशतक',
+    axes: {
+      EI: 'ऊर्जा',
+      NS: 'मन',
+      TF: 'स्वभाव',
+      JP: 'रणनीति',
+      AT: 'पहचान'
+    },
+    poles: {
+      EI: 'अंतर्मुखी ↔ बहिर्मुखी',
+      NS: 'अवलोकनशील ↔ सहजज्ञानी',
+      TF: 'चिंतन ↔ भावना',
+      JP: 'अन्वेषण ↔ निर्णय',
+      AT: 'दृढ़ ↔ अशांत'
+    },
+    roleLabel: 'भूमिका',
+    strategyLabel: 'रणनीति',
+    roles: {
+      analyst: 'विश्लेषक',
+      diplomat: 'कूटनीतिक',
+      sentinel: 'प्रहरी',
+      explorer: 'अन्वेषक'
+    },
+    strategies: {
+      confidentIndividualism: 'आत्मविश्वासी व्यक्तिवाद',
+      peopleMastery: 'लोगों पर महारत',
+      constantImprovement: 'निरंतर सुधार',
+      socialEngagement: 'सामाजिक सहभागिता'
+    }
+  },
+  composites: {
+    title: 'व्युत्पन्न लक्षण',
+    disclaimer:
+      'आपके बिग फाइव प्रतिशतकों से अनुमानित अनुमान — रैखिक मिश्रण, वास्तविक प्रश्नावली नहीं। उद्धरण वाले लक्षण प्रकाशित मेटा-विश्लेषणात्मक सहसंबंधों के भारों का उपयोग करते हैं; बाकी संपादकीय अनुमान हैं। इन सभी को मोटे संकेत मानें।',
+    details: 'यह संख्या कैसे बनती है',
+    formulaLabel: 'सूत्र',
+    provenanceLabel: 'आधार',
+    names: {
+      perfectionisticStrivings: 'पूर्णतावादी प्रयास',
+      perfectionisticConcerns: 'पूर्णतावादी चिंताएं',
+      selfControl: 'आत्म-नियंत्रण',
+      procrastination: 'टालमटोल',
+      ambition: 'महत्वाकांक्षा',
+      motivation: 'प्रेरणा',
+      desireToLead: 'नेतृत्व की इच्छा'
+    },
+    bands: {
+      veryLow: 'बहुत कम',
+      low: 'कम',
+      average: 'औसत',
+      high: 'अधिक',
+      veryHigh: 'बहुत अधिक'
+    }
+  },
+  share: {
+    viewSource: 'GitHub पर स्रोत देखें',
+    downloadPdf: 'PDF डाउनलोड करें',
+    copyLink: 'लिंक कॉपी करें',
+    copiedLink: 'लिंक कॉपी हो गया'
   },
   getResult: {
     result: 'परिणाम',

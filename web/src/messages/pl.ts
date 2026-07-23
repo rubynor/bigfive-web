@@ -198,11 +198,103 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     saveResults: 'Zachowaj następujące ID, by móc powrócić do swoich wyników.',
     compare: 'Porównaj',
     toOthers: 'się z innymi',
+    heroEyebrow: 'Twój raport osobowości',
+    domainDetails: 'Pięć czynników w szczegółach',
+    percentileLabel: 'percentyl',
+    higherThan: 'wyżej niż {percentile}% ludzi',
+    rawScore: 'wynik surowy {score} / {max}',
+    tScore: 'wynik T {t}',
+    modeLabel: 'Poziom szczegółowości',
+    modeSimple: 'Prosty',
+    modeAdvanced: 'Zaawansowany',
+    all: 'Wszystkie',
+    selectDomain: 'Wybierz czynnik',
+    readMore: 'Czytaj więcej',
+    readLess: 'Czytaj mniej',
+    percentile: '{percentile}. percentyl',
+    normNote: 'Wynik względem norm: {stratum}',
+    normApproxHint:
+      '(przybliżona grupa referencyjna — podaj płeć i wiek podczas testu, aby uzyskać dokładne dopasowanie)',
+    notFoundTitle: 'Nie można pobrać raportu',
+    notFoundId: 'Nie mogliśmy pobrać następującego id {id}.',
+    notFoundContact:
+      'Sprawdź, czy jest poprawne, lub skontaktuj się z nami pod adresem {email}.',
+    loadErrorTitle: 'Coś poszło nie tak',
+    loadErrorBody:
+      'Nie można załadować raportu z powodu problemu technicznego. Spróbuj ponownie później lub skontaktuj się z nami pod adresem {email}.',
     seo: {
       title: 'Moje wyniki testu osobowości BigFive.',
       description:
         'Poznaj moją osobowość i porównaj ze swoją w następujących pięciu kategoriach: Neurotyczność, Otwartość na doświadczenia, Sumienność, Ekstrawersja, Ugodowość.'
     }
+  },
+  typology: {
+    yourType: 'Twój typ',
+    breakdown: 'Rozkład',
+    breakdownIntro:
+      'Każdy pasek umieszcza Cię między dwiema przeciwnymi tendencjami. Kropka pokazuje Twoją pozycję w porównaniu z innymi ludźmi, a litera po tej stronie tworzy Twój typ. Jeśli kropka znajduje się blisko środka, niewielkie zmiany odpowiedzi mogą odwrócić tę literę — takie osie są oznaczone jako graniczne.',
+    borderline: 'graniczne',
+    borderlineNote:
+      'Jedna lub więcej osi leży blisko punktu środkowego (±{radius}) — niewielkie zmiany odpowiedzi mogą odwrócić tę literę. Traktuj typ jako tendencję, a nie wyrok.',
+    percentileAria: '{label}: {percentile}. percentyl',
+    axes: {
+      EI: 'Energia',
+      NS: 'Umysł',
+      TF: 'Natura',
+      JP: 'Taktyka',
+      AT: 'Tożsamość'
+    },
+    poles: {
+      EI: 'Introwertyczny ↔ Ekstrawertyczny',
+      NS: 'Obserwujący ↔ Intuicyjny',
+      TF: 'Myślący ↔ Czujący',
+      JP: 'Poszukujący ↔ Osądzający',
+      AT: 'Stanowczy ↔ Burzliwy'
+    },
+    roleLabel: 'Rola',
+    strategyLabel: 'Strategia',
+    roles: {
+      analyst: 'Analityk',
+      diplomat: 'Dyplomata',
+      sentinel: 'Strażnik',
+      explorer: 'Odkrywca'
+    },
+    strategies: {
+      confidentIndividualism: 'Pewny siebie indywidualizm',
+      peopleMastery: 'Mistrzostwo w relacjach',
+      constantImprovement: 'Ciągłe doskonalenie',
+      socialEngagement: 'Zaangażowanie społeczne'
+    }
+  },
+  composites: {
+    title: 'Cechy pochodne',
+    disclaimer:
+      'Szacunki wyliczone z Twoich percentyli Wielkiej Piątki — kombinacje liniowe, a nie przeprowadzone kwestionariusze. Cechy z odwołaniem do źródła używają wag z opublikowanych meta-analitycznych korelacji; pozostałe to redakcyjne heurystyki. Traktuj je wszystkie jako przybliżone wskazania.',
+    details: 'Jak powstaje ta liczba',
+    formulaLabel: 'Wzór',
+    provenanceLabel: 'Podstawa',
+    names: {
+      perfectionisticStrivings: 'Perfekcjonistyczne dążenia',
+      perfectionisticConcerns: 'Perfekcjonistyczne obawy',
+      selfControl: 'Samokontrola',
+      procrastination: 'Prokrastynacja',
+      ambition: 'Ambicja',
+      motivation: 'Motywacja',
+      desireToLead: 'Chęć przewodzenia'
+    },
+    bands: {
+      veryLow: 'bardzo niski',
+      low: 'niski',
+      average: 'przeciętny',
+      high: 'wysoki',
+      veryHigh: 'bardzo wysoki'
+    }
+  },
+  share: {
+    viewSource: 'Zobacz kod źródłowy na GitHubie',
+    downloadPdf: 'Pobierz PDF',
+    copyLink: 'Kopiuj link',
+    copiedLink: 'Skopiowano link'
   },
   getResult: {
     result: 'Wynik',

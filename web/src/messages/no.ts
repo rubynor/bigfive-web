@@ -194,11 +194,102 @@ innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
       'Lagre følgende ID for å se resultatene dine senere eller for å',
     compare: 'sammenligne',
     toOthers: 'deg med andre',
+    heroEyebrow: 'Din personlighetsrapport',
+    domainDetails: 'De fem domenene i detalj',
+    percentileLabel: 'persentil',
+    higherThan: 'høyere enn {percentile} % av folk',
+    rawScore: 'råskår {score} / {max}',
+    tScore: 'T-skår {t}',
+    modeLabel: 'Detaljnivå',
+    modeSimple: 'Enkel',
+    modeAdvanced: 'Avansert',
+    all: 'Alle',
+    selectDomain: 'Velg domene',
+    readMore: 'Les mer',
+    readLess: 'Les mindre',
+    percentile: '{percentile}. persentil',
+    normNote: 'Skåret mot normer: {stratum}',
+    normApproxHint:
+      '(omtrentlig referansegruppe — oppgi kjønn og alder når du tar testen for et nøyaktig treff)',
+    notFoundTitle: 'Kunne ikke hente rapporten',
+    notFoundId: 'Vi kunne ikke hente følgende id {id}.',
+    notFoundContact: 'Sjekk at den er riktig, eller kontakt oss på {email}.',
+    loadErrorTitle: 'Noe gikk galt',
+    loadErrorBody:
+      'Rapporten kunne ikke lastes inn på grunn av et teknisk problem. Prøv igjen senere, eller kontakt oss på {email}.',
     seo: {
       title: 'Mine rapport fra BigFive personlighetstesten',
       description:
         'Se min personlighet, og sammenlign deg selv i de følgende fem domenene: Nevrotisme, Åpenhet for Erfaringer, planmessighet, Ekstraversjon, og medmenneskelighet'
     }
+  },
+  typology: {
+    yourType: 'Din type',
+    breakdown: 'Fordeling',
+    breakdownIntro:
+      'Hver stolpe plasserer deg mellom to motsatte tendenser. Prikken viser hvor du står sammenlignet med andre mennesker, og bokstaven på den siden utgjør typen din. Hvis en prikk ligger nær midten, kan små endringer i svarene dine snu den bokstaven — disse aksene er markert som grensetilfeller.',
+    borderline: 'grensetilfelle',
+    borderlineNote:
+      'En eller flere akser ligger nær midtpunktet (±{radius}) — små endringer i svarene kan snu den bokstaven. Se på typen som en tendens, ikke en dom.',
+    percentileAria: '{label}: {percentile}. persentil',
+    axes: {
+      EI: 'Energi',
+      NS: 'Sinn',
+      TF: 'Natur',
+      JP: 'Taktikk',
+      AT: 'Identitet'
+    },
+    poles: {
+      EI: 'Introvert ↔ Ekstrovert',
+      NS: 'Observant ↔ Intuitiv',
+      TF: 'Tenkende ↔ Følende',
+      JP: 'Utforskende ↔ Planleggende',
+      AT: 'Selvsikker ↔ Turbulent'
+    },
+    roleLabel: 'Rolle',
+    strategyLabel: 'Strategi',
+    roles: {
+      analyst: 'Analytiker',
+      diplomat: 'Diplomat',
+      sentinel: 'Vaktpost',
+      explorer: 'Utforsker'
+    },
+    strategies: {
+      confidentIndividualism: 'Selvsikker individualisme',
+      peopleMastery: 'Folkemestring',
+      constantImprovement: 'Konstant forbedring',
+      socialEngagement: 'Sosialt engasjement'
+    }
+  },
+  composites: {
+    title: 'Avledede trekk',
+    disclaimer:
+      'Estimater beregnet fra Big Five-persentilene dine — lineære kombinasjoner, ikke gjennomførte spørreskjemaer. Trekk med kildehenvisning bruker vekter fra publiserte metaanalytiske korrelasjoner; resten er redaksjonelle tommelfingerregler. Behandle alle som grove indikasjoner.',
+    details: 'Slik bygges dette tallet',
+    formulaLabel: 'Formel',
+    provenanceLabel: 'Grunnlag',
+    names: {
+      perfectionisticStrivings: 'Perfeksjonistiske strebinger',
+      perfectionisticConcerns: 'Perfeksjonistiske bekymringer',
+      selfControl: 'Selvkontroll',
+      procrastination: 'Utsettelse',
+      ambition: 'Ambisjon',
+      motivation: 'Motivasjon',
+      desireToLead: 'Ønske om å lede'
+    },
+    bands: {
+      veryLow: 'veldig lav',
+      low: 'lav',
+      average: 'gjennomsnittlig',
+      high: 'høy',
+      veryHigh: 'veldig høy'
+    }
+  },
+  share: {
+    viewSource: 'Se kildekoden på GitHub',
+    downloadPdf: 'Last ned PDF',
+    copyLink: 'Kopier lenke',
+    copiedLink: 'Lenke kopiert'
   },
   getResult: {
     result: 'Hent resultater',

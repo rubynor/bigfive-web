@@ -107,3 +107,32 @@ export function Alert(
     </div>
   );
 }
+
+// Lightweight CSS meter (0–100 fill). Used instead of chart widgets on the
+// result page wherever a single percentile needs visualising.
+export function Meter(props: {
+  value: number; // 0..100
+  hex?: string; // fill colour; defaults to the primary token
+  label: string; // aria-label
+  class?: string;
+}) {
+  return (
+    <div
+      role='img'
+      aria-label={props.label}
+      class={clsx(
+        'h-2 overflow-hidden rounded-full bg-content3',
+        props.class
+      )}
+    >
+      <div
+        class='h-full rounded-full transition-[width] duration-500'
+        style={{
+          width: `${Math.min(100, Math.max(0, props.value))}%`,
+          ...(props.hex ? { 'background-color': props.hex } : {})
+        }}
+        classList={{ 'bg-primary': !props.hex }}
+      />
+    </div>
+  );
+}

@@ -196,11 +196,103 @@ inventário é de <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     saveResults: 'Salve a seguinte ID para ver os resultados depois ou ',
     compare: 'compare-se',
     toOthers: 'com ou outros',
+    heroEyebrow: 'Seu relatório de personalidade',
+    domainDetails: 'Os cinco domínios em detalhes',
+    percentileLabel: 'percentil',
+    higherThan: 'maior que {percentile}% das pessoas',
+    rawScore: 'pontuação bruta {score} / {max}',
+    tScore: 'escore T {t}',
+    modeLabel: 'Nível de detalhe',
+    modeSimple: 'Simples',
+    modeAdvanced: 'Avançado',
+    all: 'Todos',
+    selectDomain: 'Selecionar domínio',
+    readMore: 'Ler mais',
+    readLess: 'Ler menos',
+    percentile: '{percentile}º percentil',
+    normNote: 'Pontuado em relação às normas: {stratum}',
+    normApproxHint:
+      '(grupo de referência aproximado — informe sexo e idade ao fazer o teste para uma correspondência exata)',
+    notFoundTitle: 'Não foi possível obter o relatório',
+    notFoundId: 'Não conseguimos obter o seguinte id {id}.',
+    notFoundContact:
+      'Verifique se está correto ou entre em contato conosco em {email}.',
+    loadErrorTitle: 'Algo deu errado',
+    loadErrorBody:
+      'O relatório não pôde ser carregado devido a um problema técnico. Tente novamente mais tarde ou entre em contato conosco em {email}.',
     seo: {
       title: 'Meus resultados do teste de personalidade BigFive',
       description:
         'Veja minha personalidade e compare-se nos cinco domínios seguintes: Neuroticismo, Abertura à Experiência, Consciência, Extroversão, Afabilidade'
     }
+  },
+  typology: {
+    yourType: 'Seu tipo',
+    breakdown: 'Detalhamento',
+    breakdownIntro:
+      'Cada barra posiciona você entre duas tendências opostas. O ponto marca onde você está em comparação com outras pessoas, e a letra desse lado forma o seu tipo. Se um ponto estiver perto do meio, pequenas mudanças nas suas respostas podem inverter essa letra — esses eixos são marcados como limítrofes.',
+    borderline: 'limítrofe',
+    borderlineNote:
+      'Um ou mais eixos estão próximos do ponto médio (±{radius}) — pequenas mudanças nas respostas podem inverter essa letra. Trate o tipo como uma tendência, não um veredito.',
+    percentileAria: '{label}: {percentile}º percentil',
+    axes: {
+      EI: 'Energia',
+      NS: 'Mente',
+      TF: 'Natureza',
+      JP: 'Táticas',
+      AT: 'Identidade'
+    },
+    poles: {
+      EI: 'Introvertido ↔ Extrovertido',
+      NS: 'Observador ↔ Intuitivo',
+      TF: 'Pensante ↔ Sentimental',
+      JP: 'Explorador ↔ Julgador',
+      AT: 'Assertivo ↔ Turbulento'
+    },
+    roleLabel: 'Função',
+    strategyLabel: 'Estratégia',
+    roles: {
+      analyst: 'Analista',
+      diplomat: 'Diplomata',
+      sentinel: 'Sentinela',
+      explorer: 'Explorador'
+    },
+    strategies: {
+      confidentIndividualism: 'Individualismo confiante',
+      peopleMastery: 'Domínio de pessoas',
+      constantImprovement: 'Melhoria constante',
+      socialEngagement: 'Engajamento social'
+    }
+  },
+  composites: {
+    title: 'Traços derivados',
+    disclaimer:
+      'Estimativas projetadas a partir dos seus percentis Big Five — combinações lineares, não questionários aplicados. Traços com citação usam pesos de correlações meta-analíticas publicadas; os demais são heurísticas editoriais. Trate todos como indicações aproximadas.',
+    details: 'Como este número é construído',
+    formulaLabel: 'Fórmula',
+    provenanceLabel: 'Base',
+    names: {
+      perfectionisticStrivings: 'Esforços perfeccionistas',
+      perfectionisticConcerns: 'Preocupações perfeccionistas',
+      selfControl: 'Autocontrole',
+      procrastination: 'Procrastinação',
+      ambition: 'Ambição',
+      motivation: 'Motivação',
+      desireToLead: 'Desejo de liderar'
+    },
+    bands: {
+      veryLow: 'muito baixo',
+      low: 'baixo',
+      average: 'médio',
+      high: 'alto',
+      veryHigh: 'muito alto'
+    }
+  },
+  share: {
+    viewSource: 'Ver código-fonte no GitHub',
+    downloadPdf: 'Baixar PDF',
+    copyLink: 'Copiar link',
+    copiedLink: 'Link copiado'
   },
   getResult: {
     result: 'Resultado',

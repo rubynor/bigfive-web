@@ -191,11 +191,103 @@ const finnish = {
     saveResults: 'Tallenna seuraava tunnus nähdäksesi tulokset myöhemmin tai ',
     compare: 'vertailla',
     toOthers: 'itsesi muille',
+    heroEyebrow: 'Persoonallisuusraporttisi',
+    domainDetails: 'Viisi osa-aluetta yksityiskohtaisesti',
+    percentileLabel: 'prosenttipiste',
+    higherThan: 'korkeampi kuin {percentile} % ihmisistä',
+    rawScore: 'raakapisteet {score} / {max}',
+    tScore: 'T-pisteet {t}',
+    modeLabel: 'Yksityiskohtaisuus',
+    modeSimple: 'Yksinkertainen',
+    modeAdvanced: 'Edistynyt',
+    all: 'Kaikki',
+    selectDomain: 'Valitse osa-alue',
+    readMore: 'Lue lisää',
+    readLess: 'Lue vähemmän',
+    percentile: '{percentile}. prosenttipiste',
+    normNote: 'Pisteytetty normien mukaan: {stratum}',
+    normApproxHint:
+      '(likimääräinen vertailuryhmä — anna sukupuoli ja ikä testiä tehdessäsi tarkkaa vastaavuutta varten)',
+    notFoundTitle: 'Raporttia ei voitu hakea',
+    notFoundId: 'Emme voineet hakea seuraavaa tunnusta {id}.',
+    notFoundContact:
+      'Tarkista, että se on oikein, tai ota yhteyttä osoitteeseen {email}.',
+    loadErrorTitle: 'Jokin meni pieleen',
+    loadErrorBody:
+      'Raporttia ei voitu ladata teknisen ongelman vuoksi. Yritä myöhemmin uudelleen tai ota yhteyttä osoitteeseen {email}.',
     seo: {
       title: 'Tulokseni BigFive-persoonallisuustestistä',
       description:
         'Katso persoonallisuuttani ja vertaa itseäsi seuraavilla viidellä osa-alueella: neurotismi, avoimuus kokemukselle, tunnollisuus, ekstraversio, sopusointuisuus'
     }
+  },
+  typology: {
+    yourType: 'Tyyppisi',
+    breakdown: 'Erittely',
+    breakdownIntro:
+      'Jokainen palkki sijoittaa sinut kahden vastakkaisen taipumuksen väliin. Piste merkitsee sijaintisi muihin ihmisiin verrattuna, ja kyseisen puolen kirjain muodostaa tyyppisi. Jos piste on lähellä keskikohtaa, pienet muutokset vastauksissasi voivat kääntää kirjaimen — nämä akselit on merkitty raja-tapauksina.',
+    borderline: 'raja-tapaus',
+    borderlineNote:
+      'Yksi tai useampi akseli on lähellä keskipistettä (±{radius}) — pienet muutokset vastauksissasi voivat kääntää kirjaimen. Käsittele tyyppiä taipumuksena, ei tuomiona.',
+    percentileAria: '{label}: {percentile}. prosenttipiste',
+    axes: {
+      EI: 'Energia',
+      NS: 'Mieli',
+      TF: 'Luonne',
+      JP: 'Taktiikka',
+      AT: 'Identiteetti'
+    },
+    poles: {
+      EI: 'Introvertti ↔ Ekstrovertti',
+      NS: 'Tarkkaavainen ↔ Intuitiivinen',
+      TF: 'Ajattelevainen ↔ Tunteva',
+      JP: 'Tutkiva ↔ Tuomitseva',
+      AT: 'Itsevarma ↔ Myrskyinen'
+    },
+    roleLabel: 'Rooli',
+    strategyLabel: 'Strategia',
+    roles: {
+      analyst: 'Analyytikko',
+      diplomat: 'Diplomaatti',
+      sentinel: 'Vartija',
+      explorer: 'Tutkimusmatkailija'
+    },
+    strategies: {
+      confidentIndividualism: 'Itsevarma individualismi',
+      peopleMastery: 'Ihmisten hallinta',
+      constantImprovement: 'Jatkuva kehittyminen',
+      socialEngagement: 'Sosiaalinen sitoutuminen'
+    }
+  },
+  composites: {
+    title: 'Johdetut piirteet',
+    disclaimer:
+      'Arvioita, jotka on projisoitu Big Five -prosenttipisteistäsi — lineaarisia yhdistelmiä, ei suoritettuja kyselyitä. Piirteet, joilla on lähdeviite, käyttävät painoja julkaistuista meta-analyyttisistä korrelaatioista; loput ovat toimituksellisia heuristiikkoja. Pidä niitä kaikkia karkeina viitteinä.',
+    details: 'Miten tämä luku muodostuu',
+    formulaLabel: 'Kaava',
+    provenanceLabel: 'Peruste',
+    names: {
+      perfectionisticStrivings: 'Perfektionistinen pyrkimys',
+      perfectionisticConcerns: 'Perfektionistiset huolenaiheet',
+      selfControl: 'Itsehillintä',
+      procrastination: 'Vatulointi',
+      ambition: 'Kunnianhimo',
+      motivation: 'Motivaatio',
+      desireToLead: 'Halu johtaa'
+    },
+    bands: {
+      veryLow: 'erittäin alhainen',
+      low: 'alhainen',
+      average: 'keskitasoinen',
+      high: 'korkea',
+      veryHigh: 'erittäin korkea'
+    }
+  },
+  share: {
+    viewSource: 'Näytä lähdekoodi GitHubissa',
+    downloadPdf: 'Lataa PDF',
+    copyLink: 'Kopioi linkki',
+    copiedLink: 'Linkki kopioitu'
   },
   getResult: {
     result: 'Tulos',

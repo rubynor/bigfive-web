@@ -193,11 +193,102 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
       'احفط الرمز التالي لتتمكن من رؤية نتيجتك في وقت لاحق أو لتتمكن من ',
     compare: 'مقارنة ',
     toOthers: 'نتيجتك بغيرك ',
+    heroEyebrow: 'تقرير شخصيتك',
+    domainDetails: 'المجالات الخمسة بالتفصيل',
+    percentileLabel: 'المئين',
+    higherThan: 'أعلى من {percentile}٪ من الناس',
+    rawScore: 'الدرجة الخام {score} / {max}',
+    tScore: 'الدرجة التائية {t}',
+    modeLabel: 'مستوى التفصيل',
+    modeSimple: 'بسيط',
+    modeAdvanced: 'متقدم',
+    all: 'الكل',
+    selectDomain: 'اختر المجال',
+    readMore: 'اقرأ المزيد',
+    readLess: 'اقرأ أقل',
+    percentile: 'المئين {percentile}',
+    normNote: 'مقيّم مقابل المعايير: {stratum}',
+    normApproxHint:
+      '(مجموعة مرجعية تقريبية — حدد الجنس والعمر عند إجراء الاختبار للحصول على تطابق دقيق)',
+    notFoundTitle: 'تعذر استرداد التقرير',
+    notFoundId: 'تعذر علينا استرداد الرمز التالي {id}.',
+    notFoundContact: 'يرجى التحقق من صحته أو التواصل معنا على {email}.',
+    loadErrorTitle: 'حدث خطأ ما',
+    loadErrorBody:
+      'تعذر تحميل التقرير بسبب مشكلة تقنية. يرجى المحاولة مرة أخرى لاحقاً أو التواصل معنا على {email}.',
     seo: {
       title: 'My results from the BigFive personality test',
       description:
         'See my personality and compare yourself in the following five domains: Neuroticism, Openness To Experience, Conscientiousness, Extraversion, Agreeableness'
     }
+  },
+  typology: {
+    yourType: 'نمطك',
+    breakdown: 'التفصيل',
+    breakdownIntro:
+      'يضعك كل شريط بين ميلين متعاكسين. تشير النقطة إلى موقعك مقارنة بغيرك من الناس، ويشكّل الحرف في ذلك الجانب نمطك. إذا كانت النقطة قريبة من المنتصف، فقد تؤدي تغييرات بسيطة في إجاباتك إلى قلب ذلك الحرف — وتُعلَّم هذه المحاور بأنها حدّية.',
+    borderline: 'حدّي',
+    borderlineNote:
+      'يقع محور واحد أو أكثر قرب نقطة المنتصف (±{radius}) — قد تؤدي تغييرات بسيطة في الإجابات إلى قلب ذلك الحرف. اعتبر النمط ميلاً لا حكماً.',
+    percentileAria: '{label}: المئين {percentile}',
+    axes: {
+      EI: 'الطاقة',
+      NS: 'العقل',
+      TF: 'الطبيعة',
+      JP: 'التكتيكات',
+      AT: 'الهوية'
+    },
+    poles: {
+      EI: 'انطوائي ↔ انبساطي',
+      NS: 'ملاحِظ ↔ حدسي',
+      TF: 'مفكّر ↔ شاعر',
+      JP: 'مستطلع ↔ حاسم',
+      AT: 'واثق ↔ مضطرب'
+    },
+    roleLabel: 'الدور',
+    strategyLabel: 'الاستراتيجية',
+    roles: {
+      analyst: 'المحلل',
+      diplomat: 'الدبلوماسي',
+      sentinel: 'الحارس',
+      explorer: 'المستكشف'
+    },
+    strategies: {
+      confidentIndividualism: 'الفردانية الواثقة',
+      peopleMastery: 'التمكّن من الناس',
+      constantImprovement: 'التحسين المستمر',
+      socialEngagement: 'التفاعل الاجتماعي'
+    }
+  },
+  composites: {
+    title: 'سمات مشتقة',
+    disclaimer:
+      'تقديرات مسقطة من مئينات السمات الخمسة الكبرى لديك — مزج خطي وليست استبيانات مُطبَّقة. السمات ذات المرجع تستخدم أوزاناً من ارتباطات تحليلية شمولية منشورة؛ أما الباقي فهي قواعد تقديرية تحريرية. اعتبرها جميعاً مؤشرات تقريبية.',
+    details: 'كيف يُبنى هذا الرقم',
+    formulaLabel: 'الصيغة',
+    provenanceLabel: 'الأساس',
+    names: {
+      perfectionisticStrivings: 'السعي الكمالي',
+      perfectionisticConcerns: 'القلق الكمالي',
+      selfControl: 'ضبط النفس',
+      procrastination: 'التسويف',
+      ambition: 'الطموح',
+      motivation: 'الدافعية',
+      desireToLead: 'الرغبة في القيادة'
+    },
+    bands: {
+      veryLow: 'منخفض جداً',
+      low: 'منخفض',
+      average: 'متوسط',
+      high: 'مرتفع',
+      veryHigh: 'مرتفع جداً'
+    }
+  },
+  share: {
+    viewSource: 'عرض المصدر على GitHub',
+    downloadPdf: 'تحميل PDF',
+    copyLink: 'انسخ الرابط',
+    copiedLink: 'تم نسخ الرابط'
   },
   getResult: {
     result: 'النتيجة',

@@ -193,11 +193,103 @@ const icelandic = {
       'Vistaðu eftirfarandi auðkenni til að sjá niðurstöðurnar síðar eða',
     compare: 'bera saman',
     toOthers: 'sjálfur við aðra',
+    heroEyebrow: 'Persónuleikaskýrsla þín',
+    domainDetails: 'Fimm sviðin í smáatriðum',
+    percentileLabel: 'prósentil',
+    higherThan: 'hærra en {percentile}% fólks',
+    rawScore: 'hrátt stig {score} / {max}',
+    tScore: 'T-stig {t}',
+    modeLabel: 'Ítarleikastig',
+    modeSimple: 'Einfalt',
+    modeAdvanced: 'Ítarlegt',
+    all: 'Allt',
+    selectDomain: 'Veldu svið',
+    readMore: 'Lesa meira',
+    readLess: 'Lesa minna',
+    percentile: '{percentile}. prósentil',
+    normNote: 'Metið miðað við viðmið: {stratum}',
+    normApproxHint:
+      '(áætlaður viðmiðunarhópur — gefðu upp kyn og aldur þegar þú tekur prófið fyrir nákvæma samsvörun)',
+    notFoundTitle: 'Ekki tókst að sækja skýrslu',
+    notFoundId: 'Við gátum ekki sótt eftirfarandi auðkenni {id}.',
+    notFoundContact:
+      'Vinsamlegast athugaðu að það sé rétt eða hafðu samband við okkur á {email}.',
+    loadErrorTitle: 'Eitthvað fór úrskeiðis',
+    loadErrorBody:
+      'Ekki tókst að hlaða skýrslunni vegna tæknilegs vandamáls. Vinsamlegast reyndu aftur síðar eða hafðu samband við okkur á {email}.',
     seo: {
       title: 'Niðurstöður mínar úr BigFive persónuleikaprófinu',
       description:
         'Sjáðu persónuleika minn og berðu þig saman á eftirfarandi fimm sviðum: Taugaveiki, hreinskilni til að upplifa, samviskusemi, aukaatriði, samþykki'
     }
+  },
+  typology: {
+    yourType: 'Týpan þín',
+    breakdown: 'Sundurliðun',
+    breakdownIntro:
+      'Hver slá setur þig á milli tveggja andstæðra tilhneiginga. Punkturinn markar hvar þú stendur miðað við annað fólk og bókstafurinn á þeirri hlið myndar týpuna þína. Ef punktur er nálægt miðjunni gætu litlar breytingar á svörum þínum fleiprað þeim bókstaf — þeir ásar eru merktir sem á mörkum.',
+    borderline: 'á mörkum',
+    borderlineNote:
+      'Einn eða fleiri ásar eru nálægt miðpunkti (±{radius}) — litlar breytingar á svörum gætu fleiprað þeim bókstaf. Líttu á týpuna sem tilhneigingu, ekki niðurstöðu.',
+    percentileAria: '{label}: {percentile}. prósentil',
+    axes: {
+      EI: 'Orka',
+      NS: 'Hugur',
+      TF: 'Eðli',
+      JP: 'Aðferðir',
+      AT: 'Sjálfsmynd'
+    },
+    poles: {
+      EI: 'Innveltin ↔ Útveltin',
+      NS: 'Raunsær ↔ Innsæi',
+      TF: 'Rökhugsun ↔ Tilfinningar',
+      JP: 'Kannandi ↔ Dæmandi',
+      AT: 'Ákveðin ↔ Óróleg'
+    },
+    roleLabel: 'Hlutverk',
+    strategyLabel: 'Stefna',
+    roles: {
+      analyst: 'Greinandi',
+      diplomat: 'Diplómat',
+      sentinel: 'Vörður',
+      explorer: 'Könnuður'
+    },
+    strategies: {
+      confidentIndividualism: 'Örugg einstaklingshyggja',
+      peopleMastery: 'Fólksmeistaraskapur',
+      constantImprovement: 'Stöðugar umbætur',
+      socialEngagement: 'Félagsleg þátttaka'
+    }
+  },
+  composites: {
+    title: 'Leiddir eiginleikar',
+    disclaimer:
+      'Áætlanir reiknaðar út frá prósentilum Big Five þínum — línulegar blöndur, ekki lögðir spurningalistar. Eiginleikar með tilvísun nota vægi úr birtum meðalgreiningarfylgnum; afgangurinn er ritstjórnleg gátlisti. Líttu á þá alla sem grófar vísbendingar.',
+    details: 'Hvernig þessi tala er byggð upp',
+    formulaLabel: 'Formúla',
+    provenanceLabel: 'Grundvöllur',
+    names: {
+      perfectionisticStrivings: 'Sókn í fullkomnun',
+      perfectionisticConcerns: 'Áhyggjur af fullkomnun',
+      selfControl: 'Sjálfsstjórn',
+      procrastination: 'Frestun',
+      ambition: 'Metnaður',
+      motivation: 'Hvati',
+      desireToLead: 'Löngun til að leiða'
+    },
+    bands: {
+      veryLow: 'mjög lágt',
+      low: 'lágt',
+      average: 'meðaltal',
+      high: 'hátt',
+      veryHigh: 'mjög hátt'
+    }
+  },
+  share: {
+    viewSource: 'Skoða frumkóða á GitHub',
+    downloadPdf: 'Sækja PDF',
+    copyLink: 'Afrita hlekk',
+    copiedLink: 'Hlekkur afritaður'
   },
   getResult: {
     result: 'Niðurstaða',

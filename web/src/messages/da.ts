@@ -193,11 +193,103 @@ innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     saveResults: 'Gem følgende ID for at se dine resultater senere eller til',
     compare: 'sammenligne',
     toOthers: 'dig sammen med andre',
+    heroEyebrow: 'Din personlighedsrapport',
+    domainDetails: 'De fem domæner i detaljer',
+    percentileLabel: 'percentil',
+    higherThan: 'højere end {percentile} % af folk',
+    rawScore: 'rå score {score} / {max}',
+    tScore: 'T-score {t}',
+    modeLabel: 'Detaljeniveau',
+    modeSimple: 'Simpel',
+    modeAdvanced: 'Avanceret',
+    all: 'Alle',
+    selectDomain: 'Vælg domæne',
+    readMore: 'Læs mere',
+    readLess: 'Læs mindre',
+    percentile: '{percentile}. percentil',
+    normNote: 'Scoret i forhold til normer: {stratum}',
+    normApproxHint:
+      '(omtrentlig referencegruppe — angiv køn og alder, når du tager testen, for et præcist match)',
+    notFoundTitle: 'Kunne ikke hente rapport',
+    notFoundId: 'Vi kunne ikke hente følgende ID {id}.',
+    notFoundContact:
+      'Tjek venligst, at det er korrekt, eller kontakt os på {email}.',
+    loadErrorTitle: 'Noget gik galt',
+    loadErrorBody:
+      'Rapporten kunne ikke indlæses på grund af et teknisk problem. Prøv igen senere, eller kontakt os på {email}.',
     seo: {
       title: 'Min rapport fra BigFive personlighedstest',
       description:
         'Se min personlighed, og sammenlign dig selv på følgende fem domæner: Neurotisme, åbenhed for oplevelser, planlagt, ekstraversion og menneskehed'
     }
+  },
+  typology: {
+    yourType: 'Din type',
+    breakdown: 'Nedbrydning',
+    breakdownIntro:
+      'Hver bjælke placerer dig mellem to modsatrettede tendenser. Punktet markerer, hvor du står sammenlignet med andre mennesker, og bogstavet på den side danner din type. Sidder et punkt tæt på midten, kan små ændringer i dine svar vende det bogstav — disse akser er markeret som grænsefald.',
+    borderline: 'grænsefald',
+    borderlineNote:
+      'En eller flere akser ligger tæt på midtpunktet (±{radius}) — små ændringer i dine svar kan vende det bogstav. Betragt typen som en tendens, ikke en dom.',
+    percentileAria: '{label}: {percentile}. percentil',
+    axes: {
+      EI: 'Energi',
+      NS: 'Sind',
+      TF: 'Natur',
+      JP: 'Taktik',
+      AT: 'Identitet'
+    },
+    poles: {
+      EI: 'Introvert ↔ Ekstravert',
+      NS: 'Observant ↔ Intuitiv',
+      TF: 'Tænkende ↔ Følende',
+      JP: 'Udforskende ↔ Dømmende',
+      AT: 'Selvsikker ↔ Turbulent'
+    },
+    roleLabel: 'Rolle',
+    strategyLabel: 'Strategi',
+    roles: {
+      analyst: 'Analytiker',
+      diplomat: 'Diplomat',
+      sentinel: 'Vogter',
+      explorer: 'Opdagelsesrejsende'
+    },
+    strategies: {
+      confidentIndividualism: 'Selvsikker individualisme',
+      peopleMastery: 'Menneskemestring',
+      constantImprovement: 'Konstant forbedring',
+      socialEngagement: 'Socialt engagement'
+    }
+  },
+  composites: {
+    title: 'Afledte træk',
+    disclaimer:
+      'Skøn projiceret fra dine Big Five-percentiler — lineære sammenblandinger, ikke gennemførte spørgeskemaer. Træk med en kildehenvisning bruger vægte fra publicerede metaanalytiske korrelationer; resten er redaktionelle tommelfingerregler. Betragt dem alle som omtrentlige indikationer.',
+    details: 'Sådan er dette tal opbygget',
+    formulaLabel: 'Formel',
+    provenanceLabel: 'Grundlag',
+    names: {
+      perfectionisticStrivings: 'Perfektionistisk stræben',
+      perfectionisticConcerns: 'Perfektionistiske bekymringer',
+      selfControl: 'Selvkontrol',
+      procrastination: 'Prokrastination',
+      ambition: 'Ambition',
+      motivation: 'Motivation',
+      desireToLead: 'Lyst til at lede'
+    },
+    bands: {
+      veryLow: 'meget lav',
+      low: 'lav',
+      average: 'gennemsnitlig',
+      high: 'høj',
+      veryHigh: 'meget høj'
+    }
+  },
+  share: {
+    viewSource: 'Se kildekoden på GitHub',
+    downloadPdf: 'Download PDF',
+    copyLink: 'Kopiér link',
+    copiedLink: 'Link kopieret'
   },
   getResult: {
     result: 'Hent resultater',

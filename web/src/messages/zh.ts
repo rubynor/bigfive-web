@@ -184,6 +184,27 @@ const chinese = {
   },
   results: {
     theBigFive: '五大',
+    heroEyebrow: '您的人格报告',
+    domainDetails: '五大维度详解',
+    percentileLabel: '百分位',
+    higherThan: '高于 {percentile}% 的人',
+    rawScore: '原始分 {score} / {max}',
+    tScore: 'T 分数 {t}',
+    modeLabel: '详细程度',
+    modeSimple: '简洁',
+    modeAdvanced: '详细',
+    all: '全部',
+    selectDomain: '选择维度',
+    readMore: '阅读更多',
+    readLess: '收起',
+    percentile: '第 {percentile} 百分位',
+    normNote: '参照常模计分：{stratum}',
+    normApproxHint: '（近似参照群体——测试时提供性别和年龄可获得精确匹配）',
+    notFoundTitle: '无法获取报告',
+    notFoundId: '我们无法获取以下 ID {id}。',
+    notFoundContact: '请检查是否正确，或通过 {email} 联系我们。',
+    loadErrorTitle: '出错了',
+    loadErrorBody: '由于技术问题，报告无法加载。请稍后重试，或通过 {email} 联系我们。',
     score: '得分',
     important: '重要！',
     saveResults: '保存以下 ID 以查看以后的结果或',
@@ -194,6 +215,74 @@ const chinese = {
       description:
         'See my personality and compare yourself in the following five domains: Neuroticism, Openness To Experience, Conscientiousness, Extraversion, Agreeableness'
     }
+  },
+  typology: {
+    yourType: '您的类型',
+    breakdown: '维度解析',
+    breakdownIntro:
+      '每个条形将您置于两种相反倾向之间。圆点表示您相对于其他人的位置，该侧的字母构成您的类型。如果圆点靠近中间，答案的微小变化可能会翻转该字母——这些轴会标记为临界。',
+    borderline: '临界',
+    borderlineNote:
+      '一个或多个轴靠近中点（±{radius}）——答案的微小变化可能会翻转该字母。请将类型视为倾向，而非定论。',
+    percentileAria: '{label}：第 {percentile} 百分位',
+    axes: {
+      EI: '精力',
+      NS: '认知',
+      TF: '本性',
+      JP: '对策',
+      AT: '自我认同'
+    },
+    poles: {
+      EI: '内向 ↔ 外向',
+      NS: '实感 ↔ 直觉',
+      TF: '思考 ↔ 情感',
+      JP: '展望 ↔ 判断',
+      AT: '坚决 ↔ 动荡'
+    },
+    roleLabel: '角色',
+    strategyLabel: '策略',
+    roles: {
+      analyst: '分析家',
+      diplomat: '外交家',
+      sentinel: '守护者',
+      explorer: '探险家'
+    },
+    strategies: {
+      confidentIndividualism: '自信的独立主义',
+      peopleMastery: '人际掌控',
+      constantImprovement: '持续精进',
+      socialEngagement: '社交参与'
+    }
+  },
+  composites: {
+    title: '衍生特质',
+    disclaimer:
+      '根据您的五大人格百分位推算的估计值——线性加权组合，并非实际施测的问卷。附有引用的特质使用已发表的元分析相关系数作为权重；其余为编辑性经验法则。请将所有结果视为粗略参考。',
+    details: '这个数字是如何计算的',
+    formulaLabel: '公式',
+    provenanceLabel: '依据',
+    names: {
+      perfectionisticStrivings: '完美主义追求',
+      perfectionisticConcerns: '完美主义忧虑',
+      selfControl: '自我控制',
+      procrastination: '拖延',
+      ambition: '抱负',
+      motivation: '动机',
+      desireToLead: '领导欲望'
+    },
+    bands: {
+      veryLow: '非常低',
+      low: '低',
+      average: '中等',
+      high: '高',
+      veryHigh: '非常高'
+    }
+  },
+  share: {
+    viewSource: '在 GitHub 上查看源代码',
+    downloadPdf: '下载 PDF',
+    copyLink: '复制链接',
+    copiedLink: '已复制链接'
   },
   getResult: {
     result: '结果',

@@ -193,11 +193,102 @@ el inventario es de<i>Johnson's (2014) IPIP NEO-PI-R de 120 elementos</i>.`,
     saveResults: 'Guarde la siguiente ID para ver los resultados más tarde o ',
     compare: 'comparar',
     toOthers: 'usted mismo a los demás',
+    heroEyebrow: 'Tu informe de personalidad',
+    domainDetails: 'Los cinco dominios en detalle',
+    percentileLabel: 'percentil',
+    higherThan: 'más alto que el {percentile} % de las personas',
+    rawScore: 'puntuación bruta {score} / {max}',
+    tScore: 'puntuación T {t}',
+    modeLabel: 'Nivel de detalle',
+    modeSimple: 'Simple',
+    modeAdvanced: 'Avanzado',
+    all: 'Todos',
+    selectDomain: 'Seleccionar dominio',
+    readMore: 'Leer más',
+    readLess: 'Leer menos',
+    percentile: 'percentil {percentile}',
+    normNote: 'Puntuado según las normas: {stratum}',
+    normApproxHint:
+      '(grupo de referencia aproximado — indica tu sexo y edad al realizar la prueba para una coincidencia exacta)',
+    notFoundTitle: 'No se pudo recuperar el informe',
+    notFoundId: 'No pudimos recuperar el siguiente id {id}.',
+    notFoundContact: 'Comprueba que es correcto o contáctanos en {email}.',
+    loadErrorTitle: 'Algo salió mal',
+    loadErrorBody:
+      'El informe no se pudo cargar debido a un problema técnico. Inténtalo de nuevo más tarde o contáctanos en {email}.',
     seo: {
       title: 'Mis resultados de la prueba de personalidad Big Five',
       description:
         'Vea mi personalidad y compárese en los siguientes cinco dominios: neuroticismo, apertura a la experiencia, escrupulosidad, extraversión, amabilidad'
     }
+  },
+  typology: {
+    yourType: 'Tu tipo',
+    breakdown: 'Desglose',
+    breakdownIntro:
+      'Cada barra te sitúa entre dos tendencias opuestas. El punto marca dónde te encuentras en comparación con otras personas, y la letra de ese lado forma tu tipo. Si un punto se sitúa cerca del centro, pequeños cambios en tus respuestas podrían invertir esa letra — esos ejes están marcados como en el límite.',
+    borderline: 'en el límite',
+    borderlineNote:
+      'Uno o más ejes están cerca del punto medio (±{radius}) — pequeños cambios en tus respuestas podrían invertir esa letra. Trata el tipo como una tendencia, no como un veredicto.',
+    percentileAria: '{label}: percentil {percentile}',
+    axes: {
+      EI: 'Energía',
+      NS: 'Mente',
+      TF: 'Naturaleza',
+      JP: 'Tácticas',
+      AT: 'Identidad'
+    },
+    poles: {
+      EI: 'Introvertido ↔ Extravertido',
+      NS: 'Observador ↔ Intuitivo',
+      TF: 'Pensamiento ↔ Sentimiento',
+      JP: 'Prospector ↔ Juzgador',
+      AT: 'Asertivo ↔ Turbulento'
+    },
+    roleLabel: 'Rol',
+    strategyLabel: 'Estrategia',
+    roles: {
+      analyst: 'Analista',
+      diplomat: 'Diplomático',
+      sentinel: 'Centinela',
+      explorer: 'Explorador'
+    },
+    strategies: {
+      confidentIndividualism: 'Individualismo Seguro',
+      peopleMastery: 'Maestría Interpersonal',
+      constantImprovement: 'Mejora Constante',
+      socialEngagement: 'Compromiso Social'
+    }
+  },
+  composites: {
+    title: 'Rasgos derivados',
+    disclaimer:
+      'Estimaciones proyectadas a partir de tus percentiles Big Five: combinaciones lineales, no cuestionarios administrados. Los rasgos con una cita usan pesos de correlaciones metaanalíticas publicadas; el resto son heurísticas editoriales. Trátalos todos como indicaciones aproximadas.',
+    details: 'Cómo se construye este número',
+    formulaLabel: 'Fórmula',
+    provenanceLabel: 'Base',
+    names: {
+      perfectionisticStrivings: 'Afanes Perfeccionistas',
+      perfectionisticConcerns: 'Preocupaciones Perfeccionistas',
+      selfControl: 'Autocontrol',
+      procrastination: 'Procrastinación',
+      ambition: 'Ambición',
+      motivation: 'Motivación',
+      desireToLead: 'Deseo de Liderar'
+    },
+    bands: {
+      veryLow: 'muy bajo',
+      low: 'bajo',
+      average: 'promedio',
+      high: 'alto',
+      veryHigh: 'muy alto'
+    }
+  },
+  share: {
+    viewSource: 'Ver código fuente en GitHub',
+    downloadPdf: 'Descargar PDF',
+    copyLink: 'Copiar enlace',
+    copiedLink: 'Enlace copiado'
   },
   getResult: {
     result: 'Resultado',

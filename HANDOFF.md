@@ -283,6 +283,72 @@ build` green, puppeteer smoke on /result/58a70606a835c400c8b38e84 (og-fallback).
   namespaces `typology.roles/strategies` + `composites.*` (other locales fall
   back to English). Integration test now expects 7 composites.
 
+### Result page polish round 2 (2026-07-23, uncommitted)
+
+Follow-up to the redesign; five user-reported issues:
+
+1. **Translations completed for the result-page surface** in all 19 non-en
+   locales (4 parallel agents): each locale gained 21 missing `results.*`
+   keys plus the full `typology`, `composites` and `share` namespaces
+   (existing translations kept; `{param}` placeholders and the `↔` pole
+   separator are verbatim everywhere; percentile ordinals localized, e.g.
+   de `{percentile}. Perzentil`). Pre-existing gaps NOT touched: `seo.*`
+   still English in ar/fr/hi/zh, and other pages (test/compare/home) still
+   have English fallbacks.
+2. **Detail mode (Simple/Advanced)**: segmented toggle above the overview
+   grid; preference persisted in localStorage `result-detail-mode` (SSR
+   always renders simple, upgrades onMount — no hydration mismatch).
+   Simple (default): plain captions "higher than 73% of people", facets
+   show only the meter + template scoreText word. Advanced: adds
+   "percentile" labels, raw scores (`{score} / {max}`) and domain T-scores.
+   Signal lifted to the route (`lib/detail-mode.ts`), passed into
+   `DomainTabs` as the `mode` prop.
+3. **Overview-card title overflow** ("Conscientiousness" in 2-col mobile):
+   `min-w-0 break-words hyphens-auto` on the card title (verified: no
+   horizontal overflow at 390 px; German "Gewissenhaftigkeit" hyphenates).
+4. **Breakdown explained**: intro paragraph (`typology.breakdownIntro`)
+   under the title + per-axis pole labels (`typology.poles.*`, low→high =
+   left→right: Introverted↔Extraverted, Observant↔Intuitive,
+   Thinking↔Feeling, Prospecting↔Judging, Assertive↔Turbulent).
+5. **Save-banner missing spaces** (ru "илисравнить"): explicit `{' '}`
+   around the compare `<A>` — never rely on trailing spaces inside
+   translations.
+
+Verified: build green (typecheck catches key typos via DeepPartial), all
+unit suites green (108/29/28), puppeteer: /de + /ru pages fully translated,
+toggle persists across reload, advanced mode shows raw/T, mobile overflow
+clean.
+
+### Result page redesign round (2026-07-23, uncommitted)
+Full visual rework of `/result/[id]` (user request: modern look, better
+layout, freedom from the rest of the site's style). Structure is now:
+typology **hero** (gradient card: type string in `title()` violet gradient,
+role/strategy chips, date chip + ShareBar inline, borderline note) → save-ID
+warning Alert → **Big Five overview** (five per-domain accent cards —
+percentile, Meter, band chip — that set the detail filter *and* anchor-scroll;
+raw-score BarChart in its own card with the norm note) → typology axis
+**Breakdown** card (axes always visible; the old collapse toggle is gone) →
+composites grid → **domain details** behind a sticky (top-16, backdrop-blur)
+filter bar with accent-coloured pills.
+
+- Per-domain accents live in `web/src/lib/domain-accents.ts`, pinned to the
+  chart's DOMAIN_PALETTE mapping (overview cards are fed in O,C,E,A,N order).
+- Band→message-key map shared via `web/src/lib/bands.ts`; new `Meter`
+  component in `components/ui/index.tsx` (CSS bar, replaces the five
+  per-domain ApexCharts facet charts — one chart on the page now).
+- `DomainTabs` props changed: the `active`/`setActive` filter signal is
+  lifted to the route (overview cards drive it). `TypologyView` exports
+  `ROLE_KEYS`/`STRATEGY_KEYS` for the hero.
+- New en.ts keys: `results.heroEyebrow`, `results.domainDetails`,
+  `results.percentileLabel` (other locales fall back to English).
+- Error/NotFound branches, `?lang=`, `?showExpanded`, UTC date pin and the
+  combined/fallback norm hint are all unchanged.
+
+Verified: score 108 / typology 29 / data 28 + 8 integration green, `mise run
+build` green, puppeteer smoke (light + dark, desktop 1280 + mobile 390,
+overview-card→filter+anchor click) against dev server + Docker Postgres with
+the og-fallback fixture id.
+
 ### Open loose ends (not blocking)
 
 - Untracked stray at repo root: `compass_artifact_…md` — user chose to KEEP

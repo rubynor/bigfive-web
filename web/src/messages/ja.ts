@@ -192,11 +192,102 @@ const japanese = {
     saveResults: '次のIDを保存して、後で結果を確認するか、 ',
     compare: '比較する',
     toOthers: '他人に自分自身',
+    heroEyebrow: 'あなたのパーソナリティレポート',
+    domainDetails: '5つのドメインの詳細',
+    percentileLabel: 'パーセンタイル',
+    higherThan: '{percentile}%の人より高い',
+    rawScore: '素点 {score} / {max}',
+    tScore: 'Tスコア {t}',
+    modeLabel: '詳細レベル',
+    modeSimple: 'シンプル',
+    modeAdvanced: '詳細',
+    all: 'すべて',
+    selectDomain: 'ドメインを選択',
+    readMore: '続きを読む',
+    readLess: '閉じる',
+    percentile: '{percentile}パーセンタイル',
+    normNote: '参照基準: {stratum}',
+    normApproxHint:
+      '（近似の参照集団です — 正確に一致させるには、テスト受験時に性別と年齢を入力してください）',
+    notFoundTitle: 'レポートを取得できませんでした',
+    notFoundId: '次のIDを取得できませんでした: {id}',
+    notFoundContact: 'IDが正しいか確認するか、{email}までお問い合わせください。',
+    loadErrorTitle: '問題が発生しました',
+    loadErrorBody:
+      '技術的な問題によりレポートを読み込めませんでした。後でもう一度お試しいただくか、{email}までお問い合わせください。',
     seo: {
       title: 'BigFive性格検査の結果',
       description:
         '私の性格を見て、次の5つのドメインで自分自身を比較してください：神経症的性格、経験への開放性、誠実性、外向性、協調性'
     }
+  },
+  typology: {
+    yourType: 'あなたのタイプ',
+    breakdown: '内訳',
+    breakdownIntro:
+      '各バーは、2つの対立する傾向の間でのあなたの位置を示します。ドットは他の人と比較したあなたの位置を表し、その側の文字があなたのタイプを構成します。ドットが中央付近にある場合、回答のわずかな変化でその文字が入れ替わる可能性があります — それらの軸は「境界線上」とマークされます。',
+    borderline: '境界線上',
+    borderlineNote:
+      '1つ以上の軸が中点（±{radius}）に近い位置にあります — 回答のわずかな変化でその文字が入れ替わる可能性があります。タイプは判定ではなく傾向として捉えてください。',
+    percentileAria: '{label}: {percentile}パーセンタイル',
+    axes: {
+      EI: 'エネルギー',
+      NS: '意識',
+      TF: '本性',
+      JP: '戦術',
+      AT: 'アイデンティティ'
+    },
+    poles: {
+      EI: '内向型 ↔ 外向型',
+      NS: '現実型 ↔ 直感型',
+      TF: '思考型 ↔ 感情型',
+      JP: '探索型 ↔ 判断型',
+      AT: '自己主張型 ↔ 敏感型'
+    },
+    roleLabel: '役割',
+    strategyLabel: '戦略',
+    roles: {
+      analyst: 'アナリスト',
+      diplomat: '外交官',
+      sentinel: '番人',
+      explorer: '探検家'
+    },
+    strategies: {
+      confidentIndividualism: '自信に満ちた個人主義',
+      peopleMastery: '人心掌握',
+      constantImprovement: '絶え間ない向上',
+      socialEngagement: '社会的関与'
+    }
+  },
+  composites: {
+    title: '派生特性',
+    disclaimer:
+      'あなたのビッグファイブのパーセンタイルから推定された値です — 実際に実施した質問紙ではなく、線形の組み合わせです。出典のある特性は、公表されたメタ分析の相関に基づく重みを使用しています。それ以外は編集上のヒューリスティックです。すべて大まかな目安として捉えてください。',
+    details: 'この数値の算出方法',
+    formulaLabel: '計算式',
+    provenanceLabel: '根拠',
+    names: {
+      perfectionisticStrivings: '完璧主義的な努力',
+      perfectionisticConcerns: '完璧主義的な懸念',
+      selfControl: '自制心',
+      procrastination: '先延ばし',
+      ambition: '野心',
+      motivation: 'モチベーション',
+      desireToLead: 'リーダーシップへの意欲'
+    },
+    bands: {
+      veryLow: 'とても低い',
+      low: '低い',
+      average: '平均',
+      high: '高い',
+      veryHigh: 'とても高い'
+    }
+  },
+  share: {
+    viewSource: 'GitHubでソースを見る',
+    downloadPdf: 'PDFをダウンロード',
+    copyLink: 'リンクをコピー',
+    copiedLink: 'リンクをコピーしました'
   },
   getResult: {
     result: '結果',
