@@ -393,6 +393,23 @@ The remaining fork commits are Next.js UI — throwaway code, but they encode
 - **Site config:** supportEmail sentinel `REPLACE_ME@example.com`, overridable
   via env (fork: `NEXT_PUBLIC_SUPPORT_EMAIL`).
 
+## Results i18n — all 20 web locales covered
+
+- `packages/results` only shipped 15 templates; the 9 web locales fi, hi, ja,
+  pl, ru, sv, th, uk, zh silently fell back to English on the result page
+  (`getTemplate` loader-map default), and web locale `pt` never matched the
+  existing `pt-br` data. Symptom: UI chrome translated, domain titles/score
+  texts in English.
+- Added `src/data/{fi,hi,ja,pl,ru,sv,th,uk,zh}/` (full 5-domain × 6-facet
+  translations from `en`, 9 parallel agents, standard Big Five terminology per
+  language) and wired them into `templateLoaders` + `LanguageCode` +
+  `languages` in `packages/results/src/data/languages.ts`; `pt` now aliases
+  the `pt-br` template (both codes kept — upstream-stored `lang` may be
+  either).
+- Verified: results jest 9/9 green (needed `@types/node` devDep for the
+  `fs/promises` test — it was broken before), every locale smoke-tested
+  through `getTemplate`, `mise run test` + `mise run build` green.
+
 ## Phase 5b — adaptive local norms (new requirement, design sketch)
 
 - New norm source `local` implementing the existing `NormSet` interface (the
