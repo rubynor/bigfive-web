@@ -3,7 +3,7 @@ export interface Language {
   name: string
 }
 
-export type LanguageCode = 'de' | 'da' | 'el' | 'en' | 'es' | 'fr' | 'he' | 'is' | 'it' | 'nl' | 'no' | 'ar' | 'pt-br' | 'id' | 'ro'
+export type LanguageCode = 'de' | 'da' | 'el' | 'en' | 'es' | 'fi' | 'fr' | 'he' | 'hi' | 'is' | 'it' | 'ja' | 'nl' | 'no' | 'pl' | 'ar' | 'pt' | 'pt-br' | 'id' | 'ro' | 'ru' | 'sv' | 'th' | 'uk' | 'zh'
 
 const languages: Language[] = [
   {
@@ -65,6 +65,46 @@ const languages: Language[] = [
   {
     code: 'ro',
     name: 'Romanian'
+  },
+  {
+    code: 'fi',
+    name: 'Finnish'
+  },
+  {
+    code: 'hi',
+    name: 'Hindi'
+  },
+  {
+    code: 'ja',
+    name: 'Japanese'
+  },
+  {
+    code: 'pl',
+    name: 'Polish'
+  },
+  {
+    code: 'pt',
+    name: 'Portuguese'
+  },
+  {
+    code: 'ru',
+    name: 'Russian'
+  },
+  {
+    code: 'sv',
+    name: 'Swedish'
+  },
+  {
+    code: 'th',
+    name: 'Thai'
+  },
+  {
+    code: 'uk',
+    name: 'Ukrainian'
+  },
+  {
+    code: 'zh',
+    name: 'Chinese'
   }
 ]
 

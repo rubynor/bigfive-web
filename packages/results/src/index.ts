@@ -42,15 +42,26 @@ const templateLoaders: Record<
   el: () => import("./data/el"),
   en: () => import("./data/en"),
   es: () => import("./data/es"),
+  fi: () => import("./data/fi"),
   fr: () => import("./data/fr"),
   he: () => import("./data/he"),
+  hi: () => import("./data/hi"),
   id: () => import("./data/id"),
   is: () => import("./data/is"),
   it: () => import("./data/it"),
+  ja: () => import("./data/ja"),
   nl: () => import("./data/nl"),
   no: () => import("./data/no"),
+  pl: () => import("./data/pl"),
+  // Web locale 'pt' and upstream-stored 'pt-br' share the Brazilian template.
+  pt: () => import("./data/pt-br"),
   "pt-br": () => import("./data/pt-br"),
-  ro: () => import("./data/ro")
+  ro: () => import("./data/ro"),
+  ru: () => import("./data/ru"),
+  sv: () => import("./data/sv"),
+  th: () => import("./data/th"),
+  uk: () => import("./data/uk"),
+  zh: () => import("./data/zh")
 };
 
 export async function getTemplate(language: string): Promise<TemplateDomain[]> {
