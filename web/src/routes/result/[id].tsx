@@ -177,7 +177,7 @@ export default function ResultPage() {
 
             {/* ── Save banner ─────────────────────────────────────── */}
             <Alert color='warning' class='mt-6'>
-              <p>
+              <p class='text-center'>
                 <strong>{t('results.important')}</strong>{' '}
                 {t('results.saveResults')}{' '}
                 <A
