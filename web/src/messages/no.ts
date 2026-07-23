@@ -127,7 +127,30 @@ innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     next: 'neste',
     back: 'tilbake',
     more: 'fler',
-    seeResults: 'Se resultater'
+    seeResults: 'Se resultater',
+    demographics: {
+      title: 'Valgfritt: om deg',
+      description:
+        'Resultatet ditt sammenlignes med normgrupper. Med kjønn og alder scorer vi deg mot akkurat din gruppe i stedet for gjennomsnittet generelt.',
+      sex: 'Kjønn',
+      male: 'Mann',
+      female: 'Kvinne',
+      age: 'Alder',
+      under21: 'Under 21',
+      age21to40: '21–40',
+      age41to60: '41–60',
+      over60: 'Over 60',
+      preferNotToSay: 'Ønsker ikke å oppgi',
+      skip: 'Hopp over',
+      skipWarning:
+        'Helt greit — den kombinerte referansegruppen brukes, så persentilene dine kan bli litt mindre nøyaktige.'
+    },
+    restored: {
+      message: 'Svarene dine er gjenopprettet.',
+      startNew: 'start en ny test'
+    },
+    saveError: 'Noe gikk galt da resultatet skulle lagres. Prøv igjen.',
+    devSkip: 'Hopp til slutten (dev)'
   },
   big_five: {
     title: 'Hva er de store fem?',
@@ -291,6 +314,38 @@ innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     copyLink: 'Kopier lenke',
     copiedLink: 'Lenke kopiert'
   },
+  compare: {
+    overview: 'Oversikt',
+    editComparison: 'Rediger sammenligning',
+    noRows: 'Ingen rader å vise.',
+    invalidId: 'Skriv inn en gyldig ID som ikke allerede er brukt.',
+    invalidIdPlain: 'Skriv inn en gyldig ID.',
+    editPerson: 'Rediger person',
+    reorder: 'Flytt {name}',
+    reorderHint:
+      'Dra for å endre rekkefølge, eller sett fokus og bruk piltastene',
+    listLabel: 'Liste over personer som skal sammenlignes',
+    invalidLinkTitle: 'Ugyldig sammenligningslenke',
+    invalidLinkBody:
+      'Denne sammenligningslenken er ugyldig. Du kan lage en ny eller kontakte oss på {email}.',
+    loadErrorTitle: 'Kunne ikke laste sammenligningen',
+    loadErrorBody:
+      'Minst ett resultat i denne sammenligningen kunne ikke lastes. Du kan lage en ny sammenligning eller kontakte oss på {email}.',
+    buildNew: 'Lag en ny sammenligning'
+  },
+  feedback: {
+    title: 'Vi elsker tilbakemeldinger!',
+    intro:
+      'Send oss tilbakemelding om hvordan funksjonene våre kan bli bedre, eller om konkrete problemer.',
+    name: 'Navn',
+    email: 'E-post',
+    message: 'Melding',
+    messagePlaceholder: 'Skriv meldingen din',
+    invalidEmail: 'Skriv inn en gyldig e-postadresse',
+    submit: 'Send',
+    success: 'Sendt!',
+    error: 'Feil ved sending av tilbakemelding!'
+  },
   getResult: {
     result: 'Hent resultater',
     explanation:
@@ -298,7 +353,8 @@ innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     idInput: 'i ID-tekstfeltet',
     urlOrId: 'Lenken eller ID til resultatet',
     getResult: 'Hent resultat',
-    viewPrevious: 'Se forrige resultat'
+    viewPrevious: 'Se forrige resultat',
+    invalidId: 'Skriv inn en gyldig ID'
   },
   shareLinks: {
     copyLink: 'Kopièr lenken',

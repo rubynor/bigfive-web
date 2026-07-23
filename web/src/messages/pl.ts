@@ -129,7 +129,31 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     next: 'następne',
     back: 'poprzednie',
     more: 'więcej',
-    seeResults: 'zobacz wyniki'
+    seeResults: 'zobacz wyniki',
+    demographics: {
+      title: 'Opcjonalnie: o Tobie',
+      description:
+        'Twój wynik jest porównywany z grupami normatywnymi. Znając płeć i wiek, oceniamy Cię względem dokładnie Twojej grupy, a nie ogólnej średniej.',
+      sex: 'Płeć',
+      male: 'Mężczyzna',
+      female: 'Kobieta',
+      age: 'Wiek',
+      under21: 'Poniżej 21',
+      age21to40: '21–40',
+      age41to60: '41–60',
+      over60: 'Powyżej 60',
+      preferNotToSay: 'Wolę nie podawać',
+      skip: 'Pomiń',
+      skipWarning:
+        'Nie ma problemu — użyjemy połączonej grupy odniesienia, więc Twoje centyle mogą być nieco mniej dokładne.'
+    },
+    restored: {
+      message: 'Twoje odpowiedzi zostały przywrócone.',
+      startNew: 'zacznij nowy test'
+    },
+    saveError:
+      'Coś poszło nie tak podczas zapisywania wyniku. Spróbuj ponownie.',
+    devSkip: 'Przejdź na koniec (dev)'
   },
   big_five: {
     title: 'Czym jest Wielka Piątka?',
@@ -296,6 +320,38 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     copyLink: 'Kopiuj link',
     copiedLink: 'Skopiowano link'
   },
+  compare: {
+    overview: 'Przegląd',
+    editComparison: 'Edytuj porównanie',
+    noRows: 'Brak wierszy do wyświetlenia.',
+    invalidId: 'Podaj prawidłowy identyfikator, który nie jest już na liście.',
+    invalidIdPlain: 'Podaj prawidłowy identyfikator.',
+    editPerson: 'Edytuj osobę',
+    reorder: 'Zmień kolejność: {name}',
+    reorderHint:
+      'Przeciągnij, aby zmienić kolejność, albo ustaw fokus i użyj strzałek',
+    listLabel: 'Lista osób do porównania',
+    invalidLinkTitle: 'Nieprawidłowy link porównania',
+    invalidLinkBody:
+      'Ten link porównania jest nieprawidłowy. Możesz utworzyć nowy lub napisać do nas na {email}.',
+    loadErrorTitle: 'Nie udało się wczytać porównania',
+    loadErrorBody:
+      'Co najmniej jednego wyniku w tym porównaniu nie udało się wczytać. Możesz utworzyć nowe porównanie lub napisać do nas na {email}.',
+    buildNew: 'Utwórz nowe porównanie'
+  },
+  feedback: {
+    title: 'Uwielbiamy opinie!',
+    intro:
+      'Napisz nam, jak możemy ulepszyć nasze funkcje, albo zgłoś konkretny problem.',
+    name: 'Imię',
+    email: 'E-mail',
+    message: 'Wiadomość',
+    messagePlaceholder: 'Wpisz swoją wiadomość',
+    invalidEmail: 'Podaj prawidłowy adres e-mail',
+    submit: 'Wyślij',
+    success: 'Wysłano pomyślnie!',
+    error: 'Błąd podczas wysyłania opinii!'
+  },
   getResult: {
     result: 'Wynik',
     explanation:
@@ -303,7 +359,8 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     idInput: 'w pole wprowadzania ID',
     urlOrId: 'URL lub ID Twojego wyniku',
     getResult: 'Otrzymaj wynik',
-    viewPrevious: 'Wyświetl poprzedni wynik'
+    viewPrevious: 'Wyświetl poprzedni wynik',
+    invalidId: 'Podaj prawidłowy identyfikator'
   },
   shareLinks: {
     copyLink: 'Skopiuj do schowka',

@@ -1,6 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+/* Tailwind v4 no longer auto-discovers tailwind.config.cjs; the legacy JS
+   config (semantic NextUI-flavoured tokens, fonts, keyframes) is loaded
+   explicitly. `darkMode: 'class'` from that config is restated here as a
+   v4 custom variant so the .dark toggle keeps working. */
+@config '../tailwind.config.cjs';
+@custom-variant dark (&:where(.dark, .dark *));
 
 /* Theme-varying semantic tokens (rgb triplets so Tailwind opacity works).
    Consumed by tailwind.config.cjs; .dark is toggled on <html> by the theme

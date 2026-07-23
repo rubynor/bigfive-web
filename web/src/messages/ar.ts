@@ -125,7 +125,30 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     next: 'التالي',
     back: 'السابق',
     more: 'أكثر',
-    seeResults: 'شاهد النتيجة'
+    seeResults: 'شاهد النتيجة',
+    demographics: {
+      title: 'اختياري: عنك',
+      description:
+        'تتم مقارنة نتيجتك بمجموعات معيارية. بمعرفة الجنس والعمر نقيّمك مقابل مجموعتك بالتحديد بدلاً من المتوسط العام.',
+      sex: 'الجنس',
+      male: 'ذكر',
+      female: 'أنثى',
+      age: 'العمر',
+      under21: 'أقل من 21',
+      age21to40: '21–40',
+      age41to60: '41–60',
+      over60: 'أكثر من 60',
+      preferNotToSay: 'أفضّل عدم الإفصاح',
+      skip: 'تخطٍّ',
+      skipWarning:
+        'لا مشكلة — ستُستخدم المجموعة المرجعية المدمجة، لذا قد تكون النسب المئوية أقل دقة قليلاً.'
+    },
+    restored: {
+      message: 'تمت استعادة إجاباتك.',
+      startNew: 'ابدأ اختباراً جديداً'
+    },
+    saveError: 'حدث خطأ أثناء حفظ نتيجتك. يرجى المحاولة مرة أخرى.',
+    devSkip: 'الانتقال إلى النهاية (dev)'
   },
   big_five: {
     title: 'What are the big five?',
@@ -290,6 +313,36 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     copyLink: 'انسخ الرابط',
     copiedLink: 'تم نسخ الرابط'
   },
+  compare: {
+    overview: 'نظرة عامة',
+    editComparison: 'تعديل المقارنة',
+    noRows: 'لا توجد صفوف لعرضها.',
+    invalidId: 'يرجى إدخال معرّف صالح وغير مكرر.',
+    invalidIdPlain: 'يرجى إدخال معرّف صالح.',
+    editPerson: 'تعديل الشخص',
+    reorder: 'إعادة ترتيب {name}',
+    reorderHint: 'اسحب لإعادة الترتيب، أو ركّز واستخدم مفاتيح الأسهم',
+    listLabel: 'قائمة الأشخاص المراد مقارنتهم',
+    invalidLinkTitle: 'رابط مقارنة غير صالح',
+    invalidLinkBody:
+      'رابط المقارنة هذا تالف. يمكنك إنشاء رابط جديد أو مراسلتنا على {email}.',
+    loadErrorTitle: 'تعذّر تحميل المقارنة',
+    loadErrorBody:
+      'تعذّر تحميل نتيجة واحدة على الأقل في هذه المقارنة. يمكنك إنشاء مقارنة جديدة أو مراسلتنا على {email}.',
+    buildNew: 'إنشاء مقارنة جديدة'
+  },
+  feedback: {
+    title: 'نحن نحب ملاحظاتك!',
+    intro: 'أرسل لنا ملاحظاتك حول كيفية تحسين ميزاتنا أو عن مشكلات محددة.',
+    name: 'الاسم',
+    email: 'البريد الإلكتروني',
+    message: 'الرسالة',
+    messagePlaceholder: 'اكتب رسالتك',
+    invalidEmail: 'يرجى إدخال بريد إلكتروني صالح',
+    submit: 'إرسال',
+    success: 'تم الإرسال بنجاح!',
+    error: 'خطأ في إرسال الملاحظات!'
+  },
   getResult: {
     result: 'النتيجة',
     explanation:
@@ -297,7 +350,8 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     idInput: ' في الحقل أدناه',
     urlOrId: 'رابط أو رمز النتيجة',
     getResult: 'احصل على النتيجة',
-    viewPrevious: 'عرض النتيجة السابقة'
+    viewPrevious: 'عرض النتيجة السابقة',
+    invalidId: 'يرجى إدخال معرّف صالح'
   },
   shareLinks: {
     copyLink: 'انسخ الرابط',

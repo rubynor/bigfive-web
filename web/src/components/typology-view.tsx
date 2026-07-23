@@ -81,7 +81,7 @@ function AxisBar(props: { axis: TypologyAxis }) {
               label: axis().basisLabel,
               percentile: Math.round(axis().basisPercentile)
             })}
-            class='absolute top-1/2 h-5 w-5 -translate-x-1/2 -translate-y-1/2 rounded-full border-[3px] border-content1 bg-secondary shadow'
+            class='absolute top-1/2 h-5 w-5 -translate-x-1/2 -translate-y-1/2 rounded-full border-[3px] border-content1 bg-secondary shadow-sm'
             style={{ left: `${axis().basisPercentile}%` }}
           />
         </div>

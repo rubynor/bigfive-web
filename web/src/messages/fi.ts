@@ -126,7 +126,30 @@ const finnish = {
     next: 'Seuraava',
     back: 'takaisin',
     more: 'lisää',
-    seeResults: 'katso tulokset'
+    seeResults: 'katso tulokset',
+    demographics: {
+      title: 'Valinnainen: sinusta',
+      description:
+        'Tuloksesi verrataan normiryhmiin. Sukupuolen ja iän avulla pisteytämme sinut juuri oman ryhmäsi mukaan yleisen keskiarvon sijaan.',
+      sex: 'Sukupuoli',
+      male: 'Mies',
+      female: 'Nainen',
+      age: 'Ikä',
+      under21: 'Alle 21',
+      age21to40: '21–40',
+      age41to60: '41–60',
+      over60: 'Yli 60',
+      preferNotToSay: 'En halua kertoa',
+      skip: 'Ohita',
+      skipWarning:
+        'Ei hätää — käytämme yhdistettyä vertailuryhmää, joten prosenttipisteesi voivat olla hieman epätarkempia.'
+    },
+    restored: {
+      message: 'Vastauksesi on palautettu.',
+      startNew: 'aloita uusi testi'
+    },
+    saveError: 'Tuloksen tallentamisessa tapahtui virhe. Yritä uudelleen.',
+    devSkip: 'Siirry loppuun (dev)'
   },
   big_five: {
     title: 'Mitkä ovat viisi suurta?',
@@ -289,6 +312,38 @@ const finnish = {
     copyLink: 'Kopioi linkki',
     copiedLink: 'Linkki kopioitu'
   },
+  compare: {
+    overview: 'Yleiskatsaus',
+    editComparison: 'Muokkaa vertailua',
+    noRows: 'Ei näytettäviä rivejä.',
+    invalidId: 'Anna kelvollinen tunnus, joka ei ole jo listalla.',
+    invalidIdPlain: 'Anna kelvollinen tunnus.',
+    editPerson: 'Muokkaa henkilöä',
+    reorder: 'Siirrä {name}',
+    reorderHint:
+      'Muuta järjestystä vetämällä tai kohdista ja käytä nuolinäppäimiä',
+    listLabel: 'Vertailtavien henkilöiden luettelo',
+    invalidLinkTitle: 'Virheellinen vertailulinkki',
+    invalidLinkBody:
+      'Tämä vertailulinkki on virheellinen. Voit luoda uuden tai ottaa yhteyttä osoitteeseen {email}.',
+    loadErrorTitle: 'Vertailua ei voitu ladata',
+    loadErrorBody:
+      'Vähintään yhtä tämän vertailun tulosta ei voitu ladata. Voit luoda uuden vertailun tai ottaa yhteyttä osoitteeseen {email}.',
+    buildNew: 'Luo uusi vertailu'
+  },
+  feedback: {
+    title: 'Rakastamme palautetta!',
+    intro:
+      'Kerro meille, miten voisimme parantaa ominaisuuksiamme, tai ilmoita havaitsemistasi ongelmista.',
+    name: 'Nimi',
+    email: 'Sähköposti',
+    message: 'Viesti',
+    messagePlaceholder: 'Kirjoita viestisi',
+    invalidEmail: 'Anna kelvollinen sähköpostiosoite',
+    submit: 'Lähetä',
+    success: 'Lähetetty!',
+    error: 'Palautteen lähettäminen epäonnistui!'
+  },
   getResult: {
     result: 'Tulos',
     explanation:
@@ -296,7 +351,8 @@ const finnish = {
     idInput: 'ID-syöttökentässä',
     urlOrId: 'Tuloksesi URL-osoite tai tunniste',
     getResult: 'Hanki tulos',
-    viewPrevious: 'Näytä edellinen tulos'
+    viewPrevious: 'Näytä edellinen tulos',
+    invalidId: 'Anna kelvollinen tunnus'
   },
   shareLinks: {
     copyLink: 'Kopioi linkki leikepöydälle',

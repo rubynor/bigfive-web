@@ -55,7 +55,7 @@ export function LocaleSwitcher(props: { variant?: 'compact' | 'full' }) {
       itemComponent={(itemProps) => (
         <Select.Item
           item={itemProps.item}
-          class='flex cursor-pointer items-center gap-2 rounded-md px-2 py-1.5 text-sm outline-none data-[highlighted]:bg-content2 data-[selected]:font-medium'
+          class='flex cursor-pointer items-center gap-2 rounded-md px-2 py-1.5 text-sm outline-hidden data-[highlighted]:bg-content2 data-[selected]:font-medium'
         >
           <Flag lang={itemProps.item.rawValue} />
           <Select.ItemLabel>{itemProps.item.rawValue.name}</Select.ItemLabel>
@@ -66,7 +66,9 @@ export function LocaleSwitcher(props: { variant?: 'compact' | 'full' }) {
         aria-label='Select language'
         class={clsx(
           'flex items-center gap-2 rounded-lg border border-divider bg-content1 px-2 py-1.5 text-sm transition-colors hover:bg-content2',
-          props.variant === 'full' ? 'w-40 justify-between' : 'w-14 justify-center'
+          props.variant === 'full'
+            ? 'w-40 justify-between'
+            : 'w-14 justify-center'
         )}
       >
         <Select.Value<Language>>

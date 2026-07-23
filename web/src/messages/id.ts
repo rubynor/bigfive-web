@@ -128,7 +128,31 @@ const indonesian = {
     next: 'lanjut',
     back: 'kembali',
     more: 'lebih',
-    seeResults: 'lihat hasilnya'
+    seeResults: 'lihat hasilnya',
+    demographics: {
+      title: 'Opsional: tentang Anda',
+      description:
+        'Hasil Anda dibandingkan dengan kelompok norma. Dengan jenis kelamin dan usia, kami menilai Anda terhadap kelompok Anda yang tepat, bukan rata-rata umum.',
+      sex: 'Jenis kelamin',
+      male: 'Laki-laki',
+      female: 'Perempuan',
+      age: 'Usia',
+      under21: 'Di bawah 21',
+      age21to40: '21–40',
+      age41to60: '41–60',
+      over60: 'Di atas 60',
+      preferNotToSay: 'Tidak ingin menyebutkan',
+      skip: 'Lewati',
+      skipWarning:
+        'Tidak masalah — kelompok acuan gabungan akan digunakan, sehingga persentil Anda mungkin sedikit kurang akurat.'
+    },
+    restored: {
+      message: 'Jawaban Anda telah dipulihkan.',
+      startNew: 'mulai tes baru'
+    },
+    saveError:
+      'Terjadi kesalahan saat menyimpan hasil Anda. Silakan coba lagi.',
+    devSkip: 'Lompat ke akhir (dev)'
   },
   big_five: {
     title: 'Apakah lima besar itu?',
@@ -295,6 +319,38 @@ const indonesian = {
     copyLink: 'Salin tautan',
     copiedLink: 'Tautan disalin'
   },
+  compare: {
+    overview: 'Ringkasan',
+    editComparison: 'Edit perbandingan',
+    noRows: 'Tidak ada baris untuk ditampilkan.',
+    invalidId: 'Masukkan ID yang valid dan belum digunakan.',
+    invalidIdPlain: 'Masukkan ID yang valid.',
+    editPerson: 'Edit orang',
+    reorder: 'Ubah urutan {name}',
+    reorderHint:
+      'Seret untuk mengubah urutan, atau fokuskan lalu gunakan tombol panah',
+    listLabel: 'Daftar orang yang dibandingkan',
+    invalidLinkTitle: 'Tautan perbandingan tidak valid',
+    invalidLinkBody:
+      'Tautan perbandingan ini rusak. Anda dapat membuat yang baru atau menghubungi kami di {email}.',
+    loadErrorTitle: 'Tidak dapat memuat perbandingan',
+    loadErrorBody:
+      'Setidaknya satu hasil dalam perbandingan ini tidak dapat dimuat. Anda dapat membuat perbandingan baru atau menghubungi kami di {email}.',
+    buildNew: 'Buat perbandingan baru'
+  },
+  feedback: {
+    title: 'Kami senang menerima masukan!',
+    intro:
+      'Kirimkan masukan tentang bagaimana fitur kami dapat ditingkatkan atau masalah tertentu.',
+    name: 'Nama',
+    email: 'Email',
+    message: 'Pesan',
+    messagePlaceholder: 'Tulis pesan Anda',
+    invalidEmail: 'Masukkan email yang valid',
+    submit: 'Kirim',
+    success: 'Berhasil dikirim!',
+    error: 'Gagal mengirim masukan!'
+  },
   getResult: {
     result: 'Hasil',
     explanation:
@@ -302,7 +358,8 @@ const indonesian = {
     idInput: 'di kolom input-ID',
     urlOrId: 'URL atau ID hasil Anda',
     getResult: 'Dapatkan hasil',
-    viewPrevious: 'Lihat Hasil Sebelumnya'
+    viewPrevious: 'Lihat Hasil Sebelumnya',
+    invalidId: 'Masukkan ID yang valid'
   },
   shareLinks: {
     copyLink: 'Salin link ke papan klip',

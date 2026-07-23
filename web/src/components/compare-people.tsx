@@ -17,7 +17,12 @@ import {
 } from '@bigfive-org/data/compare-people';
 import { formatId, validId } from '@bigfive-org/data/result-id';
 import clsx from 'clsx';
-import { DeleteIcon, EditIcon, PersonIcon, ResultIcon } from '~/components/icons';
+import {
+  DeleteIcon,
+  EditIcon,
+  PersonIcon,
+  ResultIcon
+} from '~/components/icons';
 import { Button } from '~/components/ui';
 import { Modal } from '~/components/ui/overlays';
 import { useI18n } from '~/lib/i18n';
@@ -43,7 +48,7 @@ function GripIcon(props: { size?: number }) {
 }
 
 const inputClass =
-  'w-full rounded-lg border border-divider bg-content1 py-2 pl-10 pr-3 text-sm outline-none focus:border-primary';
+  'w-full rounded-lg border border-divider bg-content1 py-2 pl-10 pr-3 text-sm outline-hidden focus:border-primary';
 
 export function ComparePeople(props: {
   initialRows: ComparePerson[];
@@ -179,9 +184,7 @@ export function ComparePeople(props: {
   };
 
   const compare = () =>
-    navigate(
-      localePath(locale(), `/compare/${encodeComparePeople(rows())}`)
-    );
+    navigate(localePath(locale(), `/compare/${encodeComparePeople(rows())}`));
 
   return (
     <div class='mt-6'>
@@ -232,7 +235,7 @@ export function ComparePeople(props: {
         {t('getCompare.addPerson')}
       </Button>
 
-      <div class='mt-6 rounded-xl border border-divider bg-content1 shadow-sm'>
+      <div class='mt-6 rounded-xl border border-divider bg-content1 shadow-xs'>
         <Show
           when={rows().length > 0}
           fallback={

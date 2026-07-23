@@ -84,9 +84,7 @@ export default function CompareResultPage() {
         {(items) => (
           <>
             <CompareShareBar editId={params.id ?? ''} />
-            <h1
-              class={title({ class: 'mt-6 text-center', fullWidth: true })}
-            >
+            <h1 class={title({ class: 'mt-6 text-center', fullWidth: true })}>
               {t('compare.overview')}
             </h1>
             <BarChartCompare

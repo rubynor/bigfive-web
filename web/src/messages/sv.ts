@@ -126,7 +126,30 @@ innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     next: 'nästa',
     back: 'tillbaka',
     more: 'mer',
-    seeResults: 'Se resultat'
+    seeResults: 'Se resultat',
+    demographics: {
+      title: 'Valfritt: om dig',
+      description:
+        'Ditt resultat jämförs med normgrupper. Med kön och ålder poängsätter vi dig mot just din grupp i stället för genomsnittet i stort.',
+      sex: 'Kön',
+      male: 'Man',
+      female: 'Kvinna',
+      age: 'Ålder',
+      under21: 'Under 21',
+      age21to40: '21–40',
+      age41to60: '41–60',
+      over60: 'Över 60',
+      preferNotToSay: 'Vill inte uppge',
+      skip: 'Hoppa över',
+      skipWarning:
+        'Inga problem — den kombinerade referensgruppen används, så dina percentiler kan bli något mindre exakta.'
+    },
+    restored: {
+      message: 'Dina svar har återställts.',
+      startNew: 'starta ett nytt test'
+    },
+    saveError: 'Något gick fel när resultatet skulle sparas. Försök igen.',
+    devSkip: 'Hoppa till slutet (dev)'
   },
   big_five: {
     title: 'Vad är de stora fem?',
@@ -206,7 +229,8 @@ innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
       '(ungefärlig referensgrupp — ange kön och ålder när du gör testet för en exakt matchning)',
     notFoundTitle: 'Kunde inte hämta rapporten',
     notFoundId: 'Vi kunde inte hämta följande id {id}.',
-    notFoundContact: 'Kontrollera att det är korrekt eller kontakta oss på {email}.',
+    notFoundContact:
+      'Kontrollera att det är korrekt eller kontakta oss på {email}.',
     loadErrorTitle: 'Något gick fel',
     loadErrorBody:
       'Rapporten kunde inte laddas på grund av ett tekniskt problem. Försök igen senare eller kontakta oss på {email}.',
@@ -289,6 +313,38 @@ innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     copyLink: 'Kopiera länk',
     copiedLink: 'Länk kopierad'
   },
+  compare: {
+    overview: 'Översikt',
+    editComparison: 'Redigera jämförelse',
+    noRows: 'Inga rader att visa.',
+    invalidId: 'Ange ett giltigt ID som inte redan används.',
+    invalidIdPlain: 'Ange ett giltigt ID.',
+    editPerson: 'Redigera person',
+    reorder: 'Flytta {name}',
+    reorderHint:
+      'Dra för att ändra ordning, eller fokusera och använd piltangenterna',
+    listLabel: 'Lista över personer att jämföra',
+    invalidLinkTitle: 'Ogiltig jämförelselänk',
+    invalidLinkBody:
+      'Den här jämförelselänken är felaktig. Du kan skapa en ny eller kontakta oss på {email}.',
+    loadErrorTitle: 'Kunde inte läsa in jämförelsen',
+    loadErrorBody:
+      'Minst ett resultat i den här jämförelsen kunde inte läsas in. Du kan skapa en ny jämförelse eller kontakta oss på {email}.',
+    buildNew: 'Skapa en ny jämförelse'
+  },
+  feedback: {
+    title: 'Vi älskar feedback!',
+    intro:
+      'Skicka oss feedback om hur våra funktioner kan bli bättre, eller om specifika problem.',
+    name: 'Namn',
+    email: 'E-post',
+    message: 'Meddelande',
+    messagePlaceholder: 'Skriv ditt meddelande',
+    invalidEmail: 'Ange en giltig e-postadress',
+    submit: 'Skicka',
+    success: 'Skickat!',
+    error: 'Fel när feedbacken skulle skickas!'
+  },
   getResult: {
     result: 'Se resultat',
     explanation:
@@ -296,7 +352,8 @@ innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     idInput: 'i ID-textrutan',
     urlOrId: 'Resultatets länk eller ID',
     getResult: 'Se resultat',
-    viewPrevious: 'Visa föregående resultat'
+    viewPrevious: 'Visa föregående resultat',
+    invalidId: 'Ange ett giltigt ID'
   },
   shareLinks: {
     copyLink: 'Kopiera länk',

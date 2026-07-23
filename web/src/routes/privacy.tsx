@@ -54,8 +54,8 @@ export default function PrivacyPage() {
         </p>
         <h2 class='pt-2 text-xl font-semibold'>How to contact us?</h2>
         <p>
-          If you have any questions about this privacy policy, please contact
-          us at{' '}
+          If you have any questions about this privacy policy, please contact us
+          at{' '}
           <a class='text-primary underline' href={`mailto:${supportEmail}`}>
             {supportEmail}
           </a>

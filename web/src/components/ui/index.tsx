@@ -30,9 +30,21 @@ export const button = tv({
   },
   compoundVariants: [
     { variant: 'bordered', color: 'default', class: 'border-default' },
-    { variant: 'bordered', color: 'primary', class: 'border-primary text-primary' },
-    { variant: 'bordered', color: 'secondary', class: 'border-secondary text-secondary' },
-    { variant: 'bordered', color: 'danger', class: 'border-danger text-danger' },
+    {
+      variant: 'bordered',
+      color: 'primary',
+      class: 'border-primary text-primary'
+    },
+    {
+      variant: 'bordered',
+      color: 'secondary',
+      class: 'border-secondary text-secondary'
+    },
+    {
+      variant: 'bordered',
+      color: 'danger',
+      class: 'border-danger text-danger'
+    },
     { variant: 'ghost', color: 'primary', class: 'text-primary' },
     { variant: 'ghost', color: 'danger', class: 'text-danger' },
     { variant: 'link', color: 'primary', class: 'text-primary' }
@@ -50,11 +62,13 @@ export function Button(props: ButtonProps) {
     'size',
     'class'
   ]);
-  return <button class={button({ ...variants, class: variants.class })} {...rest} />;
+  return (
+    <button class={button({ ...variants, class: variants.class })} {...rest} />
+  );
 }
 
 export const card = tv({
-  base: 'rounded-xl border border-divider bg-content1 p-4 shadow-sm'
+  base: 'rounded-xl border border-divider bg-content1 p-4 shadow-xs'
 });
 
 export const chip = tv({
@@ -76,7 +90,12 @@ export function Chip(
   props: JSX.HTMLAttributes<HTMLSpanElement> & VariantProps<typeof chip>
 ) {
   const [variants, rest] = splitProps(props, ['color', 'class']);
-  return <span class={chip({ ...variants, class: clsx(variants.class) })} {...rest} />;
+  return (
+    <span
+      class={chip({ ...variants, class: clsx(variants.class) })}
+      {...rest}
+    />
+  );
 }
 
 export const alert = tv({
@@ -101,7 +120,11 @@ export function Alert(
 ) {
   const [variants, rest] = splitProps(props, ['color', 'class', 'title']);
   return (
-    <div role='alert' class={alert({ ...variants, class: clsx(variants.class) })} {...rest}>
+    <div
+      role='alert'
+      class={alert({ ...variants, class: clsx(variants.class) })}
+      {...rest}
+    >
       {variants.title && <p class='mb-1 font-semibold'>{variants.title}</p>}
       {rest.children}
     </div>
@@ -120,10 +143,7 @@ export function Meter(props: {
     <div
       role='img'
       aria-label={props.label}
-      class={clsx(
-        'h-2 overflow-hidden rounded-full bg-content3',
-        props.class
-      )}
+      class={clsx('h-2 overflow-hidden rounded-full bg-content3', props.class)}
     >
       <div
         class='h-full rounded-full transition-[width] duration-500'

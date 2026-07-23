@@ -31,10 +31,7 @@ export default function ComparePage() {
       {/* Seeding happens on mount: the builder mirrors its own state with
           history.replaceState (no router navigation), so any reactive change
           to ?people= means an external navigation that remounts this route. */}
-      <ComparePeople
-        initialRows={initialRows()}
-        initialId={initialId()}
-      />
+      <ComparePeople initialRows={initialRows()} initialId={initialId()} />
     </main>
   );
 }

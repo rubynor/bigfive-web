@@ -12,24 +12,29 @@ export default function FaqPage() {
     {
       value: 'error',
       title: 'I got an error on this website',
-      content: <>Submit an issue at GitHub or send us an e-mail at {supportEmail}</>
+      content: () => (
+        <>Submit an issue at GitHub or send us an e-mail at {supportEmail}</>
+      )
     },
     {
       value: 'code-commercial',
       title: 'Can I use the code for this website for Commercial Purposes?',
-      content: <>Yes, this project is licensed under the MIT license.</>
+      content: () => <>Yes, this project is licensed under the MIT license.</>
     },
     {
       value: 'questions-commercial',
       title: 'Can I use the questions for Commercial Purposes?',
-      content: (
-        <>Yes, the questions and translations are licensed under the MIT license.</>
+      content: () => (
+        <>
+          Yes, the questions and translations are licensed under the MIT
+          license.
+        </>
       )
     },
     {
       value: 'print',
       title: 'How do I print my test results?',
-      content: (
+      content: () => (
         <>
           Try to print the results-page from your browser or save it as a
           PDF-document and print that instead.
@@ -39,7 +44,7 @@ export default function FaqPage() {
     {
       value: 'translate-questions',
       title: 'I want to translate the questions to my language',
-      content: (
+      content: () => (
         <>
           Use{' '}
           <a
@@ -59,7 +64,7 @@ export default function FaqPage() {
     {
       value: 'translate-results',
       title: 'I want to translate the result text to my language',
-      content: (
+      content: () => (
         <>
           The result texts live in the repository under packages/results —
           translations are contributed via GitHub pull requests.
@@ -70,7 +75,7 @@ export default function FaqPage() {
       value: 'more-info',
       title:
         'Where can I find more information about the questions and the evaluation?',
-      content: (
+      content: () => (
         <>
           See the{' '}
           <a
@@ -88,7 +93,7 @@ export default function FaqPage() {
     {
       value: 'questions-location',
       title: 'Where can I find the questions?',
-      content: (
+      content: () => (
         <>
           All questions and translations are in the repository under
           packages/questions. The questions and scoring are taken from
@@ -99,7 +104,7 @@ export default function FaqPage() {
     {
       value: 'code-location',
       title: 'Where can I find the code?',
-      content: <>The code is found on GitHub (link in the footer).</>
+      content: () => <>The code is found on GitHub (link in the footer).</>
     }
   ];
 

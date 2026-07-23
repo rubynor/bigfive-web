@@ -13,6 +13,7 @@ import {
   createEffect,
   createMemo,
   createResource,
+  Suspense,
   useContext,
   type Accessor,
   type ParentProps
@@ -65,9 +66,7 @@ const enDict = flatten(en);
 const fetchDictionary = async (locale: string): Promise<Partial<Dictionary>> =>
   locale === 'en'
     ? {}
-    : flatten(
-        (await dictionaryLoaders[locale]()).default as RawDictionary
-      );
+    : flatten((await dictionaryLoaders[locale]()).default as RawDictionary);
 
 // next-intl-style single-brace interpolation from the kept message bundles:
 // 'Over {n} people' + { n: 3000 }. Unknown params stay as-is.
@@ -114,9 +113,15 @@ export function I18nProvider(props: ParentProps) {
     return interpolate(template, params);
   };
 
+  // The children are wrapped in Suspense so that reading the still-pending
+  // `dict` resource suspends instead of silently falling back to English.
+  // Without it, anything rendered outside a Suspense boundary (the navbar and
+  // footer live outside the route-level one in app.tsx) was server-rendered in
+  // English and then hydrated with that English markup, so the chrome never
+  // picked up the locale.
   return (
     <I18nContext.Provider value={{ locale, dir, t }}>
-      {props.children}
+      <Suspense>{props.children}</Suspense>
     </I18nContext.Provider>
   );
 }

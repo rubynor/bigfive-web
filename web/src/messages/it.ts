@@ -126,7 +126,31 @@ l'inventario proviene da <i>Johnson's (2014) IPIP NEO-PI-R di 120 elementi</i>.`
     next: 'prossimo',
     back: 'indietro',
     more: 'di più',
-    seeResults: 'vedi risultati'
+    seeResults: 'vedi risultati',
+    demographics: {
+      title: 'Facoltativo: su di te',
+      description:
+        'Il tuo risultato viene confrontato con gruppi normativi. Con il tuo sesso e la tua età ti valutiamo rispetto al tuo gruppo esatto anziché alla media generale.',
+      sex: 'Sesso',
+      male: 'Uomo',
+      female: 'Donna',
+      age: 'Età',
+      under21: 'Meno di 21',
+      age21to40: '21–40',
+      age41to60: '41–60',
+      over60: 'Oltre 60',
+      preferNotToSay: 'Preferisco non dirlo',
+      skip: 'Salta',
+      skipWarning:
+        "Nessun problema: verrà usato il gruppo di riferimento combinato, quindi i tuoi percentili potrebbero essere un po' meno precisi."
+    },
+    restored: {
+      message: 'Le tue risposte sono state ripristinate.',
+      startNew: 'inizia un nuovo test'
+    },
+    saveError:
+      'Qualcosa è andato storto durante il salvataggio del risultato. Riprova.',
+    devSkip: 'Vai alla fine (dev)'
   },
   big_five: {
     title: 'Cosa sono i big five?',
@@ -294,6 +318,38 @@ l'inventario proviene da <i>Johnson's (2014) IPIP NEO-PI-R di 120 elementi</i>.`
     copyLink: 'Copia link',
     copiedLink: 'Link copiato'
   },
+  compare: {
+    overview: 'Panoramica',
+    editComparison: 'Modifica confronto',
+    noRows: 'Nessuna riga da mostrare.',
+    invalidId: 'Inserisci un ID valido e non duplicato.',
+    invalidIdPlain: 'Inserisci un ID valido.',
+    editPerson: 'Modifica persona',
+    reorder: 'Riordina {name}',
+    reorderHint:
+      'Trascina per riordinare, oppure metti a fuoco e usa i tasti freccia',
+    listLabel: 'Elenco delle persone da confrontare',
+    invalidLinkTitle: 'Link di confronto non valido',
+    invalidLinkBody:
+      'Questo link di confronto non è valido. Puoi crearne uno nuovo o scriverci a {email}.',
+    loadErrorTitle: 'Impossibile caricare il confronto',
+    loadErrorBody:
+      'Almeno un risultato di questo confronto non è stato caricato. Puoi creare un nuovo confronto o scriverci a {email}.',
+    buildNew: 'Crea un nuovo confronto'
+  },
+  feedback: {
+    title: 'Adoriamo i feedback!',
+    intro:
+      'Scrivici come possiamo migliorare le nostre funzionalità o segnalaci problemi specifici.',
+    name: 'Nome',
+    email: 'Email',
+    message: 'Messaggio',
+    messagePlaceholder: 'Scrivi il tuo messaggio',
+    invalidEmail: "Inserisci un'email valida",
+    submit: 'Invia',
+    success: 'Inviato con successo!',
+    error: "Errore nell'invio del feedback!"
+  },
   getResult: {
     result: 'Risultati',
     explanation:
@@ -301,7 +357,8 @@ l'inventario proviene da <i>Johnson's (2014) IPIP NEO-PI-R di 120 elementi</i>.`
     idInput: 'nel campo di immissione ID',
     urlOrId: 'URL o ID del risultato',
     getResult: 'Ottieni risultato',
-    viewPrevious: 'Visualizza risultato precedente'
+    viewPrevious: 'Visualizza risultato precedente',
+    invalidId: 'Inserisci un ID valido'
   },
   shareLinks: {
     copyLink: 'Copia il link negli appunti',

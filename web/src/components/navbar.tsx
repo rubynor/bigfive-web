@@ -45,7 +45,10 @@ export function Navbar() {
         <div class='ml-2 hidden gap-4 md:flex'>
           <For each={siteConfig.navItems}>
             {(item) => (
-              <A class={linkClass(item.href)} href={localePath(locale(), item.href)}>
+              <A
+                class={linkClass(item.href)}
+                href={localePath(locale(), item.href)}
+              >
                 {t(`toolbar.${item.label}` as MessageKey)}
               </A>
             )}

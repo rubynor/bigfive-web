@@ -11,7 +11,7 @@ import { useI18n } from '~/lib/i18n';
 const EMAIL_RE = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 
 const fieldClass =
-  'w-full rounded-lg border border-divider bg-content1 px-3 py-2 text-sm outline-none focus:border-primary';
+  'w-full rounded-lg border border-divider bg-content1 px-3 py-2 text-sm outline-hidden focus:border-primary';
 
 export function FeedbackForm() {
   const { t } = useI18n();
@@ -29,10 +29,7 @@ export function FeedbackForm() {
   );
   const isInvalidForm = createMemo(
     () =>
-      name() === '' ||
-      email() === '' ||
-      message() === '' ||
-      isInvalidEmail()
+      name() === '' || email() === '' || message() === '' || isInvalidEmail()
   );
 
   const submit = async () => {
@@ -84,7 +81,9 @@ export function FeedbackForm() {
             aria-invalid={isInvalidEmail()}
           />
           <Show when={isInvalidEmail()}>
-            <span class='text-xs text-danger'>{t('feedback.invalidEmail')}</span>
+            <span class='text-xs text-danger'>
+              {t('feedback.invalidEmail')}
+            </span>
           </Show>
         </label>
       </div>

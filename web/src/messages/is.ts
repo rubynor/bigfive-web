@@ -126,7 +126,31 @@ const icelandic = {
     next: 'næst',
     back: 'aftur',
     more: 'meira',
-    seeResults: 'sjá niðurstöður'
+    seeResults: 'sjá niðurstöður',
+    demographics: {
+      title: 'Valfrjálst: um þig',
+      description:
+        'Niðurstaðan þín er borin saman við viðmiðunarhópa. Með kyni og aldri metum við þig út frá nákvæmlega þínum hópi í stað almenns meðaltals.',
+      sex: 'Kyn',
+      male: 'Karl',
+      female: 'Kona',
+      age: 'Aldur',
+      under21: 'Undir 21',
+      age21to40: '21–40',
+      age41to60: '41–60',
+      over60: 'Yfir 60',
+      preferNotToSay: 'Vil ekki svara',
+      skip: 'Sleppa',
+      skipWarning:
+        'Ekkert mál — sameinaði viðmiðunarhópurinn verður notaður, svo hundraðshlutföllin þín geta orðið ögn ónákvæmari.'
+    },
+    restored: {
+      message: 'Svörin þín hafa verið endurheimt.',
+      startNew: 'byrja nýtt próf'
+    },
+    saveError:
+      'Eitthvað fór úrskeiðis við að vista niðurstöðuna. Reyndu aftur.',
+    devSkip: 'Fara í lokin (dev)'
   },
   big_five: {
     title: 'Hverjar eru fimm stóru?',
@@ -291,6 +315,37 @@ const icelandic = {
     copyLink: 'Afrita hlekk',
     copiedLink: 'Hlekkur afritaður'
   },
+  compare: {
+    overview: 'Yfirlit',
+    editComparison: 'Breyta samanburði',
+    noRows: 'Engar raðir til að sýna.',
+    invalidId: 'Sláðu inn gilt auðkenni sem er ekki þegar á listanum.',
+    invalidIdPlain: 'Sláðu inn gilt auðkenni.',
+    editPerson: 'Breyta einstaklingi',
+    reorder: 'Færa {name}',
+    reorderHint: 'Dragðu til að endurraða, eða veldu og notaðu örvatakkana',
+    listLabel: 'Listi yfir einstaklinga til samanburðar',
+    invalidLinkTitle: 'Ógildur samanburðartengill',
+    invalidLinkBody:
+      'Þessi samanburðartengill er gallaður. Þú getur búið til nýjan eða haft samband við okkur á {email}.',
+    loadErrorTitle: 'Ekki tókst að hlaða samanburðinum',
+    loadErrorBody:
+      'Að minnsta kosti eina niðurstöðu í þessum samanburði tókst ekki að hlaða. Þú getur búið til nýjan samanburð eða haft samband við okkur á {email}.',
+    buildNew: 'Búa til nýjan samanburð'
+  },
+  feedback: {
+    title: 'Við elskum ábendingar!',
+    intro:
+      'Sendu okkur ábendingar um hvernig má bæta eiginleikana eða um tiltekin vandamál.',
+    name: 'Nafn',
+    email: 'Netfang',
+    message: 'Skilaboð',
+    messagePlaceholder: 'Skrifaðu skilaboðin þín',
+    invalidEmail: 'Sláðu inn gilt netfang',
+    submit: 'Senda',
+    success: 'Sent!',
+    error: 'Villa við að senda ábendingu!'
+  },
   getResult: {
     result: 'Niðurstaða',
     explanation:
@@ -298,7 +353,8 @@ const icelandic = {
     idInput: 'í auðkennisreitinn',
     urlOrId: 'Slóð eða auðkenni niðurstöðu þinnar',
     getResult: 'Fáðu niðurstöðu',
-    viewPrevious: 'Skoða fyrri niðurstöðu'
+    viewPrevious: 'Skoða fyrri niðurstöðu',
+    invalidId: 'Sláðu inn gilt auðkenni'
   },
   shareLinks: {
     copyLink: 'Afritaðu krækju á klemmuspjald',

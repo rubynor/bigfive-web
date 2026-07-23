@@ -27,7 +27,9 @@ export default function Test() {
         when={items()}
         fallback={<p class='mt-8 text-center text-default-500'>…</p>}
       >
-        {(questions) => <Survey questions={questions()} language={language()} />}
+        {(questions) => (
+          <Survey questions={questions()} language={language()} />
+        )}
       </Show>
     </main>
   );

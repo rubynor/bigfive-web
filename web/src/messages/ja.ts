@@ -127,7 +127,30 @@ const japanese = {
     next: '次',
     back: 'バック',
     more: 'もっと',
-    seeResults: '結果を見る'
+    seeResults: '結果を見る',
+    demographics: {
+      title: '任意: あなたについて',
+      description:
+        '結果は基準集団と比較されます。性別と年齢がわかれば、全体平均ではなくあなたと同じ集団を基準に採点できます。',
+      sex: '性別',
+      male: '男性',
+      female: '女性',
+      age: '年齢',
+      under21: '21歳未満',
+      age21to40: '21–40',
+      age41to60: '41–60',
+      over60: '60歳超',
+      preferNotToSay: '回答しない',
+      skip: 'スキップ',
+      skipWarning:
+        '問題ありません — 統合された基準集団を使用するため、パーセンタイルの精度がやや下がる場合があります。'
+    },
+    restored: {
+      message: '回答を復元しました。',
+      startNew: '新しいテストを始める'
+    },
+    saveError: '結果の保存中に問題が発生しました。もう一度お試しください。',
+    devSkip: '最後までスキップ (dev)'
   },
   big_five: {
     title: 'ビッグファイブは何ですか？',
@@ -211,7 +234,8 @@ const japanese = {
       '（近似の参照集団です — 正確に一致させるには、テスト受験時に性別と年齢を入力してください）',
     notFoundTitle: 'レポートを取得できませんでした',
     notFoundId: '次のIDを取得できませんでした: {id}',
-    notFoundContact: 'IDが正しいか確認するか、{email}までお問い合わせください。',
+    notFoundContact:
+      'IDが正しいか確認するか、{email}までお問い合わせください。',
     loadErrorTitle: '問題が発生しました',
     loadErrorBody:
       '技術的な問題によりレポートを読み込めませんでした。後でもう一度お試しいただくか、{email}までお問い合わせください。',
@@ -289,6 +313,36 @@ const japanese = {
     copyLink: 'リンクをコピー',
     copiedLink: 'リンクをコピーしました'
   },
+  compare: {
+    overview: '概要',
+    editComparison: '比較を編集',
+    noRows: '表示する行がありません。',
+    invalidId: '有効で重複していないIDを入力してください。',
+    invalidIdPlain: '有効なIDを入力してください。',
+    editPerson: '人物を編集',
+    reorder: '{name} を並べ替え',
+    reorderHint: 'ドラッグして並べ替えるか、フォーカスして矢印キーを使用します',
+    listLabel: '比較する人物の一覧',
+    invalidLinkTitle: '無効な比較リンク',
+    invalidLinkBody:
+      'この比較リンクは正しくありません。新しく作成するか、{email} までご連絡ください。',
+    loadErrorTitle: '比較を読み込めませんでした',
+    loadErrorBody:
+      'この比較に含まれる結果のうち少なくとも1件を読み込めませんでした。新しい比較を作成するか、{email} までご連絡ください。',
+    buildNew: '新しい比較を作成'
+  },
+  feedback: {
+    title: 'ご意見をお寄せください!',
+    intro: '機能の改善案や具体的な問題についてお知らせください。',
+    name: '名前',
+    email: 'メールアドレス',
+    message: 'メッセージ',
+    messagePlaceholder: 'メッセージを入力してください',
+    invalidEmail: '有効なメールアドレスを入力してください',
+    submit: '送信',
+    success: '送信しました!',
+    error: 'フィードバックの送信に失敗しました!'
+  },
   getResult: {
     result: '結果',
     explanation:
@@ -296,7 +350,8 @@ const japanese = {
     idInput: 'ID入力フィールド',
     urlOrId: '結果のURLまたはID',
     getResult: '結果を得る',
-    viewPrevious: '以前の結果を表示'
+    viewPrevious: '以前の結果を表示',
+    invalidId: '有効なIDを入力してください'
   },
   shareLinks: {
     copyLink: 'リンクをクリップボードにコピーする',

@@ -49,7 +49,11 @@ export default function Home() {
         <div class='mt-4 flex gap-3'>
           <A
             href={localePath(locale(), '/test')}
-            class={button({ color: 'primary', size: 'lg', class: 'rounded-full shadow-lg' })}
+            class={button({
+              color: 'primary',
+              size: 'lg',
+              class: 'rounded-full shadow-lg'
+            })}
           >
             {t('frontpage.call_to_action')}
             <ArrowRightIcon size={20} />
@@ -58,7 +62,11 @@ export default function Home() {
             href={siteConfig.links.github}
             target='_blank'
             rel='noopener noreferrer'
-            class={button({ variant: 'bordered', size: 'lg', class: 'rounded-full' })}
+            class={button({
+              variant: 'bordered',
+              size: 'lg',
+              class: 'rounded-full'
+            })}
           >
             <GithubIcon size={20} />
             GitHub
@@ -87,7 +95,9 @@ export default function Home() {
 
       {/* Compare section */}
       <section class='mt-12 text-center'>
-        <h2 class={title({ fullWidth: true })}>{t('frontpage.compare.title')}</h2>
+        <h2 class={title({ fullWidth: true })}>
+          {t('frontpage.compare.title')}
+        </h2>
         <p class={subtitle({ class: 'mx-auto text-center' })}>
           {t('frontpage.compare.text1')} {t('frontpage.compare.text2')}
         </p>
@@ -108,7 +118,7 @@ export default function Home() {
               href={localePath(locale(), '/test')}
               title={t('frontpage.call_to_action')}
               aria-label={t('frontpage.call_to_action')}
-              class='flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-[#FF1CF7] to-[#7928CA] text-white shadow-lg transition-transform hover:scale-105'
+              class='flex h-20 w-20 items-center justify-center rounded-full bg-linear-to-br from-[#FF1CF7] to-[#7928CA] text-white shadow-lg transition-transform hover:scale-105'
             >
               <PlusLinearIcon size={54} />
             </A>

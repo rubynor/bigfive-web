@@ -42,9 +42,7 @@ function DomainSection(props: {
         >
           {props.domain.domain}
         </span>
-        <h2 class='min-w-0 flex-1 text-2xl font-bold'>
-          {props.domain.title}
-        </h2>
+        <h2 class='min-w-0 flex-1 text-2xl font-bold'>{props.domain.title}</h2>
         <div class='shrink-0 text-right'>
           <p
             class='text-3xl font-extrabold tabular-nums'
@@ -202,9 +200,7 @@ export function DomainTabs(props: {
                       ? 'text-white'
                       : 'text-default-600 hover:bg-content2'
                   )}
-                  style={
-                    isActive() ? { 'background-color': accent().hex } : {}
-                  }
+                  style={isActive() ? { 'background-color': accent().hex } : {}}
                   onClick={() => props.setActive(domain.domain)}
                 >
                   {domain.title}

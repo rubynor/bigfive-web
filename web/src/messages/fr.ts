@@ -127,7 +127,31 @@ const french = {
     next: 'prochain',
     back: 'retour',
     more: 'plus',
-    seeResults: 'see results'
+    seeResults: 'see results',
+    demographics: {
+      title: 'Facultatif : à propos de vous',
+      description:
+        "Votre résultat est comparé à des groupes de référence. Avec votre sexe et votre âge, nous vous évaluons par rapport à votre groupe exact plutôt qu'à la moyenne générale.",
+      sex: 'Sexe',
+      male: 'Homme',
+      female: 'Femme',
+      age: 'Âge',
+      under21: 'Moins de 21 ans',
+      age21to40: '21–40',
+      age41to60: '41–60',
+      over60: 'Plus de 60 ans',
+      preferNotToSay: 'Je préfère ne pas répondre',
+      skip: 'Passer',
+      skipWarning:
+        'Aucun problème — le groupe de référence combiné sera utilisé, vos centiles peuvent donc être un peu moins précis.'
+    },
+    restored: {
+      message: 'Vos réponses ont été restaurées.',
+      startNew: 'commencer un nouveau test'
+    },
+    saveError:
+      "Une erreur est survenue lors de l'enregistrement de votre résultat. Veuillez réessayer.",
+    devSkip: 'Aller à la fin (dev)'
   },
   big_five: {
     title: 'What are the big five?',
@@ -212,10 +236,9 @@ const french = {
     percentile: '{percentile}e percentile',
     normNote: 'Score calculé selon les normes : {stratum}',
     normApproxHint:
-      "(groupe de référence approximatif — indiquez votre sexe et votre âge lors du test pour une correspondance exacte)",
+      '(groupe de référence approximatif — indiquez votre sexe et votre âge lors du test pour une correspondance exacte)',
     notFoundTitle: 'Impossible de récupérer le rapport',
-    notFoundId:
-      "Nous n'avons pas pu récupérer l'identifiant suivant {id}.",
+    notFoundId: "Nous n'avons pas pu récupérer l'identifiant suivant {id}.",
     notFoundContact:
       "Veuillez vérifier qu'il est correct ou contactez-nous à {email}.",
     loadErrorTitle: "Quelque chose s'est mal passé",
@@ -231,10 +254,10 @@ const french = {
     yourType: 'Votre type',
     breakdown: 'Répartition',
     breakdownIntro:
-      "Chaque barre vous situe entre deux tendances opposées. Le point indique votre position par rapport aux autres personnes, et la lettre de ce côté forme votre type. Si un point se situe près du milieu, de petits changements dans vos réponses pourraient inverser cette lettre — ces axes sont marqués comme limites.",
+      'Chaque barre vous situe entre deux tendances opposées. Le point indique votre position par rapport aux autres personnes, et la lettre de ce côté forme votre type. Si un point se situe près du milieu, de petits changements dans vos réponses pourraient inverser cette lettre — ces axes sont marqués comme limites.',
     borderline: 'limite',
     borderlineNote:
-      "Un ou plusieurs axes se situent près du milieu (±{radius}) — de petits changements de réponses pourraient inverser cette lettre. Considérez le type comme une tendance, pas comme un verdict.",
+      'Un ou plusieurs axes se situent près du milieu (±{radius}) — de petits changements de réponses pourraient inverser cette lettre. Considérez le type comme une tendance, pas comme un verdict.',
     percentileAria: '{label} : {percentile}e percentile',
     axes: {
       EI: 'Énergie',
@@ -295,6 +318,38 @@ const french = {
     copyLink: 'Copier le lien',
     copiedLink: 'Lien copié'
   },
+  compare: {
+    overview: 'Aperçu',
+    editComparison: 'Modifier la comparaison',
+    noRows: 'Aucune ligne à afficher.',
+    invalidId: 'Veuillez saisir un identifiant valide et non dupliqué.',
+    invalidIdPlain: 'Veuillez saisir un identifiant valide.',
+    editPerson: 'Modifier la personne',
+    reorder: 'Réordonner {name}',
+    reorderHint:
+      'Faites glisser pour réordonner, ou placez le focus et utilisez les touches fléchées',
+    listLabel: 'Liste des personnes à comparer',
+    invalidLinkTitle: 'Lien de comparaison invalide',
+    invalidLinkBody:
+      'Ce lien de comparaison est mal formé. Vous pouvez en créer un nouveau ou nous écrire à {email}.',
+    loadErrorTitle: 'Impossible de charger la comparaison',
+    loadErrorBody:
+      "Au moins un résultat de cette comparaison n'a pas pu être chargé. Vous pouvez créer une nouvelle comparaison ou nous écrire à {email}.",
+    buildNew: 'Créer une nouvelle comparaison'
+  },
+  feedback: {
+    title: 'Vos retours nous intéressent !',
+    intro:
+      'Dites-nous comment améliorer nos fonctionnalités ou signalez un problème précis.',
+    name: 'Nom',
+    email: 'E-mail',
+    message: 'Message',
+    messagePlaceholder: 'Saisissez votre message',
+    invalidEmail: 'Veuillez saisir une adresse e-mail valide',
+    submit: 'Envoyer',
+    success: 'Envoyé avec succès !',
+    error: "Erreur lors de l'envoi du retour !"
+  },
   getResult: {
     result: 'Résultat',
     explanation:
@@ -302,7 +357,8 @@ const french = {
     idInput: 'dans le champ de saisie ID',
     urlOrId: 'URL ou ID de votre résultat',
     getResult: 'Obtenez le résultat',
-    viewPrevious: 'Afficher le résultat précédent'
+    viewPrevious: 'Afficher le résultat précédent',
+    invalidId: 'Veuillez saisir un identifiant valide'
   },
   shareLinks: {
     copyLink: 'Copier le lien dans le presse-papiers',

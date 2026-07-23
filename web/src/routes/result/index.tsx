@@ -23,9 +23,7 @@ export default function GetResultPage() {
     setPreviousId(localStorage.getItem('resultId'));
   });
 
-  const isInvalid = createMemo(
-    () => id() !== '' && !formatAndValidateId(id())
-  );
+  const isInvalid = createMemo(() => id() !== '' && !formatAndValidateId(id()));
 
   const submit = () => {
     if (!formatAndValidateId(id())) return;
@@ -52,7 +50,7 @@ export default function GetResultPage() {
             </span>
             <input
               type='text'
-              class='w-full rounded-lg border border-divider bg-content1 py-2 pl-10 pr-3 font-mono text-sm outline-none focus:border-primary'
+              class='w-full rounded-lg border border-divider bg-content1 py-2 pl-10 pr-3 font-mono text-sm outline-hidden focus:border-primary'
               placeholder='58a70606a835c400c8b38e84'
               value={id()}
               onInput={(e) => setId(e.currentTarget.value)}

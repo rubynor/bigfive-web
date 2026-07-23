@@ -38,20 +38,22 @@ export function ProgressBar(props: {
 
 // --- Dialog (modal) ---
 
-export function Modal(props: ParentProps<{
-  open: boolean;
-  onOpenChange: (open: boolean) => void;
-  title?: string;
-  size?: 'sm' | 'md' | 'lg';
-}>) {
+export function Modal(
+  props: ParentProps<{
+    open: boolean;
+    onOpenChange: (open: boolean) => void;
+    title?: string;
+    size?: 'sm' | 'md' | 'lg';
+  }>
+) {
   return (
     <Dialog open={props.open} onOpenChange={props.onOpenChange}>
       <Dialog.Portal>
-        <Dialog.Overlay class='fixed inset-0 z-50 bg-black/50 backdrop-blur-sm data-[expanded]:animate-in data-[expanded]:fade-in' />
+        <Dialog.Overlay class='fixed inset-0 z-50 bg-black/50 backdrop-blur-xs data-[expanded]:animate-in data-[expanded]:fade-in' />
         <div class='fixed inset-0 z-50 flex items-center justify-center p-4'>
           <Dialog.Content
             class={clsx(
-              'w-full rounded-xl border border-divider bg-content1 p-6 shadow-xl outline-none data-[expanded]:animate-in data-[expanded]:zoom-in-95',
+              'w-full rounded-xl border border-divider bg-content1 p-6 shadow-xl outline-hidden data-[expanded]:animate-in data-[expanded]:zoom-in-95',
               props.size === 'lg'
                 ? 'max-w-2xl'
                 : props.size === 'sm'
@@ -82,7 +84,16 @@ export function Modal(props: ParentProps<{
 
 // --- Accordion (faq) ---
 
-export type AccordionEntry = { value: string; title: string; content: JSX.Element };
+// `content` is a thunk, not a ready-made JSX.Element: Kobalte does not render
+// a collapsed item's content during SSR, so eagerly-built JSX would try to
+// claim hydration keys that aren't in the server markup ("Hydration Mismatch.
+// Unable to find DOM nodes for hydration key"). Deferring construction to
+// inside <Accordion.Content> keeps creation and rendering in the same place.
+export type AccordionEntry = {
+  value: string;
+  title: string;
+  content: () => JSX.Element;
+};
 
 export function FaqAccordion(props: { items: AccordionEntry[] }) {
   return (
@@ -103,7 +114,7 @@ export function FaqAccordion(props: { items: AccordionEntry[] }) {
               </Accordion.Trigger>
             </Accordion.Header>
             <Accordion.Content class='pb-3 text-sm text-default-600'>
-              {item.content}
+              {item.content()}
             </Accordion.Content>
           </Accordion.Item>
         )}

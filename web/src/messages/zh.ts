@@ -123,7 +123,30 @@ const chinese = {
     next: '下一个',
     back: '返回',
     more: '更多',
-    seeResults: '查看结果'
+    seeResults: '查看结果',
+    demographics: {
+      title: '可选：关于你',
+      description:
+        '你的结果会与常模群体进行比较。提供性别和年龄后，我们会以你所属的具体群体为基准计分，而不是总体平均值。',
+      sex: '性别',
+      male: '男',
+      female: '女',
+      age: '年龄',
+      under21: '21岁以下',
+      age21to40: '21–40',
+      age41to60: '41–60',
+      over60: '60岁以上',
+      preferNotToSay: '不愿透露',
+      skip: '跳过',
+      skipWarning:
+        '没问题——将使用合并后的参照群体，因此你的百分位可能略欠精确。'
+    },
+    restored: {
+      message: '你的答案已恢复。',
+      startNew: '开始新的测试'
+    },
+    saveError: '保存结果时出错，请重试。',
+    devSkip: '跳到结尾 (dev)'
   },
   big_five: {
     title: 'What are the big five?',
@@ -204,7 +227,8 @@ const chinese = {
     notFoundId: '我们无法获取以下 ID {id}。',
     notFoundContact: '请检查是否正确，或通过 {email} 联系我们。',
     loadErrorTitle: '出错了',
-    loadErrorBody: '由于技术问题，报告无法加载。请稍后重试，或通过 {email} 联系我们。',
+    loadErrorBody:
+      '由于技术问题，报告无法加载。请稍后重试，或通过 {email} 联系我们。',
     score: '得分',
     important: '重要！',
     saveResults: '保存以下 ID 以查看以后的结果或',
@@ -284,13 +308,44 @@ const chinese = {
     copyLink: '复制链接',
     copiedLink: '已复制链接'
   },
+  compare: {
+    overview: '概览',
+    editComparison: '编辑对比',
+    noRows: '没有可显示的行。',
+    invalidId: '请输入有效且未重复的 ID。',
+    invalidIdPlain: '请输入有效的 ID。',
+    editPerson: '编辑人员',
+    reorder: '重新排序 {name}',
+    reorderHint: '拖动以重新排序，或聚焦后使用方向键',
+    listLabel: '待对比人员列表',
+    invalidLinkTitle: '无效的对比链接',
+    invalidLinkBody:
+      '该对比链接格式有误。你可以新建一个，或通过 {email} 联系我们。',
+    loadErrorTitle: '无法加载对比',
+    loadErrorBody:
+      '此对比中至少有一个结果无法加载。你可以新建对比，或通过 {email} 联系我们。',
+    buildNew: '新建对比'
+  },
+  feedback: {
+    title: '我们欢迎反馈！',
+    intro: '告诉我们如何改进功能，或反馈具体问题。',
+    name: '姓名',
+    email: '邮箱',
+    message: '留言',
+    messagePlaceholder: '请输入你的留言',
+    invalidEmail: '请输入有效的邮箱地址',
+    submit: '提交',
+    success: '发送成功！',
+    error: '发送反馈时出错！'
+  },
   getResult: {
     result: '结果',
     explanation: '如果您参加了测试并保存了 ID，则通过键入您得到的 ID（比如',
     idInput: '在 ID 输入字段中',
     urlOrId: '结果的 URL 或 ID',
     getResult: '获取结果',
-    viewPrevious: '查看上一个结果'
+    viewPrevious: '查看上一个结果',
+    invalidId: '请输入有效的 ID'
   },
   shareLinks: {
     copyLink: '将链接复制到剪贴板',

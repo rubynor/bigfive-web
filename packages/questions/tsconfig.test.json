@@ -1,0 +1,11 @@
+// The package build only compiles src/, and the jest transform (@swc/jest)
+// only strips types — so the test sources need a config of their own to stay
+// type-checked. `bun run typecheck` uses this one.
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "types": ["jest"]
+  },
+  "include": ["src/**/*.ts", "test/**/*.ts"]
+}

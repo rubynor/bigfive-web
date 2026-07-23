@@ -23,8 +23,8 @@ export default function AboutPage() {
         <p>
           Welcome, your premier destination for exploring personality traits
           using the scientifically acclaimed Big Five model. Our free,
-          open-source test offers detailed insights into the five key
-          dimensions of personality: Openness, Conscientiousness, Extraversion,
+          open-source test offers detailed insights into the five key dimensions
+          of personality: Openness, Conscientiousness, Extraversion,
           Agreeableness, and Neuroticism.
         </p>
         <p>
