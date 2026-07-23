@@ -6,6 +6,7 @@
 
 import { query, action } from '@solidjs/router';
 import type {
+  Demographics,
   Feedback,
   Report,
   SaveTestInput,
@@ -13,10 +14,17 @@ import type {
 } from '@bigfive-org/data';
 
 export const getTestResultQuery = query(
-  async (id: string, language?: string): Promise<Report> => {
+  async (
+    id: string,
+    language?: string,
+    // Read-only norm-stratum override for the result page's reference-group
+    // control. Never written back — the stored row keeps the demographics the
+    // taker gave at test time.
+    demographics?: Demographics
+  ): Promise<Report> => {
     'use server';
     const { getTestResult } = await import('@bigfive-org/data');
-    return getTestResult(id, language);
+    return getTestResult(id, language, demographics);
   },
   'testResult'
 );

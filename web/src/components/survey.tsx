@@ -17,11 +17,17 @@ import {
 import { useAction, useNavigate } from '@solidjs/router';
 import type { Question } from '@bigfive-org/questions';
 import type { Answer, SaveTestInput } from '@bigfive-org/data';
-import type { AgeBracket, Demographics, Sex } from '@bigfive-org/score';
+import type { Demographics } from '@bigfive-org/score';
 import { saveTestAction } from '~/lib/actions';
 import { localePath } from '~/lib/i18n/nav';
 import { useI18n } from '~/lib/i18n';
-import { Alert, Button, card } from '~/components/ui';
+import { Alert, Button } from '~/components/ui';
+import {
+  DemographicsFields,
+  toDemographics,
+  type AgeChoice,
+  type SexChoice
+} from '~/components/demographics-fields';
 import { RadioCards } from '~/components/ui/radio';
 import { ProgressBar } from '~/components/ui/overlays';
 import { CloseIcon } from '~/components/icons';
@@ -35,12 +41,6 @@ function formatTimer(seconds: number): string {
     .toString()
     .padStart(2, '0')}`;
 }
-
-// 'skip' is an explicit UI choice (shows the accuracy warning); '' means the
-// card was never touched (no warning). Both persist as absent demographics.
-type DemographicChoice = '' | 'skip';
-type SexChoice = Sex | DemographicChoice;
-type AgeChoice = AgeBracket | DemographicChoice;
 
 export function Survey(props: { questions: Question[]; language: string }) {
   const { t, locale } = useI18n();
@@ -60,14 +60,8 @@ export function Survey(props: { questions: Question[]; language: string }) {
   const [autoAdvancing, setAutoAdvancing] = createSignal(false);
   const [seconds, setSeconds] = createSignal(0);
 
-  const demographics = (): Demographics => {
-    const d: Demographics = {};
-    const sex = sexChoice();
-    const age = ageChoice();
-    if (sex === 'male' || sex === 'female') d.sex = sex;
-    if (age !== '' && age !== 'skip') d.ageBracket = age;
-    return d;
-  };
+  const demographics = (): Demographics =>
+    toDemographics(sexChoice(), ageChoice());
 
   const persist = (nextAnswers: Answer[], nextIndex: number) => {
     localStorage.setItem('inProgress', 'true');
@@ -152,7 +146,12 @@ export function Survey(props: { questions: Question[]; language: string }) {
     const previousLatestId = answers().at(-1)?.id;
     const nextAnswers = [
       ...answers().filter((a) => a.id !== id),
-      { id, score: Number(value), domain: question.domain, facet: question.facet }
+      {
+        id,
+        score: Number(value),
+        domain: question.domain,
+        facet: question.facet
+      }
     ];
     setAnswers(nextAnswers);
     persist(nextAnswers, currentQuestionIndex());
@@ -243,7 +242,8 @@ export function Survey(props: { questions: Question[]; language: string }) {
       label: choice.text
     }));
 
-  const skipWarningShown = () => sexChoice() === 'skip' || ageChoice() === 'skip';
+  const skipWarningShown = () =>
+    sexChoice() === 'skip' || ageChoice() === 'skip';
 
   return (
     <div class='mt-2'>
@@ -257,70 +257,40 @@ export function Survey(props: { questions: Question[]; language: string }) {
       </div>
 
       <Show when={currentQuestionIndex() === 0}>
-        <div class={card({ class: 'mt-4 flex flex-col gap-4' })}>
-          <div>
+        <section class='mt-4 rounded-2xl border border-divider bg-content1 p-5 shadow-xs sm:p-6'>
+          <div class='flex items-baseline justify-between gap-4'>
             <p class='font-semibold'>{t('test.demographics.title')}</p>
-            <p class='text-sm text-default-500'>
-              {t('test.demographics.description')}
-            </p>
-          </div>
-          <div class='flex flex-col gap-4 sm:flex-row sm:gap-8'>
-            <fieldset>
-              <legend class='mb-2 text-sm font-medium'>
-                {t('test.demographics.sex')}
-              </legend>
-              <RadioCards
-                name='sex'
-                value={sexChoice()}
-                onChange={(v) => setSexChoice(v as SexChoice)}
-                options={[
-                  { value: 'male', label: t('test.demographics.male') },
-                  { value: 'female', label: t('test.demographics.female') },
-                  {
-                    value: 'skip',
-                    label: t('test.demographics.preferNotToSay')
-                  }
-                ]}
-              />
-            </fieldset>
-            <fieldset>
-              <legend class='mb-2 text-sm font-medium'>
-                {t('test.demographics.age')}
-              </legend>
-              <RadioCards
-                name='age'
-                value={ageChoice()}
-                onChange={(v) => setAgeChoice(v as AgeChoice)}
-                options={[
-                  { value: 'lt21', label: t('test.demographics.under21') },
-                  { value: 'a21_40', label: t('test.demographics.age21to40') },
-                  { value: 'a41_60', label: t('test.demographics.age41to60') },
-                  { value: 'gt60', label: t('test.demographics.over60') },
-                  {
-                    value: 'skip',
-                    label: t('test.demographics.preferNotToSay')
-                  }
-                ]}
-              />
-            </fieldset>
-          </div>
-          <div>
-            <Button
-              variant='ghost'
-              color='default'
-              size='sm'
+            {/* Skip sets both fields at once. It sits on the title line
+                rather than below the options: at the bottom it read as a
+                form submit and competed with BACK/NEXT. */}
+            <button
+              type='button'
+              class='shrink-0 cursor-pointer text-sm text-default-500 underline underline-offset-4 transition-colors hover:text-foreground'
               onClick={() => {
                 setSexChoice('skip');
                 setAgeChoice('skip');
               }}
             >
               {t('test.demographics.skip')}
-            </Button>
+            </button>
+          </div>
+          <p class='mt-1 max-w-prose text-sm text-default-500'>
+            {t('test.demographics.description')}
+          </p>
+          <div class='mt-5'>
+            <DemographicsFields
+              sex={sexChoice()}
+              age={ageChoice()}
+              onSex={setSexChoice}
+              onAge={setAgeChoice}
+            />
           </div>
           <Show when={skipWarningShown()}>
-            <Alert color='warning'>{t('test.demographics.skipWarning')}</Alert>
+            <Alert color='warning' class='mt-4'>
+              {t('test.demographics.skipWarning')}
+            </Alert>
           </Show>
-        </div>
+        </section>
       </Show>
 
       <Show when={restored()}>
@@ -368,7 +338,11 @@ export function Survey(props: { questions: Question[]; language: string }) {
       </For>
 
       <div class='my-12 inline-flex space-x-4'>
-        <Button color='primary' disabled={backDisabled()} onClick={handlePrevious}>
+        <Button
+          color='primary'
+          disabled={backDisabled()}
+          onClick={handlePrevious}
+        >
           {t('test.back').toUpperCase()}
         </Button>
         <Button color='primary' disabled={nextDisabled()} onClick={handleNext}>

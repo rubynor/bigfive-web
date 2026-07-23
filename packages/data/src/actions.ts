@@ -11,7 +11,7 @@ import { generateObjectId, isObjectId } from './object-id';
 import { fetchOgResult } from './og-fallback';
 import { feedback, results } from './schema';
 import { B5Error } from './types';
-import type { Feedback, SaveTestInput } from './types';
+import type { Demographics, Feedback, SaveTestInput } from './types';
 import { scoreAssessment } from '../../score/src/scoring';
 import { toLegacyScores } from '../../score/src/adapter';
 import type { AssessmentResult } from '../../score/src/types';
@@ -42,9 +42,15 @@ export type Report = {
   composites: CompositeTrait[];
 };
 
+// `demographicsOverride` re-scores an existing result against a different norm
+// stratum WITHOUT touching the stored row — an evaluation aid on the result
+// page ("what would this look like scored as 41–60?"). An empty object is a
+// meaningful override (score against the combined reference group), so the
+// stored value is only consulted when the argument is `undefined`.
 export async function getTestResult(
   id: string,
-  language?: string
+  language?: string,
+  demographicsOverride?: Demographics
 ): Promise<Report> {
   let report = await getDb().query.results.findFirst({
     columns: {
@@ -94,7 +100,7 @@ export async function getTestResult(
   // null → undefined → the combined + 21–40 reference stratum (fallbackApplied).
   const assessment = scoreAssessment({
     answers: report.answers,
-    demographics: report.demographics ?? undefined
+    demographics: demographicsOverride ?? report.demographics ?? undefined
   });
   const typology = computeTypology(assessment);
   const composites = computeComposites(assessment);

@@ -234,9 +234,18 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     normNote: 'Scored against norms: {stratum}',
     normApproxHint:
       '(approximate reference group — provide sex & age when taking the test for an exact match)',
+    normGroupChange: 'Change reference group',
+    normGroupClose: 'Close',
+    normGroupExplainer:
+      'Percentiles say where you stand within a comparison group. Pick a different group to see the same answers scored against it — this only changes the view, your saved result is untouched.',
+    normPreviewBadge: 'Preview',
+    normGroupPreviewNote:
+      'You are viewing a preview against another reference group. Nothing has been saved.',
+    normGroupReset: 'Back to my group',
     notFoundTitle: 'Could not retrieve report',
     notFoundId: 'We could not retrieve the following id {id}.',
-    notFoundContact: 'Please check that it is correct or contact us at {email}.',
+    notFoundContact:
+      'Please check that it is correct or contact us at {email}.',
     loadErrorTitle: 'Something went wrong',
     loadErrorBody:
       'The report could not be loaded due to a technical problem. Please try again later or contact us at {email}.',

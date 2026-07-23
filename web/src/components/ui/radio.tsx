@@ -1,10 +1,17 @@
-// Kobalte RadioGroup wrapper styled for the survey answer rows and the
-// demographics card. Options are plain { value, label } pairs, rendered as
-// full-width clickable rows (radio circle + label) — the same shape as the
-// upstream survey's labeled radio list.
+// Kobalte RadioGroup wrappers, in two shapes:
+//
+// - `RadioCards`  — full-width clickable rows (radio circle + label), the
+//   shape of the upstream survey's labeled radio list. Used for the 5-point
+//   Likert answers, where every option is a long sentence.
+// - `RadioChips`  — a wrapping row of pills. Used where the options are one
+//   or two words (sex, age bracket): stacked rows waste a screenful and make
+//   two side-by-side groups of unequal length look ragged.
+//
+// Options are plain { value, label } pairs in both.
 
 import { RadioGroup } from '@kobalte/core/radio-group';
 import { For } from 'solid-js';
+import clsx from 'clsx';
 
 export type RadioOption = { value: string; label: string };
 
@@ -51,6 +58,39 @@ export function RadioCards(props: RadioCardsProps) {
               <RadioGroup.ItemIndicator class='h-2.5 w-2.5 rounded-full bg-primary' />
             </RadioGroup.ItemControl>
             <RadioGroup.ItemLabel class='text-sm'>
+              {option.label}
+            </RadioGroup.ItemLabel>
+          </RadioGroup.Item>
+        )}
+      </For>
+    </RadioGroup>
+  );
+}
+
+// The pill has no radio circle — the filled state carries the selection — so
+// the focus ring has to come from the (visually hidden) input via
+// focus-within, or keyboard users get no indication at all.
+const chipClass =
+  'group cursor-pointer rounded-full border border-divider bg-content1 px-4 py-2 text-sm transition-colors hover:bg-content2 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-primary data-[checked]:border-primary data-[checked]:bg-primary/10 data-[checked]:font-medium data-[checked]:text-primary';
+
+export function RadioChips(props: RadioCardsProps & { class?: string }) {
+  return (
+    <RadioGroup
+      class={clsx('flex flex-wrap gap-2', props.class)}
+      value={props.value}
+      onChange={props.onChange}
+      aria-label={props['aria-label']}
+      orientation='horizontal'
+    >
+      <For each={props.options}>
+        {(option) => (
+          <RadioGroup.Item
+            value={option.value}
+            class={chipClass}
+            onClick={forwardClickToInput}
+          >
+            <RadioGroup.ItemInput name={props.name} />
+            <RadioGroup.ItemLabel class='block whitespace-nowrap'>
               {option.label}
             </RadioGroup.ItemLabel>
           </RadioGroup.Item>

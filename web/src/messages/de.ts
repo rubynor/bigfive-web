@@ -129,7 +129,31 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     next: 'Weiter',
     back: 'Zurück',
     more: 'Mehr',
-    seeResults: 'Ergebnisse sehen'
+    seeResults: 'Ergebnisse sehen',
+    demographics: {
+      title: 'Optional: über Sie',
+      description:
+        'Ihr Ergebnis wird mit Normgruppen verglichen. Mit Ihrem Geschlecht und Alter bewerten wir Sie anhand Ihrer genauen Gruppe statt anhand des allgemeinen Durchschnitts.',
+      sex: 'Geschlecht',
+      male: 'Männlich',
+      female: 'Weiblich',
+      age: 'Alter',
+      under21: 'Unter 21',
+      age21to40: '21–40',
+      age41to60: '41–60',
+      over60: 'Über 60',
+      preferNotToSay: 'Keine Angabe',
+      skip: 'Überspringen',
+      skipWarning:
+        'Kein Problem — es wird die kombinierte Referenzgruppe verwendet, Ihre Perzentile können daher etwas ungenauer sein.'
+    },
+    restored: {
+      message: 'Ihre Antworten wurden wiederhergestellt.',
+      startNew: 'einen neuen Test starten'
+    },
+    saveError:
+      'Beim Speichern Ihres Ergebnisses ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.',
+    devSkip: 'Zum Ende springen (dev)'
   },
   big_five: {
     title: 'Was sind die Big Five?',
@@ -217,6 +241,14 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     normNote: 'Bewertet anhand der Normen: {stratum}',
     normApproxHint:
       '(ungefähre Referenzgruppe — geben Sie beim Test Geschlecht & Alter an für eine exakte Zuordnung)',
+    normGroupChange: 'Referenzgruppe ändern',
+    normGroupClose: 'Schließen',
+    normGroupExplainer:
+      'Perzentile zeigen, wo Sie innerhalb einer Vergleichsgruppe stehen. Wählen Sie eine andere Gruppe, um dieselben Antworten daran gemessen zu sehen — das ändert nur die Ansicht, Ihr gespeichertes Ergebnis bleibt unberührt.',
+    normPreviewBadge: 'Vorschau',
+    normGroupPreviewNote:
+      'Sie sehen eine Vorschau mit einer anderen Referenzgruppe. Es wurde nichts gespeichert.',
+    normGroupReset: 'Zurück zu meiner Gruppe',
     notFoundTitle: 'Bericht konnte nicht abgerufen werden',
     notFoundId: 'Wir konnten die folgende ID nicht abrufen: {id}.',
     notFoundContact:
@@ -298,6 +330,38 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     copyLink: 'Link kopieren',
     copiedLink: 'Link kopiert'
   },
+  compare: {
+    overview: 'Übersicht',
+    editComparison: 'Vergleich bearbeiten',
+    noRows: 'Keine Einträge vorhanden.',
+    invalidId: 'Bitte geben Sie eine gültige, nicht doppelte ID ein.',
+    invalidIdPlain: 'Bitte geben Sie eine gültige ID ein.',
+    editPerson: 'Person bearbeiten',
+    reorder: '{name} umsortieren',
+    reorderHint:
+      'Zum Umsortieren ziehen oder fokussieren und die Pfeiltasten verwenden',
+    listLabel: 'Liste der zu vergleichenden Personen',
+    invalidLinkTitle: 'Ungültiger Vergleichslink',
+    invalidLinkBody:
+      'Dieser Vergleichslink ist fehlerhaft. Sie können einen neuen erstellen oder uns unter {email} kontaktieren.',
+    loadErrorTitle: 'Vergleich konnte nicht geladen werden',
+    loadErrorBody:
+      'Mindestens ein Ergebnis in diesem Vergleich konnte nicht geladen werden. Sie können einen neuen Vergleich erstellen oder uns unter {email} kontaktieren.',
+    buildNew: 'Neuen Vergleich erstellen'
+  },
+  feedback: {
+    title: 'Wir freuen uns über Feedback!',
+    intro:
+      'Schreiben Sie uns, wie wir unsere Funktionen verbessern können, oder melden Sie konkrete Probleme.',
+    name: 'Name',
+    email: 'E-Mail',
+    message: 'Nachricht',
+    messagePlaceholder: 'Geben Sie Ihre Nachricht ein',
+    invalidEmail: 'Bitte geben Sie eine gültige E-Mail-Adresse ein',
+    submit: 'Absenden',
+    success: 'Erfolgreich gesendet!',
+    error: 'Fehler beim Senden des Feedbacks!'
+  },
   getResult: {
     result: 'Ergebnis',
     explanation:
@@ -305,7 +369,8 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     idInput: 'in das ID-Eingabefeld',
     urlOrId: 'URL oder ID Ihrer Ergebnisse',
     getResult: 'Zum Ergebnis',
-    viewPrevious: 'Vorheriges Ergebnis anzeigen'
+    viewPrevious: 'Vorheriges Ergebnis anzeigen',
+    invalidId: 'Bitte geben Sie eine gültige ID ein'
   },
   shareLinks: {
     copyLink: 'Link in Zwischenablage kopieren',
