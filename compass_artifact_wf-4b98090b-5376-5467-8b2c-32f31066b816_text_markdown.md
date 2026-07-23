@@ -1,0 +1,95 @@
+# The Big Five and the Constellation of Character Traits: Empirical Correlations, with Perfectionism in Depth
+
+## TL;DR
+- **Most "other" personality constructs are substantially—sometimes almost entirely—reducible to the Big Five**: perfectionistic concerns are largely Neuroticism (meta-analytic rc+ = .50) while perfectionistic strivings are largely Conscientiousness (rc+ = .44); grit correlates ρ ≈ .84 with Conscientiousness (a textbook "jangle fallacy"); and the Five-Factor Model explains ~88% of the variance in psychopathy.
+- **Neuroticism and Conscientiousness are the two workhorse dimensions**: Neuroticism anchors self-esteem, optimism/pessimism, trait EI, anxiety/depression vulnerability, and the maladaptive side of perfectionism; Conscientiousness anchors grit, self-control, (low) procrastination, and the achievement-striving side of perfectionism. Low Agreeableness is the common core of the Dark Triad.
+- **The clearest genuine exception is HEXACO Honesty–Humility**, which the Big Five capture only partially (R² ≈ .27–.30 from Big Five Aspect Scales), making it the strongest candidate for a construct that meaningfully extends—rather than merely relabels—the five-factor space.
+
+## Key Findings
+
+1. **Perfectionism splits cleanly along Big Five lines.** The definitive meta-analysis (Smith, Sherry, Vidovic, Saklofske, Stoeber & Benoit, 2019; k = 77, 95 samples, N = 24,789) shows perfectionistic *concerns* load on Neuroticism (rc+ = .50), low Agreeableness (−.26), and low Extraversion (−.24), whereas perfectionistic *strivings* load on Conscientiousness (rc+ = .44). This maps onto the long-hypothesised "neurotic vs. non-neurotic" perfectionism distinction.
+
+2. **Grit ≈ Conscientiousness.** Credé, Tynan & Harms (2017) meta-analysis found grit correlates ρ = .84 with Conscientiousness—strong enough that grit's discriminant validity is in serious doubt.
+
+3. **Self-esteem, core self-evaluations, optimism, and trait EI are dominated by Neuroticism (and secondarily Extraversion).** The Big Five explain roughly a third of self-esteem variance and over half of trait-EI variance.
+
+4. **The Dark Triad shares low Agreeableness as its common core**; the FFM explains nearly all variance in psychopathy and much of narcissism.
+
+5. **Hierarchical structure matters.** The Big Five sit above narrower facets and aspects (DeYoung) and below two metatraits (Stability, Plasticity) and a General Factor of Personality; jangle fallacies proliferate because researchers name facet-level or blend constructs as though they were novel.
+
+## Details
+
+### 1. Perfectionism and the Five-Factor Model (primary focus)
+
+**Frameworks.** Two multidimensional models dominate. Frost's Multidimensional Perfectionism Scale (FMPS; Frost et al., 1990) has six subscales: concern over mistakes, doubts about actions, personal standards, parental criticism, parental expectations, and organization. Hewitt & Flett's MPS (HFMPS; 1991) has three: self-oriented, other-oriented, and socially prescribed perfectionism. Slaney's Almost Perfect Scale–Revised (APS-R) adds high standards, order, and discrepancy. Following Stoeber & Otto (2006), factor-analytic work collapses most of these onto two higher-order factors:
+- **Perfectionistic strivings (PS):** self-oriented perfectionism, personal standards, high standards.
+- **Perfectionistic concerns (PC):** socially prescribed perfectionism, concern over mistakes, doubts about actions, discrepancy.
+
+**Headline meta-analytic results (Smith et al., 2019).** Using disattenuated weighted-mean correlations (rc+, corrected for scale unreliability):
+- **Perfectionistic concerns:** Neuroticism rc+ = .50; Agreeableness rc+ = −.26; Extraversion rc+ = −.24.
+- **Perfectionistic strivings:** Conscientiousness rc+ = .44.
+
+**Subscale-level detail (Smith et al., 2019, Table 2; rc+ disattenuated):**
+- Self-oriented perfectionism × Conscientiousness: rc+ = .42 (k = 26, N = 6,885); × Neuroticism: rc+ = .15 (k = 48, N = 13,061). So the "self-oriented" striving is chiefly a conscientious trait with only a small neurotic component.
+- Personal standards × Conscientiousness: rc+ = .40 (k = 8, N = 2,250).
+- High standards × Conscientiousness: rc+ = .49; High standards × Agreeableness: rc+ = .22 (positive—one reason "high standards" items behave more adaptively than "perfectionism" items).
+- Socially prescribed perfectionism × Neuroticism: rc+ = .37; × Agreeableness: rc+ = −.31; × Extraversion: rc+ = −.19.
+- Concern over mistakes × Neuroticism: rc+ = .53.
+- Doubts about actions × Neuroticism: rc+ = .63 (the single strongest perfectionism–FFM link).
+- Discrepancy × Neuroticism: rc+ = .53.
+- Other-oriented perfectionism × Agreeableness: rc+ = −.35 (k = 12, N = 2,770)—the "demanding of others" form is primarily antagonism.
+
+**How much does the FFM explain?** In a companion review (Smith et al., 2022, "Multidimensional Perfectionism Turns 30"), the five FFM traits *collectively* explained 21% of self-oriented perfectionism, 18% of other-oriented, 30% of socially prescribed, 22% of personal standards, 46% of concern over mistakes, and 72% of doubts about actions. The clear implication: most perfectionism dimensions (except doubts about actions) retain substantial variance beyond the Big Five and are not redundant with them. Perfectionism dimensions incrementally predict depression, self-esteem, and disordered personality after controlling for FFM traits.
+
+**Robust vs. contested.** Robust: PC→Neuroticism and PS→Conscientiousness. Contested: whether "high standards/personal standards" are adaptive—Smith et al. show the maladaptiveness of strivings "hinges on instrumentation" (whether the scale wording captures striving for excellence vs. genuine perfectionism). Also contested: longitudinal causal direction—Stoeber, Otto & Dalbert (2009) found Conscientiousness predicted increases in self-oriented perfectionism over 5–8 months, but Neuroticism did *not* prospectively predict increases in perfectionism.
+
+### 2. Broader survey of constructs correlated with the Big Five
+
+**Grit (Duckworth).** Credé, Tynan & Harms (2017), "Much Ado About Grit" (584 effect sizes, 88 samples, N = 66,807): overall grit × Conscientiousness ρ = .84 (k = 22, N = 18,826); perseverance-of-effort facet × Conscientiousness ρ = .83; consistency-of-interest × Conscientiousness ρ = .61; grit × self-control ρ = .72. Grit's higher-order structure was not confirmed, and grit correlated only ~.18 with performance. Schmidt et al. (2018/2020) item-level factor analyses reinforce this ("Grit and conscientiousness: Another jangle fallacy").
+
+**Self-esteem.** Robins, Tracy, Trzesniewski, Potter & Gosling (2001; N = 326,641): the Big Five collectively accounted for 34% of self-esteem variance; high self-esteem individuals were emotionally stable, extraverted, and conscientious. Neuroticism is the strongest single predictor (explaining ~25% on its own). Some theorists model self-esteem as roughly "Emotional Stability + Extraversion."
+
+**Core self-evaluations (CSE).** Judge & Bono (2001; 274 correlations): CSE is a higher-order construct indicated by self-esteem, generalized self-efficacy, locus of control, and (low) Neuroticism. True-score correlations with job satisfaction: self-esteem .26, generalized self-efficacy .45, internal locus of control .32, emotional stability .24; with job performance ~.19–.26. Bono & Judge (2003) note CSE consistently relates to Extraversion and Conscientiousness (e.g., neuroticism and self-esteem correlated with extraversion at −.25 and .32). CSE is essentially a broadened Neuroticism/Emotional-Stability construct.
+
+**Dark Triad (narcissism, Machiavellianism, psychopathy).** O'Boyle, Forsyth, Banks, Story & White (2015; 310 samples, 215 sources): the FFM explained nearly all variance in psychopathy (R²c = .88) and a substantial portion of narcissism (R²c = .42); the single common Big Five correlate across all three is low Agreeableness. A separate meta-analysis (Muris, Merckelbach, Otgaar & Meijer, 2017, "The Malevolent Side of Human Nature," Perspectives on Psychological Science) reported Dark Triad × Agreeableness correlations of roughly −.21 (narcissism), −.43 (Machiavellianism), and −.46 (psychopathy), and identified HEXACO Honesty–Humility as the other principal correlate. Machiavellianism and psychopathy also relate to low Conscientiousness; narcissism relates positively to Extraversion and Openness. The authors question whether the Dark Triad is sufficiently distinct from established trait space.
+
+**HEXACO Honesty–Humility (H).** The strongest candidate for a genuine extension of the Big Five. Howard & Van Zandt (2020; meta-analysis of ~400 studies): H shares only a modest amount of variance with Big Five/HEXACO dimensions, but is more strongly associated with Big Five Agreeableness than HEXACO Agreeableness, and relates very strongly to the Dark Triad (its correlation with Machiavellianism approaches convergent-validity levels). Crucially, Big Five Aspect Scales (BFAS) explain only R² ≈ .27 (five factors) to .30 (ten aspects) of H—i.e., the Big Five leave ~70% of H unaccounted for. Whether H is truly "missing" from the Big Five or is a re-weighted blend of Agreeableness/low-antagonism remains debated; some argue the Big Five reorganise rather than omit this variance.
+
+**Need for cognition / intellect / curiosity (Openness).** Greco & Walter (2013), "The Need For Cognition: A Meta-Analysis Clarifying the Link to Intelligence and Personality" (Academy of Management Proceedings; 76 independent samples), found that "NFC has strongest relationships with general cognitive ability, the Openness to Experience facet of the Big 5, and Conscientiousness." Liu & Nesbit (2024; 136 effect sizes, N = 53,258) found NFC × academic achievement r = .20 (95% CI .18–.22). NFC, typical intellectual engagement, openness-to-ideas, and epistemic curiosity are near-synonymous "investment traits" clustering within the Openness/Intellect domain—another jangle cluster.
+
+**Trait emotional intelligence.** Trait EI is largely a blend of Big Five variance dominated by low Neuroticism, then Extraversion and Conscientiousness. In the Dutch TEIQue-SF validation, van der Linden et al. (2010) reported that "the overlap between trait EI and the higher-order personality dimensions exceeds 50%," with Neuroticism the strongest correlate (global trait EI × Neuroticism reaching r ≈ −0.68 in Pérez-González & Sánchez-Ruiz, Frontiers in Psychology, 2019). van der Linden, Pekaar, Bakker, Schermer, Vernon, Dunkel & Petrides (2017; Psychological Bulletin 143:36–52; k = 142 data sources, N = 36,268) found trait EI and the General Factor of Personality overlap at r ≈ .85 and concluded the two are "very similar, perhaps even synonymous"; a follow-up twin study (van der Linden et al., 2018, Behavior Genetics 48:147–154) put the correlation at ρ = .88 with a substantial shared genetic component—effectively identical constructs.
+
+**Impulsivity, self-control, sensation seeking.** Self-control (Tangney's SCS) correlates ≈ .54 with Conscientiousness, −.50 with Neuroticism, and .29 with Agreeableness. Whiteside & Lynam's UPPS model maps impulsivity facets directly onto the FFM: urgency→Neuroticism, (lack of) premeditation and perseverance→low Conscientiousness, sensation seeking→Extraversion. Sensation seeking (Zuckerman) relates positively to Extraversion and Openness and negatively to Agreeableness and Conscientiousness (the NEO Extraversion facet "excitement seeking" was explicitly built to capture it). "Self-control" has even been proposed as an alternative label for the metatrait Stability.
+
+**Optimism/pessimism.** Optimism (LOT-R) is most strongly linked to low Neuroticism and high Extraversion, but Sharpe, Martin & Roth (2011; five samples, N = 4,332) found substantial positive relations with Emotional Stability, Extraversion, Agreeableness, and Conscientiousness, with Agreeableness and Conscientiousness adding incremental variance beyond Neuroticism and Extraversion.
+
+**Procrastination.** Steel (2007), "The Nature of Procrastination" (Psychological Bulletin; meta-analysis of 691 correlations): procrastination × Conscientiousness r ≈ −.62 (its facets self-discipline, distractibility, organization, achievement motivation are the strongest correlates); impulsiveness is the other strong predictor; Neuroticism, rebelliousness, and sensation seeking show only weak connections. Procrastination is often treated as a (low) Conscientiousness facet.
+
+**Anxiety/depression vulnerability (Neuroticism).** Kotov, Gamez, Schmidt & Watson (2010; 175 studies, 851 effect sizes, 66 meta-analyses): Neuroticism is elevated across depressive, anxiety, and substance-use disorders, with cross-sectional Cohen's d from ~0.5 (substance disorders) to ~2.0 (some anxiety/mood disorders); low Conscientiousness and low Extraversion add specificity. Jeronimus et al. (2016; 59 prospective studies, N = 443,313) found large unadjusted prospective associations (d = 0.50–0.70) that roughly halve after adjusting for baseline symptoms and psychiatric history—supporting Neuroticism as a genuine but partly confounded vulnerability factor and a core of the "general factor of psychopathology."
+
+**Type A behaviour pattern.** Evidence is thinner and older. Type A's components decompose: the achievement/hard-driving component maps onto Conscientiousness (and self-efficacy/"fighting spirit"), while the hostility/impatience component maps onto low Agreeableness and high Neuroticism. Type A is not a unitary Big Five construct and has largely been superseded by focus on its toxic hostility component.
+
+### 3. Methodological framing
+
+**Jangle fallacy.** The "jangle fallacy" (using two different names for one construct) pervades this literature: grit vs. Conscientiousness is the canonical case; trait EI vs. the GFP; need for cognition vs. Openness/Intellect; self-control vs. Conscientiousness/Stability. Lawson & Robins (2021) offer criteria for diagnosing jangle fallacies (e.g., extreme inter-scale correlations, emergence of a single common factor). The mirror "jingle fallacy" (one name, different constructs) also appears—"perfectionism" scales that actually measure high standards vs. genuine self-criticism.
+
+**Hierarchical structure of personality.** From narrow to broad: (1) items → (2) facets (e.g., NEO's 30 facets) → (3) DeYoung, Quilty & Peterson's (2007) *ten aspects* (two per domain: e.g., Neuroticism = Withdrawal + Volatility; Conscientiousness = Industriousness + Orderliness; Openness = Openness + Intellect) → (4) the Big Five domains → (5) two metatraits, **Stability** (shared variance of Emotional Stability, Agreeableness, Conscientiousness; "Alpha") and **Plasticity** (Extraversion + Openness; "Beta") → (6) a single General Factor of Personality (GFP). van der Linden, te Nijenhuis & Bakker (2010; K = 212, N = 144,117) found the GFP explains roughly 45% of Big Five variance and relates ~.20 to supervisor-rated job performance—though whether the GFP is substantive or an artifact of social-desirability/evaluative response bias remains contested (Ashton et al., 2009 argue artifact).
+
+**How much variance do the Big Five explain in "other" traits?** Highly variable: near-total for psychopathy (~88%) and grit (~70%+ of shared variance), roughly half for trait EI (>50%), about a third for self-esteem (34%), but only ~27–30% for Honesty–Humility. The practical rule: constructs defined by emotional (in)stability, achievement/impulse regulation, or antagonism are largely Big Five re-descriptions; constructs invoking honesty, fairness, and non-exploitativeness are the least well captured.
+
+## Recommendations
+
+- **For construct selection in research or assessment:** Default to well-validated Big Five (or HEXACO) measures and treat "new" trait labels as guilty of redundancy until proven otherwise. Require incremental-validity evidence (variance explained beyond the Big Five) before adopting a construct like grit or trait EI. *Threshold that would change this:* a candidate construct showing meta-analytic incremental prediction of an important outcome with ΔR² that is both statistically robust and practically meaningful (e.g., ΔR² ≳ .03–.05) after controlling for the relevant Big Five domains and facets.
+- **If studying perfectionism specifically:** Always separate perfectionistic strivings from concerns; do not use a composite. Report which subscales you used, because the strivings–adaptiveness relationship "hinges on instrumentation." Control for Neuroticism when testing PC's links to psychopathology and for Conscientiousness when testing PS's links to achievement. Prefer the two-factor (PS/PC) structure plus a separate other-oriented dimension.
+- **If your interest is honesty, integrity, exploitation, or counterproductive behaviour:** Use HEXACO rather than the Big Five, because Honesty–Humility carries roughly 70% variance the Big Five omit and outpredicts Agreeableness for these outcomes.
+- **When interpreting effect sizes:** Distinguish disattenuated (rc+, ρ) from observed (r+) correlations—the former are inflated relative to what you will observe with real, imperfectly reliable scales. Perfectionism's rc+ = .50 with Neuroticism corresponds to an observed r+ nearer .42.
+- **For predicting psychopathology risk:** Neuroticism is the highest-yield single screen, but adjust for baseline symptoms/history, since roughly half its prospective predictive power is confounded by prior state.
+
+## Caveats
+
+- **Disattenuation inflates coefficients.** Many headline numbers (perfectionism rc+, grit ρ, Dark Triad corrected r) are corrected for unreliability and exceed what raw data yield. I have flagged observed vs. corrected where possible.
+- **The exact O'Boyle et al. (2015) per-cell Dark Triad × Big Five correlations could not be independently verified from the primary table within this research;** the R² figures (.88 psychopathy, .42 narcissism) are confirmed from the paper, but specific agreeableness correlations of −.21/−.43/−.46 come from the separate Muris et al. (2017) meta-analysis and −.36/−.47/−.25 from the Paulhus & Williams (2002) primary study—these should not be conflated.
+- **Cross-sectional dominance.** Most correlations are cross-sectional; the few longitudinal studies (e.g., Stoeber et al. 2009 on perfectionism; Jeronimus et al. 2016 on neuroticism) complicate simple causal readings.
+- **The GFP is genuinely contested**—substantive higher-order trait vs. evaluative/social-desirability artifact—and this dispute is unresolved.
+- **Self-report method variance** inflates many of these overlaps; multi-rater and behavioural-genetic designs (e.g., twin studies showing shared genetic architecture between conscientiousness, self-control, and grit) partly corroborate the overlaps but also show construct-specific variance.
+- **Honesty–Humility's status is theoretical as much as empirical**: whether it is "missing from" or merely "reorganised within" the Big Five depends on which Big Five instrument and rotation one adopts.
