@@ -140,6 +140,7 @@ console.log(getFacet({language: 'no', domain: 'O', facet: 2})) // returns conten
 | is   | Icelandic | Franz Jónas Arnar Arnarson and [Sigurður Kári Árnason](https://github.com/sigurdurkari) |
 | ar   | Arabic    | Rayan Khan |
 | pt-br| Portugese Brazilian | [Rafael Sales](https://github.com/rsales) |
+| ru   | Russian   | [Denis Onosov](https://github.com/donosov999-ai) (GPT-4o-assisted, reviewed by native speakers) |
 
 ## Help wanted
 
