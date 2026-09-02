@@ -61,8 +61,23 @@ interface ResultsProps {
   showExpanded?: boolean;
 }
 
+const sortResultsInOrder = (results: Domain[]): Domain[] => {
+  const desiredOrder = ['O', 'C', 'E', 'A', 'N'];
+  
+  const domainMap = new Map<string, Domain>();
+  results.forEach(result => {
+    domainMap.set(result.domain, result);
+  });
+  
+  return desiredOrder
+    .map(domain => domainMap.get(domain))
+    .filter((domain): domain is Domain => domain !== undefined);
+};
+
 const Results = ({ report, showExpanded }: ResultsProps) => {
   const t = useTranslations('results');
+  
+  const sortedResults = sortResultsInOrder(report.results);
 
   return (
     <>
@@ -100,9 +115,9 @@ const Results = ({ report, showExpanded }: ResultsProps) => {
       <div className='flex mt-10'>
         <h1 className={title()}>{t('theBigFive')}</h1>
       </div>
-      <BarChart max={120} results={report.results} />
+      <BarChart max={120} results={sortedResults} />
       <DomainTabs
-        results={report.results}
+        results={sortedResults}
         showExpanded={!!showExpanded}
         scoreText={t('score')}
       />
