@@ -7,7 +7,7 @@ export default function FaqPage() {
     {
       question: 'I got an error on this website',
       answer:
-        'Submit an issue at GitHub or send us an e-mail at bigfive-test@rubynor.com'
+        'Submit an issue on GitHub or send us an e-mail at bigfive-test@rubynor.com'
     },
     {
       question: 'Can I use the code for this website for Commercial Purposes?',
@@ -41,11 +41,11 @@ export default function FaqPage() {
     {
       question: 'Where can I find the questions?',
       answer:
-        'All questions and translations are in this repo in the data folder. The questions and scoring is taken from ipip.ori.org'
+        'All questions and translations are in this repo in the data folder. The questions and scoring are taken from ipip.ori.org'
     },
     {
       question: 'Where can I find the code?',
-      answer: 'The code is found here at GitHub.'
+      answer: 'The code is found here on GitHub.'
     }
   ];
   return (
