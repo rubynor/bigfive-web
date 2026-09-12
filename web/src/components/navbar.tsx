@@ -23,7 +23,7 @@ import { TwitterIcon, GithubIcon, Logo } from '@/components/icons';
 import { Link as NextLink } from '../navigation';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 interface NavbarProps {
   navItems: { label: string; href: string }[];
@@ -34,6 +34,7 @@ export const Navbar = ({ navItems, navMenuItems }: NavbarProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
   const locale = useLocale();
+  const t = useTranslations('navbar');
 
   const isCurrentPath = (link: string): boolean => {
     if (link === '/') {
@@ -55,7 +56,7 @@ export const Navbar = ({ navItems, navMenuItems }: NavbarProps) => {
           <NextLink
             className='flex justify-start items-center gap-1'
             href='/'
-            aria-label='Home'
+            aria-label={t('ariaHome')}
           >
             <Logo />
           </NextLink>
@@ -84,10 +85,18 @@ export const Navbar = ({ navItems, navMenuItems }: NavbarProps) => {
         justify='end'
       >
         <NavbarItem className='hidden sm:flex gap-2'>
-          <Link isExternal href={siteConfig.links.twitter} aria-label='Twitter'>
+          <Link
+            isExternal
+            href={siteConfig.links.twitter}
+            aria-label={t('ariaTwitter')}
+          >
             <TwitterIcon className='text-default-500' />
           </Link>
-          <Link isExternal href={siteConfig.links.github} aria-label='Github'>
+          <Link
+            isExternal
+            href={siteConfig.links.github}
+            aria-label={t('ariaGithub')}
+          >
             <GithubIcon className='text-default-500' />
           </Link>
           <ThemeSwitch />
@@ -102,7 +111,11 @@ export const Navbar = ({ navItems, navMenuItems }: NavbarProps) => {
           <LocaleSwitcher />
         </NavbarItem>
         <NavbarItem>
-          <Link isExternal href={siteConfig.links.github} aria-label='Github'>
+          <Link
+            isExternal
+            href={siteConfig.links.github}
+            aria-label={t('ariaGithub')}
+          >
             <GithubIcon className='text-default-500' />
           </Link>
         </NavbarItem>
@@ -111,7 +124,7 @@ export const Navbar = ({ navItems, navMenuItems }: NavbarProps) => {
         </NavbarItem>
         <NavbarItem className='w-10 h-full'>
           <NavbarMenuToggle
-            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+            aria-label={isMenuOpen ? t('closeMenu') : t('openMenu')}
           />
         </NavbarItem>
       </NavbarContent>

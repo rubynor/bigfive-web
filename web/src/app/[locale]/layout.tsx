@@ -26,6 +26,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'frontpage' });
   const s = await getTranslations({ locale, namespace: 'seo' });
+  const tMeta = await getTranslations({ locale, namespace: 'metadata' });
   const alternatesLang = locales.reduce((a, v) => ({ ...a, [v]: `/${v}` }), {});
   return {
     title: {
@@ -52,7 +53,7 @@ export async function generateMetadata({
       description: t('seo.description'),
       images: {
         url: `${basePath}/og-image.png`,
-        alt: 'People comparing personality tests'
+        alt: tMeta('ogImageAlt')
       }
     },
     twitter: {
@@ -63,7 +64,7 @@ export async function generateMetadata({
       creator: siteConfig.creator,
       images: {
         url: `${basePath}/og-image.png`,
-        alt: 'People comparing personality tests'
+        alt: tMeta('twitterImageAlt')
       }
     }
   };

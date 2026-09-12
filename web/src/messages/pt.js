@@ -1,7 +1,7 @@
 const portuguese = {
   language: {
-    label: 'Brazilian Portuguese',
-    locale: 'pt'
+    label: 'Português (Portugal)',
+    locale: 'pt-PT'
   },
   seo: {
     keywords:
@@ -98,8 +98,8 @@ inventário é de <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     and: 'e',
     pages: 'páginas',
     languages: 'idiomas',
-    save: 'Save',
-    close: 'Close'
+    save: 'Salvar',
+    close: 'Fechar'
   },
   form: {
     information: 'Informação',
@@ -187,7 +187,8 @@ inventário é de <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     comparePeople: 'comparar pessoas',
     nameOfPerson: 'Nome desta pessoa',
     urlOrId: 'URL ou ID para comparação',
-    name: 'Nome'
+    name: 'Nome',
+    loadingText: 'Loading...'
   },
   results: {
     theBigFive: 'Os Cinco Grandes',
@@ -199,7 +200,7 @@ inventário é de <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     seo: {
       title: 'Meus resultados do teste de personalidade BigFive',
       description:
-        'Veja minha personalidade e compare-se nos cinco domínios seguintes: Neuroticismo, Abertura à Experiência, Consciência, Extroversão, Afabilidade'
+        'Veja minha personalidade e compare-se nos cinco domínios seguintes: Neuroticismo, Abertura à Experiência, Conscienciosidade, Extroversão, Afabilidade'
     }
   },
   getResult: {
@@ -217,6 +218,45 @@ inventário é de <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
     shareTwitter: 'Compartilhar no Twitter',
     copiedLink: 'Copiado',
     shareResults: 'Compartilhe seus resultados!'
+  },
+  navbar: {
+    ariaHome: 'Home',
+    ariaTwitter: 'Twitter',
+    ariaGithub: 'Github',
+    closeMenu: 'Close menu',
+    openMenu: 'Open menu'
+  },
+  footer: {
+    ariaLinkedIn: 'LinkedIn',
+    ariaFacebook: 'Facebook',
+    allRightsReserved: 'all rights reserved'
+  },
+  metadata: {
+    ogImageAlt: 'People comparing personality tests',
+    twitterImageAlt: 'People comparing personality tests'
+  },
+  cookieConsent: {
+    bannerTitle: 'Cookie consent',
+    bannerDescription: 'We use cookies on our site.',
+    readMore: 'Read more in our ',
+    privacyPolicyLinkText: 'privacy policy',
+    preferencesButton: 'Preferences',
+    declineButton: 'Decline',
+    acceptAllButton: 'Accept all',
+    settingsTitle: 'Cookie Preferences',
+    settingsDescription: 'Manage your cookie settings. You can enable or disable different types of cookies below.',
+    essentialCookiesLabel: 'Essential Cookies',
+    essentialCookiesDescription: 'These cookies are necessary for the website to function and cannot be switched off.',
+    analyticsCookiesLabel: 'Analytics Cookies',
+    analyticsCookiesDescription: 'These cookies allow us to count visits and traffic sources, so we can measure and improve the performance of our site.',
+    marketingCookiesLabel: 'Marketing Cookies',
+    marketingCookiesDescription: 'These cookies help us show you relevant ads.',
+    savePreferencesButton: 'Save Preferences'
+  },
+  resultPage: {
+    errorAlertTitle: 'Could not retrieve report',
+    errorAlertIdText: 'We could not retrieve the following id {id}.',
+    errorAlertContactText: 'Please check that it is correct or contact us at {email}.'
   }
 };
 

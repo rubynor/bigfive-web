@@ -2,7 +2,7 @@ import { type TemplateDomain } from '../../types'
 
 const conscientiousness: TemplateDomain = {
   domain: 'C',
-  title: 'Consciência',
+  title: 'Conscienciosidade',
   shortDescription: 'Diz respeito à forma como controlamos, conduzimos e direcionamos nossos impulsos.',
   description: `Consciência gira em torno da ideia de organização e perseverança. 
 Indivíduos conscientes normalmente são considerados inteligentes, pois idealizam 
@@ -41,9 +41,7 @@ desorganizado e costumam te avaliar como descuidado.`
     },
     {
       score: 'high', // do not translate this line
-      text: `"Sua pontuação em Consciência" é alta. Você é uma pessoa 
-que define bem seus objetivos e os realiza com determinação. Te consideram 
-confiável e trabalhador."`
+      text: "Sua pontuação em Conscienciosidade é alta. Você é uma pessoa que define bem seus objetivos e os realiza com determinação. Te consideram confiável e trabalhador."
     }
   ],
   facets: [

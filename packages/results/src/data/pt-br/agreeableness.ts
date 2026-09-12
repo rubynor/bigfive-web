@@ -3,7 +3,7 @@ import { type TemplateDomain } from '../../types'
 const agreeableness: TemplateDomain = {
   domain: 'A',
   title: 'Afabilidade',
-  shortDescription: 'Pessoas agradáveis aos outros, simpáticos. Se preocupam com a cooperação e a harmonia social e facilmente se dão bem com outras pessoas.',
+  shortDescription: 'Pessoas agradáveis, simpáticas. Se preocupam com a cooperação e a harmonia social e facilmente se dão bem com outras pessoas.',
   description: `São atenciosos, amigáveis, generosos e se comprometem com os 
 interesses do próximo. Pessoas com esse perfil também têm uma visão otimista 
 sobre a humanidade. Eles acreditam que as pessoas são honestas, decentes, 
@@ -21,9 +21,7 @@ ações agradem a maioria.`,
   results: [
     {
       score: 'low', // do not translate this line
-      text: `Sua pontuação para "afabilidade" é baixa, indicando que você se
-preocupa mais com as próprias necessidades do que com a dos outros. 
-As pessoas podem te considerar rigoroso, crítico, e inflexível.`
+      text: 'Sua pontuação para "afabilidade" é baixa, indicando que você se preocupa mais com as próprias necessidades do que com a dos outros. As pessoas podem te considerar rigoroso, crítico e inflexível.'
     },
     {
       score: 'neutral', // do not translate this line
@@ -50,10 +48,7 @@ desonestos e perigosos.`
     {
       facet: 2,
       title: 'Moralidade',
-      text: `Pessoas que se baseiam na ética e justiça, indivíduo sincero e franco. 
-Esse grupo têm facilidade em lidar com outras pessoas e normalmente não gostam de 
-manipulações nas relações. Pontuação baixa caracteriza pessoas que acreditam que 
-é necessário ou comum que as relações sociais causam decepções.`
+      text: 'Pessoas que se baseiam na ética e justiça, indivíduo sincero e franco. Esse grupo têm facilidade em lidar com outras pessoas e normalmente não gostam de manipulações nas relações. Pessoas com baixa pontuação aqui podem ser vistas como mais dispostas a usar de astúcia ou a ocultar a verdade para atingir seus próprios objetivos, e podem não hesitar em manipular os outros se acharem vantajoso.'
     },
     {
       facet: 3,
@@ -76,7 +71,7 @@ conseguir o que querem.`
     {
       facet: 5,
       title: 'Modéstia',
-      text: `Pesssoas que falam de realizações próprias com bastante humildade. 
+      text: `Pessoas que falam de realizações próprias com bastante humildade.
 Não gostam de ser considerados superiores ou melhores do que os outros. Em alguns 
 casos essa atitude pode ocasionar baixa autoconfiança/autoestima. Os que têm 
 pontuação baixa se consideram superiores e podem ser vistos como arrogante 

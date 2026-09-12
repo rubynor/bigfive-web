@@ -21,7 +21,7 @@ export default function ComparePage({
       <br />
       <br />
       <span className='mt-2'>{t('description1')}</span>
-      <Suspense fallback='loading...'>
+      <Suspense fallback={t('loadingText')}>
         <ComparePeople
           addPersonText={t('addPerson')}
           comparePeopleText={t('comparePeople')}

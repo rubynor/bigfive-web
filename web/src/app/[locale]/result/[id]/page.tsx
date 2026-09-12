@@ -36,19 +36,27 @@ export default async function ResultPage({
   searchParams
 }: ResultPageParams) {
   let report;
+  const tErrors = await getTranslations({
+    locale: params.locale,
+    namespace: 'resultPage'
+  });
 
   try {
     report = await getTestResult(params.id.substring(0, 24), searchParams.lang);
   } catch (error) {
-    throw new Error('Could not retrieve report');
+    // throw new Error('Could not retrieve report');
+    // Instead of throwing, we'll let the !report block handle it
+    // This allows us to show a translated error message
   }
 
   if (!report)
     return (
-      <Alert title='Could not retrive report'>
+      <Alert title={tErrors('errorAlertTitle')}>
         <>
-          <p>We could not retrive the following id {params.id}.</p>
-          <p>Please check that it is correct or contact us at {supportEmail}</p>
+          <p>{tErrors('errorAlertIdText', { id: params.id })}</p>
+          <p>
+            {tErrors('errorAlertContactText', { email: supportEmail })}
+          </p>
         </>
       </Alert>
     );

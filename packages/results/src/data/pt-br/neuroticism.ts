@@ -6,7 +6,7 @@ const neuroticism: TemplateDomain = {
   shortDescription: 'Neuroticismo: tendência a sentir emoções negativas.',
   description: `O termo neurose foi utilizado por Freud para descrever 
 uma condição marcada por sofrimento mental e emocional, e pela incapacidade 
-de lidar com as circunstâncias normais da vida. O pscicanalista defendia 
+de lidar com as circunstâncias normais da vida. O psicanalista defendia
 a ideia de que todos os seres humanos mostram alguns sinais de neurose, 
 mas que cada indivíduo lida de maneira diferente ao sofrimento e tem sintomas 
 específicos quando "em sitações de perigo". Hoje a psicologia retrata o 
@@ -74,18 +74,14 @@ tendem a não sentir esses sentimentos depressivos.`
     {
       facet: 4,
       title: 'Autoconsciência',
-      text: `Pessoas impulsivas são incapazes de controlar desejos ou impulsos. Sentem 
-dificuldade em resistir a vontades. Eles tendem a sanar seus prazeres e buscam recompensas 
-instantâneas ao invés de longo-prazo. Já pessoas pouco impulsivas não passam por situações 
-exageradas em relação a seus desejos, pois conseguem resistir. Por esse motivo costumam 
-ser mais moderados.`
+      text: 'Esta faceta descreve a tendência a sentir constrangimento, vergonha ou desconforto em situações sociais. Pessoas com alta autoconsciência são muito sensíveis ao que os outros pensam delas, temem o ridículo e podem se sentir ansiosas ou tensas na presença de outros. Aqueles com baixa autoconsciência, por outro lado, raramente se sentem intimidados socialmente e não se preocupam excessivamente com a opinião alheia.'
     },
     {
       facet: 5,
       title: 'Impulsividade',
       text: `Pessoas impulsivas são incapazes de controlar desejos ou impulsos. 
 Sentem dificuldade em resistir a vontades. Eles tendem a sanar seus prazeres e 
-buscam recompensas instantâneas ao invês de longo-prazo. Já pessoas pouco impulsivas 
+buscam recompensas instantâneas ao invés de longo-prazo. Já pessoas pouco impulsivas
 não experimentam necessidades exageradas ou desejos que são impossíveis de resistir, 
 por esse motivo costumam ser mais moderados. `
     },

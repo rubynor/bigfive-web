@@ -11,7 +11,7 @@ de maneira individualista. A abertura à Experiência está ligada ao intelecto,
 pessoas consideradas intelectuais. Outra característica dessa categoria é a facilidade 
 para assimilação de símbolos e ao abstrato. Habilidades intelectuais (pensamento matemático, 
 lógico ou geométrico, uso artístico e metafórico da linguagem, performance musical e da 
-arte visual). Pessoas com notas baixas para "Abertura para Experiência" tendem a se 
+arte visual). Pessoas com notas baixas em "Abertura à Experiência" tendem a se
 interessar pelo comum. Eles preferem o simples, direto e óbvio, são conservadores e 
 resistentes à mudança. Pessoas nessa categoria, abertas à experiências, são normalmente 
 consideradas mais maduras, que se adaptam com mais facilidade. No entanto, estilos de 
@@ -59,7 +59,7 @@ tem pouca ou nenhuma sensibilidade estética e interesse pela arte.`
       facet: 3,
       title: 'Emotividade',
       text: `Receptivos e conscientes de seus próprios sentimentos e emoções. 
-Sentem emoções fortes e tendem a expressá-las abertamente. As pessaos pouco emotivas 
+Sentem emoções fortes e tendem a expressá-las abertamente. As pessoas pouco emotivas
 tendem a não expressar suas emoções abertamente.`
     },
     {
