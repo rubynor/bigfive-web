@@ -45,7 +45,7 @@ const french = {
       }
     },
     description: {
-      top: 'Lgagnez à mieux vous connaître grâce à un test de personnalité <violet>gratuit</violet> et open source.',
+      top: 'Gagnez à mieux vous connaître grâce à un test de personnalité <violet>gratuit</violet> et open source.',
       subtop: 'The',
       subtop2:
         ' is the most scientifically validated and reliable psychological model to measure personality.',
