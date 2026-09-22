@@ -68,3 +68,15 @@ test('translators are credited', t => {
     t.truthy(translator.language !== undefined)
   })
 })
+
+test('minus choices mirror plus choices in every language', t => {
+  const { languages } = getInfo()
+  languages.forEach(({ id }) => {
+    const choices = require(`../data/${id}/choices`)
+    choices.plus.forEach((plus, i) => {
+      const minus = choices.minus[i]
+      t.is(minus.text, plus.text, `${id}: minus[${i}] label matches plus[${i}]`)
+      t.is(minus.score, 6 - plus.score, `${id}: minus[${i}] score is reversed`)
+    })
+  })
+})

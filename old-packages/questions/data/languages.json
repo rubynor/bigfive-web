@@ -12,6 +12,14 @@
     "text": "Chinese (Hong Kong)"
   },
   {
+    "id": "zh-hant",
+    "text": "Chinese (Traditional)"
+  },
+  {
+    "id": "vi",
+    "text": "Vietnamese"
+  },
+  {
     "id": "hi",
     "text": "Hindi"
   },
